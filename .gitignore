@@ -1,0 +1,14 @@
+.DB_Store
+Thumbs.db
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/*
+wp-content/advacned-cache.php
+wp-content/cache/*
+wp-content/mu-plugins/
+wp-content/plugins/
+wp-content/mc_data/*
+wp-content/cache/
+# .gitignore
+# wp-admin/
+# wp-includes/
