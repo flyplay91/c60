@@ -6,3 +6,5 @@ wp-content/upgrade/*
 wp-content/advacned-cache.php
 wp-content/cache/*
 wp-content/mu-plugins/
+wp-content/plugins/
+wp-content/mc_data/*
