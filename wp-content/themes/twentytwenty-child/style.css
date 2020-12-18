@@ -13,51 +13,277 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain: twenty-twenty-child
 */
-@font-face {
-  font-family: 'WorkSans-SemiBold';
-  src: url("assets/fonts/WorkSans-SemiBold.eot");
-  src: url("assets/fonts/WorkSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/WorkSans-SemiBold.woff2") format("woff2"), url("assets/fonts/WorkSans-SemiBold.woff") format("woff"), url("assets/fonts/WorkSans-SemiBold.ttf") format("truetype"), url("assets/fonts/WorkSans-SemiBold.svg#gothambook") format("svg");
-  font-weight: 900; }
-
-@font-face {
-  font-family: 'WorkSans-Bold';
-  src: url("assets/fonts/WorkSans-Bold.eot");
-  src: url("assets/fonts/WorkSans-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/WorkSans-Bold.woff2") format("woff2"), url("assets/fonts/WorkSans-Bold.woff") format("woff"), url("assets/fonts/WorkSans-Bold.ttf") format("truetype"), url("assets/fonts/WorkSans-Bold.svg#gothambook") format("svg");
-  font-weight: 700; }
-
-@font-face {
-  font-family: 'WorkSans-Medium';
-  src: url("assets/fonts/WorkSans-Medium.eot");
-  src: url("assets/fonts/WorkSans-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/WorkSans-Medium.woff2") format("woff2"), url("assets/fonts/WorkSans-Medium.woff") format("woff"), url("assets/fonts/WorkSans-Medium.ttf") format("truetype"), url("assets/fonts/WorkSans-Medium.svg#gothambook") format("svg");
-  font-weight: 500; }
-
-@font-face {
-  font-family: 'WorkSans-Regular';
-  src: url("assets/fonts/WorkSans-Regular.eot");
-  src: url("assets/fonts/WorkSans-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/WorkSans-Regular.woff2") format("woff2"), url("assets/fonts/WorkSans-Regular.woff") format("woff"), url("assets/fonts/WorkSans-Regular.ttf") format("truetype"), url("assets/fonts/WorkSans-Regular.svg#gothambook") format("svg");
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Gotham-Bold';
-  src: url("assets/fonts/Gotham-Bold.eot");
-  src: url("assets/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gotham-Bold.woff2") format("woff2"), url("assets/fonts/Gotham-Bold.woff") format("woff"), url("assets/fonts/Gotham-Bold.ttf") format("truetype"), url("assets/fonts/Gotham-Bold.svg#gothambook") format("svg");
-  font-weight: 700; }
-
-@font-face {
-  font-family: 'Gotham-Medium';
-  src: url("assets/fonts/Gotham-Medium.eot");
-  src: url("assets/fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gotham-Medium.woff2") format("woff2"), url("assets/fonts/Gotham-Medium.woff") format("woff"), url("assets/fonts/Gotham-Medium.ttf") format("truetype"), url("assets/fonts/Gotham-Medium.svg#gothambook") format("svg"); }
-
-@font-face {
-  font-family: 'Gotham-Book';
-  src: url("assets/fonts/Gotham-Book.eot");
-  src: url("assets/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gotham-Book.woff2") format("woff2"), url("assets/fonts/Gotham-Book.woff") format("woff"), url("assets/fonts/Gotham-Book.ttf") format("truetype"), url("assets/fonts/Gotham-Book.svg#gothambook") format("svg"); }
-
+@font-face {font-family: "NeurialGrotesk-Bold";
+	src: url("assets/fonts/NeurialGrotesk-Bold.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-Bold.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Bold.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-Bold.svg#NeurialGrotesk-Bold") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-BoldItalic";
+	src: url("assets/fonts/NeurialGrotesk-BoldItalic.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-BoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-BoldItalic.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-BoldItalic.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-BoldItalic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-BoldItalic.svg#NeurialGrotesk-BoldItalic") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-Extrabold";
+	src: url("assets/fonts/NeurialGrotesk-Extrabold.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-Extrabold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-Extrabold.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Extrabold.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Extrabold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-Extrabold.svg#NeurialGrotesk-Extrabold") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-ExtraboldItalic";
+	src: url("assets/fonts/NeurialGrotesk-ExtraboldItalic.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-ExtraboldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-ExtraboldItalic.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-ExtraboldItalic.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-ExtraboldItalic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-ExtraboldItalic.svg#NeurialGrotesk-ExtraboldItalic") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-Italic";
+	src: url("assets/fonts/NeurialGrotesk-Italic.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-Italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-Italic.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Italic.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Italic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-Italic.svg#NeurialGrotesk-Italic") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-Light";
+	src: url("assets/fonts/NeurialGrotesk-Light.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-Light.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Light.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-Light.svg#NeurialGrotesk-Light") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-LightItalic";
+	src: url("assets/fonts/NeurialGrotesk-LightItalic.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-LightItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-LightItalic.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-LightItalic.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-LightItalic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-LightItalic.svg#NeurialGrotesk-LightItalic") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-Medium";
+	src: url("assets/fonts/NeurialGrotesk-Medium.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-Medium.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Medium.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Medium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-Medium.svg#NeurialGrotesk-Medium") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-MediumItalic";
+	src: url("assets/fonts/NeurialGrotesk-MediumItalic.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-MediumItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-MediumItalic.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-MediumItalic.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-MediumItalic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-MediumItalic.svg#NeurialGrotesk-MediumItalic") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "NeurialGrotesk-Regular";
+	src: url("assets/fonts/NeurialGrotesk-Regular.eot"); /* IE9*/
+	src: url("assets/fonts/NeurialGrotesk-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/NeurialGrotesk-Regular.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Regular.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/NeurialGrotesk-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-Regular.svg#NeurialGrotesk-Regular") format("svg"); /* iOS 4.1- */
+}
 :root {
-  --color-orange: #f86e60;
-  --color-green: #34899c;
-  --color-light-pink: #f4f3f1;
-  --color-light-grey: #f5f5f5;
+  --color-white: #ffffff;
+  --color-line: #eaeaea;
+  --color-text: #2F024A;
+  --color-pink: #6b2c90;
+  --color-dark-pink: #501D6E;
+}
+
+body {
+  background-color: var(--origin-white);
+}
+
+/* Global Style */
+.inner-section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+li::marker {
+  content: none;
+}
+
+
+/* Header Style */
+.header-top {
+  border-bottom: 1px solid var(--color-line);
+  padding: 30px 0 18px;
+}
+
+.header-top__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-social {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-top-mobile a {
+  color: var(--color-text);
+  font-size: 16px;
+  font-family: 'NeurialGrotesk-Medium';
+  text-decoration: none;
+}
+
+.header-top-social li {
+  margin: 0 0 0 16px;
+}
+
+.header-top-social li a {
+  font-family: 'NeurialGrotesk-Medium';
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color-dark-pink);
+  text-decoration: none;
+}
+
+.header-top-social li a svg {
+  fill: var(--color-dark-pink);
+  width: 24px;
+}
+
+.header-bottom {
+  padding: 27px 0 22px;
+}
+
+.header-bottom__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 110px;
+}
+
+.header-menu {
+  margin: 0;
+  display: flex;
+}
+
+.header-menu > li {
+  padding: 0 25px;
+  margin: 0;
+}
+
+.header-menu > li:last-child {
+  padding: 0 0 0 20px;
+}
+
+.header-menu > li > a {
+  font-size: 18px;
+  line-height: 23px;
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  margin: 0;
+  background-color: var(--color-dark-pink);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.dropdown-menu:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 12px 15px;
+  border-color: transparent transparent var(--color-dark-pink) transparent;
+  display: block;
+  position: absolute;
+  top: -12px;
+  left: 19%;
+  transform: translateX(-50%);
+}
+
+.shop-dropdown {
+  width: 150px;
+}
+
+.testimonial-dropdown {
+  width: 220px;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown:after {
+  content: '';
+  background-image: url('assets/images/dropdown-arrow.svg');
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 7px;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.has-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.has-dropdown:hover:after {
+  transform: rotate(180deg);
+}
+
+.header-cart > a {
+  position: relative;
+  display: block;
+}
+
+.header-cart > a > img {
+  width: 28px;
+}
+
+.header-cart > a > span {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background-color: var(--color-pink);
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  border-radius: 50%;
 }
 
 
