@@ -13,11 +13,14 @@ function twentytwenty_child_scripts() {
  	wp_enqueue_script( 'twentytwenty-child', get_stylesheet_directory_uri() . '/js/custom-js.js', array( 'jquery' ), false, true );
 }
 
+
+
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
 function my_acf_json_save_point( $path ) {
   $path = get_stylesheet_directory() . '/acf-json';
   return $path;
 }
+
 
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
