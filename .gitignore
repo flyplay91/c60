@@ -10,5 +10,5 @@ wp-content/plugins/
 wp-content/mc_data/*
 wp-content/cache/
 # .gitignore
-# wp-admin/
-# wp-includes/
+wp-admin/
+wp-includes/
