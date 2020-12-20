@@ -28,7 +28,7 @@
 
 		<header class="site-header">
 			<div class="header-top">
-				<div class="inner-section header-top__inner">
+				<div class="inner-section-1440 header-top__inner">
 					<div class="header-top-mobile">
 						<a href="tel:18003679364">1 (800) 367-9364</a>
 					</div>
@@ -71,7 +71,7 @@
 			</div>
 
 			<div class="header-bottom">
-				<div class="inner-section header-bottom__inner">
+				<div class="inner-section-1440 header-bottom__inner">
 					<div class="header-logo">
 						<a href="/">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-logo.png">
