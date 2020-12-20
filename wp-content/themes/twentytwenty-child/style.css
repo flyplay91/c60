@@ -286,4 +286,47 @@ li::marker {
   border-radius: 50%;
 }
 
+.header-banner {
+  background-color: var(--color-pink);
+  padding: 15px 0;
+}
 
+.header-banner__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-banner__inner .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  background-position: center;
+}
+
+.header-banner__inner .slick-arrow:focus {
+  outline: none;
+}
+
+.header-banner__inner .slick-prev {
+  left: -10%;
+  background-image: url('assets/images/header-banner-left-arrow.png');
+}
+
+.header-banner__inner .slick-next {
+  right: -10%;
+  background-image: url('assets/images/header-banner-right-arrow.png');
+}
+
+.header-banner__inner span {
+  text-align: center;
+}

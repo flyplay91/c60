@@ -104,6 +104,11 @@
 					</ul>
 				</div>
 			</div>
-			<div class="header-banner"></div>
+			<div class="header-banner">
+				<div class="header-banner__inner">
+					<span>Free Shipping on Domestic Orders</span>
+					<span>20% All C60 Pet Products</span>
+				</div>
+			</div>
 		</header>
 		
