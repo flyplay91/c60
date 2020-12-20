@@ -97,7 +97,7 @@
 						<li><a href="/my-account/">Sign Up</a></li>
 						<li class="header-cart">
 							<a href="/cart/">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/cart-icon.svg">
+								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/cart-icon.png">
 								<span>0</span>
 							</a>
 						</li>
