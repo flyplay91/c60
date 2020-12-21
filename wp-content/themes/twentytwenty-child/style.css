@@ -360,6 +360,7 @@ button:focus {
 .header-banner__inner span {
   text-align: center;
   font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-white);
 }
 
 /* ================ Home Page ============= */
