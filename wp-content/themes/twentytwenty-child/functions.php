@@ -8,7 +8,6 @@ function twentytwenty_parent_styles() {
 add_action( 'wp_enqueue_scripts', 'twentytwenty_child_scripts' );
 function twentytwenty_child_scripts() {
 	wp_enqueue_script( 'jqery', get_stylesheet_directory_uri() . '/js/jquery.min.js', array( 'jquery' ), false, true );
-	// wp_enqueue_script( 'recaptcha', get_stylesheet_directory_uri() . '/js/recaptcha-api.js', array( 'jquery' ), false, true );
  	wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/js/slick.min.js', array( 'jquery' ), false, true );
  	wp_enqueue_script( 'twentytwenty-child', get_stylesheet_directory_uri() . '/js/custom-js.js', array( 'jquery' ), false, true );
 }
@@ -31,10 +30,18 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 	
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Footer Menu',
-		'menu_title'	=> 'Footer',
-		'parent_slug'	=> 'theme-general-settings',
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Footer Menu',
+	// 	'menu_title'	=> 'Footer',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Social Menu',
+		'menu_title'	=> 'Social Menu',
+		'menu_slug' 	=> 'theme-social-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
 	));
 }
 
