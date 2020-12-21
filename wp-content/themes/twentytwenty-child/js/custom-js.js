@@ -28,22 +28,37 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		arrows: false,
 		responsive: [
-		  {
+		  	{
 				breakpoint: 650,
 				settings: {
 				  slidesToShow: 2,
 				  slidesToScroll: 1
 				}
-		  },
-		  {
+		  	},
+		  	{
 				breakpoint: 480,
 				settings: {
 				  slidesToShow: 1,
 				  slidesToScroll: 1
 				}
-		  }
+		  	}
 		]
-  });
+	});
+
+	$('.home-hero').on('init', function(event, slick){
+		$('.home-hero.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
+	});
+
+	$('.home-hero').slick({
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+  		autoplaySpeed: 2000
+  	});  
+
 
 });
 	

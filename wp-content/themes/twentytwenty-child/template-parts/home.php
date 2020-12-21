@@ -9,13 +9,6 @@
  */
 
 get_header();
-
-    $hero_group = get_field('home_hero');
-    $hero_img = $hero_group['background_image']['url']; 
-    $hero_title = $hero_group['title'];
-    $hero_subtitle = $hero_group['subtitle'];
-    $hero_shop_link = $hero_group['shop_button_link'];
-
     $seen_group = get_field('home_seen');
     $seen_title = $seen_group['title'];
 
@@ -50,16 +43,27 @@ get_header();
 <main class="home-page">
     <?php if( have_rows('home_hero')) : ?>
         <?php while ( have_rows('home_hero')): the_row(); ?>
-        <section class="home-hero" style="background-image: url(<?php echo $hero_img ?>)">
-            <div class="home-hero__inner">
-                <h1 class="home-hero__title"><?php echo $hero_title ?></h1>
-                <h4 class="home-hero__subtitle"><?php echo $hero_subtitle ?></h4>
-                <div class="home-hero__btns">
-                    <a href="<?php echo $hero_shop_link ?>" class="home-hero-btn-shop">Shop Now</a>
-                    <a href="javascript: void(0)" class="home-hero-btn-more">Learn More</a>
-                </div>
-            </div>
-        </section>
+        <sectoin class="home-hero">
+            <?php if( have_rows('carousel_repeater') ) :
+                while( have_rows('carousel_repeater') ) : the_row();
+                    $img_url = get_sub_field('background_image')['url'];
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('subtitle');
+                    $shop_btn_link = get_sub_field('shop_button_link');
+                ?>
+                    <div class="home-hero__carousel" style="background-image: url(<?php echo $img_url ?>)">
+                        <div class="home-hero__inner">
+                            <h1 class="home-hero__title"><?php echo $title ?></h1>
+                            <h4 class="home-hero__subtitle"><?php echo $subtitle ?></h4>
+                            <div class="home-hero__btns">
+                                <a href="<?php echo $shop_btn_link ?>" class="home-hero-btn-shop">Shop Now</a>
+                                <a href="javascript: void(0)" class="home-hero-btn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>        
+                <?php endwhile;
+            endif; ?>
+        </sectoin>
         <?php endwhile;
     endif; ?>
 

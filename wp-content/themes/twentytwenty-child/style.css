@@ -369,10 +369,19 @@ button:focus {
 
 /* ================ Home Page ============= */
 .home-hero {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.home-hero__carousel {
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+}
+
+.home-hero__carousel:focus {
+  outline: none;
 }
 
 .home-hero__inner {
