@@ -3,6 +3,25 @@
     "title": "Social Menu",
     "fields": [
         {
+            "key": "field_5fe0bf5964928",
+            "label": "Phone Number",
+            "name": "phone_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5fe0b0601753c",
             "label": "Instagram Link",
             "name": "instagram_link",
@@ -134,5 +153,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1608561245
+    "modified": 1608564595
 }

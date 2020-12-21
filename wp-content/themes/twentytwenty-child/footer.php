@@ -20,6 +20,9 @@
 	$facebook_link = get_field('facebook_link', 'option');
 	$pinterest_link = get_field('pinterest_link', 'option');
 	$podcast_link = get_field('podcast_link', 'option');
+
+	$logo_img = get_field('logo_image', 'option')['url'];
+	$logo_alt = get_field('logo_image', 'option')['alt'];
 ?>
 		<footer class="site-footer">
 			<div class="footer__inner inner-section-1120">
@@ -34,7 +37,9 @@
 				<div class="footer-nav">
 					<div class="footer-menu-block">
 						<div class="footer-logo">
-							<a href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-logo.png" alt="C60 Purple Power"></a>
+							<a href="/">
+								<img src="<?php echo $logo_img ?>" alt="<?php echo $logo_alt ?>">
+							</a>
 						</div>
 						<div class="footer-menu__item">
 							<h5>Company</h5>

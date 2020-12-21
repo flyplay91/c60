@@ -25,12 +25,17 @@
 	</head>
 
 	<?php
+		$phone_number = get_field('phone_number', 'option');
 		$instagram_link = get_field('instagram_link', 'option');
 		$youtube_link = get_field('youtube_link', 'option');
 		$twitter_link = get_field('twitter_link', 'option');
 		$facebook_link = get_field('facebook_link', 'option');
 		$pinterest_link = get_field('pinterest_link', 'option');
 		$podcast_link = get_field('podcast_link', 'option');
+
+		$logo_img = get_field('logo_image', 'option')['url'];
+		$logo_alt = get_field('logo_image', 'option')['alt'];
+		
 	?>
 
 	<body <?php body_class(); ?>>
@@ -38,9 +43,11 @@
 		<header class="site-header">
 			<div class="header-top">
 				<div class="inner-section-1440 header-top__inner">
-					<div class="header-top-mobile">
-						<a href="tel:18003679364">1 (800) 367-9364</a>
-					</div>
+					<?php if ($phone_number) : ?>
+						<div class="header-top-mobile">
+							<a href="tel:<?php echo $phone_number ?>"><?php echo $phone_number ?></a>
+						</div>
+					<?php endif; ?>
 					<ul class="header-top-social">
 						<li class="header-top-account">
 							<a href="/my-account">My Account</a>
@@ -100,7 +107,7 @@
 				<div class="inner-section-1440 header-bottom__inner">
 					<div class="header-logo">
 						<a href="/">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-logo.png">
+							<img src="<?php echo $logo_img ?>" alt="<?php echo $logo_alt ?>">
 						</a>
 					</div>
 

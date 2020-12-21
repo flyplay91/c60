@@ -23,18 +23,12 @@ function my_acf_json_save_point( $path ) {
 
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
-		'page_title' 	=> 'Footer Menu',
-		'menu_title'	=> 'Footer Menu',
-		'menu_slug' 	=> 'theme-footer-settings',
+		'page_title' 	=> 'Header & Footer Logo',
+		'menu_title'	=> 'Header & Footer Logo',
+		'menu_slug' 	=> 'theme-header-footer-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
-	// acf_add_options_sub_page(array(
-	// 	'page_title' 	=> 'Footer Menu',
-	// 	'menu_title'	=> 'Footer',
-	// 	'parent_slug'	=> 'theme-general-settings',
-	// ));
 
 	acf_add_options_page(array(
 		'page_title' 	=> 'Social Menu',
