@@ -13,8 +13,8 @@ $(document).ready(function() {
 	});
 
 	$('body').on('click', '.home-product-select-btn', function() {
-		$(this).toggleClass('active');
-		$(this).closest('.home-product__items-item').find('.home-cart-block').toggleClass('active');
+		$(this).closest('.home-product__items-item').siblings().removeClass('active');
+		$(this).closest('.home-product__items-item').toggleClass('active');
 	});
 
 	$('.home-blog__block').on('init', function(event, slick){

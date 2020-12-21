@@ -574,7 +574,7 @@ button:focus {
   justify-content: space-between;
 }
 
-.home-product-select-btn.active label:before {
+.home-product__items-item.active .home-product-select-btn label:before {
   transform: rotate(180deg);
 }
 
@@ -653,7 +653,7 @@ button:focus {
   color: var(--color-dark-pink);
 }
 
-.home-cart-block.active {
+.home-product__items-item.active .home-cart-block {
   display: block;
 }
 
