@@ -23,17 +23,30 @@
 
 	$logo_img = get_field('logo_image', 'option')['url'];
 	$logo_alt = get_field('logo_image', 'option')['alt'];
+
+	$newsletter_group = get_field('newsletter_group', 'option');
+	$newsletter_title = $newsletter_group['title'];
+	$newsletter_subtitle = $newsletter_group['subtitle'];
+	$newsletter_form_shortcode = $newsletter_group['form_shortcode'];
+
+	$description_group = get_field('footer_description_group', 'option');
+	$description = $description_group['description'];
+
+	$contact_group = get_field('footer_contact_group', 'option');
+	$contact_phone = $contact_group['contact_phone'];
+	$contact_work_hours = $contact_group['contact_work_hours'];
+	$contact_email = $contact_group['contact_email'];
 ?>
 		<footer class="site-footer">
 			<div class="footer__inner inner-section-1120">
+				
 				<div class="footer-newsletter">
-					<h2 class="footer-newsletter__title">Join the C60 Purple Power Community</h2>
-					<h3 class="footer-newsletter__subtitle">Subscribe to our newsletter</h3>
-					<div class="footer-newsletter__form">
-						<div class="klaviyo-form-R7CxC3"></div>
-					</div>
+					<h2 class="footer-newsletter__title"><?php echo $newsletter_title ?></h2>
+					<h3 class="footer-newsletter__subtitle"><?php echo $newsletter_subtitle ?></h3>
+					<div class="footer-newsletter__form"><?php echo $newsletter_form_shortcode ?></div>
 				</div>
-
+				
+				
 				<div class="footer-nav">
 					<div class="footer-menu-block">
 						<div class="footer-logo">
@@ -41,38 +54,39 @@
 								<img src="<?php echo $logo_img ?>" alt="<?php echo $logo_alt ?>">
 							</a>
 						</div>
-						<div class="footer-menu__item">
-							<h5>Company</h5>
-							<ul>
-								<li><a href="">Terms and Conditions</a></li>
-								<li><a href="">Shipping Policy</a></li>
-								<li><a href="">Return and Refund Policy</a></li>
-								<li><a href="">Privacy Policy</a></li>
-								<li><a href="">COVID-19 Update</a></li>
-								<li><a href="">C60 Research</a></li>
-							</ul>
-						</div>
-						<div class="footer-menu__item">
-							<h5>Shop</h5>
-							<ul>
-								<li><a href="">C60 Products</a></li>
-								<li><a href="">C60 Oil</a></li>
-								<li><a href="">C60 for Pets</a></li>
-								<li><a href="">My Account</a></li>
-								<li><a href="">Cart</a></li>
-							</ul>
-						</div>
+
+						<?php if( have_rows('footer_logo_&_menu_group', 'option')) : ?>
+        					<?php while ( have_rows('footer_logo_&_menu_group', 'option')): the_row(); ?>
+								<?php if ( have_rows('menu_repeater', 'option')) :
+									while (have_rows('menu_repeater', 'option')) : the_row(); ?>
+									<div class="footer-menu__item">
+										<h5><?php echo get_sub_field('menu_label', 'option') ?></h5>
+										<ul>
+											<?php if ( have_rows('menu_items_repeater', 'option')) :
+												while (have_rows('menu_items_repeater', 'option')) : the_row(); ?>
+												<li><a href="<?php echo get_sub_field('menu_link') ?>"><?php echo get_sub_field('menu_title') ?></a></li>
+												<?php endwhile;
+											endif; ?>
+										</ul>
+									</div>
+									<?php endwhile;
+								endif; ?>
+							<?php endwhile;
+						endif; ?>
 					</div>
-					<div class="footer-des">These products have not been evaluated by the Food and Drug Administration. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease. Individual results may vary.</div>
+
+					
+					<div class="footer-des"><?php echo $description ?></div>
+					
 					<div class="footer-contact-social">
 						<div class="footer-cs-item">
-							<a class="footer-mobile" href="tel:1-800-367-9364">1-800-367-9364</a>
+							<a class="footer-mobile" href="tel:<?php echo $contact_phone ?>"><?php echo $contact_phone ?></a>
 						</div>
 						<div class="footer-cs-item">
-							<span class="footer-work-time">8 am – 8pm M-F EST<br>9am -3pm Sat EST</span>
+							<span class="footer-work-time"><?php echo $contact_work_hours ?></span>
 						</div>
 						<div class="footer-cs-item">
-							<a class="footer-mail" href="mailto:support@c60purplepower.com">support@60purplepower.com</a>
+							<a class="footer-mail" href="mailto:<?php echo $contact_email ?>"><?php echo $contact_email ?></a>
 						</div>
 						<div class="footer-cs-item">
 							<ul class="footer-social">

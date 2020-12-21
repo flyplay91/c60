@@ -45,6 +45,14 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Footer Options',
+		'menu_title'	=> 'Footer Options',
+		'menu_slug' 	=> 'theme-footer-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
 }
 
 
