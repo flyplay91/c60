@@ -508,6 +508,11 @@ button:focus {
   display: block;
 }
 
+.home-seen__imgs-item:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .home-product {
   padding: 50px 0;
 }
