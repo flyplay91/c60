@@ -729,6 +729,11 @@ button:focus {
   text-align: center;
 }
 
+.home-why__block-item:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .home-why__block-item > img {
   height: 50px;
   margin: 0 auto;
@@ -794,6 +799,11 @@ button:focus {
 
 .home-health__type-item:nth-child(2n) {
   margin-top: 100px;
+}
+
+.home-health__type-item img:hover {
+  transition: .02s;
+  transform: scale(1.01);
 }
 
 .home-pets {
@@ -878,6 +888,11 @@ button:focus {
   border-radius: 10px;
   position: relative;
   min-height: 220px;
+}
+
+.home-blog__block-item:hover {
+  transition: .02s;
+  transform: scale(1.01);
 }
 
 .home-blog__block-item img {
