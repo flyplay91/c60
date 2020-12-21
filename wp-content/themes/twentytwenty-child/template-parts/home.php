@@ -72,12 +72,14 @@ get_header();
                     <?php if( have_rows('image_repeater') ) :
                     
                         while( have_rows('image_repeater') ) : the_row();
-                            $main_img = get_sub_field('main_image')['url'];
-                            $hover_img = get_sub_field('hover_image')['url'];
+                            $main_img_url = get_sub_field('main_image')['url'];
+                            $main_img_alt = get_sub_field('main_image')['alt'];
+                            $hover_img_url = get_sub_field('hover_image')['url'];
+                            $hover_img_alt = get_sub_field('hover_image')['alt'];
                         ?>
                             <div class="home-seen__imgs-item">
-                                <img src="<?php echo  $main_img ?>">
-                                <img src="<?php echo $hover_img ?>">
+                                <img src="<?php echo  $main_img_url ?>" alt="<?php echo $main_img_alt ?>">
+                                <img src="<?php echo $hover_img_url ?>" alt="<?php echo $hover_img_alt ?>">
                             </div>
                         <?php endwhile;
                     endif; ?>
