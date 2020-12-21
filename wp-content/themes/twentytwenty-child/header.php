@@ -77,33 +77,36 @@
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-logo.png">
 						</a>
 					</div>
+
 					<ul class="header-menu">
-						<li class="has-dropdown">
-							<a href="/shop/">Shop</a>
-							<ul class="dropdown-menu shop-dropdown">
-								<li><a href="/c60-oil/">C60 Oil</a></li>
-								<li><a href="/c60-pets/">C60 for Pets</a></li>
-								<li><a href="/c60-bundles/">C60 Bundles</a></li>
-							</ul>
-						</li>
-						<li><a href="/about/">About</a></li>
-						<li><a href="/blog/">Blog</a></li>
-						<li class="has-dropdown">
-							<a href="/contact/">Contact Us</a>
-							<ul class="dropdown-menu testimonial-dropdown">
-								<li><a href="/testimonial/">Submit Your Testimonial</a></li>
-							</ul>
-						</li>
-						<li><a href="/my-account/">Sign Up</a></li>
-						<li class="header-cart">
-							<a href="/cart/">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/cart-icon.png">
-								<span>0</span>
-							</a>
-						</li>
+						<?php
+						if ( has_nav_menu( 'primary' ) ) {
+
+							wp_nav_menu(
+								array(
+									'container'  => '',
+									'items_wrap' => '%3$s',
+									'theme_location' => 'primary',
+								)
+							);
+
+						} elseif ( ! has_nav_menu( 'expanded' ) ) {
+
+							wp_list_pages(
+								array(
+									'match_menu_classes' => true,
+									'show_sub_menu_icons' => true,
+									'title_li' => false,
+									'walker'   => new TwentyTwenty_Walker_Page(),
+								)
+							);
+
+						}
+						?>
 					</ul>
 				</div>
 			</div>
+
 			<div class="header-banner">
 				<div class="header-banner__inner">
 					<span>Free Shipping on Domestic Orders</span>
