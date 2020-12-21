@@ -228,7 +228,7 @@ button:focus {
   background-color: var(--color-dark-pink);
   border-radius: 10px;
   padding: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .dropdown-menu:before {
