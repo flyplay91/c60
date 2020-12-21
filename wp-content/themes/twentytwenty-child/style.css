@@ -367,6 +367,15 @@ button:focus {
   color: var(--color-white);
 }
 
+.banner-coupon-btn {
+  background-color: var(--color-white);
+  color: var(--color-pink);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
 /* ================ Home Page ============= */
 .home-hero {
   opacity: 0;
