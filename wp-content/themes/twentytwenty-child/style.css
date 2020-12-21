@@ -364,7 +364,6 @@ button:focus {
 
 /* ================ Home Page ============= */
 .home-hero {
-  background-image: url('assets/images/home-hero-bg.jpg');
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -731,6 +730,7 @@ button:focus {
   max-width: 1126px;
   margin: 50px auto;
   padding: 0 10px;
+  text-align: center;
 }
 
 .home-health__type {
