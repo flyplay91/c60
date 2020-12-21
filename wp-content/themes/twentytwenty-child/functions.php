@@ -37,5 +37,13 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Top Banner',
+		'menu_title'	=> 'Top Banner',
+		'menu_slug' 	=> 'theme-banner-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
 }
 

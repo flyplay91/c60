@@ -142,8 +142,12 @@
 
 			<div class="header-banner">
 				<div class="header-banner__inner">
-					<span>Free Shipping on Domestic Orders</span>
-					<span>20% All C60 Pet Products</span>
+					<?php if (have_rows('banner_repeater', 'option')) :
+						while (have_rows('banner_repeater', 'option')) : the_row();
+						$banner_text = get_sub_field('text'); ?>
+							<span><?php echo $banner_text ?></span>
+						<?php endwhile; ?>
+					<?php endif; ?>
 				</div>
 			</div>
 		</header>
