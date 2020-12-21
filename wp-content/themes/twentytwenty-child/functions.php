@@ -83,20 +83,24 @@ function HomeProducts() { ?>
 			<div class="home-product-cart">
 				<div class="home-cart-block">
 					<div class="home-cart-item">
-						<label>2 oz - $49</label>
+						<label>2 oz - $49 / $39.20 mo</label>
 						<a data-product_id="9275" data-variation_id="152113" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>4 oz - $97</label>
+						<label>4 oz - $97 / $77.60 mo</label>
 						<a data-product_id="9275" data-variation_id="150913" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>8 oz - $190</label>
+						<label>8 oz - $190 / $152.00 mo</label>
 						<a data-product_id="9275" data-variation_id="150915" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>16 oz - $370</label>
+						<label>16 oz - $370 / $296.00 mo</label>
 						<a data-product_id="9275" data-variation_id="150917" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 				</div>
 			</div>
@@ -125,20 +129,24 @@ function HomeProducts() { ?>
 			<div class="home-product-cart">
 				<div class="home-cart-block">
 					<div class="home-cart-item">
-						<label>2 oz - $49</label>
+						<label>2 oz - $49 / $39.20 mo</label>
 						<a data-product_id="9272" data-variation_id="152104" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>4 oz - $97</label>
+						<label>4 oz - $97 / $77.60 mo</label>
 						<a data-product_id="9272" data-variation_id="150948" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>8 oz - $190</label>
+						<label>8 oz - $190 / $152.00 mo</label>
 						<a data-product_id="9272" data-variation_id="150950" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>16 oz - $370</label>
+						<label>16 oz - $370 / $296.00 mo</label>
 						<a data-product_id="9272" data-variation_id="150952" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 				</div>
 			</div>
@@ -167,20 +175,24 @@ function HomeProducts() { ?>
 			<div class="home-product-cart">
 				<div class="home-cart-block">
 					<div class="home-cart-item">
-						<label>2 oz - $49</label>
+						<label>2 oz - $49 / $39.20 mo</label>
 						<a data-product_id="114057" data-variation_id="152093" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>4 oz - $97</label>
+						<label>4 oz - $97 / $77.60 mo</label>
 						<a data-product_id="114057" data-variation_id="152074" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>8 oz - $190</label>
+						<label>8 oz - $190 / $152.00 mo</label>
 						<a data-product_id="114057" data-variation_id="152076" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 					<div class="home-cart-item">
-						<label>16 oz - $370</label>
+						<label>16 oz - $370 / $296.00 mo</label>
 						<a data-product_id="114057" data-variation_id="152078" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+						<a href="" class="home-product-cart-btn">Subscribe</a>
 					</div>
 				</div>
 			</div>
