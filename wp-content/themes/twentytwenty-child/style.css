@@ -266,6 +266,10 @@ button:focus {
   display: inline-block;
 }
 
+.header-menu li.header-cart > a {
+  padding-right: 0;
+}
+
 .header-menu > li > a:hover {
   transition: .02s;
   transform: scale(1.01);
@@ -321,7 +325,7 @@ button:focus {
 }
 
 .header-cart > a > img {
-  width: 28px;
+  width: 32px;
 }
 
 .header-cart > a > span {
@@ -329,8 +333,8 @@ button:focus {
   top: -3px;
   right: -3px;
   background-color: var(--color-pink);
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   display: flex;
   align-items: center;
   justify-content: center;

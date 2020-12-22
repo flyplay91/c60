@@ -14,7 +14,21 @@ get_header();
 
     $product_group = get_field('home_product');
     $product_title = $product_group['title'];
-    $product_shortcode = $product_group['shortcode'];
+    $first_product_img_url = $product_group['first_product_image']['url'];
+    $first_product_img_alt = $product_group['first_product_image']['alt'];
+    $first_product_title = $product_group['first_product_title'];
+    $first_product_link = $product_group['first_product_link'];
+    $first_product_id = $product_group['first_product_id'];
+    $second_product_img_url = $product_group['second_product_image']['url'];
+    $second_product_img_alt = $product_group['second_product_image']['alt'];
+    $second_product_title = $product_group['second_product_title'];
+    $second_product_link = $product_group['second_product_link'];
+    $second_product_id = $product_group['second_product_id'];
+    $third_product_img_url = $product_group['third_product_image']['url'];
+    $third_product_img_alt = $product_group['third_product_image']['alt'];
+    $third_product_title = $product_group['third_product_title'];
+    $third_product_link = $product_group['third_product_link'];
+    $third_product_id = $product_group['third_product_id'];
 
     $why_group = get_field('home_why');
     $why_subtitle = $why_group['subtitle'];
@@ -98,7 +112,129 @@ get_header();
         <section class="home-product">
             <div class="inner-section-1220 home-prduct__inner">
                 <h2 class="home-product__title"><?php echo $product_title ?></h2>
-                <?php echo do_shortcode($product_shortcode); ?>
+                <div class="home-product__items">
+                    <div class="home-product__items-item">
+                        <div class="home-product-title-des">
+                            <a href="<?php echo $first_product_link ?>">
+                                <img src="<?php echo $first_product_img_url ?>" alt="<?php echo $first_product_img_alt ?>">
+                            </a>
+                            <div class="home-product-title">
+                                <label><a href="<?php echo $first_product_link ?>"><?php echo $first_product_title ?></a></label>
+                                <div class="home-product-content">
+                                    <div class="home-product-content-left">
+                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
+                                        <a href="<?php echo $first_product_link ?>"><span>Starting at $49</span></a>
+                                    </div>
+                                    <div class="home-product-content-right">
+                                        <div class="home-product-select-btn">
+                                            <label>Select Option</label>
+                                            <div class="home-product-cart">
+                                                <div class="home-cart-block">
+                                                    <?php
+                                                        $first_product = new WC_Product_Variable( $first_product_id );
+                                                        $first_variations = $first_product->get_available_variations();
+                                                        foreach ($first_variations as $first_variation) {
+                                                            $first_variant_id = $first_variation["variation_id"];
+                                                        ?>
+                                                            <div class="home-cart-item">
+                                                                <label>2 oz - $49 / $39.20 mo</label>
+                                                                <a data-product_id="<?php echo $first_product_id ?>" data-variation_id="<?php echo $first_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+                                                                <a href="" class="home-product-cart-btn">Subscribe</a>
+                                                            </div>
+                                                        <?php
+                                                        }
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="home-product__items-item">
+                        <div class="home-product-title-des">
+                            <a href="<?php echo $second_product_link ?>">
+                                <img src="<?php echo $second_product_img_url ?>" alt="<?php echo $second_product_img_alt ?>">
+                            </a>
+                            <div class="home-product-title">
+                                <label><a href="<?php echo $second_product_link ?>"><?php echo $second_product_title ?></a></label>
+                                <div class="home-product-content">
+                                    <div class="home-product-content-left">
+                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
+                                        <a href="<?php echo $second_product_link ?>"><span>Starting at $49</span></a>
+                                    </div>
+                                    <div class="home-product-content-right">
+                                        <div class="home-product-select-btn">
+                                            <label>Select Option</label>
+                                            <div class="home-product-cart">
+                                                <div class="home-cart-block">
+                                                    <?php
+                                                        $second_product = new WC_Product_Variable( $second_product_id );
+                                                        $second_variations = $second_product->get_available_variations();
+                                                        foreach ($second_variations as $second_variation) {
+                                                            $second_variant_id = $second_variation["variation_id"];
+                                                        ?>
+                                                            <div class="home-cart-item">
+                                                                <label>2 oz - $49 / $39.20 mo</label>
+                                                                <a data-product_id="<?php echo $second_product_id ?>" data-variation_id="<?php echo $second_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+                                                                <a href="" class="home-product-cart-btn">Subscribe</a>
+                                                            </div>
+                                                        <?php
+                                                        }
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-product__items-item">
+                        <div class="home-product-title-des">
+                            <a href="<?php echo $third_product_link ?>">
+                                <img src="<?php echo $third_product_img_url ?>" alt="<?php echo $third_product_img_alt ?>">
+                            </a>
+                            <div class="home-product-title">
+                                <label><a href="<?php echo $third_product_link ?>"><?php echo $third_product_title ?></a></label>
+                                <div class="home-product-content">
+                                    <div class="home-product-content-left">
+                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
+                                        <a href="<?php echo $third_product_link ?>"><span>Starting at $49</span></a>
+                                    </div>
+                                    <div class="home-product-content-right">
+                                        <div class="home-product-select-btn">
+                                            <label>Select Option</label>
+                                            <div class="home-product-cart">
+                                                <div class="home-cart-block">
+                                                    <?php
+                                                        $third_product = new WC_Product_Variable( $third_product_id );
+                                                        $third_variations = $third_product->get_available_variations();
+                                                        foreach ($third_variations as $third_variation) {
+                                                            $third_variant_id = $third_variation["variation_id"];
+                                                        ?>
+                                                            <div class="home-cart-item">
+                                                                <label>2 oz - $49 / $39.20 mo</label>
+                                                                <a data-product_id="<?php echo $third_product_id ?>" data-variation_id="<?php echo $third_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
+                                                                <a href="" class="home-product-cart-btn">Subscribe</a>
+                                                            </div>
+                                                        <?php
+                                                        }
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
             </div>
         </section>
         <?php endwhile;
