@@ -628,7 +628,7 @@ button:focus {
   transform: scale(1.01);
 }
 
-.home-product-select-btn label:before {
+.home-product-select-btn > label:before {
   background-image: url('assets/images/down-arrow.png');
   background-repeat: no-repeat;
   background-size: contain;
