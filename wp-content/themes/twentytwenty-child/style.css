@@ -532,6 +532,11 @@ button:focus {
   grid-gap: 20px;
 }
 
+.home-product__items .home-product__items-item:nth-child(2) .home-product-title-des > a,
+.home-product__items .home-product__items-item:last-child .home-product-title-des > a {
+  max-width: 37%;
+}
+
 .home-product__items-item {
   min-height: 300px;
   background-color: var(--color-light-pink);
