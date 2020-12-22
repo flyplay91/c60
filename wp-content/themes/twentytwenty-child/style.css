@@ -1168,7 +1168,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .product-image-summary {
   background-color:  var(--color-light-pink);
-  padding-top: 50px;
+  padding: 50px 10px;
 }
 
 .product-image-summary__inner {
@@ -1214,4 +1214,45 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+
+.product-tab-related {
+  padding: 0 10px 50px;
+}
+
+.product-tab-related .woocommerce-tabs {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-tab-related .woocommerce-tabs .tabs {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: var(--color-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-tab-related .woocommerce-tabs .tabs li {
+  margin: 0;
+  padding: 20px;
+}
+
+.product-tab-related .woocommerce-tabs .tabs li.active {
+  background-color: var(--color-light-pink);
+}
+
+.product-tab-related .woocommerce-tabs .tabs li a {
+  color: var(--color-white);
+  box-shadow: none;
+}
+
+.product-tab-related .woocommerce-tabs .tabs li.active a {
+  color: var(--color-text);
+}
+
+.product-tab-related .related {
+  max-width: 1440px;
+  margin: 0 auto;
 }

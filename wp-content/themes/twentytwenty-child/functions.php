@@ -107,3 +107,10 @@ add_action( 'after_setup_theme', 'remove_pgz_theme_support', 100 );
 function remove_pgz_theme_support() { 
 	remove_theme_support( 'wc-product-gallery-zoom' );
 }
+
+// Delete additional information tab on product page.
+add_filter( 'woocommerce_product_tabs', 'bbloomer_remove_product_tabs', 9999 );
+function bbloomer_remove_product_tabs( $tabs ) {
+    unset( $tabs['additional_information'] ); 
+    return $tabs;
+}
