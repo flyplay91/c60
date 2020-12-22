@@ -75,6 +75,7 @@ $(document).ready(function() {
 				if(response){
 				
 					$('a.home-product-cart-btn[data-class="cart-added"]').text('Added');
+					$('a.home-product-cart-btn[data-class="cart-added"]').closest('.home-product__items-item').find('.home-cart-block').css('display', 'block');
 					setTimeout(function(){ 
 						$('a.home-product-cart-btn[data-class="cart-added"]').text('Add to cart');
 						$('a.home-product-cart-btn').removeAttr('data-class');

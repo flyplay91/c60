@@ -86,3 +86,18 @@ function HomeBlogs() { ?>
 		
 	</div>
 <?php }
+
+
+add_action( 'wp_ajax_nopriv_variation_to_cart', 'product_variation_add_to_cart' );
+add_action( 'wp_ajax_variation_to_cart', 'product_variation_add_to_cart' );
+function product_variation_add_to_cart() {
+    if( isset($_POST['pid']) && $_POST['pid'] > 0 ){
+        $product_id   = (int) $_POST['pid'];
+        $variation_id = (int) $_POST['vid'];
+        $quantity     = (int) $_POST['qty'];
+        $variation    = '';
+        WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation );
+        echo true;
+    }
+    die();
+}
