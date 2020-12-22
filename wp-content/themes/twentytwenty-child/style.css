@@ -647,7 +647,7 @@ button:focus {
   left: 50%;
   transform: translateX(-50%);
   width: 450px;
-  bottom: -207px;
+  bottom: -198px;
   display: none;
   position: absolute;
   background-color: var(--color-dark-pink);
