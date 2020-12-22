@@ -87,7 +87,7 @@ function HomeBlogs() { ?>
 	</div>
 <?php }
 
-
+// Homepage proudct add to cart action
 add_action( 'wp_ajax_nopriv_variation_to_cart', 'product_variation_add_to_cart' );
 add_action( 'wp_ajax_variation_to_cart', 'product_variation_add_to_cart' );
 function product_variation_add_to_cart() {
@@ -100,4 +100,10 @@ function product_variation_add_to_cart() {
         echo true;
     }
     die();
+}
+
+// Disable product page image zoom
+add_action( 'after_setup_theme', 'remove_pgz_theme_support', 100 );
+function remove_pgz_theme_support() { 
+	remove_theme_support( 'wc-product-gallery-zoom' );
 }
