@@ -84,6 +84,7 @@ $(document).ready(function() {
 				
 					var currentCartCount = parseInt($('.header-cart span').attr('data-cart-total'));
 					$('.header-cart span').attr('data-cart-total', currentCartCount + 1);
+					$('.header-cart span').html(currentCartCount + 1);
 				}
 			},
 			error: function (error) {
