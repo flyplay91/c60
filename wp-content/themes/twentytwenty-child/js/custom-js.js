@@ -12,10 +12,10 @@ $(document).ready(function() {
 		arrow: true
 	});
 
-	$('body').on('click', '.home-product-select-btn', function() {
-		$(this).closest('.home-product__items-item').siblings().removeClass('active');
-		$(this).closest('.home-product__items-item').toggleClass('active');
-	});
+	// $('body').on('click', '.home-product-select-btn', function() {
+	// 	$(this).closest('.home-product__items-item').siblings().removeClass('active');
+	// 	$(this).closest('.home-product__items-item').toggleClass('active');
+	// });
 
 	$('.home-blog__block').on('init', function(event, slick){
 		$('.home-blog__block.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});

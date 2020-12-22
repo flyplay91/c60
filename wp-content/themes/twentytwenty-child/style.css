@@ -552,11 +552,6 @@ button:focus {
   display: block;
 }
 
-.home-product__items .home-product__items-item:nth-child(2) .home-product-title-des > a,
-.home-product__items .home-product__items-item:last-child > .home-product-title-des a {
-  max-width: 37%;
-}
-
 .home-product-title > label > a {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 16px;
@@ -600,7 +595,7 @@ button:focus {
   width: 49%;
 }
 
-.home-product-select-btn label {
+.home-product-select-btn > label {
   color: var(--color-pink);
   font-size: 14px;
   font-family: 'NeurialGrotesk-Bold';
@@ -615,7 +610,7 @@ button:focus {
   justify-content: space-between;
 }
 
-.home-product__items-item.active .home-product-select-btn label:before {
+.home-product-select-btn:hover > label:before {
   transform: rotate(180deg);
 }
 
@@ -643,7 +638,7 @@ button:focus {
   left: 50%;
   transform: translateX(-50%);
   width: 450px;
-  bottom: -225px;
+  bottom: -207px;
   display: none;
   position: absolute;
   background-color: var(--color-dark-pink);
@@ -694,7 +689,7 @@ button:focus {
   color: var(--color-dark-pink);
 }
 
-.home-product__items-item.active .home-cart-block {
+.home-product-select-btn:hover .home-cart-block {
   display: block;
 }
 
