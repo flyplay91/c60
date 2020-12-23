@@ -148,6 +148,13 @@ button:focus {
   outline: none;
 }
 
+.entry-content,
+.entry-content p,
+.entry-content a,
+.entry-content li  {
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-text);
+}
 
 
 /* Header Style */

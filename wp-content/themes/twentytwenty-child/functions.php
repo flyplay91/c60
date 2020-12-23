@@ -1,4 +1,27 @@
 <?php
+
+// Disable default color setting
+add_filter( 'theme_mod_accent_accessible_colors', 'op_change_default_colours', 10, 1 );
+
+/**
+ * Override the colours added in the customiser.
+ *
+ * @param array $default An array of the key colours being used in the theme.
+ */
+function op_change_default_colours( $default ) {
+
+    $default = array(
+        'content'       => array(
+            'text'      => '#2F024A',
+            'accent'    => '#6b2c90',
+            'secondary' => '#6d6d6d',
+            'borders'   => '#dcd7ca',
+        )
+    );
+
+    return $default;
+}
+
 add_action( 'wp_enqueue_scripts', 'twentytwenty_parent_styles' );
 function twentytwenty_parent_styles() {
 	wp_enqueue_style( 'slick-style', get_stylesheet_directory_uri().'/slick.css' );
