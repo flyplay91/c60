@@ -228,7 +228,7 @@ button:focus {
 
 .header-menu > li {
   position: relative;
-  margin: 8px 0 0 25px;
+  margin: 0 0 0 25px;
 }
 
 .header-menu > li .icon {
@@ -290,7 +290,7 @@ button:focus {
   padding: 15px;
   position: absolute;
   right: 99990px;
-  top: calc(100% + 20px);
+  top: 100%;
   transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
   transform: translateY(6px);
   width: 240px;
