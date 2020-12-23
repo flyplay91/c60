@@ -51,7 +51,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		arrows: false,
 		autoplay: true,
-  		autoplaySpeed: 2000
+  		autoplaySpeed: 8000
 	});
 	  
 	// Homepage Product Cart
