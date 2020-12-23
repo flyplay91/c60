@@ -240,7 +240,7 @@ button:focus {
   width: 12px;
   color: var(--color-text);
   right: -5px;
-  top: calc(50% - 0.4rem);
+  top: calc(50% - 7px);
 }
 
 .header-menu > li .icon:before,
