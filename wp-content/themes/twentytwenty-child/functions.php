@@ -137,3 +137,37 @@ function bbloomer_remove_product_tabs( $tabs ) {
     unset( $tabs['additional_information'] ); 
     return $tabs;
 }
+
+// Remove short description in product page
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+function woocommerce_template_single_excerpt() {
+	return;
+}
+
+// Remove price in product page
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+
+// Change Choose your option to Size in variant dropdown
+add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'cinchws_filter_dropdown_args', 10 );
+function cinchws_filter_dropdown_args( $args ) {
+    $args['show_option_none'] = 'Size';
+    return $args;
+}
+
+// Customize subscription variant in product page
+function wc_all_the_products_modify_subscription_option( $description ) {
+	$description = 'Subscribe & Save: <br />' . $description;
+
+	return $description;
+}
+function wc_all_the_products_modify_single_option( $description, WC_Product $product ) {
+    $description .= ': <br />' . wc_price( $product->get_price() );
+
+	return $description;
+}
+
+add_filter( 'wcsatt_single_product_subscription_option_description', 'wc_all_the_products_modify_subscription_option' );
+add_filter( 'wcsatt_single_product_one_time_option_description', 'wc_all_the_products_modify_single_option', 10, 2 );
+
+// Remove product meta in product page
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
