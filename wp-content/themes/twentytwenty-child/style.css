@@ -1475,3 +1475,15 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-top: 10px;
   font-size: 18px;
 }
+
+.wcsatt-add-to-subscription-wrapper {
+  text-align: center;
+}
+
+.wcsatt-add-to-subscription-action-input {
+  width: 5px !important;
+}
+
+.wcsatt-add-to-subscription-wrapper:before {
+  content: none !important;
+}
