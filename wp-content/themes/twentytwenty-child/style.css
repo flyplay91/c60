@@ -1247,6 +1247,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .product-tab-related .woocommerce-tabs .tabs li {
@@ -1270,6 +1271,135 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .product-tab-related .related {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.woocommerce-Tabs-panel {
+  padding-top: 50px;
+}
+
+#ywar_reviews {
+  max-width: 1040px;
+}
+
+#reviews.ywar-review-content {
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+#reviews.ywar-review-content #comments li {
+  padding: 30px 10px;
+  margin: 0;
+  position: relative;
+}
+
+#reviews.ywar-review-content #comments li .comment_container {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#reviews.ywar-review-content #comments li .star-rating {
+  right: 15px;
+  font-size: 24px;
+  margin: 0;
+  color: var(--color-pink);
+}
+
+#reviews.ywar-review-content #comments li .comment_container .meta {
+  margin: 0 0 0 10px;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  color: var(--color-pink);
+}
+
+#reviews.ywar-review-content #comments li .comment_container .comment-text {
+  margin: 0 0 0 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#reviews.ywar-review-content #comments li .comment_container .comment-text .description {
+  font-style: italic;
+}
+
+#reviews.ywar-review-content #comments li .comment_container .comment-text .description .review_title,
+#reviews.ywar-review-content #comments li .comment_container .comment-text .description .review_content {
+  color: var(--color-pink);
+}
+
+#reviews.ywar-review-content #comments li .comment_container .comment-text .description .review_vote {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 50px;
+}
+
+#reviews.ywar-review-content #comments li .comment_container .comment-text .description .review_vote .review_helpful {
+  font-size: 16px;
+}
+
+#reviews.ywar-review-content #comments li .comment_container .comment-text .description .review-actions .reply a {
+  border-radius: 60px;
+  color: var(--color-white);
+  font-size: 12px;
+  padding: 10px 25px;
+  display: inline-block;
+}
+
+#reviews.ywar-review-content #review_form_wrapper {
+  margin: 0;
+  border: 2px solid var(--color-line);
+  padding: 20px;
+}
+
+#reviews.ywar-review-content #review_form_wrapper #reply-title {
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-size: 24px;
+  color: var(--color-pink);
+}
+
+#reviews.ywar-review-content #review_form_wrapper .upload_section,
+#uploadFileList {
+  display: none !important;
+}
+
+#reviews.ywar-review-content #review_form_wrapper .form-submit {
+  margin: 0;
+}
+
+#reviews.ywar-review-content #review_form_wrapper .form-submit input {
+  border-radius: 60px;
+}
+
+#reviews_summary > h3 {
+  margin: 0 0 30px 0;
+  color: var(--color-pink);
+}
+
+#ywar_reviews .woocommerce-product-rating {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#ywar_reviews .woocommerce-product-rating .star-rating {
+  color: var(--color-pink);
+  font-size: 24px;
+  margin: 0 10px 0 0;
+}
+
+#ywar_reviews .review-rating-value {
+  display: none;
 }
 
 .variations {
@@ -1321,7 +1451,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   display: none;
 }
 
-.single-product .woocommerce-product-rating {
+.single-product .entry-summary .woocommerce-product-rating {
   margin: 0;
   position: relative;
   top: 35px;
@@ -1329,7 +1459,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   max-width: 160px;
 }
 
-.single-product .woocommerce-product-rating .star-rating {
+.single-product .entry-summary .woocommerce-product-rating .star-rating {
   color: var(--color-review);
   font-size: 24px;
   width: 127px;
@@ -1487,3 +1617,4 @@ body.single-product .qib-button.qib-button-wrapper {
 .wcsatt-add-to-subscription-wrapper:before {
   content: none !important;
 }
+
