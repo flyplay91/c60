@@ -171,3 +171,6 @@ add_filter( 'wcsatt_single_product_one_time_option_description', 'wc_all_the_pro
 
 // Remove product meta in product page
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+// Remove related product in product page
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );

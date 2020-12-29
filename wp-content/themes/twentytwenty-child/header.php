@@ -140,7 +140,9 @@
 						<li class="header-cart">
 							<a href="/cart/">
 								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/cart-icon.png" alt="C60 Purple Power Cart">
-								<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
+								<?php if ($cart_count > 0) : ?>
+									<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
+								<?php endif; ?>
 							</a>
 						</li>
 					</ul>
