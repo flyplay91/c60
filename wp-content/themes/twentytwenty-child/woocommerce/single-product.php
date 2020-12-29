@@ -41,24 +41,27 @@ get_header( 'shop' ); ?>
 		<?php endwhile; // end of the loop. ?>
 		
 		<?php
-			$related_product_group = get_field('related_product_group');
-			$related_product_sub_heading = $related_product_group['sub_heading'];
-			$related_product_heading = $related_product_group['heading'];
-			$related_first_product_img_url = $related_product_group['first_product_image']['url'];
-			$related_first_product_img_alt = $related_product_group['first_product_image']['alt'];
-			$related_first_product_title = $related_product_group['first_product_title'];
-			$related_first_product_link = $related_product_group['first_product_link'];
-			$related_first_product_id = $related_product_group['first_product_id'];
-			$related_second_product_img_url = $related_product_group['second_product_image']['url'];
-			$related_second_product_img_alt = $related_product_group['second_product_image']['alt'];
-			$related_second_product_title = $related_product_group['second_product_title'];
-			$related_second_product_link = $related_product_group['second_product_link'];
-			$related_second_product_id = $related_product_group['second_product_id'];
-			$related_third_product_img_url = $related_product_group['third_product_image']['url'];
-			$related_third_product_img_alt = $related_product_group['third_product_image']['alt'];
-			$related_third_product_title = $related_product_group['third_product_title'];
-			$related_third_product_link = $related_product_group['third_product_link'];
-			$related_third_product_id = $related_product_group['third_product_id'];
+			if (get_field('related_product_group') != null) {
+				$related_product_group = get_field('related_product_group');
+				$related_product_sub_heading = $related_product_group['sub_heading'];
+				$related_product_heading = $related_product_group['heading'];
+				$related_first_product_img_url = $related_product_group['first_product_image']['url'];
+				$related_first_product_img_alt = $related_product_group['first_product_image']['alt'];
+				$related_first_product_title = $related_product_group['first_product_title'];
+				$related_first_product_link = $related_product_group['first_product_link'];
+				$related_first_product_id = $related_product_group['first_product_id'];
+				$related_second_product_img_url = $related_product_group['second_product_image']['url'];
+				$related_second_product_img_alt = $related_product_group['second_product_image']['alt'];
+				$related_second_product_title = $related_product_group['second_product_title'];
+				$related_second_product_link = $related_product_group['second_product_link'];
+				$related_second_product_id = $related_product_group['second_product_id'];
+				$related_third_product_img_url = $related_product_group['third_product_image']['url'];
+				$related_third_product_img_alt = $related_product_group['third_product_image']['alt'];
+				$related_third_product_title = $related_product_group['third_product_title'];
+				$related_third_product_link = $related_product_group['third_product_link'];
+				$related_third_product_id = $related_product_group['third_product_id'];
+			}
+			
 		?>
 
 		<?php if( have_rows('related_product_group')) : ?>
