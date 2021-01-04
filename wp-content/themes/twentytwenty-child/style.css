@@ -104,6 +104,7 @@ Text Domain: twenty-twenty-child
   --color-inactive-dot: #B596C8;
   --color-review: #FFA900;
   --color-border: #B596C8;
+  --color-green: #095D37;
 }
 
 body {
@@ -1658,6 +1659,7 @@ body.single-product .qib-button.qib-button-wrapper {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 57px;
   color: var(--color-text);
+  margin-bottom: 50px;
 }
 
 .shop__hero-content p {
@@ -2093,3 +2095,355 @@ body.single-product .qib-button.qib-button-wrapper {
   text-align: center;
   color: var(--color-pink);
 }
+
+/* ======== About Page ========== */
+.about-hero {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-hero__innner {
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.about-hero__innner h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+  margin-bottom: 50px;
+}
+
+.about-hero__innner p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--color-text);
+  width: 34%;
+  margin-bottom: 45px;
+}
+
+.about-what {
+  margin-top: 100px;
+}
+
+.about-what__inner h3 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 58px;
+  line-height: 64px;
+  color: var(--color-pink);
+}
+
+.about-what-img-text {
+  display: grid;
+  grid-gap: 50px;
+  align-items: center;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 70px;
+}
+
+.about-what__img {
+  position: relative;
+}
+
+.about-what__img img {
+  border-radius: 10px;
+}
+
+.about-what__img:before {
+  content: '';
+  background-image: url('assets/images/about_what_sticker.png');
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  display: block;
+  background-size: contain;
+  top: -50px;
+  left: -100px;
+  position: absolute;
+}
+
+.about-what__text p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 46px;
+  color: var(--color-text);
+}
+
+.about-antioxidant {
+  margin-top: 100px;
+  background: linear-gradient(173.16deg, #FFFFFF 26.33%, #9061AC 94.63%);
+  mix-blend-mode: normal;
+}
+
+.about-antioxidant h3 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 58px;
+  line-height: 64px;
+  color: var(--color-pink);
+  text-align: center;
+}
+
+.about-antioxidant p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 46px;
+  color: var(--color-text);
+  text-align: center;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.about-antioxidant__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.about-benefits {
+  background-color: var(--color-pink);
+  padding: 100px 0;
+}
+
+.about-benefits__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.about-benefits-des {
+  color: var(--color-white);
+}
+
+.about-benefits-des h3 {
+  font-size: 44px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.about-benefits-des p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.about-benefits-des ul li {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 22px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.about-benefits-des ul li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.about-benefits-img img {
+  border-radius: 10px;
+}
+
+.about-image-text {
+  padding-top: 100px;
+}
+
+.about-image-text-item {
+  display: grid;
+  grid-gap: 50px;
+  align-items: center;
+  
+}
+
+.about-image-text__inner .about-image-text-item:first-child {
+  grid-template-columns: 2fr 3fr;
+  margin-bottom: 100px;
+}
+
+.about-image-text__inner .about-image-text-item:last-child {
+  grid-template-columns: 3fr 2fr;
+}
+
+.about-image-text__inner .about-image-text-item:last-child img {
+  order: 2;
+}
+
+.about-image-text-item img {
+  border-radius: 10px;
+}
+
+.about-text-item h3 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.about-text-item p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 0;
+  text-align: left;
+}
+
+.about-mission {
+  margin-top: 100px;
+  background-color: var(--color-pink);
+  padding: 100px 0;
+}
+
+.about-mission__inner {
+  color: var(--color-white);
+}
+
+.about-mission__inner h3 {
+  font-size: 44px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.about-mission__inner p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.about-mission__inner ul li {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 22px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.about-mission__inner ul li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.about-team {
+  margin-top: 80px;
+}
+
+.about-team__inner > h4 {
+  color: var(--color-text);
+  text-align: center;
+  font-family: 'NeurialGrotesk-Regular';
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 1.4px;
+}
+
+.about-team__inner > h3 {
+  font-size: 44px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-pink);
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1.4px;
+}
+
+.about-team-img-desc {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 50px;
+  margin-top: 70px;
+  align-items: center;
+}
+
+.about-team-img-desc img {
+  border-radius: 10px;
+}
+
+.about-team-desc h3 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 22px;
+  line-height: 35px;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.about-team-desc p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-text);
+}
+
+.about-team-short-desc {
+  margin-top: 50px;
+}
+
+.about-team-short-desc p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-text);
+}
+
+.btn-meet-team {
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-white);
+  background-color: var(--color-dark-pink);
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 30px;
+  font-size: 22px;
+}
+
+.btn-meet-team:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+.about-more__inner > h3 {
+  font-size: 44px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-pink);
+  text-align: left;
+}
+
+.about-more-items {
+  margin-top: 50px;
+}
+
+.about-more-items .more-item {
+  margin-bottom: 20px;
+}
+
+.about-more-items .more-item a {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-size: 22px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-more-items .more-item a:before {
+  content: '';
+  background-image: url('assets/images/science-link-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 15px;
+}
+
+
+
+    
