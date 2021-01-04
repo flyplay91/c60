@@ -145,6 +145,11 @@ $(document).ready(function() {
 		});
 	});
 
+	// Product category page change product price
+	if ($('.page-template-product_category span.price') != 0) {
+		$('.page-template-product_category span.price').html('<span class="custom-subscription-price">Save 20% With Renewals</span>');
+	}
+
 
 });
 	

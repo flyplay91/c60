@@ -9,10 +9,10 @@
  */
 defined( 'ABSPATH' ) || exit;
 
-get_header( 'shop' );
+get_header();
 ?>
 
-<div class="shop-page">
+<main class="shop-page">
 	<?php if( have_rows('shop_hero_group')) : 
 		$hero_group = get_field('shop_hero_group');
 		$hero_img_url = $hero_group['hero_background_image']['url'];
@@ -157,6 +157,6 @@ get_header( 'shop' );
 			</section>
 		<?php endwhile;
 	endif; ?>
-</div>
+</main>
 <?php
-get_footer( 'shop' );
+get_footer();

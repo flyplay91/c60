@@ -2000,3 +2000,89 @@ body.single-product .qib-button.qib-button-wrapper {
   text-align: center;
   color: var(--color-pink);
 }
+
+/* ========== Product category page ========= */
+.product-category__title-short-des h1 {
+  line-height: 1;
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.product-category__title-short-des p {
+  text-align: left;
+  color: var(--color-text);
+}
+
+.product-category__products {
+  margin-top: 50px;
+}
+
+.product-category__products__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.product-category__products li .woocommerce-loop-product__title {
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-text);
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+.product-category__products li .star-rating {
+  font-size: 18px;
+  width: 127px;
+  margin: 5px auto;
+}
+
+.product-category__products li .price {
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-category__products li .attachment-woocommerce_thumbnail {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.page-template-product_category .woocommerce-Price-amount {
+	display: none;
+}
+
+.product-category__des {
+  margin-top: 100px;
+}
+
+.product-category__des--item {
+  margin-bottom: 40px;
+}
+
+.product-category__des--item h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-text);
+  text-align: left;
+}
+
+.product-category__des--item p {
+  text-align: left;
+  color: var(--color-text);
+}
+
+.category__blog__inner h2 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--color-pink);
+}
