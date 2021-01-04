@@ -977,6 +977,11 @@ button:focus {
   padding-bottom: 70px;
 }
 
+.footer-newsletter > img {
+  margin: 0 auto;
+  width: 40px;
+}
+
 .footer-newsletter__title {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 40px;
@@ -986,12 +991,14 @@ button:focus {
 }
 
 .footer-newsletter__subtitle {
-  color: var(--color-text);
-  font-size: 34px;
   font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  display: block;
 }
 
 .footer-newsletter__form form.needsclick {

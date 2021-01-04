@@ -25,6 +25,8 @@
 	$logo_alt = get_field('logo_image', 'option')['alt'];
 
 	$newsletter_group = get_field('newsletter_group', 'option');
+	$newsleeter_img_url = $newsletter_group['image']['url'];
+	$newsleeter_img_alt = $newsletter_group['image']['alt'];
 	$newsletter_title = $newsletter_group['title'];
 	$newsletter_subtitle = $newsletter_group['subtitle'];
 	$newsletter_form_shortcode = $newsletter_group['form_shortcode'];
@@ -41,8 +43,9 @@
 			<div class="footer__inner inner-section-1120">
 				
 				<div class="footer-newsletter">
-					<h2 class="footer-newsletter__title"><?php echo $newsletter_title ?></h2>
+					<img src="<?php echo $newsleeter_img_url ?>" alt="<?php echo $newsleeter_img_alt ?>">
 					<h3 class="footer-newsletter__subtitle"><?php echo $newsletter_subtitle ?></h3>
+					<h2 class="footer-newsletter__title"><?php echo $newsletter_title ?></h2>
 					<div class="footer-newsletter__form"><?php echo $newsletter_form_shortcode ?></div>
 				</div>
 				
