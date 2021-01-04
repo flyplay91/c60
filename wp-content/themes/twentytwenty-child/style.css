@@ -103,6 +103,7 @@ Text Domain: twenty-twenty-child
   --color-light-black: #360254;
   --color-inactive-dot: #B596C8;
   --color-review: #FFA900;
+  --color-border: #B596C8;
 }
 
 body {
@@ -113,16 +114,19 @@ body {
 .inner-section-1440 {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 25px 15px;
 }
 
 .inner-section-1220 {
   max-width: 1220px;
   margin: 0 auto;
+  padding: 25px 15px;
 }
 
 .inner-section-1120 {
   max-width: 1120px;
   margin: 0 auto;
+  padding: 25px 15px;
 }
 
 li::marker {
@@ -493,7 +497,6 @@ button:focus {
 
 .home-seen__inner {
   border-bottom: solid 1px rgba(107, 44, 144, 0.3);
-  padding-bottom: 30px;
 }
 
 .home-seen__title {
@@ -701,6 +704,7 @@ button:focus {
   align-content: center;
   grid-gap: 7px;
   margin: 15px 0;
+  align-items: center;
 }
 
 .home-cart-item label {
@@ -966,7 +970,7 @@ button:focus {
 
 /* ============= Footer ================== */
 .site-footer {
-  padding: 70px 0;
+  padding: 50px 0 70px 0;
 }
 
 .footer-newsletter {
@@ -1630,4 +1634,369 @@ body.single-product .qib-button.qib-button-wrapper {
   content: none !important;
 }
 
+/* ========= Shop Page =========== */
+.shop__hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+}
 
+.shop__hero-content  {
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.shop__hero-content h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+}
+
+.shop__hero-content p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--color-text);
+  width: 34%;
+  margin-bottom: 45px;
+}
+
+.shop__hero-content img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.shop__hero-content img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+.shop_nav {
+  background-color: var(--color-pink);
+}
+
+.shop-parent-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.shop-parent-nav li {
+  position: relative;
+  margin: 0 15px;
+  padding: 15px;
+}
+
+.shop-parent-nav li span a {
+  font-size: 16px;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-family: 'NeurialGrotesk-Bold';
+  cursor: pointer;
+}
+
+.shop-child-nav {
+  display: none;
+  position: absolute;
+  margin: 0;
+  top: 57px;
+  z-index: 1;
+  left: 0;
+  background-color: var(--color-light-pink);
+  width: 600px;
+}
+
+.shop-parent-nav > li:hover {
+  background-color: var(--color-light-pink);
+}
+
+.shop-parent-nav > li:hover > span a {
+  color: var(--color-text);
+}
+
+.shop-parent-nav > li:hover .shop-child-nav {
+  display: flex;
+}
+
+.shop-child-nav li:hover > a {
+  color: var(--color-text);
+}
+
+.shop-child-nav li a {
+  color: var(--color-pink);
+  font-size: 14px;
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.shop-products-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.shop-products-block li .woocommerce-loop-product__title {
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-text);
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+.shop-products-block li .star-rating {
+  font-size: 18px;
+  width: 127px;
+  margin: 5px auto;
+}
+
+.shop-products-block li .price {
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.shop-products-block li .attachment-woocommerce_thumbnail {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.page-template-shop .woocommerce-Price-amount {
+	display: none;
+}
+
+.custom-subscription-price {
+  position: relative;
+}
+
+.custom-subscription-price:before {
+  content: '';
+  background-image: url('assets/images/package.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top: -8px;
+  left: -40px;
+}
+
+.shop-variant-select .add_to_cart_button {
+  background-color: transparent;
+  border: solid 1px var(--color-pink);
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Regular';
+  text-transform: capitalize;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+  justify-content: space-between;
+  margin: 10px auto 0;
+  padding: 0 15px;
+  height: 45px;
+  border-radius: 17px;
+}
+
+.shop-variant-select .add_to_cart_button:hover {
+  transition: .02s;
+  transform: scale(1.01);
+  color: var(--color-pink);
+  text-decoration: none !important;
+}
+
+.shop-variant-select .add_to_cart_button:after {
+  background-image: url('assets/images/down-arrow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 8px;
+  content: '';
+  margin-top: 3px;
+}
+
+/* .shop-variant-select .add_to_cart_button:hover:after {
+  transform: rotate(180deg);
+} */
+
+.shop-variant-select .shop-variant-items {
+  display: none;
+  background-color: var(--color-dark-pink);
+  padding: 15px;
+  border-radius: 15px;
+  width: 450px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shop-variant-select .shop-variant-items:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 10px 20px;
+  border-color: transparent transparent var(--color-dark-pink) transparent;
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shop-variant-select .shop-variant-item {
+  display: grid;
+  grid-template-columns: 5fr 3fr 3fr;
+  align-content: center;
+  grid-gap: 7px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.shop-variant-select .shop-variant-item label {
+  color: var(--color-white);
+  font-size: 14px;
+  font-family: 'NeurialGrotesk-Regular';
+  margin-right: 20px;
+}
+
+.shop-variant-select .shop-variant-item .btn-shop-add-cart {
+  color: var(--color-white);
+  border: solid 1px var(--color-white);
+  padding: 7px 15px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-family: 'NeurialGrotesk-Regular';
+  text-align: center;
+}
+
+.shop-variant-select {
+  position: relative;
+}
+
+.shop-variant-select:hover .shop-variant-items {
+  display: grid;
+}
+
+.shop__image-text {
+  margin-top: 50px;
+}
+
+.shop__image-text-block {
+  display: grid;
+  grid-gap: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.shop__image-text-block.left-img {
+  grid-template-columns: 2fr 3fr;
+}
+
+.shop__image-text-block.right-img {
+  grid-template-columns: 3fr 2fr;
+}
+
+.shop__image-text-block.right-img img {
+  order: 2;
+}
+
+.shop__image-text-block img {
+  border-radius: 10px;
+}
+
+.shop-text h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.shop-text p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  text-align: left;
+}
+
+.shop-text ul {
+  margin: 20px 0 20px 40px;
+}
+
+.shop-text ul li {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.shop-accordion-block > h3 {
+  color: var(--color-pink);
+  font-size: 50px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.accordion-item-block {
+  margin-top: 10px;
+}
+
+.accordion-item {
+  margin-top: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: var(--color-pink);
+}
+
+.accordion-item h4 {
+  color: var(--color-white);
+  font-size: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-item p {
+  color: var(--color-pink);
+  font-size: 18px;
+  font-family: 'NeurialGrotesk-Regular';
+  margin: 15px 0 0 0;
+  line-height: 1.2;
+  display: none;
+}
+
+.accordion-item.active {
+  background-color: rgba(246, 231, 255, 0.2);
+}
+
+.accordion-item.active h4 {
+  color: var(--color-dark-pink);
+}
+
+.accordion-item.active p {
+  display: block;
+}
+
+.shop-accordion-block.first-accordion {
+  margin-bottom: 50px;
+}
+
+.shop__blog__inner > h2 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--color-pink);
+}

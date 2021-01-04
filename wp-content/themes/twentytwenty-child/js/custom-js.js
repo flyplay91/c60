@@ -93,6 +93,58 @@ $(document).ready(function() {
 		});
 	});
 
+	// Shoppage change product price
+	if ($('.page-template-shop span.price') != 0) {
+		$('.page-template-shop span.price').html('<span class="custom-subscription-price">Save 20% With Renewals</span>');
+	}
+
+	// Shoppage accordion
+	$('body').on('click', '.accordion-item > h4', function() {
+		$('.accordion-item').removeClass('active');
+		$('.accordion-item p').hide();
+		$('.accordion-item ul').hide();
+		$(this).closest('.accordion-item').siblings().find('p').slideUp(350);
+		$(this).closest('.accordion-item').siblings().find('ul').slideUp(350);
+		$(this).next().slideDown(350);
+		$(this).closest('.accordion-item').addClass('active');
+	});
+
+	// Shoppage add to cart product
+	var a = 'a.btn-shop-add-cart';
+		$(a).on('click', function(e){
+		e.preventDefault();
+		$(this).attr('data-class', 'cart-added');
+
+		$.ajax({
+			type: 'POST',
+			url: wc_add_to_cart_params.ajax_url,
+			data: {
+				'action': 'variation_to_cart',
+				'pid'   : $(this).attr('data-product_id'),
+				'vid'   : $(this).attr('data-variation_id'),
+				'qty'   : 1,
+			},
+			success: function (response) {
+				if(response){
+				
+					$('a.btn-shop-add-cart[data-class="cart-added"]').text('Added');
+					setTimeout(function(){ 
+						$('a.btn-shop-add-cart[data-class="cart-added"]').text('Add to cart');
+						$('a.btn-shop-add-cart').removeAttr('data-class');
+					}, 3000);
+				
+				
+					var currentCartCount = parseInt($('.header-cart span').attr('data-cart-total'));
+					$('.header-cart span').attr('data-cart-total', currentCartCount + 1);
+					$('.header-cart span').html(currentCartCount + 1);
+				}
+			},
+			error: function (error) {
+				console.log(error);
+			}
+		});
+	});
+
 
 });
 	

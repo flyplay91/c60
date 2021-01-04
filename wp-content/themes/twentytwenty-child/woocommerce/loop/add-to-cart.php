@@ -20,17 +20,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-
-echo apply_filters(
-	'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
-	sprintf(
-		'<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
-		esc_url( $product->add_to_cart_url() ),
-		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
-		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
-		isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
-		esc_html( $product->add_to_cart_text() )
-	),
-	$product,
-	$args
-);
+$productId = $product->get_id();
+?>
+<div class="shop-variant-select">
+	<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select option</a>
+	<div class="shop-variant-items">
+		<?php
+			if ( ( $variations = $product->get_children() ) ) {
+			    foreach ( $variations as $variationId ) {
+			    	$variation = new WC_Product_Variation($variationId);
+			        $variationName = implode(" / ", $variation->get_variation_attributes());
+			        $variationPrice = $variation->get_price();
+			    ?>
+			    	<div class="shop-variant-item">
+			    		<label><?php echo $variationName . ' - $' . $variationPrice; ?></label>
+						<a href="javascript:void(0)" class="btn-shop-add-cart" data-product_id="<?php echo $productId ?>" data-variant_id="<?php echo $variationId ?>">Add to cart</a>
+						<a href="" class="btn-shop-add-cart">Subscribe</a>
+			    	</div>
+			    <?php    
+			    }
+			}
+		?>
+	</div>
+<?php
