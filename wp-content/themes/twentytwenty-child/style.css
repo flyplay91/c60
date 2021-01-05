@@ -2133,6 +2133,7 @@ body.single-product .qib-button.qib-button-wrapper {
   height: 800px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .about-hero__innner {
