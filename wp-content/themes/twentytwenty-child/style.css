@@ -2476,6 +2476,82 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-right: 15px;
 }
 
+/* ========= Science Page ========== */
+.science__hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+}
+
+.science__hero-inner {
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.science__hero-inner h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+  margin-bottom: 50px;
+}
+
+.science__hero-inner img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.science__hero-inner img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+.science__item {
+  border-bottom: solid 1px rgba(107, 44, 144, 0.4);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.science__item img {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.science__item h3 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 36px;
+  color: var(--color-pink);
+  margin-bottom: 20px;
+}
+
+.sceince__item_links span {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  color: var(--color-green);
+  line-height: 1.5;
+  padding: 10px 0 10px 35px;;
+  display: block;
+  position: relative;
+}
+
+.sceince__item_links span a {
+  color: var(--color-green);
+  text-decoration: underline;
+}
+
+.sceince__item_links span:before {
+  content: '';
+  background-image: url('assets/images/science-link-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 15px;
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+}
 
 
     
