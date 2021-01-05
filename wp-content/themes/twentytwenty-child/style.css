@@ -685,6 +685,7 @@ button:focus {
   background-color: var(--color-dark-pink);
   padding: 0 20px;
   border-radius: 15px;
+  z-index: 1;
 }
 
 .home-cart-block:before {
@@ -828,7 +829,7 @@ button:focus {
   font-size: 18px;
   max-width: 1126px;
   margin: 50px auto;
-  padding: 0 10px;
+  padding: 0 15px;
   text-align: center;
 }
 
@@ -1032,10 +1033,6 @@ button:focus {
   .home-more {
     padding: 30px 0;
   }
-
-  .site-footer {
-    padding: 30px 0;
-  }
 }
 
 @media(max-width: 768px) {
@@ -1065,15 +1062,14 @@ button:focus {
 
   .home-health__type {
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
   }
 
   .home-health__type-item:nth-child(2n) {
     margin-top: 0;
   }
 
-  .footer-contact-social {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
 
 @media(max-width: 767px) {
@@ -1156,6 +1152,12 @@ button:focus {
 
   .header-mobile-nav .sub-menu > li {
     padding: 10px 0;
+    border-bottom: solid 1px var(--color-light-pink);
+  }
+
+  .header-mobile-nav .sub-menu > li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   .header-mobile-menu {
@@ -1184,17 +1186,96 @@ button:focus {
     top: 10px;
   }
 
+  .header-mobile-menu .btn-mobile-nav.active span:first-child {
+    transform: translateY(10px) rotate(45deg);
+  }
+
   .header-mobile-menu .btn-mobile-nav span:nth-child(2) {
     top: 19px;
+  }
+
+  .header-mobile-menu .btn-mobile-nav.active span:nth-child(2) {
+    opacity: 0;
   }
 
   .header-mobile-menu .btn-mobile-nav span:last-child {
     bottom: 10px;
   }
+
+  .header-mobile-menu .btn-mobile-nav.active span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .home-seen__imgs {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media(max-width: 500px) {
+  .home-product__items-item {
+    width: 350px;
+  }
 
+  .home-pets__block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-pets__block-left {
+    order: 2;
+    text-align: center;
+  }
+
+  .header-top-social li {
+    display: none;
+  }
+
+  .header-top-social li.header-top-account {
+    display: block;
+  }
+
+  .home-hero__title {
+    font-size: 26px;
+  }
+
+  .home-hero__subtitle {
+    font-size: 18px;
+  }
+
+  .home-hero__btns a {
+    font-size: 16px;
+    min-width: 140px;
+  }
+
+  .home-seen__title,
+  .home-product__title,
+  .home-why__title,
+  .home-benefits__title,
+  .home-pets__title a,
+  .home-more__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .home-why__subtitle,
+  .home-benefits__subtitle,
+  .home-pets__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  .home-why__block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-health__type {
+    padding: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-pets__block-left a {
+    font-size: 16px;
+  }
 }
 
 /* ============= Footer ================== */
@@ -1400,6 +1481,39 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .footer-social li a svg {
   fill: var(--color-dark-pink);
   width: 24px;
+}
+
+@media(max-width: 1024px) {
+  .site-footer {
+    padding: 30px 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer-contact-social {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 500px) {
+  .site-footer {
+    padding: 0;
+  }
+
+  .footer-contact-social {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-newsletter__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .footer-newsletter__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
 }
 
 /* ============ Product Detail Page =============  */

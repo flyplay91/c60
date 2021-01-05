@@ -38,7 +38,7 @@ $(document).ready(function() {
 				}
 		  	},
 		  	{
-				breakpoint: 480,
+				breakpoint:550,
 				settings: {
 				  slidesToShow: 1,
 				  slidesToScroll: 1
@@ -159,6 +159,7 @@ $(document).ready(function() {
 
 	// Mobile menu
 	$('body').on('click', '.btn-mobile-nav', function() {
+		$(this).toggleClass('active');
 		$('.header-mobile-nav').toggleClass('active');
 	});
 
