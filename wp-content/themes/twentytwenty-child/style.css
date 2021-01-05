@@ -3065,6 +3065,14 @@ body.single-product .qib-button.qib-button-wrapper {
     max-width: 350px;
     margin: 0 auto;
   }
+
+  .about-what,
+  .about-antioxidant,
+  .about-image-text,
+  .about-mission,
+  .about-team {
+    padding: 0 15px;
+  }
 }
 
 /* ========= Science Page ========== */
