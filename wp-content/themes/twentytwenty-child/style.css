@@ -112,6 +112,7 @@ body {
 }
 
 /* Global Style */
+
 .inner-section-1440 {
   max-width: 1440px;
   margin: 0 auto;
@@ -967,6 +968,233 @@ button:focus {
 
 .home-blog__block .slick-dots li.slick-active button {
   background-color: var(--color-pink);
+}
+
+.header-mobile-nav {
+  display: none;
+}
+
+@media(max-width: 1440px) {
+  .header-top {
+    padding: 0;
+  }
+
+  .header-bottom {
+    padding: 0;
+  }
+
+  .home-product {
+    padding: 50px 0 0 0;
+  }
+}
+
+@media(max-width: 1024px) {
+  .home-hero__carousel {
+    height: 450px;
+  }
+
+  .home-hero__inner {
+    left: 45%;
+  }
+
+  .home-hero__title {
+    font-size: 40px;
+  }
+
+  .home-hero__subtitle {
+    font-size: 24px;
+  }
+
+  .home-seen {
+    padding-top: 0;
+  }
+
+  .home-product {
+    padding: 30px 0 0 0;
+  }
+
+  .home-why {
+    padding: 30px 0;
+  }
+
+  .home-benefits {
+    padding: 30px 0;
+  }
+
+  .home-health__type-item:nth-child(2n) {
+    margin-top: 60px;
+  }
+
+  .home-pets {
+    padding: 30px 0;
+  }
+
+  .home-more {
+    padding: 30px 0;
+  }
+
+  .site-footer {
+    padding: 30px 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .home-hero__inner {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-product__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-product__items-item {
+    width: 500px;
+    margin: 0 auto 50px;
+  }
+
+  .home-why__block {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-why__block-item {
+    margin-bottom: 30px;
+  }
+
+  .home-health__type {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-health__type-item:nth-child(2n) {
+    margin-top: 0;
+  }
+
+  .footer-contact-social {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-mobile-nav.active {
+    display: block;
+  }
+
+  .header-mobile-nav .sub-menu {
+    display: none;
+  }
+
+  .header-mobile-nav > li {
+    border-bottom: solid 1px var(--color-light-pink);
+    padding: 10px;
+    position: relative;
+  }
+
+  .header-mobile-nav > li:last-child {
+    border-bottom: none;
+  }
+
+  .header-mobile-nav > li .icon {
+    display: block;
+    height: 7px;
+    position: absolute;
+    pointer-events: none;
+    transform: rotate(-45deg);
+    width: 12px;
+    color: var(--color-text);
+    right: 15px;
+    top: 20px;
+  }
+
+  .header-mobile-nav > li .icon:before {
+    height: 9px;
+    width: 2px;
+  }
+
+  .header-mobile-nav > li .icon:after {
+    height: 2px;
+    width: 9px;
+  }
+
+  .header-mobile-nav > li .icon:before, .header-mobile-nav > li .icon:after {
+    content: "";
+    display: block;
+    background-color: currentColor;
+    position: absolute;
+    bottom: calc(50% - 1px);
+    left: 0;
+  }
+
+  .header-mobile-nav > li > a {
+    font-weight: 600;
+  }
+
+  .header-mobile-nav .sub-menu a {
+    color: var(--color-pink);
+  }
+
+  .header-mobile-nav > li.active .sub-menu {
+    display: block;
+  }
+
+  .header-mobile-nav > li.active .icon {
+    transform: rotate(135deg);
+  }
+
+  .header-mobile-nav .sub-menu:before {
+    content: none;
+  }
+
+  .header-mobile-nav .sub-menu {
+    margin-left: 20px;
+  }
+
+  .header-mobile-nav .sub-menu > li {
+    padding: 10px 0;
+  }
+
+  .header-mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-mobile-menu .btn-mobile-nav {
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: relative;
+    background-color: var(--color-pink);
+    margin-left: 10px;
+    padding: 0 7px;
+  }
+
+  .header-mobile-menu .btn-mobile-nav span {
+    height: 2px;
+    background-color: var(--color-white);
+    width: 26px;
+    position: absolute;
+  }
+
+  .header-mobile-menu .btn-mobile-nav span:first-child {
+    top: 10px;
+  }
+
+  .header-mobile-menu .btn-mobile-nav span:nth-child(2) {
+    top: 19px;
+  }
+
+  .header-mobile-menu .btn-mobile-nav span:last-child {
+    bottom: 10px;
+  }
+}
+
+@media(max-width: 500px) {
+
 }
 
 /* ============= Footer ================== */
@@ -2554,5 +2782,3 @@ body.single-product .qib-button.qib-button-wrapper {
   left: 0;
 }
 
-
-    

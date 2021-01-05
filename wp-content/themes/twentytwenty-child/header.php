@@ -146,7 +146,51 @@
 							</a>
 						</li>
 					</ul>
+
+					<div class="header-mobile-menu">
+						<div class="header-cart">
+							<a href="/cart/">
+								<?php $cart_count = WC()->cart->get_cart_contents_count(); ?>
+								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/cart-icon.png" alt="C60 Purple Power Cart">
+								<?php if ($cart_count > 0) : ?>
+									<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
+								<?php endif; ?>
+							</a>
+						</div>
+						<a href="javascript:void(0)" class="btn-mobile-nav">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
 				</div>
+
+				<ul class="header-mobile-nav">
+					<?php
+					if ( has_nav_menu( 'primary' ) ) {
+
+						wp_nav_menu(
+							array(
+								'container'  => '',
+								'items_wrap' => '%3$s',
+								'theme_location' => 'primary',
+							)
+						);
+
+					} elseif ( ! has_nav_menu( 'expanded' ) ) {
+
+						wp_list_pages(
+							array(
+								'match_menu_classes' => true,
+								'show_sub_menu_icons' => true,
+								'title_li' => false,
+								'walker'   => new TwentyTwenty_Walker_Page(),
+							)
+						);
+
+					}
+					?>
+				</ul>
 			</div>
 
 			<div class="header-banner">

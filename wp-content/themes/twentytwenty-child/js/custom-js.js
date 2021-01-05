@@ -23,8 +23,15 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		arrows: false,
 		responsive: [
+			{
+				breakpoint: 1100,
+				settings: {
+				  slidesToShow: 3,
+				  slidesToScroll: 1
+				}
+		  	},
 		  	{
-				breakpoint: 650,
+				breakpoint: 800,
 				settings: {
 				  slidesToShow: 2,
 				  slidesToScroll: 1
@@ -149,6 +156,16 @@ $(document).ready(function() {
 	if ($('.page-template-product_category span.price') != 0) {
 		$('.page-template-product_category span.price').html('<span class="custom-subscription-price">Save 20% With Renewals</span>');
 	}
+
+	// Mobile menu
+	$('body').on('click', '.btn-mobile-nav', function() {
+		$('.header-mobile-nav').toggleClass('active');
+	});
+
+	$('body').on('click', '.header-mobile-nav > li', function() {
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	});
 
 
 });
