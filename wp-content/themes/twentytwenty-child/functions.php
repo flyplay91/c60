@@ -138,6 +138,9 @@ function bbloomer_remove_product_tabs( $tabs ) {
     return $tabs;
 }
 
+// Remove description text in Description content
+add_filter( 'woocommerce_product_description_heading', '__return_null' );
+
 // Remove short description in product page
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 function woocommerce_template_single_excerpt() {
