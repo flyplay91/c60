@@ -1301,6 +1301,25 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   padding-top: 50px;
 }
 
+.woocommerce-Tabs-panel ul {
+  margin-left: 30px;
+}
+
+.woocommerce-Tabs-panel ul li {
+  display: flex;
+  align-items: center;
+}
+
+.woocommerce-Tabs-panel ul li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-text);
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 #ywar_reviews {
   max-width: 1040px;
 }
