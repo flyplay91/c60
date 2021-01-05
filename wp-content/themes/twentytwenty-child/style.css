@@ -1303,6 +1303,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .woocommerce-Tabs-panel ul {
   margin-left: 30px;
+  max-width: 100% !important;
 }
 
 .woocommerce-Tabs-panel ul li {
@@ -1968,6 +1969,18 @@ body.single-product .qib-button.qib-button-wrapper {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 18px;
   line-height: 1.8;
+  display: flex;
+  align-items: center;
+}
+
+.shop-text ul li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-light-pink);
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .shop-accordion-block > h3 {
