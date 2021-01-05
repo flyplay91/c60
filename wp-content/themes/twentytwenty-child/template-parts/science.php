@@ -10,7 +10,6 @@
 
 get_header();
 
-phpinfo();exit;
 ?>
 
 <main class="science-page">
