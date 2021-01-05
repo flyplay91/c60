@@ -9,6 +9,8 @@
  */
 
 get_header();
+
+phpinfo();exit;
 ?>
 
 <main class="science-page">
@@ -41,18 +43,9 @@ get_header();
                 <div class="science__items__inner inner-section-1220">
                     <?php if( have_rows('item_repeater') ) :
                         while( have_rows('item_repeater') ) : the_row();
-                        if (get_sub_field('item_image')['url'] != null) {
-                            $item_image_url = get_sub_field('item_image')['url'];
-                        } else {
-                            $item_image_url = '';
-                        }
-
-                        if (get_sub_field('item_image')['url'] != null) {
-                            $item_image_alt = get_sub_field('item_image')['alt'];
-                        } else {
-                            $item_image_alt = '';
-                        }
                         
+                        $item_image_url = get_sub_field('item_image')['url'];
+                        $item_image_alt = get_sub_field('item_image')['alt'];
                         $item_title = get_sub_field('item_title');
                     ?>
                         <div class="science__item">
