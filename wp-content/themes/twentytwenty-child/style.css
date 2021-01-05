@@ -3073,6 +3073,11 @@ body.single-product .qib-button.qib-button-wrapper {
   .about-team {
     padding: 0 15px;
   }
+
+  .about-what__img:before {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* ========= Science Page ========== */
@@ -3150,5 +3155,36 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-top: 5px;
   position: absolute;
   left: 0;
+}
+
+@media(max-width: 1023px) {
+  .science__hero {
+    height: 450px;
+  }
+
+  .science__hero-inner {
+    padding: 50px 15px 0;
+  }
+
+  .science__hero-inner h1 {
+    font-size: 40px;
+  }
+
+  .science__item img {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 767px) {
+  .science__hero-inner h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .science__item h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
 }
 
