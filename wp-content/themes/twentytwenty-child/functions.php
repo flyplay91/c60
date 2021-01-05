@@ -177,3 +177,11 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 
 // Remove related product in product page
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// Change product page breadcrumb
+add_filter( 'woocommerce_breadcrumb_defaults', 'woo_change_breadcrumb_home_text' );
+function woo_change_breadcrumb_home_text( $defaults ) {
+	$defaults['home'] = 'C60 Purple Power';
+
+	return $defaults;
+}

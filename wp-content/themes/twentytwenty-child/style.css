@@ -105,6 +105,7 @@ Text Domain: twenty-twenty-child
   --color-review: #FFA900;
   --color-border: #B596C8;
   --color-green: #095D37;
+  --color-black: #000000;
 }
 
 body {
@@ -1553,7 +1554,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .product-image-summary {
   background-color:  var(--color-light-pink);
-  padding: 50px 10px;
+  padding: 50px 0;
 }
 
 .product-image-summary__inner {
@@ -1602,7 +1603,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 }
 
 .product-tab-related {
-  padding: 0 10px 50px;
+  padding: 0 15px;
 }
 
 .product-tab-related .woocommerce-tabs {
@@ -2006,6 +2007,38 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .wcsatt-add-to-subscription-wrapper:before {
   content: none !important;
+}
+
+.woocommerce-product-gallery img {
+  width: 100%;
+}
+
+.woocommerce-breadcrumb {
+  margin-bottom: 0;
+}
+
+@media(max-width: 1023px) {
+  .product-image-summary__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 500px) {
+  .product_title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .woocommerce-product-gallery img {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .home-product__sub_heading {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
 }
 
 /* ========= Shop Page =========== */
@@ -2431,8 +2464,8 @@ body.single-product .qib-button.qib-button-wrapper {
 
   .shop-products-block > li {
     padding: 20px;
-    -webkit-box-shadow: 0px 0px 6px 0px #000000;
-    box-shadow: 0px 0px 6px 0px #000000;
+    -webkit-box-shadow: 0px 0px 6px 0px var(--color-black);
+    box-shadow: 0px 0px 6px 0px var(--color-black);
     margin-bottom: 30px;
   }
 
@@ -2549,6 +2582,32 @@ body.single-product .qib-button.qib-button-wrapper {
   line-height: 60px;
   text-align: center;
   color: var(--color-pink);
+}
+
+@media(max-width: 768px) {
+  .product-category__des {
+    margin-top: 0;
+  }
+}
+
+@media(max-width: 767px) {
+  .product-category__products__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .product-category__products__inner > li {
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 6px 0px var(--color-black);
+    box-shadow: 0px 0px 6px 0px var(--color-black);
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 500px) {
+  .category__blog__inner h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 /* ======== About Page ========== */
@@ -2706,7 +2765,7 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 .about-image-text {
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .about-image-text-item {
@@ -2898,6 +2957,114 @@ body.single-product .qib-button.qib-button-wrapper {
   height: 20px;
   display: block;
   margin-right: 15px;
+}
+
+@media(max-width: 1023px) {
+  .about-hero {
+    height: 450px;
+  }
+
+  .about-hero__innner {
+    padding: 50px 15px 0;
+  }
+
+  .about-hero__innner h1 {
+    font-size: 40px;
+  }
+
+  .about-hero__innner p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .about-what,
+  .about-antioxidant,
+  .about-image-text,
+  .about-mission,
+  .about-team {
+    margin-top: 50px;
+  }
+
+  .about-what__inner h3,
+  .about-antioxidant h3,
+  .about-benefits-des h3,
+  .about-text-item h3,
+  .about-mission__inner h3,
+  .about-team__inner > h3,
+  .about-more__inner > h3 {
+    font-size: 40px;
+  }
+
+  .about-what-img-text,
+  .about-benefits__inner,
+  .about-image-text__inner .about-image-text-item:last-child,
+  .about-image-text__inner .about-image-text-item:first-child,
+  .about-team-img-desc {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-text__inner .about-image-text-item:first-child {
+    margin-bottom: 50px;
+  }
+
+  .about-what__img img,
+  .about-benefits-img img,
+  .about-image-text-item img,
+  .about-team-img-desc img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about-what__img:before {
+    left: 0;
+  }
+
+  .about-what__text p,
+  .about-antioxidant p,
+  .about-benefits-des p,
+  .about-benefits-des ul li,
+  .about-text-item p,
+  .about-mission__inner p,
+  .about-mission__inner ul li {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .about-benefits,
+  .about-mission {
+    padding: 50px 0;
+  }
+
+  .about-text-item br {
+    display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  .about-hero__innner h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .about-what__inner h3,
+  .about-antioxidant h3,
+  .about-benefits-des h3,
+  .about-text-item h3,
+  .about-mission__inner h3,
+  .about-team__inner > h3,
+  .about-more__inner > h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about-what__img img,
+  .about-benefits-img img,
+  .about-image-text-item img,
+  .about-team-img-desc img {
+    max-width: 350px;
+    margin: 0 auto;
+  }
 }
 
 /* ========= Science Page ========== */
