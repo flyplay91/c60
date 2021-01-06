@@ -533,15 +533,15 @@ button:focus {
   margin: 0 auto;
 }
 
-.home-seen__imgs-item img:last-child {
+.home-seen__imgs-item img.home-seen__imgs-item--hover-img {
   display: none;
 }
 
-.home-seen__imgs-item:hover img:first-child {
+.home-seen__imgs-item:hover img.home-seen__imgs-item--mian-img {
   display: none;
 }
 
-.home-seen__imgs-item:hover img:last-child {
+.home-seen__imgs-item:hover img.home-seen__imgs-item--hover-img {
   display: block;
 }
 

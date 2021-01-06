@@ -96,8 +96,8 @@ get_header();
                             $hover_img_alt = get_sub_field('hover_image')['alt'];
                         ?>
                             <div class="home-seen__imgs-item">
-                                <img src="<?php echo  $main_img_url ?>" alt="<?php echo $main_img_alt ?>">
-                                <img src="<?php echo $hover_img_url ?>" alt="<?php echo $hover_img_alt ?>">
+                                <img class="home-seen__imgs-item--mian-img" src="<?php echo  $main_img_url ?>" alt="<?php echo $main_img_alt ?>">
+                                <img class="home-seen__imgs-item--hover-img" src="<?php echo $hover_img_url ?>" alt="<?php echo $hover_img_alt ?>">
                             </div>
                         <?php endwhile;
                     endif; ?>
