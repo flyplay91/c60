@@ -3546,7 +3546,7 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 .testimonial-form__inner .gform_wrapper .gform_footer {
-  width: calc(50% - 25px);
+  width: calc(50% - 10px);
   margin-left: auto;
   padding-bottom: 0;
 }
@@ -3554,6 +3554,8 @@ body.single-product .qib-button.qib-button-wrapper {
 .testimonial-form__inner .gform_wrapper .gform_footer input {
   width: 100% !important;
   margin-bottom: 0 !important;
+  font-family: 'NeurialGrotesk-Bold';
+  text-transform: capitalize;
 }
 
 .testimonial-form__inner .gform_wrapper .gform_footer input:hover {
