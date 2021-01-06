@@ -168,6 +168,9 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 	});
 
+	// Testimonial page add file upload text in form
+	$('.testimonial-form__inner .gform_body li.testimonial-file input[type=file]').before('<button class="btn-testimonial-file-upload">Select Files</button>');
+
 
 });
 	
