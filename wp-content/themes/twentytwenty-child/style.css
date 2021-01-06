@@ -3259,3 +3259,103 @@ body.single-product .qib-button.qib-button-wrapper {
   left: 0;
   top: 8px;
 }
+
+/* ========== Contact Page ========== */
+.contact-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+}
+
+.contact-hero__inner {
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.contact-hero__inner h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+  margin-bottom: 50px;
+}
+
+.contact-hero__inner p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--color-text);
+  width: 34%;
+  margin-bottom: 45px;
+}
+
+.contact-hero__inner img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.contact-hero__inner img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+.contact-content__inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 100px;
+  padding-top: 100px;
+}
+
+.contact-info__item {
+  margin-bottom: 50px;
+}
+
+.contact-info__item label {
+  font-size: 22px;
+  color: var(--color-pink);
+  font-weight: 500;
+  font-family: 'NeurialGrotesk-Bold';
+  line-height: 1.6;
+}
+
+.contact-info__item p,
+.contact-info_short_desc p {
+  font-size: 18px;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Regular';
+  line-height: 1.6;
+}
+
+.contact-info_short_desc p a {
+  text-decoration: underline;
+}
+
+.contact-content__form h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.contact-content__form .zrf-form p {
+  margin-bottom: 30px;
+}
+
+.contact-content__form .zrf-form p span {
+  color: var(--color-pink);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.contact-content__form .zrf-form p input,
+.contact-content__form .zrf-form p textarea {
+  background-color: var(--color-line);
+}
+
+.contact-content__form .zrf-form #zendesk_field_zen_submit input {
+  background-color: var(--color-dark-pink);
+  width: 100%;
+  font-family: 'NeurialGrotesk-Bold';
+}
