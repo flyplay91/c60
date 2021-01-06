@@ -3660,3 +3660,51 @@ body.single-product .qib-button.qib-button-wrapper {
     padding: 15px 0;
   }
 }
+
+/* ======= My Account Page ======== */
+.woocommerce-form.woocommerce-form-login,
+.woocommerce-form.woocommerce-form-register {
+  border: 1px solid var(--color-line);
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.account-page-login-form h2,
+.account-page-register-form h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.account-page-forms {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.account-page-forms .woocommerce-form-row,
+.account-page-forms .woocommerce-privacy-policy-text {
+  margin-bottom: 20px;
+}
+
+.account-page-forms .woocommerce-LostPassword {
+  margin-top: 20px;
+}
+
+@media(max-width: 767px) {
+  .account-page-login-form h2,
+  .account-page-register-form h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .account-page-forms {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
