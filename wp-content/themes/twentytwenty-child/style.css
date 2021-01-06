@@ -1377,7 +1377,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .footer-menu-block {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
@@ -1503,6 +1503,22 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 @media(max-width: 500px) {
   .site-footer {
     padding: 0;
+  }
+
+  .footer-menu-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-logo {
+    order: -2;
+  }
+
+  .footer-logo img {
+    max-width: 150px;
+  }
+
+  .footer-satisfaction-icon {
+    order: -1;
   }
 
   .footer-contact-social {

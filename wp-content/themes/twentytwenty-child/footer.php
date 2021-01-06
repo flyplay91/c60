@@ -58,7 +58,11 @@
 							</a>
 						</div>
 
-						<?php if( have_rows('footer_logo_&_menu_group', 'option')) : ?>
+						<?php if( have_rows('footer_logo_&_menu_group', 'option')) : 
+							$footer_logo_menu_group = get_field('footer_logo_&_menu_group', 'option');
+							$satisfaction_img_url = $footer_logo_menu_group['satisfaction_image']['url'];
+							$satisfaction_img_alt = $footer_logo_menu_group['satisfaction_image']['alt'];
+							?>
         					<?php while ( have_rows('footer_logo_&_menu_group', 'option')): the_row(); ?>
 								<?php if ( have_rows('menu_repeater', 'option')) :
 									while (have_rows('menu_repeater', 'option')) : the_row(); ?>
@@ -74,8 +78,14 @@
 									</div>
 									<?php endwhile;
 								endif; ?>
+
+						<div class="footer-satisfaction-icon">
+							<img src="<?php echo $satisfaction_img_url ?>" alt="<?php echo $satisfaction_img_alt ?>">
+						</div>
 							<?php endwhile;
 						endif; ?>
+
+						
 					</div>
 
 					
