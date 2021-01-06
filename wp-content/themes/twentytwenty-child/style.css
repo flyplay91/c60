@@ -3359,3 +3359,45 @@ body.single-product .qib-button.qib-button-wrapper {
   width: 100%;
   font-family: 'NeurialGrotesk-Bold';
 }
+
+@media(max-width: 1024px) {
+  .contact-hero {
+    height: 450px;
+  }
+
+  .contact-hero__inner {
+    padding: 50px 15px 0;
+  }
+
+  .contact-hero__inner h1 {
+    font-size: 40px;
+  }
+
+  .contact-hero__inner p br {
+    display: none;
+  }
+
+  .contact-hero__inner p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media(max-width: 767px) {
+  .contact-hero__inner h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .contact-content__inner {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .contact-content__form h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
