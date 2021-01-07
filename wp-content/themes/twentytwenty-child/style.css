@@ -3708,3 +3708,28 @@ body.single-product .qib-button.qib-button-wrapper {
     grid-gap: 20px;
   }
 }
+
+/* ========= Blog Page ========== */
+.blog-post-list__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.blog-post-item {
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 6px 0px var(--color-black);
+  box-shadow: 0px 0px 6px 0px var(--color-black);
+  margin-bottom: 30px;
+}
+
+.blog-post-item > a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.blog-post-item .post-item-title h2 {
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-text);
+  font-size: 22px;
+}
