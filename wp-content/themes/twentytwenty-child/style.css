@@ -2469,9 +2469,7 @@ body.single-product .qib-button.qib-button-wrapper {
   .shop-products-block {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media(max-width: 500px) {
   .shop__hero-content h1 {
     font-size: 26px;
     margin-bottom: 15px;
@@ -3723,7 +3721,8 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-bottom: 30px;
 }
 
-.blog-post-item > a {
+.blog-post-item > a,
+.post-date {
   display: block;
   margin-bottom: 20px;
 }
@@ -3732,4 +3731,142 @@ body.single-product .qib-button.qib-button-wrapper {
   font-family: 'NeurialGrotesk-Regular';
   color: var(--color-text);
   font-size: 22px;
+}
+
+/* ======== FAQ page ========= */
+.faq-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+}
+
+.faq-hero__inner {
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.faq-hero__inner h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-white);
+  margin-bottom: 50px;
+}
+
+.faq-hero__inner p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--color-white);
+  width: 34%;
+  margin-bottom: 45px;
+}
+
+.faq-hero__inner img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.faq-accordion {
+  margin-top: 50px;
+}
+
+.faq-accordion-block > h3 {
+  color: var(--color-pink);
+  font-size: 50px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.faq-accordion-block {
+  margin-top: 50px;
+}
+
+.faq-accordion-block.first-accordion {
+  margin-top: 0;
+}
+
+.faq-contact {
+  margin-top: 50px;
+}
+
+.faq-contact__inner {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.faq-contact__inner h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+  text-align: center;
+}
+
+.faq-contact__inner .wpcf7-form p {
+  margin-bottom: 30px;
+}
+
+.faq-contact__inner .wpcf7-form p label {
+  color: var(--color-pink);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.faq-contact__inner .wpcf7-form p input,
+.faq-contact__inner .wpcf7-form p textarea {
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-line);
+}
+
+.faq-contact__inner .wpcf7-form p input.wpcf7-submit {
+  background-color: var(--color-dark-pink);
+  width: 100%;
+}
+
+.faq-contact__inner .wpcf7-form p input.wpcf7-submit:hover {
+  transition: .02s;
+  transform: scale(1.01);
+  text-decoration: none;
+}
+
+@media(max-width: 1024px) {
+  .faq-hero {
+    height: 450px;
+  }
+  
+  .faq-hero__inner {
+    padding: 50px 15px 0;
+  }
+  
+  .faq-hero__inner h1 {
+    font-size: 40px;
+  }
+  
+  .faq-hero__inner p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .faq-text h2,
+  .faq-accordion-block > h3 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 767px) {
+  .faq-hero__inner h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .faq-text h2,
+  .faq-accordion-block > h3,
+  .faq__blog__inner > h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
