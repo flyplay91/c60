@@ -130,3 +130,4 @@ Stack trace:
 #6 /home/427283.cloudwaysapps.com/qnwvfbmdzn/public_html/index.php(17): require('/home/427283.cl...')
 #7 {main}
   thrown in /home/427283.cloudwaysapps.com/qnwvfbmdzn/public_html/wp-content/themes/twentytwenty-child/footer.php on line 19
+[07-Jan-2021 18:24:51 UTC] PHP Notice:  Undefined index: scheme in /home/427283.cloudwaysapps.com/qnwvfbmdzn/public_html/wp-includes/canonical.php on line 818
