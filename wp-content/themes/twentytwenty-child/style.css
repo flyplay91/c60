@@ -2628,26 +2628,26 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 /* ======== About Page ========== */
-.about-hero {
+.why-c60-hero {
   height: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.about-hero__innner {
+.why-c60-hero__innner {
   padding-left: 50px;
   padding-top: 100px;
 }
 
-.about-hero__innner h1 {
+.why-c60-hero__innner h1 {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 57px;
   color: var(--color-text);
   margin-bottom: 50px;
 }
 
-.about-hero__innner p {
+.why-c60-hero__innner p {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 25px;
   line-height: 35px;
@@ -2656,18 +2656,18 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-bottom: 45px;
 }
 
-.about-what {
+.why-c60-what {
   margin-top: 100px;
 }
 
-.about-what__inner h3 {
+.why-c60-what__inner h3 {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 58px;
   line-height: 64px;
   color: var(--color-pink);
 }
 
-.about-what-img-text {
+.why-c60-what-img-text {
   display: grid;
   grid-gap: 50px;
   align-items: center;
@@ -2675,15 +2675,15 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-top: 70px;
 }
 
-.about-what__img {
+.why-c60-what__img {
   position: relative;
 }
 
-.about-what__img img {
+.why-c60-what__img img {
   border-radius: 10px;
 }
 
-.about-what__img:before {
+.why-c60-what__img:before {
   content: '';
   background-image: url('assets/images/about_what_sticker.png');
   background-repeat: no-repeat;
@@ -2696,20 +2696,20 @@ body.single-product .qib-button.qib-button-wrapper {
   position: absolute;
 }
 
-.about-what__text p {
+.why-c60-what__text p {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 24px;
   line-height: 46px;
   color: var(--color-text);
 }
 
-.about-antioxidant {
+.why-c60-antioxidant {
   margin-top: 100px;
   background: linear-gradient(173.16deg, #FFFFFF 26.33%, #9061AC 94.63%);
   mix-blend-mode: normal;
 }
 
-.about-antioxidant h3 {
+.why-c60-antioxidant h3 {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 58px;
   line-height: 64px;
@@ -2717,7 +2717,7 @@ body.single-product .qib-button.qib-button-wrapper {
   text-align: center;
 }
 
-.about-antioxidant p {
+.why-c60-antioxidant p {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 24px;
   line-height: 46px;
@@ -2727,39 +2727,39 @@ body.single-product .qib-button.qib-button-wrapper {
   margin: 50px auto;
 }
 
-.about-antioxidant__images {
+.why-c60-antioxidant__images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 100px;
 }
 
-.about-benefits {
+.why-c60-benefits {
   background-color: var(--color-pink);
   padding: 100px 0;
 }
 
-.about-benefits__inner {
+.why-c60-benefits__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 100px;
 }
 
-.about-benefits-des {
+.why-c60-benefits-des {
   color: var(--color-white);
 }
 
-.about-benefits-des h3 {
+.why-c60-benefits-des h3 {
   font-size: 44px;
   font-family: 'NeurialGrotesk-Bold';
 }
 
-.about-benefits-des p {
+.why-c60-benefits-des p {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 22px;
   line-height: 33px;
 }
 
-.about-benefits-des ul li {
+.why-c60-benefits-des ul li {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 22px;
   line-height: 35px;
@@ -2767,7 +2767,7 @@ body.single-product .qib-button.qib-button-wrapper {
   align-items: center;
 }
 
-.about-benefits-des ul li:before {
+.why-c60-benefits-des ul li:before {
   content: '';
   width: 10px;
   height: 10px;
@@ -2777,39 +2777,39 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-right: 10px;
 }
 
-.about-benefits-img img {
+.why-c60-benefits-img img {
   border-radius: 10px;
 }
 
-.about-image-text {
+.why-c60-image-text {
   margin-top: 100px;
 }
 
-.about-image-text-item {
+.why-c60-image-text-item {
   display: grid;
   grid-gap: 50px;
   align-items: center;
   
 }
 
-.about-image-text__inner .about-image-text-item:first-child {
+.why-c60-image-text__inner .why-c60-image-text-item:first-child {
   grid-template-columns: 2fr 3fr;
   margin-bottom: 100px;
 }
 
-.about-image-text__inner .about-image-text-item:last-child {
+.why-c60-image-text__inner .why-c60-image-text-item:last-child {
   grid-template-columns: 3fr 2fr;
 }
 
-.about-image-text__inner .about-image-text-item:last-child img {
+.why-c60-image-text__inner .why-c60-image-text-item:last-child img {
   order: 2;
 }
 
-.about-image-text-item img {
+.why-c60-image-text-item img {
   border-radius: 10px;
 }
 
-.about-text-item h3 {
+.why-c60-text-item h3 {
   font-size: 50px;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -2817,7 +2817,7 @@ body.single-product .qib-button.qib-button-wrapper {
   color: var(--color-dark-pink);
 }
 
-.about-text-item p {
+.why-c60-text-item p {
   color: var(--color-text);
   font-family: 'NeurialGrotesk-Regular';
   font-size: 20px;
@@ -2826,28 +2826,28 @@ body.single-product .qib-button.qib-button-wrapper {
   text-align: left;
 }
 
-.about-mission {
+.why-c60-mission {
   margin-top: 100px;
   background-color: var(--color-pink);
   padding: 100px 0;
 }
 
-.about-mission__inner {
+.why-c60-mission__inner {
   color: var(--color-white);
 }
 
-.about-mission__inner h3 {
+.why-c60-mission__inner h3 {
   font-size: 44px;
   font-family: 'NeurialGrotesk-Bold';
 }
 
-.about-mission__inner p {
+.why-c60-mission__inner p {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 22px;
   line-height: 33px;
 }
 
-.about-mission__inner ul li {
+.why-c60-mission__inner ul li {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 22px;
   line-height: 35px;
@@ -2855,7 +2855,7 @@ body.single-product .qib-button.qib-button-wrapper {
   align-items: center;
 }
 
-.about-mission__inner ul li:before {
+.why-c60-mission__inner ul li:before {
   content: '';
   width: 10px;
   height: 10px;
@@ -2865,11 +2865,11 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-right: 10px;
 }
 
-.about-team {
+.why-c60-team {
   margin-top: 80px;
 }
 
-.about-team__inner > h4 {
+.why-c60-team__inner > h4 {
   color: var(--color-text);
   text-align: center;
   font-family: 'NeurialGrotesk-Regular';
@@ -2879,7 +2879,7 @@ body.single-product .qib-button.qib-button-wrapper {
   letter-spacing: 1.4px;
 }
 
-.about-team__inner > h3 {
+.why-c60-team__inner > h3 {
   font-size: 44px;
   font-family: 'NeurialGrotesk-Bold';
   color: var(--color-pink);
@@ -2888,7 +2888,7 @@ body.single-product .qib-button.qib-button-wrapper {
   letter-spacing: 1.4px;
 }
 
-.about-team-img-desc {
+.why-c60-team-img-desc {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 50px;
@@ -2896,11 +2896,11 @@ body.single-product .qib-button.qib-button-wrapper {
   align-items: center;
 }
 
-.about-team-img-desc img {
+.why-c60-team-img-desc img {
   border-radius: 10px;
 }
 
-.about-team-desc h3 {
+.why-c60-team-desc h3 {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 22px;
   line-height: 35px;
@@ -2909,18 +2909,18 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-bottom: 50px;
 }
 
-.about-team-desc p {
+.why-c60-team-desc p {
   font-size: 18px;
   line-height: 1.7;
   font-family: 'NeurialGrotesk-Regular';
   color: var(--color-text);
 }
 
-.about-team-short-desc {
+.why-c60-team-short-desc {
   margin-top: 50px;
 }
 
-.about-team-short-desc p {
+.why-c60-team-short-desc p {
   font-size: 18px;
   line-height: 1.7;
   font-family: 'NeurialGrotesk-Regular';
@@ -2942,22 +2942,22 @@ body.single-product .qib-button.qib-button-wrapper {
   transform: scale(1.01);
 }
 
-.about-more__inner > h3 {
+.why-c60-more__inner > h3 {
   font-size: 44px;
   font-family: 'NeurialGrotesk-Bold';
   color: var(--color-pink);
   text-align: left;
 }
 
-.about-more-items {
+.why-c60-more-items {
   margin-top: 50px;
 }
 
-.about-more-items .more-item {
+.why-c60-more-items .more-item {
   margin-bottom: 20px;
 }
 
-.about-more-items .more-item a {
+.why-c60-more-items .more-item a {
   color: var(--color-green);
   text-decoration: underline;
   font-size: 22px;
@@ -2965,7 +2965,7 @@ body.single-product .qib-button.qib-button-wrapper {
   align-items: flex-end;
 }
 
-.about-more-items .more-item a:before {
+.why-c60-more-items .more-item a:before {
   content: '';
   background-image: url('assets/images/science-link-icon.png');
   background-repeat: no-repeat;
@@ -2977,121 +2977,121 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 @media(max-width: 1023px) {
-  .about-hero {
+  .why-c60-hero {
     height: 450px;
   }
 
-  .about-hero__innner {
+  .why-c60-hero__innner {
     padding: 50px 15px 0;
   }
 
-  .about-hero__innner h1 {
+  .why-c60-hero__innner h1 {
     font-size: 40px;
   }
 
-  .about-hero__innner p {
+  .why-c60-hero__innner p {
     width: 100%;
     font-size: 18px;
     line-height: 28px;
   }
 
-  .about-what,
-  .about-antioxidant,
-  .about-image-text,
-  .about-mission,
-  .about-team {
+  .why-c60-what,
+  .why-c60-antioxidant,
+  .why-c60-image-text,
+  .why-c60-mission,
+  .why-c60-team {
     margin-top: 50px;
   }
 
-  .about-what__inner h3,
-  .about-antioxidant h3,
-  .about-benefits-des h3,
-  .about-text-item h3,
-  .about-mission__inner h3,
-  .about-team__inner > h3,
-  .about-more__inner > h3 {
+  .why-c60-what__inner h3,
+  .why-c60-antioxidant h3,
+  .why-c60-benefits-des h3,
+  .why-c60-text-item h3,
+  .why-c60-mission__inner h3,
+  .why-c60-team__inner > h3,
+  .why-c60-more__inner > h3 {
     font-size: 40px;
   }
 
-  .about-what-img-text,
-  .about-benefits__inner,
-  .about-image-text__inner .about-image-text-item:last-child,
-  .about-image-text__inner .about-image-text-item:first-child,
-  .about-team-img-desc {
+  .why-c60-what-img-text,
+  .why-c60-benefits__inner,
+  .why-c60-image-text__inner .why-c60-image-text-item:last-child,
+  .why-c60-image-text__inner .why-c60-image-text-item:first-child,
+  .why-c60-team-img-desc {
     grid-template-columns: 1fr;
   }
 
-  .about-image-text__inner .about-image-text-item:first-child {
+  .why-c60-image-text__inner .why-c60-image-text-item:first-child {
     margin-bottom: 50px;
   }
 
-  .about-what__img img,
-  .about-benefits-img img,
-  .about-image-text-item img,
-  .about-team-img-desc img {
+  .why-c60-what__img img,
+  .why-c60-benefits-img img,
+  .why-c60-image-text-item img,
+  .why-c60-team-img-desc img {
     max-width: 600px;
     margin: 0 auto;
   }
 
-  .about-what__img:before {
+  .why-c60-what__img:before {
     left: 0;
   }
 
-  .about-what__text p,
-  .about-antioxidant p,
-  .about-benefits-des p,
-  .about-benefits-des ul li,
-  .about-text-item p,
-  .about-mission__inner p,
-  .about-mission__inner ul li {
+  .why-c60-what__text p,
+  .why-c60-antioxidant p,
+  .why-c60-benefits-des p,
+  .why-c60-benefits-des ul li,
+  .why-c60-text-item p,
+  .why-c60-mission__inner p,
+  .why-c60-mission__inner ul li {
     font-size: 18px;
     line-height: 1.4;
   }
 
-  .about-benefits,
-  .about-mission {
+  .why-c60-benefits,
+  .why-c60-mission {
     padding: 50px 0;
   }
 
-  .about-text-item br {
+  .why-c60-text-item br {
     display: none;
   }
 }
 
 @media(max-width: 767px) {
-  .about-hero__innner h1 {
+  .why-c60-hero__innner h1 {
     font-size: 26px;
     margin-bottom: 15px;
   }
 
-  .about-what__inner h3,
-  .about-antioxidant h3,
-  .about-benefits-des h3,
-  .about-text-item h3,
-  .about-mission__inner h3,
-  .about-team__inner > h3,
-  .about-more__inner > h3 {
+  .why-c60-what__inner h3,
+  .why-c60-antioxidant h3,
+  .why-c60-benefits-des h3,
+  .why-c60-text-item h3,
+  .why-c60-mission__inner h3,
+  .why-c60-team__inner > h3,
+  .why-c60-more__inner > h3 {
     font-size: 30px;
     line-height: 40px;
   }
 
-  .about-what__img img,
-  .about-benefits-img img,
-  .about-image-text-item img,
-  .about-team-img-desc img {
+  .why-c60-what__img img,
+  .why-c60-benefits-img img,
+  .why-c60-image-text-item img,
+  .why-c60-team-img-desc img {
     max-width: 350px;
     margin: 0 auto;
   }
 
-  .about-what,
-  .about-antioxidant p,
-  .about-image-text,
-  .about-mission,
-  .about-team {
+  .why-c60-what,
+  .why-c60-antioxidant p,
+  .why-c60-image-text,
+  .why-c60-mission,
+  .why-c60-team {
     padding: 0 15px;
   }
 
-  .about-what__img:before {
+  .why-c60-what__img:before {
     width: 150px;
     height: 150px;
   }

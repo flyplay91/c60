@@ -1,11 +1,11 @@
 {
     "key": "group_5ff33effb22e0",
-    "title": "About Page",
+    "title": "Why C60 Page",
     "fields": [
         {
             "key": "field_5ff33f0ccdde5",
-            "label": "About Hero Group",
-            "name": "about_hero_group",
+            "label": "Why C60 Hero Group",
+            "name": "why_c60_hero_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -83,8 +83,8 @@
         },
         {
             "key": "field_5ff3430414a85",
-            "label": "About What Group",
-            "name": "about_what_group",
+            "label": "Why C60 What Group",
+            "name": "why_c60_what_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -162,8 +162,8 @@
         },
         {
             "key": "field_5ff34f5ae3cc8",
-            "label": "About Antioxidant Group",
-            "name": "about_antioxidant_group",
+            "label": "Why C60 Antioxidant Group",
+            "name": "why_c60_antioxidant_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -265,8 +265,8 @@
         },
         {
             "key": "field_5ff3525684c5a",
-            "label": "About Benefits Group",
-            "name": "about_benefits_group",
+            "label": "Why C60 Benefits Group",
+            "name": "why_c60_benefits_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -325,8 +325,8 @@
         },
         {
             "key": "field_5ff361a887798",
-            "label": "About Image Text Group",
-            "name": "about_image_text_group",
+            "label": "Why C60 Image Text Group",
+            "name": "why_c60_image_text_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -406,8 +406,8 @@
         },
         {
             "key": "field_5ff365014286d",
-            "label": "About Mission Group",
-            "name": "about_mission_group",
+            "label": "Why C60 Mission Group",
+            "name": "why_c60_mission_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -442,8 +442,8 @@
         },
         {
             "key": "field_5ff367b26efee",
-            "label": "About Team Group",
-            "name": "about_team_group",
+            "label": "Why C60 Team Group",
+            "name": "why_c60_team_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -593,8 +593,8 @@
         },
         {
             "key": "field_5ff36be00cf9a",
-            "label": "About More Group",
-            "name": "about_more_group",
+            "label": "Why C60 More Group",
+            "name": "why_c60_more_group",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -688,7 +688,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-parts\/about.php"
+                "value": "template-parts\/why_c60.php"
             }
         ]
     ],
@@ -700,5 +700,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1609788419
+    "modified": 1610152143
 }
