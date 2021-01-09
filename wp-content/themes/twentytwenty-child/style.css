@@ -3870,3 +3870,314 @@ body.single-product .qib-button.qib-button-wrapper {
     line-height: 40px;
   }
 }
+
+/* ========= What is C60 page ========== */
+.what-c60-hero__inner {
+  position: relative;
+  text-align: center;
+}
+
+.what-c60-hero__inner .what-c60-hero-bg-img {
+  position: absolute;
+  top: 0;
+}
+
+.what-c60-hero__inner h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-dark-pink);
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.what-c60-hero__inner .what-c60-hero-arrow-img {
+  width: 30px;
+  margin: 0 auto;
+}
+
+.what-c60-hero__inner h4 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-text);
+  max-width: 800px;
+  margin: 20px auto 50px;
+  font-weight: 500;
+}
+
+.what-c60-hero__inner p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--color-text);
+  padding-bottom: 45px;
+}
+
+.what-c60-hero__inner .what-c60-hero-img {
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+
+.what-c60-history {
+  margin-top: 50px;
+}
+
+.what-c60-history__heading-block {
+  text-align: center;
+}
+
+.what-c60-history__heading-block h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.what-c60-history__heading-block h4 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 34px;
+  max-width: 900px;
+  margin: 0 auto 45px;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.what-c60-history__heading-block p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text);
+  max-width: 850px;
+  margin: 0 auto 45px;
+}
+
+.what-c60-history__content-img-text {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 100px;
+}
+
+.what-c60-history__content-text h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.what-c60-history__content-text p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.what-c60-history__content-img img {
+  border-radius: 10px;
+}
+
+.what-c60-history__content label {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.what-c60-history__content > ul {
+  margin-top: 10px;
+}
+
+.what-c60-history__content ul li {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 20px;
+}
+
+.what-c60-history__content ul li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-light-pink);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.what-c60-history__content > ul > li {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.what-c60-history__content > ul > li ul {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.what-c60-history__content-block > p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.what-c60-history__content-block > p a {
+  text-decoration: underline;
+}
+
+.what-c60-img-text {
+  margin-top: 50px;
+}
+
+.what-c60-img-text-item {
+  display: grid;
+  grid-gap: 100px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.what-c60-img-text-item:last-child {
+  margin-bottom: 0;
+}
+
+.what-c60-img-text-item img {
+  border-radius: 10px;
+}
+
+.what-c60-img-text-item h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.what-c60-img-text-item p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.what-c60-img-text-item a {
+  text-decoration: underline;
+}
+
+.what-c60-img-text-item.right-img {
+  grid-template-columns: 3fr 2fr;
+}
+
+.what-c60-img-text-item.left-img {
+  grid-template-columns: 2fr 3fr;
+}
+
+.what-c60-img-text-item.right-img img {
+  order: 2;
+}
+
+@media(max-width: 1024px) {
+  .what-c60-hero__inner .what-c60-hero-bg-img {
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .what-c60-hero__inner h1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 40px;
+  }
+
+  .what-c60-hero__inner h4,
+  .what-c60-history__heading-block h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .what-c60-hero__inner .what-c60-hero-img {
+    max-width: 300px;
+    margin: 30px auto 0;
+  }
+
+  .what-c60-history {
+    margin-top: 0;
+  }
+
+  .what-c60-history__heading-block h2,
+  .what-c60-history__content-text h2,
+  .what-c60-img-text-item h2 {
+    font-size: 40px;
+  }
+
+  .what-c60-img-text-item.left-img,
+  .what-c60-img-text-item.right-img {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .what-c60-history__content-img-text {
+    grid-gap: 30px;
+  }
+
+  .what-c60-img-text {
+    margin-top: 0;
+  }
+}
+
+@media(max-width: 767px) {
+  .what-c60-hero__inner h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 30px 0;
+  }
+
+  .what-c60-hero__inner .what-c60-hero-img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .what-c60-history__heading-block h2,
+  .what-c60-history__content-text h2,
+  .what-c60-img-text-item h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .what-c60-history__content {
+    margin-top: 30px;
+  }
+
+  .what-c60-img-text-item {
+    text-align: center;
+  }
+
+  .what-c60-history__content-img-text,
+  .what-c60-img-text-item.left-img,
+  .what-c60-img-text-item.right-img {
+    grid-template-columns: 1fr;
+  }
+
+  .what-c60-history__content-img img,
+  .what-c60-img-text-item.left-img img,
+  .what-c60-img-text-item.right-img img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .what-c60-img-text-item.right-img img {
+    order: 0;
+  }
+}
