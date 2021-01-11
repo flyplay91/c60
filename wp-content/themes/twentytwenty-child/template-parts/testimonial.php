@@ -17,20 +17,20 @@ get_header();
         $testimonial_hero_group = get_field('testimonial_hero_group');
         $hero_heading = $testimonial_hero_group['hero_heading'];
         $hero_sub_heading = $testimonial_hero_group['hero_sub_heading'];
-        $hero_image_img_url = $testimonial_hero_group['hero_image']['url'];
-        $hero_image_img_alt = $testimonial_hero_group['hero_backhero_imageground_image']['alt'];
-        $hero_down_arrow_arrow_img_url = $testimonial_hero_group['hero_down_arrow']['url'];
-        $hero_down_arrow_arrow_img_alt = $testimonial_hero_group['hero_down_arrow']['alt'];
+        $hero_img_url = $testimonial_hero_group['hero_image']['url'];
+        $hero_img_alt = $testimonial_hero_group['hero_image']['alt'];
+        $hero_down_arrow_img_url = $testimonial_hero_group['hero_down_arrow']['url'];
+        $hero_down_arrow_img_alt = $testimonial_hero_group['hero_down_arrow']['alt'];
         while ( have_rows('testimonial_hero_group')): the_row(); ?>
             <section class="testimonial-hero">
                 <div class="testimonial-hero__inner inner-section-1440">
                     <div class="testimonial-hero__content">
                         <h1><?php echo $hero_heading ?></h1>
                         <p><?php echo $hero_sub_heading ?></p>
-                        <img src="<?php echo $hero_down_arrow_arrow_img_url ?>" alt="<?php echo $hero_down_arrow_arrow_img_alt ?>">
+                        <img src="<?php echo $hero_down_arrow_img_url ?>" alt="<?php echo $hero_down_arrow_img_alt ?>">
                     </div>
                     <div class="testimonial-hero__image">
-                        <img src="<?php echo $hero_image_img_url ?>" alt="<?php echo $hero_image_img_alt ?>">
+                        <img src="<?php echo $hero_img_url ?>" alt="<?php echo $hero_img_alt ?>">
                     </div>
                 </div>
             </section>

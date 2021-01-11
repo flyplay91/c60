@@ -2976,7 +2976,7 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-right: 15px;
 }
 
-@media(max-width: 1023px) {
+@media(max-width: 1024px) {
   .why-c60-hero {
     height: 450px;
   }
@@ -3819,6 +3819,7 @@ body.single-product .qib-button.qib-button-wrapper {
 .faq-contact__inner .wpcf7-form p textarea {
   background-color: var(--color-input-bg);
   border: 1px solid var(--color-line);
+  margin-top: 10px;
 }
 
 .faq-contact__inner .wpcf7-form p input.wpcf7-submit {
@@ -3868,6 +3869,10 @@ body.single-product .qib-button.qib-button-wrapper {
   .faq__blog__inner > h2 {
     font-size: 30px;
     line-height: 40px;
+  }
+
+  .faq-accordion {
+    margin-top: 0;
   }
 }
 
@@ -4456,5 +4461,246 @@ body.single-product .qib-button.qib-button-wrapper {
   .about-team-item .team-img-text.left-img img,
   .about-team-item .team-img-text.right-img img {
     max-width: 100%;
+  }
+}
+
+/* ======= Wholesale page ========= */
+.wholesale-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+}
+
+.wholesale-hero__inner {
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+
+.wholesale-hero__inner h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+  margin-bottom: 50px;
+  max-width: 400px;
+}
+
+.wholesale-hero__inner img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.wholesale-img-text {
+  margin-top: 100px;
+}
+
+.wholesale-img-text__inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  align-items: center;
+}
+
+.wholesale-img-text__inner img {
+  border-radius: 10px;
+}
+
+.wholesale-text-block h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+  max-width: 600px;
+}
+
+.wholesale-text-block h3 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.wholesale-text-block p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.wholesale-full-text__inner p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.wholesale-product {
+  margin-top: 100px;
+  background: linear-gradient(173.16deg, #FFFFFF 26.33%, #9061AC 94.63%);
+  mix-blend-mode: normal;
+}
+
+.wholesale-product h3 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 58px;
+  line-height: 64px;
+  color: var(--color-pink);
+  text-align: center;
+}
+
+.wholesale-product p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-text);
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.wholesale-product__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.wholesale-accordion {
+  margin-top: 50px;
+}
+
+.wholesale-accordion-block.first-accordion {
+  margin-bottom: 50px;
+}
+
+.wholesale-accordion-block > h3 {
+  color: var(--color-pink);
+  font-size: 50px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.wholesale-form {
+  margin-top: 100px;
+}
+
+.wholesale-form h2 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-text);
+}
+
+.wholesale-form__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  align-items: center;
+}
+
+.wholesale-form-block .wpcf7-form p {
+  margin-bottom: 30px;
+}
+
+.wholesale-form-block .wpcf7-form p label {
+  color: var(--color-pink);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.wholesale-form-block .wpcf7-form p input,
+.wholesale-form-block .wpcf7-form p textarea {
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-line);
+  margin-top: 10px;
+}
+
+.wholesale-form-block .wpcf7-form p input.wpcf7-submit {
+  background-color: var(--color-dark-pink);
+  width: 100%;
+}
+
+.wholesale-form-block .wpcf7-form p input.wpcf7-submit:hover {
+  transition: .02s;
+  transform: scale(1.01);
+  text-decoration: none;
+}
+
+.wholesale-form-img img {
+  border-radius: 10px;
+}
+
+@media(max-width: 1024px) {
+  .wholesale-hero {
+    height: 450px;
+  }
+
+  .wholesale-hero__inner {
+    padding: 50px 15px 0;
+  }
+
+  .wholesale-hero__inner h1,
+  .wholesale-text-block h2,
+  .wholesale-product h3,
+  .wholesale-accordion-block > h3,
+  .wholesale-form h2 {
+    font-size: 40px;
+  }
+
+  .wholesale-img-text,
+  .wholesale-product,
+  .wholesale-form  {
+    margin-top: 50px;
+  }
+
+  .wholesale-text-block h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .wholesale-product p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+@media(max-width: 767px) {
+  .wholesale-hero__inner h1,
+  .wholesale-text-block h2,
+  .wholesale-product h3,
+  .wholesale-accordion-block > h3,
+  .wholesale-form h2 {
+    font-size: 26px;
+  }
+
+  .wholesale-img-text,
+  .wholesale-product,
+  .wholesale-form,
+  .wholesale-accordion {
+    margin-top: 30px;
+  }
+
+  .wholesale-img-text__inner,
+  .wholesale-form__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .wholesale-img-text__inner img {
+    order: 2;
+  }
+
+  .wholesale-product p {
+    margin: 0 auto;
+  }
+
+  .wholesale-form-block {
+    order: 2;
   }
 }
