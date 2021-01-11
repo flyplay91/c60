@@ -3168,7 +3168,6 @@ body.single-product .qib-button.qib-button-wrapper {
   width: 20px;
   height: 20px;
   display: block;
-  margin-right: 15px;
   margin-top: 5px;
   position: absolute;
   left: 0;
@@ -4702,5 +4701,162 @@ body.single-product .qib-button.qib-button-wrapper {
 
   .wholesale-form-block {
     order: 2;
+  }
+}
+
+/* ======= Seen page ========== */
+.seen-hero {
+  background: linear-gradient(173.16deg, rgb(255 255 255 / 0.25) 26.33%, rgb(144 97 172 / 0.25) 94.63%);
+  padding: 100px 15px;
+  text-align: center;
+}
+
+.seen-hero h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+  margin-bottom: 50px;
+}
+
+.seen-hero__arrow {
+  height: 110px;
+  margin: 0 auto;
+}
+
+.seen-hero__img {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.seen-items {
+  margin-top: 100px;
+}
+
+.seen-item {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+  align-items: center;
+}
+
+.seen-item:last-child {
+  margin-bottom: 0;
+}
+
+.seen-item.right-img img {
+  order: 2;
+}
+
+.seen-item img {
+  border-radius: 10px;
+}
+
+.seen-item__content h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+  position: relative;
+  padding-left: 25px;
+}
+
+.seen-item__content h2:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-light-pink);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+
+.seen-item__content h4 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.seen-item__content p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.seen-item__content a {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  color: var(--color-green);
+  line-height: 1.5;
+  padding: 10px 0 10px 45px;
+  display: block;
+  position: relative;
+  text-decoration: underline;
+}
+
+.seen-item__content a:before {
+  content: '';
+  background-image: url(assets/images/podcard_icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+@media(max-width: 1024px) {
+  .seen-hero {
+    padding: 50px 15px;
+  }
+
+  .seen-hero h1,
+  .seen-item__content h2 {
+    font-size: 40px;
+  }
+
+  .seen-items {
+    margin-top: 50px;
+  }
+
+  .seen-item {
+    grid-gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .seen-item__content h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media(max-width: 767px) {
+  .seen-hero h1,
+  .seen-item__content h2 {
+    font-size: 26px;
+  }
+
+  .seen-item__content h2:before {
+    top: 10px;
+  }
+
+  .seen-item {
+    grid-template-columns: 1fr;
+  }
+
+  .seen-item.left-img img {
+    order: 2;
+  }
+
+  .seen-item {
+    margin-bottom: 50px;
   }
 }
