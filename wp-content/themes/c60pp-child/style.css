@@ -1457,7 +1457,7 @@ button:focus {
 }
 .footer-newsletter__form form.needsclick .Row__FormRow-sc-17nghml-0 .FormComponent__StyledFormComponentWrapper-e0xun6-0.lpsQFr button {
   width: 100%;
-  background: var(--color-pink) !important;
+  background: var(--color-dark-pink) !important;
   height: 50px !important;
   padding: 3px 0 0 0 !important;
 }
@@ -1494,6 +1494,12 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   grid-gap: 10px;
 }
 
+.footer-menu-block .footer-logo a {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  grid-gap: 10px;
+}
+
 .footer-menu__item h5 {
   color: var(--color-text);
   font-family: 'NeurialGrotesk-Bold';
@@ -1513,9 +1519,29 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   transform: scale(1.01);
 }
 
+.footer-nav-newsletter h3 {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.footer-nav-newsletter .kl-private-reset-css-Xuajs1 {
+  padding-left: 0 !important;
+  width: 100%;
+}
+
+.footer-nav-newsletter .kl-private-reset-css-Xuajs1 input[type=email] {
+  padding: 10px 0 8px 10px!important;
+}
+
+.footer-nav-newsletter button.kl-private-reset-css-Xuajs1 {
+  padding: 17px 0 12px !important;
+  background-color: var(--color-dark-pink) !important;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
 .footer-des {
-  font-style: italic;
-  text-align: center;
   color: var(--color-text);
   font-size: 14px;
   padding: 40px 0;
@@ -1525,6 +1551,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+  margin-top: 50px;
 }
 
 .footer-mobile,
