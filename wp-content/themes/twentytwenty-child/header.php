@@ -19,7 +19,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-
+		<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+		<script>
+			KlaviyoSubscribe.attachToModalForm('#k_id_modal', {
+				delay_seconds: 3,
+				success: function () {
+					$('.klaviyo_subscription_form').hide();
+					$('.success_message').html('<div class="klaviyo_block"><h2>Thank you for<br> signing up!</h2><h3>USE CODE: <b>EMAIL15</b></h3><h2>FOR 15% OFF</h2><h4>YOUR ORDER</h4><a href="">SHOP NOW</a></div>');
+				}
+			});
+		</script>
 		<?php wp_head(); ?>
 
 	</head>
@@ -201,6 +210,32 @@
 							<span><?php echo $banner_text ?></span>
 						<?php endwhile; ?>
 					<?php endif; ?>
+				</div>
+			</div>
+
+			<div class="klaviyo-popup klaviyo_modal" id="k_id_modal" style="display:none;">
+				<div class="klaviyo-popup__inner">
+					<!-- <div class="klaviyo-form-RDdXu4"></div> -->
+					<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate" class="klaviyo_subscription_form">
+						<input type="hidden" name="g" value="H8vQEK">
+						<div class="klaviyo_block">
+							<h2>Begin healthy<br> doesn't have<br> to be complicated</h2>
+							<h3>Register for our VIP list<br> and <b>save 15%</b> today</h3>
+						</div>
+						<div class="klaviyo_block">
+						<div class="klaviyo_field_group">
+							<input type="email" id="k_id_modal_$email" name="email" placeholder="Enter Email"></div>
+						</div> 
+						<div class="klaviyo_fine_print"></div>
+						<div class="klaviyo_form_actions">
+							<button type="submit">
+								<span>Join Now</span>
+							</button>
+						</div>
+						<div class="klaviyo_below_submit" ></div>
+					</form>
+					<div class="error_message" ></div>
+					<div class="success_message" style="display: none;"></div>
 				</div>
 			</div>
 		</header>

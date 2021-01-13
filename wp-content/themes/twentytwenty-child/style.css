@@ -428,6 +428,125 @@ button:focus {
   margin: 0px 5px;
 }
 
+.klaviyo-popup__inner {
+  top: 50%;
+  width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.klaviyo-popup__inner form {
+  background-image: url('assets/images/klaviyo_popup_join_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  padding: 50px;
+}
+
+.klaviyo-popup__inner form h2 {
+  color: var(--color-pink);
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.klaviyo-popup__inner form h3 {
+  color: var(--color-black);
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 30px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.klaviyo-popup__inner form .klaviyo_field_group input::-webkit-input-placeholder {
+  font-style: italic;
+}
+.klaviyo-popup__inner form .klaviyo_field_group input::-moz-placeholder {
+  font-style: italic;
+}
+.klaviyo-popup__inner form .klaviyo_field_group input:-ms-input-placeholder {
+  font-style: italic;
+}
+.klaviyo-popup__inner form .klaviyo_field_group input:-moz-placeholder {
+  font-style: italic;
+}
+
+.klaviyo-popup__inner form .klaviyo_form_actions {
+  border: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.klaviyo-popup__inner form .klaviyo_form_actions button {
+  padding: 18px 20px 15px;
+}
+
+.klaviyo-popup__inner form .klaviyo_form_actions button span {
+  background-color: var(--color-pink);
+  letter-spacing: 2.5px;
+  font-family: 'NeurialGrotesk-Regular';
+  text-transform: uppercase;
+}
+
+.klaviyo-popup__inner form .klaviyo_block {
+  max-width: 400px;
+}
+
+.klaviyo-popup__inner .success_message {
+  background-image: url('assets/images/klaviyo_popup_success_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  padding: 50px;
+}
+
+.success_message .klaviyo_block {
+  padding-left: 350px;
+  text-align: left;
+}
+
+.success_message .klaviyo_block h2 {
+  color: var(--color-pink);
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.success_message .klaviyo_block h3 {
+  color: var(--color-black);
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 30px;
+  font-family: 'NeurialGrotesk-Regular';
+  margin-bottom: 10px;
+}
+
+.success_message .klaviyo_block h4 {
+  color: var(--color-pink);
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: 'NeurialGrotesk-Regular';
+  margin-bottom: 10px;
+}
+
+.success_message .klaviyo_block a {
+  padding: 15px 20px;
+  display: inline-block;
+  background-color: var(--color-pink);
+  letter-spacing: 2.5px;
+  font-family: 'NeurialGrotesk-Regular';
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
 @media(max-width: 767px) {
   .header-banner {
     padding: 15px;
