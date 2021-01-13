@@ -170,7 +170,6 @@ button:focus {
 /* Header Style */
 .header-top {
   border-bottom: 1px solid var(--color-line);
-  padding: 30px 0 18px;
 }
 
 .header-top__inner {
@@ -220,10 +219,6 @@ button:focus {
 .header-top-social li a svg {
   fill: var(--color-dark-pink);
   width: 24px;
-}
-
-.header-bottom {
-  padding: 27px 0 22px;
 }
 
 .header-bottom__inner {
@@ -1107,14 +1102,6 @@ button:focus {
 }
 
 @media(max-width: 1440px) {
-  .header-top {
-    padding: 0;
-  }
-
-  .header-bottom {
-    padding: 0;
-  }
-
   .home-product {
     padding: 50px 0 0 0;
   }
