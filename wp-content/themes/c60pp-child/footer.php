@@ -40,7 +40,7 @@
 	$contact_email = $contact_group['contact_email'];
 ?>
 		<footer class="site-footer">
-			<div class="footer__inner inner-section-1120">
+			<div class="footer__inner inner-section-1440">
 				
 				<div class="footer-newsletter">
 					<img src="<?php echo $newsleeter_img_url ?>" alt="<?php echo $newsleeter_img_alt ?>">
@@ -52,16 +52,25 @@
 				
 				<div class="footer-nav">
 					<div class="footer-menu-block">
-						<div class="footer-logo">
-							<a href="/">
-								<img src="<?php echo $logo_img ?>" alt="<?php echo $logo_alt ?>">
-							</a>
-						</div>
+						<?php if( have_rows('footer_logo_group', 'option')) : 
+							while ( have_rows('footer_logo_group', 'option')): the_row(); ?>
+								<div class="footer-logo">
+									<a href="/">
+										<?php if ( have_rows('logo_repeater', 'option')) :
+											while (have_rows('logo_repeater', 'option')) : the_row(); 
+												$logo_img_url = get_sub_field('logo_image')['url'];
+												$logo_img_alt = get_sub_field('logo_image')['alt'];
+											?>
+												<img src="<?php echo $logo_img_url ?>" alt="<?php echo $logo_img_alt ?>">
+											<?php endwhile;
+										endif; ?>		
+									</a>
+								</div>
+							<?php endwhile;
+						endif; ?>
 
 						<?php if( have_rows('footer_logo_&_menu_group', 'option')) : 
 							$footer_logo_menu_group = get_field('footer_logo_&_menu_group', 'option');
-							$satisfaction_img_url = $footer_logo_menu_group['satisfaction_image']['url'];
-							$satisfaction_img_alt = $footer_logo_menu_group['satisfaction_image']['alt'];
 							?>
         					<?php while ( have_rows('footer_logo_&_menu_group', 'option')): the_row(); ?>
 								<?php if ( have_rows('menu_repeater', 'option')) :
@@ -78,25 +87,30 @@
 									</div>
 									<?php endwhile;
 								endif; ?>
-
-						<div class="footer-satisfaction-icon">
-							<img src="<?php echo $satisfaction_img_url ?>" alt="<?php echo $satisfaction_img_alt ?>">
-						</div>
 							<?php endwhile;
 						endif; ?>
 
-						
+						<?php if( have_rows('footer_newsletter_group', 'option')) : 
+							while ( have_rows('footer_newsletter_group', 'option')): the_row(); 
+							$nav_newsletter_group = get_field('footer_newsletter_group', 'option');
+							$nav_newsletter_title = $nav_newsletter_group['newsletter_title'];
+							$nav_newsletter_shortcode = $nav_newsletter_group['newsletter_shortcode'];
+						?>
+								<div class="footer-nav-newsletter">
+									<h3><?php echo $nav_newsletter_title ?></h3>
+									<?php echo do_shortcode($nav_newsletter_shortcode); ?>
+								</div>
+							<?php endwhile;
+						endif; ?>
 					</div>
 
 					
-					<div class="footer-des"><?php echo $description ?></div>
-					
 					<div class="footer-contact-social">
 						<div class="footer-cs-item">
-							<a class="footer-mobile" href="tel:<?php echo $contact_phone ?>"><?php echo $contact_phone ?></a>
+							<span class="footer-work-time"><?php echo $contact_work_hours ?></span>
 						</div>
 						<div class="footer-cs-item">
-							<span class="footer-work-time"><?php echo $contact_work_hours ?></span>
+							<a class="footer-mobile" href="tel:<?php echo $contact_phone ?>"><?php echo $contact_phone ?></a>
 						</div>
 						<div class="footer-cs-item">
 							<a class="footer-mail" href="mailto:<?php echo $contact_email ?>"><?php echo $contact_email ?></a>
@@ -153,6 +167,8 @@
 							</ul>
 						</div>
 					</div>
+
+					<div class="footer-des"><?php echo $description ?></div>
 				</div>
 			</div>
 		</footer>

@@ -101,8 +101,70 @@
             ]
         },
         {
+            "key": "field_5fff5d88b912c",
+            "label": "Footer Logo Group",
+            "name": "footer_logo_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5fff5d96b912d",
+                    "label": "Logo Repeater",
+                    "name": "logo_repeater",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fff5da5b912e",
+                            "label": "Logo Image",
+                            "name": "logo_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "field_5fe0e5c6adc2a",
-            "label": "Footer Logo & Menu Group",
+            "label": "Footer Menu Group",
             "name": "footer_logo_&_menu_group",
             "type": "group",
             "instructions": "",
@@ -209,12 +271,29 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "key": "field_5fff60b438440",
+            "label": "Footer Newsletter Group",
+            "name": "footer_newsletter_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
                 {
-                    "key": "field_5ff5ea1b5902c",
-                    "label": "Satisfaction Image",
-                    "name": "satisfaction_image",
-                    "type": "image",
+                    "key": "field_5fff60bf38441",
+                    "label": "Newsletter Title",
+                    "name": "newsletter_title",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -223,16 +302,30 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fff60c738442",
+                    "label": "Newsletter Shortcode",
+                    "name": "newsletter_shortcode",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -364,5 +457,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1609951955
+    "modified": 1610571990
 }
