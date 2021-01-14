@@ -219,7 +219,7 @@
 					<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate" class="klaviyo_subscription_form">
 						<input type="hidden" name="g" value="H8vQEK">
 						<div class="klaviyo_block">
-							<h2>Begin healthy<br> doesn't have<br> to be complicated</h2>
+							<h2>Being healthy<br> doesn't have<br> to be complicated</h2>
 							<h3>Register for our VIP list<br> and <b>save 15%</b> today</h3>
 						</div>
 						<div class="klaviyo_block">
