@@ -2,8 +2,7 @@
 /*
 Theme Name: C60PP Child
 Theme URI: http://example.com/c60pp-child/
-description:
-  c60pp
+description: c60pp child theme
 Author: TFCmarketing
 Author URI: http://example.com
 Template: c60pp
@@ -164,6 +163,11 @@ button:focus {
   font-family: 'NeurialGrotesk-Regular';
   color: var(--color-text);
   font-size: 18px;
+}
+
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 100%;
 }
 
 
@@ -1678,6 +1682,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 }
 
 /* ============ Product Detail Page =============  */
+.product-page-breadcrumb {
+  margin-bottom: 20px;
+}
+
 .woocommerce-message {
   margin: 0;
   background-color: var(--color-light-pink);
@@ -1743,19 +1751,31 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 }
 
 .woocommerce-product-gallery .flex-control-nav li {
-  width: 13px;
   float: none;
   margin: 0 0 15px 0;
+}
+
+.quantity.wqpmb_quantity {
+  max-width: 50px !important;
+}
+
+.onsale {
+  position: absolute;
 }
 
 .woocommerce-product-gallery .flex-control-nav li img {
   position: relative;
   background: var(--color-pink);
+  opacity: 0.5;
   object-position: -200px -200px;
   object-fit: contain;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
+}
+
+.woocommerce-product-gallery .flex-control-nav li img.flex-active {
+  opacity: 1;
 }
 
 .product-tab-related {
@@ -3337,9 +3357,17 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 /* ======== Blog post page ========== */
+.post-page {
+  padding-top: 50px;
+}
+
+.post-breadcrumb {
+  margin-bottom: 20px;
+}
+
 .post-page__inner {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-gap: 50px;
 }
 
@@ -3348,12 +3376,19 @@ body.single-product .qib-button.qib-button-wrapper {
   padding-right: 30px;
 }
 
-.post-block h2 {
+.post-block h1 {
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 36px;
-  color: var(--color-pink);
+  font-size: 50px;
+  color: var(--color-text);
+}
+
+.post-block h2 {
+  font-size: 34px;
+  line-height: 1.2;
   margin-bottom: 20px;
-  margin-top: 50px;
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-text);
+  font-weight: 500;
 }
 
 .post-block ul li{
