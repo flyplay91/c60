@@ -12,8 +12,14 @@ get_header();
 ?>
 
 <main class="post-page">
-    <div class="post-page__inner inner-section-1220">
+    <div class="post-page__inner inner-section-1440">
         <div class="post-block">
+            <div class="post-breadcrumb">
+				<nav class="woocommerce-breadcrumb">
+					<a href="/">C60 Purple Power</a> / <a href="/blog/">Blog</a> / <?php the_title() ?>
+				</nav>
+			</div>
+            <h1><?php the_title() ?></h1>
             <?php the_content(); ?>
         </div>
 

@@ -45,7 +45,9 @@ if ( post_password_required() ) {
 			?>
 
 			<div class="summary entry-summary">
-				<?php woocommerce_breadcrumb(); ?>
+				<div class="product-page-breadcrumb">
+					<?php woocommerce_breadcrumb(); ?>
+				</div>
 				<?php
 				/**
 				 * Hook: woocommerce_single_product_summary.

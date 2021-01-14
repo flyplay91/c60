@@ -35,8 +35,6 @@ function twentytwenty_child_scripts() {
  	wp_enqueue_script( 'twentytwenty-child', get_stylesheet_directory_uri() . '/js/custom-js.js', array( 'jquery' ), false, true );
 }
 
-
-
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
 function my_acf_json_save_point( $path ) {
   $path = get_stylesheet_directory() . '/acf-json';
@@ -77,6 +75,13 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 }
+
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+	add_theme_support( 'wc-product-gallery-slider' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 add_shortcode('home_blogs', 'HomeBlogs');
 function HomeBlogs() { ?>
@@ -185,3 +190,9 @@ function woo_change_breadcrumb_home_text( $defaults ) {
 
 	return $defaults;
 }
+
+// Set subscribe from regular price when sale
+function discount_from_regular_callback() {
+	return true;
+}
+add_filter('wcsatt_discount_from_regular', 'discount_from_regular_callback');
