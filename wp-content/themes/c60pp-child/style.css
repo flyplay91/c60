@@ -1761,6 +1761,14 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .onsale {
   position: absolute;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .woocommerce-product-gallery .flex-control-nav li img {
