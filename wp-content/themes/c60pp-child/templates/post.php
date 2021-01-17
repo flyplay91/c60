@@ -44,10 +44,12 @@ get_header();
                     $privacy_image_alt = $post_privacy_group['privacy_image']['alt'];
                     $privacy_content = $post_privacy_group['privacy_content'];
                 ?>
+                <?php if ($privacy_image_url) : ?>
                 <div class="post-privacy">
                     <img src="<?php echo $privacy_image_url ?>" alt="<?php echo $privacy_image_alt ?>">
                     <p><?php echo $privacy_content ?></p>
                 </div>
+                <?php endif; ?>
                 <?php endwhile;
             endif; ?>
 
