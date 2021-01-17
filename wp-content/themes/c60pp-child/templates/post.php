@@ -21,6 +21,39 @@ get_header();
 			</div>
             <h1><?php the_title() ?></h1>
             <?php the_content(); ?>
+            <?php if( have_rows('post_image_text_group')) : ?>
+                <?php while ( have_rows('post_image_text_group')): the_row(); 
+                    $post_image_text_group = get_field('post_image_text_group');
+                    $img_url = $post_image_text_group['image']['url'];
+                    $img_alt = $post_image_text_group['image']['alt'];
+                    $content = $post_image_text_group['content'];
+                ?>
+                <div class="post-img-text">
+                    <div class="post-text">
+                        <?php echo $content ?>
+                    </div>
+                    <div class="post-img" style="background-image:url(<?php echo $img_url ?>)"></div>
+                </div>
+                <?php endwhile;
+            endif; ?>
+
+            <?php if( have_rows('post_privacy_group')) : ?>
+                <?php while ( have_rows('post_privacy_group')): the_row(); 
+                    $post_privacy_group = get_field('post_privacy_group');
+                    $privacy_image_url = $post_privacy_group['privacy_image']['url'];
+                    $privacy_image_alt = $post_privacy_group['privacy_image']['alt'];
+                    $privacy_content = $post_privacy_group['privacy_content'];
+                ?>
+                <div class="post-privacy">
+                    <img src="<?php echo $privacy_image_url ?>" alt="<?php echo $privacy_image_alt ?>">
+                    <p><?php echo $privacy_content ?></p>
+                </div>
+                <?php endwhile;
+            endif; ?>
+
+            <div class="post-pagination">
+                
+            </div>
         </div>
 
         <div class="post-sidebar">
