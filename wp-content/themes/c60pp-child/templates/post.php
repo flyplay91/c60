@@ -28,12 +28,14 @@ get_header();
                     $img_alt = $post_image_text_group['image']['alt'];
                     $content = $post_image_text_group['content'];
                 ?>
+                <?php if ($img_url) : ?>
                 <div class="post-img-text">
                     <div class="post-text">
                         <?php echo $content ?>
                     </div>
                     <div class="post-img" style="background-image:url(<?php echo $img_url ?>)"></div>
                 </div>
+                <?php endif; ?>
                 <?php endwhile;
             endif; ?>
 
