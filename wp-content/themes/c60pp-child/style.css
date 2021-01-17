@@ -4000,6 +4000,12 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-bottom: 20px;
 }
 
+.blog-post-item .post-item-image img {
+  max-height: 200px;
+  object-fit: cover;
+  width: 1009%;
+}
+
 .blog-post-item .post-item-title h2 {
   font-family: 'NeurialGrotesk-Regular';
   color: var(--color-text);
