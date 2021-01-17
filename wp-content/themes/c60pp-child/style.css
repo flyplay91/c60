@@ -5140,3 +5140,156 @@ body.single-product .qib-button.qib-button-wrapper {
     margin-bottom: 50px;
   }
 }
+
+/* ======== Celebrities page ========== */
+.celebrities-hero {
+  position: relative;
+  margin-top: 100px;
+}
+
+.celebrities-hero__heading {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+
+.celebrities-hero__heading h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+  margin-bottom: 50px;
+}
+
+.celebrities-hero__heading p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--color-text);
+  margin-bottom: 45px;
+}
+
+.celebrities-hero__heading img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.celebrities-hero__img {
+  width: 48%;
+  margin-left: auto;
+}
+
+.celebrities-users__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.celebrities-user {
+  margin-bottom: 50px;
+}
+
+.celebrities-user:nth-child(2n) {
+  margin-top: 50px;
+}
+
+.celebrities-user:nth-child(5),
+.celebrities-user:nth-child(6),
+.celebrities-user:nth-child(7),
+.celebrities-user:nth-child(8) {
+  margin-bottom: 0;
+}
+
+.celebrities-user .celebrities-user-img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.celebrities-user:nth-child(2n) .celebrities-user-img {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+
+.celebrities-user-name-instagram {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.celebrities-user-name label {
+  font-size: 20px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.celebrities-user-name span {
+  font-size: 16px;
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-pink);
+  display: inline-block;
+}
+
+.celebrities-user-name-instagram a img {
+  max-width: 40px;
+}
+
+.celebrities-user > p {
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: 'NeurialGrotesk-Regular';
+  color: var(--color-pink);
+}
+
+@media(max-width: 1440px) {
+  .celebrities-hero {
+    margin-top: 50px;
+  }
+
+  .celebrities-hero__heading {
+    top: 50px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .celebrities-hero__heading h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .celebrities-hero__heading p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 767px) {
+  .celebrities-hero__inner {
+    display: grid;
+  }
+
+  .celebrities-hero {
+    margin-top: 0;
+  }
+
+  .celebrities-hero__heading {
+    position: unset;
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .celebrities-hero__heading h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .celebrities-hero__heading p br {
+    display: none;
+  }
+
+  .celebrities-hero__img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .celebrities-users__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

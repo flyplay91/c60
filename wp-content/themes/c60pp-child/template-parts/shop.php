@@ -21,8 +21,8 @@ get_header();
 		$hero_sub_heading = $hero_group['hero_sub_heading'];
 		$hero_arrow_img_url = $hero_group['hero_down_arrow']['url'];
 		$hero_arrow_img_alt = $hero_group['hero_down_arrow']['alt'];
-	?>
-        <?php while ( have_rows('shop_hero_group')): the_row(); ?>
+		
+		while ( have_rows('shop_hero_group')): the_row(); ?>
 			<section class="shop__hero" style="background-image: url(<?php echo $hero_img_url ?>)">
 				<div class="shop__hero-content">
 					<h1><?php echo $hero_heading ?></h1>
