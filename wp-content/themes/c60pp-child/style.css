@@ -2318,6 +2318,14 @@ body.single-product .qib-button.qib-button-wrapper {
   font-family: 'NeurialGrotesk-Regular';
 }
 
+.shop-products {
+  margin-top: 50px;
+}
+
+.shop-breadcrumb {
+  margin-bottom: 50px;
+}
+
 .shop-products-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -5293,3 +5301,292 @@ body.single-product .qib-button.qib-button-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* =========== Ambassador page ============= */
+.ambassador-hero {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ambassador-hero__inner {
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.ambassador-hero__inner h1 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-text);
+  margin-bottom: 50px;
+}
+
+.ambassador-hero__inner p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--color-text);
+  width: 34%;
+  margin-bottom: 45px;
+}
+
+.ambassador-hero__inner img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.ambassador-team {
+  margin-top: 50px;
+}
+
+.ambassador-team__inner > p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-text);
+  max-width: 900px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.ambassador-team__text p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-top: 30px;
+}
+
+.ambassador-team__img-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+}
+
+.ambassador-team__img-text img {
+  border-radius: 10px;
+}
+
+.ambassador-team__text h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+
+.ambassador-team__text h3 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.ambassador-products {
+  margin-top: 100px;
+  background: linear-gradient(173.16deg, #FFFFFF 26.33%, #9061AC 94.63%);
+  mix-blend-mode: normal;
+}
+
+.ambassador-products h3 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 58px;
+  line-height: 64px;
+  color: var(--color-pink);
+  text-align: center;
+}
+
+.ambassador-products p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-text);
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.ambassador-products__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.ambassador-benefits {
+  margin-top: 100px;
+}
+
+.ambassador-benefits > img {
+  width: 64px;
+  margin: 0 auto;
+}
+
+.ambassador-benefits > h2 {
+  font-size: 54px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-text);
+  text-align: center;
+}
+
+.ambassador-benefits > p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ambassador-benefits__inner {
+  margin-top: 50px;
+}
+
+.ambassador-benefit {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+  align-items: center;
+}
+
+.ambassador-benefit:last-child {
+  margin-bottom: 0;
+}
+
+.ambassador-benefit.right-img img {
+  order: 2;
+}
+
+.ambassador-benefit img {
+  border-radius: 10px;
+}
+
+.ambassador-benefit__content h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+  position: relative;
+  padding-left: 25px;
+}
+
+.ambassador-benefit__content h2:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-light-pink);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+
+.ambassador-benefit__content h4 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.ambassador-benefit__content p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+@media(max-width: 1024px) {
+  .ambassador-hero {
+    height: 450px;
+  }
+
+  .ambassador-hero__inner {
+    padding: 50px 15px 0;
+  }
+
+  .ambassador-hero__inner h1,
+  .ambassador-team__text h2,
+  .ambassador-products h3,
+  .ambassador-benefits > h2,
+  .ambassador-benefit__content h2 {
+    font-size: 40px;
+  }
+
+  .ambassador-hero__inner p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .ambassador-team__text h3,
+  .ambassador-benefit__content h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .ambassador-products,
+  .ambassador-benefits {
+    margin-top: 50px;
+  }
+
+  .ambassador-products p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 10px auto;
+    padding: 0 15px;
+  }
+
+  .ambassador-benefit__content h2:before {
+    top: 20px;
+  }
+
+  .ambassador-benefit {
+    grid-gap: 50px;
+  }
+}
+
+@media(max-width: 767px) {
+  .ambassador-hero__inner h1,
+  .ambassador-team__text h2,
+  .ambassador-products h3,
+  .ambassador-benefits > h2,
+  .ambassador-benefit__content h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .ambassador-hero__inner h1 br,
+  .ambassador-hero__inner p br,
+  .ambassador-benefit__content h2 br {
+    display: none;
+  }
+
+  .ambassador-team__img-text,
+  .ambassador-benefit {
+    grid-template-columns: 1fr;
+  }
+
+  .ambassador-team__img-text img,
+  .ambassador-benefit.left-img img {
+    order: 2;
+  }
+
+  .ambassador-benefit__content h4 {
+    margin-bottom: 15px;
+  }
+
+  .ambassador-benefit__content h2:before {
+    top: 9px;
+  }
+}
+
