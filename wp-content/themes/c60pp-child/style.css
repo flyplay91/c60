@@ -3520,6 +3520,50 @@ body.single-product .qib-button.qib-button-wrapper {
   transform: scale(1.2);
 }
 
+.post-block .post-pagination {
+  border-top: 1px solid var(--color-line);
+  padding: 40px 10px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--color-line);
+}
+
+.post-block .post-pagination p {
+  margin: 0;
+  position: relative;
+}
+
+.post-block .post-pagination p:before {
+  content: '';
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 12px;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.post-block .post-pagination p:first-child {
+  padding-left: 30px;
+}
+
+.post-block .post-pagination p:last-child {
+  padding-right: 30px;
+}
+
+.post-block .post-pagination p:first-child:before {
+  background-image: url('assets/images/long-left-arrow.png');
+  left: 0;
+}
+
+.post-block .post-pagination p:last-child:before {
+  background-image: url('assets/images/long-right-arrow.png');
+  right: 0;
+}
+
 .post-block .post-privacy {
   background-color: var(--color-light-pink);
   margin-top: 100px;

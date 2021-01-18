@@ -56,7 +56,8 @@ get_header();
             endif; ?>
 
             <div class="post-pagination">
-                
+            <p><?php previous_post_link('%link', "Previous Post"); ?></p>
+            <p><?php next_post_link('%link', "Next Post"); ?></p>
             </div>
         </div>
 
