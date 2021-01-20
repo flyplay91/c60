@@ -786,6 +786,20 @@ button:focus {
 .product-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.product-items:after {
+  content: '';
+  background-image: url('assets/images/sale_banner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  right: -35px;
+  top: -50px;
 }
 
 .product-item {
