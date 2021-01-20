@@ -1711,6 +1711,10 @@ button:focus {
     text-align: center;
   }
 
+  .product-items:after {
+    right: -15px;
+  }
+
   .home-seen__imgs {
     grid-template-columns: repeat(4, 1fr);
   }
