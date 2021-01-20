@@ -106,6 +106,8 @@ Text Domain: c60pp-child
   --color-green: #095D37;
   --color-black: #000000;
   --color-input-bg: #FAFAFA;
+  --color-light-grey: #DDEDE6;
+  --color-dark-purple: #360254;
 }
 
 body {
@@ -623,6 +625,114 @@ button:focus {
   color: var(--color-white);
 }
 
+.home-what-c60 {
+  background-color: var(--color-light-pink);
+  padding: 50px 0;
+}
+
+.home-what-c60__inner h1 {
+  color: var(--color-pink);
+  text-align: center;
+  font-size: 50px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.home-what-c60__img-text {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.home-what-c60__img h3 {
+  font-size: 30px;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  margin-bottom: 20px;
+}
+
+.home-what-c60__img p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+}
+
+.home-why-c60 {
+  margin-top: 50px;
+}
+
+.home-why-c60__img-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.home-why-c60__text h2 {
+  color: var(--color-pink);
+  font-size: 50px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.home-why-c60__text h3 {
+  color: var(--color-light-black);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 22px;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+
+.home-why-c60__text p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.home-why-c60__items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  align-items: center;
+  margin-top: -70px;
+  background-color: var(--color-light-pink);
+  padding: 40px 20px;
+  z-index: 1;
+  position: relative;
+  margin-right: 50px;
+}
+
+.home-why-c60__item {
+  text-align: center;
+  border-right: solid 1px rgb(107 44 144 / 0.15);
+  padding: 20px 15px 20px 0;
+}
+
+.home-why-c60__item:last-child {
+  border: none;
+}
+
+.home-why-c60__item img {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.home-why-c60__item label {
+  display: block;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.home-why-c60__item span {
+  display: block;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 5px; 
+}
+
 .home-seen {
   padding-top: 30px;
 }
@@ -634,7 +744,7 @@ button:focus {
 .home-seen__title {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 40px;
-  line-height: 60px;
+  line-height: 1.2;
   text-align: center;
   color: var(--color-pink);
 }
@@ -643,7 +753,7 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
   grid-gap: 10px;
 }
 
@@ -668,380 +778,450 @@ button:focus {
   transform: scale(1.01);
 }
 
-.home-product {
-  padding: 50px 0;
-}
-
-.home-product__title {
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 40px;
-  line-height: 60px;
-  text-align: center;
-  color: var(--color-pink);
-}
-
-.home-product__sub_heading {
-  font-family: 'NeurialGrotesk-Regular';
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--color-text);
-  margin-bottom: 15px;
-}
-
-.home-product__items {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.home-product__items .home-product__items-item:nth-child(2) .home-product-title-des > a,
-.home-product__items .home-product__items-item:last-child .home-product-title-des > a {
-  max-width: 37%;
-}
-
-.home-product__items-item {
-  min-height: 300px;
-  background-color: var(--color-light-pink);
-  border-radius: 25px;
-  padding: 15px;
-  position: relative;
-}
-
-.home-product-title-des {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.home-product-title-des > a {
-  margin: -60px auto 0;
-  display: block;
-}
-
-.home-product-title > label > a {
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 16px;
-  color: var(--color-text);
-  line-height: 1.4;
-}
-
-.home-product-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.home-product-content-left {
-  width: 49%;
-}
-
-.home-product-content-left > img {
-  height: 20px;
-}
-
-.home-product-content-left > a > span {
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 14px;
-  color: var(--color-pink);
-  display: flex;
-  align-items: center;
-}
-
-.home-product-content-left > a > span:before {
-  content: '';
-  background-image: url('assets/images/starting-at-line.png');
-  background-repeat: no-repeat;
-  width: 45px;
-  height: 2px;
-  display: block;
-  margin-right: 5px;
-}
-
-.home-product-content-right {
-  width: 49%;
-}
-
-.home-product-select-btn > label {
-  color: var(--color-pink);
-  font-size: 14px;
-  font-family: 'NeurialGrotesk-Bold';
-  text-align: center;
-  border: solid 2px var(--color-pink);
-  border-radius: 20px;
-  padding: 15px 20px;
-  margin-top: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.home-product-select-btn:hover > label:before {
-  transform: rotate(180deg);
-}
-
-.home-product-select-btn label:hover {
-  transition: .2s;
-  transform: scale(1.01);
-}
-
-.home-product-select-btn > label:before {
-  background-image: url('assets/images/down-arrow.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 15px;
-  height: 8px;
-  content: '';
-  margin-top: 3px;
-  display: block;
-}
-
-.home-product-cart {
-  z-index: 1;
-}
-
-.home-cart-block {
-  left: 50%;
-  transform: translateX(-50%);
-  width: 450px;
-  bottom: -198px;
-  display: none;
-  position: absolute;
-  background-color: var(--color-dark-pink);
-  padding: 0 20px;
-  border-radius: 15px;
-  z-index: 1;
-}
-
-.home-cart-block:before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 20px 15px 20px;
-  border-color: transparent transparent var(--color-dark-pink) transparent;
-  display: block;
-  position: absolute;
-  top: -15px;
-  right: 21%;
-}
-
-.home-cart-item {
-  display: grid;
-  grid-template-columns: 5fr 3fr 3fr;
-  align-content: center;
-  grid-gap: 7px;
-  margin: 15px 0;
-  align-items: center;
-}
-
-.home-cart-item label {
-  color: var(--color-white);
-  font-size: 14px;
-  font-family: 'NeurialGrotesk-Regular';
-  margin-right: 20px;
-}
-
-.home-product-cart-btn {
-  color: var(--color-white);
-  border: solid 1px var(--color-white);
-  padding: 7px 15px;
-  border-radius: 16px;
-  font-size: 14px;
-  font-family: 'NeurialGrotesk-Regular';
-  text-align: center;
-}
-
-.home-product-cart-btn:hover {
-  background-color: var(--color-white);
-  color: var(--color-dark-pink);
-}
-
-.home-product-select-btn:hover .home-cart-block {
-  display: block;
-}
-
-.home-why {
-  padding: 75px 0 70px;
-}
-
-.home-why__subtitle {
-  font-family: 'NeurialGrotesk-Regular';
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--color-light-black);
-  margin-bottom: 25px;
-}
-
-.home-why__title {
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 40px;
-  line-height: 60px;
-  text-align: center;
-  color: var(--color-pink);
-}
-
-.home-why__block {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 15px;
-  align-items: center;
+/*  */
+.home-products {
   margin-top: 50px;
 }
 
-.home-why__block-item {
-  text-align: center;
+.product-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.home-why__block-item:hover {
+.product-item {
+  background-color: var(--color-light-pink);
+  padding: 30px 30px 60px;
+}
+
+.product-item.product-item--1 {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.product-item.product-item--3 {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.product-item.product-item--1 > img {
+  max-width: 213px;
+}
+
+.product-item.product-item--2 > img {
+  max-width: 225px;
+}
+
+.product-item.product-item--3 > img {
+  max-width: 210px;
+}
+
+.product-item > img {
+  margin: -70px auto 0;
+}
+
+.product-item label {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+  color: var(--color-text);
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-rating-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.product-rating-price img {
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+.product-rating-price span {
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+}
+
+.btn-home-product {
+  background-color: var(--color-dark-pink);
+  color: var(--color-white);
+  padding: 20px;
+  display: block;
+  max-width: 350px;
+  margin: -30px auto 0;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.btn-home-product:hover {
   transition: .02s;
   transform: scale(1.01);
 }
 
-.home-why__block-item > img {
-  height: 50px;
-  margin: 0 auto;
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
 }
 
-.home-why__block-item label {
+.tabset .tab-panel {
+  display: none;
+}
+
+.tab-panels {
+  margin-top: 70px;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
   display: block;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  margin: 0 100px;
+  cursor: pointer;
   color: var(--color-pink);
+  font-size: 36px;
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 18px;
-  margin-top: 10px;
+  border-bottom: 7px solid var(--color-white);
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
-.home-why__block-item span {
-  display: block;
-  color: var(--color-pink);
-  font-family: 'NeurialGrotesk-Regular';
-  font-size: 14px;
-  line-height: 1.2;
-  margin-top: 5px;
+.tabset > label:hover,
+.tabset > input:focus + label {
+  transition: .02s;
+  transform: scale(1.01);
+  border-bottom: solid 7px var(--color-pink);
 }
+
+.tabset > input:checked + label {
+  border-bottom: 7px solid var(--color-pink);
+}
+
+.tab-panel {
+  padding: 30px 0;
+}
+.tabset {
+  max-width: 65em;
+  text-align: center;
+}
+/*  */
 
 .home-benefits {
-  padding: 75px 0 70px;
+  margin-top: 30px;
 }
 
-.home-benefits__subtitle {
-  font-family: 'NeurialGrotesk-Regular';
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--color-light-black);
-  margin-bottom: 25px;
+.home-benefits__inner > img {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .home-benefits__title {
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 40px;
+  font-size: 50px;
   line-height: 60px;
   text-align: center;
   color: var(--color-pink);
+  margin-top: 30px;
 }
 
-.home-benefits__des {
-  font-family: 'NeurialGrotesk-Regular';
-  color: var(--color-pink);
-  font-size: 18px;
-  max-width: 1126px;
-  margin: 50px auto;
-  padding: 0 15px;
-  text-align: center;
-}
-
-.home-health__type {
+.home-benefits__items {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 15px;
-  padding: 0 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
 }
 
-.home-health__type-item:nth-child(2n) {
-  margin-top: 100px;
+.home-benefits__item--img-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
 }
 
-.home-health__type-item img:hover {
+.home-benefits__item--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home-benefits__item--text h3 {
+  font-size: 28px;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  margin-bottom: 20px;
+}
+
+.home-benefits__item--text p {
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.home-benefits__item--text a {
+  background-color: var(--color-dark-pink);
+  color: var(--color-white);
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 17px 0;
+  max-width: 250px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+}
+
+.home-benefits__item--text a:hover {
   transition: .02s;
   transform: scale(1.01);
 }
 
-.home-pets {
-  padding: 75px 0 70px;
+.home-cfo {
+  background-color: var(--color-light-pink);
+  margin-top: 50px;
+  padding: 20px 0;
 }
 
-.home-pets__subtitle {
-  font-family: 'NeurialGrotesk-Regular';
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--color-light-black);
-  margin-bottom: 25px;
-}
-
-.home-pets__title {
-  text-align: center;
-}
-
-.home-pets__title a {
+.home-cfo__inner h4 {
+  font-size: 32px;
+  color: var(--color-text);
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 40px;
-  line-height: 60px;
+  margin-bottom: 20px;
   text-align: center;
-  color: var(--color-pink);
 }
 
-.home-pets__block {
+.home-cfo__img-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.home-cfo__img-position img {
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.home-cfo__position label {
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-text);
+  font-size: 28px;
+}
+
+.home-cfo__position span {
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+}
+
+.home-new-product {
+  margin-top: 50px;
+}
+
+.home-new-product__inner > label {
+  color: var(--color-pink);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.home-new-product__img-text {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15px;
-  margin-top: 25px;
+  grid-gap: 50px;
 }
 
-.home-pets__block-left p {
+.home-new-product__text h3 {
+  font-size: 34px;
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Bold';
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.home-new-product__text p {
+  color: var(--color-text);
   font-family: 'NeurialGrotesk-Regular';
-  color: var(--color-pink);
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 1.4;
 }
 
-.home-pets__block-left a {
+.home-new-product__text a {
   background-color: var(--color-pink);
-  font-size: 18px;
-  padding: 20px 40px;
   color: var(--color-white);
   display: inline-block;
-  margin-top: 50px;
-  font-family: 'NeurialGrotesk-Medium';
+  margin-top: 30px;
+  padding: 15px 60px;
+  font-size: 22px;
+  border-radius: 25px;
+  font-family: 'NeurialGrotesk-Regular';
 }
 
-.home-pets__block-left a:hover {
-  transition: .2s;
+.home-new-product__text a:hover {
+  transition: .02s;
   transform: scale(1.01);
 }
 
+.home-cfo-bottom-banner {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: var(--color-light-pink);
+}
+
+.home-cfo-bottom-banner__text {
+  padding: 0 100px;
+}
+
+.home-cfo-bottom-banner__text h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-dark-purple);
+  font-family: 'NeurialGrotesk-Bold';
+  margin-bottom: 50px;
+}
+
+.home-cfo-bottom-banner__text label {
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-light-black);
+  font-size: 28px;
+}
+
+.home-cfo-bottom-banner__text span {
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+}
+
+.home-lives {
+  margin-top: 50px;
+}
+
+.home-lives__inner > h2 {
+  font-size: 50px;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  text-align: center;
+}
+
+.home-lives__items {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-lives__item {
+  padding: 60px 40px 30px;
+  width: 48%;
+  position: relative;
+}
+
+.home-lives__item:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  border-right: 50px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: none;
+}
+
+.home-lives__item.lives-item--1 {
+  margin-bottom: 200px;
+  background-color: var(--color-light-pink);
+  margin-left: 80px;
+}
+
+.home-lives__item.lives-item--1:after,
+.home-lives__item.lives-item--4:after {
+  border-top: 50px solid var(--color-light-pink);
+}
+
+.home-lives__item.lives-item--2:after,
+.home-lives__item.lives-item--3:after {
+  border-top: 50px solid var(--color-light-grey);
+}
+
+.home-lives__item.lives-item--2 {
+  margin-right: -80px;
+  margin-bottom: 200px;
+  background-color: var(--color-light-grey);
+}
+
+.home-lives__item.lives-item--3 {
+  margin-left: -80px;
+  background-color: var(--color-light-grey);
+}
+
+.home-lives__item.lives-item--4 {
+  margin-right: 80px;
+  background-color: var(--color-light-pink);
+}
+
+
+
+.home-lives__item > img {
+  max-height: 250px;
+  margin: -200px auto 0;
+}
+
+.home-lives__item h4 {
+  color: var(--color-text);
+  text-align: center;
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 28px;
+}
+
+.home-lives__item p {
+  color: var(--color-pink);
+  text-align: center;
+  font-size: 18px;
+  font-family: 'NeurialGrotesk-Regular';
+  margin-top: 10px;
+}
+
+.lives__item-star-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.lives__item-star-user img {
+  height: 22px;
+  margin-right: 10px;
+}
+
+.lives__item-star-user label {
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-light-black);
+  font-size: 18px;
+}
+
 .home-more {
-  padding: 50px 0;
+  margin-top: 100px;
 }
 
 .home-more__title {
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 40px;
+  font-size: 50px;
   line-height: 60px;
   text-align: center;
   color: var(--color-pink);
@@ -1058,9 +1238,9 @@ button:focus {
   background-size: cover;
   background-position: center;
   margin: 0 10px;
-  border-radius: 10px;
   position: relative;
-  min-height: 220px;
+  min-height: 250px;
+  border: solid 5px var(--color-pink);
 }
 
 .home-blog__block-item:hover {
@@ -1105,12 +1285,6 @@ button:focus {
   display: none;
 }
 
-@media(max-width: 1440px) {
-  .home-product {
-    padding: 50px 0 0 0;
-  }
-}
-
 @media(max-width: 1024px) {
   .home-hero__carousel {
     height: 450px;
@@ -1132,32 +1306,105 @@ button:focus {
     padding-top: 0;
   }
 
-  .home-product {
-    padding: 30px 0 0 0;
+  .home-what-c60 {
+    padding: 20px 0;
   }
 
-  .home-why {
-    padding: 30px 0;
+  .home-what-c60__inner h1,
+  .home-why-c60__text h2,
+  .home-benefits__title,
+  .home-lives__inner > h2 {
+    font-size: 40px;
+  }
+
+  .home-what-c60__img h3 {
+    font-size: 26px;
+  }
+
+  .home-why-c60__text h3 {
+    font-size: 18px;
+  }
+
+  .home-why-c60__text p {
+    font-size: 15px;
+  }
+
+  .home-why-c60__items {
+    margin-right: 20px;
+  }
+
+  .home-seen__title {
+    font-size: 36px;
+  }
+
+  .home-benefits__item--text h3 {
+    font-size: 24px;
+  }
+
+  .home-cfo__inner h4 {
+    font-size: 28px;
+  }
+
+  .home-new-product__inner > label {
+    font-size: 28px;
+  }
+
+  .home-new-product__text h3 {
+    font-size: 30px;
+  }
+
+  .home-new-product__text p {
+    font-size: 20px;
+  }
+
+  .tabset > label {
+    font-size: 30px;
+  }
+
+  .tab-panels {
+    margin-top: 50px;
+  }
+
+  .product-rating-price img {
+    max-width: 120px;
+    margin-right: 10px;
   }
 
   .home-benefits {
-    padding: 30px 0;
+    margin-top: 0;
   }
 
-  .home-health__type-item:nth-child(2n) {
-    margin-top: 60px;
+  .home-lives__inner {
+    padding: 25px 50px;
   }
 
-  .home-pets {
-    padding: 30px 0;
+  .home-lives__item.lives-item--1 {
+    margin-left: 30px;
+  }
+
+  .home-lives__item.lives-item--2 {
+    margin-right: -30px;
+  }
+
+  .home-lives__item.lives-item--3 {
+    margin-left: -30px;
+  }
+
+  .home-lives__item.lives-item--4 {
+    margin-right: 30px;
+  }
+
+  .home-cfo-bottom-banner__text h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .home-more {
-    padding: 30px 0;
+    margin-top: 50px;
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
   .home-hero__inner {
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1165,36 +1412,82 @@ button:focus {
     text-align: center;
   }
 
-  .home-product__items {
-    grid-template-columns: repeat(1, 1fr);
+  .home-what-c60__img-text {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .home-product__items-item {
-    width: 500px;
-    margin: 0 auto 50px;
+  .home-what-c60__img-text > img {
+    display: none;
   }
 
-  .home-why__block {
-    grid-template-columns: repeat(3, 1fr);
+  .home-what-c60__inner h1, .home-why-c60__text h2, .home-benefits__title, .home-lives__inner > h2, .home-more__title {
+    font-size: 34px;
   }
 
-  .home-why__block-item {
-    margin-bottom: 30px;
+  .home-what-c60__img h3 {
+    font-size: 22px;
   }
 
-  .home-health__type {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+  .home-why-c60__items {
+    margin-top: 20px;
+    margin-right: 0;
   }
 
-  .home-health__type-item:nth-child(2n) {
-    margin-top: 0;
+  .tabset > label {
+    margin: 0 30px;
   }
 
-  
+  .product-item.product-item--1 > img {
+    max-width: 150px;
+  }
+
+  .product-item.product-item--2 > img {
+    max-width: 155px;
+  }
+
+  .product-item.product-item--3 > img {
+    max-width: 150px;
+  }
+
+  .product-rating-price img {
+    max-width: 85px;
+    margin-right: 5px;
+  }
+
+  .product-rating-price span {
+    font-size: 14px;
+  }
+
+  .btn-home-product {
+    padding: 15px;
+    max-width: 250px;
+  }
+
+  .home-benefits__inner > img {
+    max-width: 250px;
+  }
+
+  .home-benefits__items {
+    grid-template-columns: 1fr;
+  }
+
+  .home-cfo-bottom-banner {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+  }
+
+  .home-cfo-bottom-banner__img > img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .home-cfo-bottom-banner__text {
+    padding: 50px;
+  }
 }
 
 @media(max-width: 767px) {
+
   .header-menu {
     display: none;
   }
@@ -1328,25 +1621,88 @@ button:focus {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .home-what-c60__img-text,
+  .home-why-c60__img-text,
+  .home-why-c60__items,
+  .product-items,
+  .home-benefits__item--img-text,
+  .home-new-product__img-text {
+    grid-template-columns: 1fr;
+  }
+
+  .product-item.product-item--1 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+  }
+
+  .product-rating-price img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+
+  .product-rating-price span,
+  .home-why-c60__text p {
+    font-size: 18px;
+  }
+
+  .product-item.product-item--3 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+
+  .home-why-c60__item {
+    border-right: none;
+    border-bottom: solid 1px rgb(107 44 144 / 0.15);
+  }
+
+  .home-cfo__inner h4 {
+    font-size: 24px;
+  }
+
+  .home-cfo__inner h4 br {
+    display: none;
+  }
+
+  .home-lives__item {
+    width: 100%;
+  }
+
+  .home-lives__item.lives-item--1,
+  .home-lives__item.lives-item--2,
+  .home-lives__item.lives-item--3,
+  .home-lives__item.lives-item--4 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home-lives__item.lives-item--1,
+  .home-lives__item.lives-item--2,
+  .home-lives__item.lives-item--3 {
+    margin-bottom: 200px;
+  }
+
+  .home-benefits__item--text a {
+    max-width: 100%;
+    margin: 30px auto 0;
+    width: 80%;
+  }
+
+  .home-benefits__item--text h3,
+  .home-benefits__item--text p,
+  .home-what-c60__inner h1, .home-why-c60__text h2, .home-benefits__title, .home-lives__inner > h2, .home-more__title,
+  .home-what-c60__img h3,
+  .home-what-c60__img p,
+  .home-why-c60__text h3,
+  .home-why-c60__text p {
+    text-align: center;
+  }
+
   .home-seen__imgs {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media(max-width: 500px) {
-  .home-product__items-item {
-    width: 350px;
-  }
-
-  .home-pets__block {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .home-pets__block-left {
-    order: 2;
-    text-align: center;
-  }
-
   .header-top-social li {
     display: none;
   }
@@ -1369,34 +1725,9 @@ button:focus {
   }
 
   .home-seen__title,
-  .home-product__title,
-  .home-why__title,
-  .home-benefits__title,
-  .home-pets__title a,
   .home-more__title {
     font-size: 30px;
     line-height: 40px;
-  }
-
-  .home-why__subtitle,
-  .home-benefits__subtitle,
-  .home-pets__subtitle {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 15px;
-  }
-
-  .home-why__block {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .home-health__type {
-    padding: 0 15px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .home-pets__block-left a {
-    font-size: 16px;
   }
 }
 
@@ -2212,12 +2543,6 @@ body.single-product .qib-button.qib-button-wrapper {
   .woocommerce-product-gallery img {
     width: 350px;
     margin: 0 auto;
-  }
-
-  .home-product__sub_heading {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 15px;
   }
 }
 
