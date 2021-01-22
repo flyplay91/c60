@@ -3,6 +3,8 @@ Thumbs.db
 wp-config.php
 wp-content/uploads/
 wp-content/upgrade/*
+wp-content/updraft/*
+wp-content/themes/c60pp/konnektive-import-errors.log
 wp-content/advacned-cache.php
 wp-content/cache/*
 wp-content/mu-plugins/
