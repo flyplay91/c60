@@ -23,7 +23,7 @@ get_header();
         $hero_content = $about_hero_group['hero_content'];
         while ( have_rows('about_hero_group')): the_row(); ?>
             <section class="about-hero">
-                <div class="about-hero__inner inner-section-1440">
+                <div class="about-hero__inner inner-section-1366">
                     <img class="about-hero-bg-img" src="<?php echo $hero_background_image_url ?>" alt="<?php echo $hero_background_image_alt ?>">
                     <h1><?php echo $hero_heading ?></h1>
                     <div class="about-hero-content">
@@ -50,7 +50,7 @@ get_header();
         while ( have_rows('about_team_group')): the_row(); ?>
             <section class="about-team">
                 <div class="about-team-ceo">
-                    <div class="about-team-ceo__inner inner-section-1440">
+                    <div class="about-team-ceo__inner inner-section-1366">
                         <h1><?php echo $team_heading ?></h1>
                         <img src="<?php echo $team_down_arrow_image_url ?>" alt="<?php echo $team_down_arrow_image_alt ?>">
                         <div class="team-ceo-img-text">
@@ -61,7 +61,7 @@ get_header();
                     </div>
                 </div>
 
-                <div class="about-team__inner inner-section-1440">
+                <div class="about-team__inner inner-section-1366">
                     <div class="about-team-items">
                         <?php if( have_rows('team_member_repeater') ) :
                             while( have_rows('team_member_repeater') ) : the_row();

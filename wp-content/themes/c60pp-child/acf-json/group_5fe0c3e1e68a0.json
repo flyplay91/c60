@@ -112,6 +112,21 @@
                                 "id": ""
                             },
                             "return_format": "url"
+                        },
+                        {
+                            "key": "field_600b0f0c2dfde",
+                            "label": "Learn More Button Link",
+                            "name": "learn_more_button_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
                         }
                     ]
                 }
@@ -1506,5 +1521,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1611151655
+    "modified": 1611337502
 }

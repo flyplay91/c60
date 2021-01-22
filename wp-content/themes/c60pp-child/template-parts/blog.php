@@ -13,7 +13,7 @@ get_header();
 
 <main class="blog-page">
     <section class="blog-post-list">
-        <div class="blog-post-list__inner inner-section-1440">
+        <div class="blog-post-list__inner inner-section-1366">
             <?php
                 $attachments = get_posts( array(
                     'post_type'      => 'post',

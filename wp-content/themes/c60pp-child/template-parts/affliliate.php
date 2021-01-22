@@ -123,7 +123,7 @@ get_header();
         $form_image_alt = $affiliate_form_group['form_image']['alt'];
         while ( have_rows('affiliate_form_group')): the_row(); ?>
             <section class="affiliate-form">
-                <div class="affiliate-form__inner inner-section-1440">
+                <div class="affiliate-form__inner inner-section-1366">
                     <h2><?php echo $form_heading ?></h2>
                     <h4><?php echo $form_sub_heading ?></h4>
                     <div class="affiliate-form__block">

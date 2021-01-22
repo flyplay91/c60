@@ -27,6 +27,7 @@ get_header();
                     $title = get_sub_field('title');
                     $subtitle = get_sub_field('subtitle');
                     $shop_btn_link = get_sub_field('shop_button_link');
+                    $learn_more_btn_link = get_sub_field('learn_more_button_link');
                 ?>
                     <div class="home-hero__carousel" style="background-image: url(<?php echo $img_url ?>)">
                         <div class="home-hero__inner">
@@ -34,7 +35,7 @@ get_header();
                             <h4 class="home-hero__subtitle"><?php echo $subtitle ?></h4>
                             <div class="home-hero__btns">
                                 <a href="<?php echo $shop_btn_link ?>" class="home-hero-btn-shop">Shop Now</a>
-                                <a href="javascript: void(0)" class="home-hero-btn-more">Learn More</a>
+                                <a href="<?php echo $learn_more_btn_link ?>" class="home-hero-btn-more">Learn More</a>
                             </div>
                         </div>
                     </div>        
@@ -82,7 +83,7 @@ get_header();
         $why_c60_image_alt = $home_why_c60_group['why_c60_image']['alt'];
         while ( have_rows('home_why_c60')): the_row(); ?>
             <section class="home-why-c60">
-                <div class="home-why-c60__inner inner-section-1440">
+                <div class="home-why-c60__inner inner-section-1366">
                     <div class="home-why-c60__img-text">
                         <div class="home-why-c60__text">
                             <h2><?php echo $why_c60_heading ?></h2>
@@ -218,7 +219,7 @@ get_header();
         $benefits_title = $benefits_group['title'];
         while ( have_rows('home_benefits')): the_row(); ?>
         <section class="home-benefits">
-            <div class="home-benefits__inner inner-section-1440">
+            <div class="home-benefits__inner inner-section-1366">
                 <img src="<?php echo $benefits_logo_url ?>" alt="<?php echo $benefits_logo_alt ?>">
                 <h2 class="home-benefits__title"><?php echo $benefits_title ?></h2>
                 <div class="home-benefits__items">

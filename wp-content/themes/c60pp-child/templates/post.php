@@ -12,7 +12,7 @@ get_header();
 ?>
 
 <main class="post-page">
-    <div class="post-page__inner inner-section-1440">
+    <div class="post-page__inner inner-section-1366">
         <div class="post-block">
             <div class="post-breadcrumb">
 				<nav class="woocommerce-breadcrumb">

@@ -33,7 +33,7 @@ if ( post_password_required() ) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'product-block', $product ); ?>>
 	<div class="product-image-summary">
-		<div class="inner-section-1440 product-image-summary__inner">
+		<div class="inner-section-1366 product-image-summary__inner">
 			<?php
 			/**
 			 * Hook: woocommerce_before_single_product_summary.
