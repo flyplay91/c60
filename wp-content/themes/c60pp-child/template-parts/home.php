@@ -162,14 +162,18 @@ get_header();
                                         while( have_rows('products_first_repeater') ) : the_row();
                                         $product_image_url = get_sub_field('product_image')['url'];
                                         $product_image_alt = get_sub_field('product_image')['alt'];
+                                        $product_url = get_sub_field('product_link');
                                         $product_title = get_sub_field('product_title');
                                         $product_star_image_url = get_sub_field('product_star_image')['url'];
                                         $product_star_image_alt = get_sub_field('product_star_image')['alt'];
                                         $product_price = get_sub_field('product_price');
+                                        $product_sale = get_sub_field('is_sale');
                                     ?>
-                                        <div class="product-item product-item--<?php echo get_row_index() ?>">
-                                            <img src="<?php echo $product_image_url ?>" alt="<?php echo $product_image_alt ?>">
-                                            <label><?php echo $product_title ?></label>
+                                        <div class="product-item product-item--<?php echo get_row_index() ?> <?php if ($product_sale == 'yes') { echo 'product-item--sale'; } ?>">
+                                            <a href="<?php echo $product_url ?>">
+                                                <img src="<?php echo $product_image_url ?>" alt="<?php echo $product_image_alt ?>">
+                                                <label><?php echo $product_title ?></label>
+                                            </a>
                                             <div class="product-rating-price">
                                                 <img src="<?php echo $product_star_image_url ?>" alt="<?php echo $product_star_image_alt ?>">
                                                 <span><?php echo $product_price ?></span>
@@ -186,15 +190,18 @@ get_header();
                                         while( have_rows('products_second_repeater') ) : the_row();
                                         $product_image_url = get_sub_field('product_image')['url'];
                                         $product_image_alt = get_sub_field('product_image')['alt'];
+                                        $product_url = get_sub_field('product_link');
                                         $product_title = get_sub_field('product_title');
                                         $product_star_image_url = get_sub_field('product_star_image')['url'];
                                         $product_star_image_alt = get_sub_field('product_star_image')['alt'];
                                         $product_price = get_sub_field('product_price');
-                                        
+                                        $product_sale = get_sub_field('is_sale');
                                     ?>
-                                        <div class="product-item product-item--<?php echo get_row_index() ?>">
-                                            <img src="<?php echo $product_image_url ?>" alt="<?php echo $product_image_alt ?>">
-                                            <label><?php echo $product_title ?></label>
+                                        <div class="product-item product-item--<?php echo get_row_index() ?> <?php if ($product_sale == 'yes') { echo 'product-item--sale'; } ?>">
+                                            <a href="<?php echo $product_url ?>">
+                                                <img src="<?php echo $product_image_url ?>" alt="<?php echo $product_image_alt ?>">
+                                                <label><?php echo $product_title ?></label>
+                                            </a>
                                             <div class="product-rating-price">
                                                 <img src="<?php echo $product_star_image_url ?>" alt="<?php echo $product_star_image_alt ?>">
                                                 <span><?php echo $product_price ?></span>
