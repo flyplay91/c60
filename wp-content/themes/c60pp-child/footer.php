@@ -40,7 +40,7 @@
 	$contact_email = $contact_group['contact_email'];
 ?>
 		<footer class="site-footer">
-			<div class="footer__inner inner-section-1366">
+			<div class="footer__inner inner-section-1220">
 				
 				<div class="footer-newsletter">
 					<img src="<?php echo $newsleeter_img_url ?>" alt="<?php echo $newsleeter_img_alt ?>">
