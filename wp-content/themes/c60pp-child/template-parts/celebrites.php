@@ -24,7 +24,7 @@ get_header();
         
         while ( have_rows('celebrities_hero_group')): the_row(); ?>
             <section class="celebrities-hero">
-                <div class="celebrities-hero__inner inner-section-1440">
+                <div class="celebrities-hero__inner inner-section-1366">
                     <div class="celebrities-hero__heading">
                         <h1><?php echo $hero_heading ?></h1>
                         <p><?php echo $hero_description ?></p>

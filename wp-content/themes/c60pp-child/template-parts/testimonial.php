@@ -23,7 +23,7 @@ get_header();
         $hero_down_arrow_img_alt = $testimonial_hero_group['hero_down_arrow']['alt'];
         while ( have_rows('testimonial_hero_group')): the_row(); ?>
             <section class="testimonial-hero">
-                <div class="testimonial-hero__inner inner-section-1440">
+                <div class="testimonial-hero__inner inner-section-1366">
                     <div class="testimonial-hero__content">
                         <h1><?php echo $hero_heading ?></h1>
                         <p><?php echo $hero_sub_heading ?></p>

@@ -152,7 +152,7 @@ get_header();
 	?>
 		<?php while ( have_rows('shop_more_group')): the_row(); ?>
 			<section class="shop__blog">
-				<div class="shop__blog__inner inner-section-1440">
+				<div class="shop__blog__inner inner-section-1366">
 					<h2><?php echo $shop_more_heading ?></h2>
 					<?php echo do_shortcode($shop_more_shortcode); ?>
 				</div>

@@ -77,7 +77,7 @@ get_header();
     <?php if( have_rows('wholesale_accordion_group')) : ?>
 		<?php while ( have_rows('wholesale_accordion_group')): the_row(); ?>
 			<section class="wholesale-accordion">
-				<div class="wholesale-accordion__inner inner-section-1440">
+				<div class="wholesale-accordion__inner inner-section-1366">
 					<?php if( have_rows('accordion_repeater') ) :
 						while( have_rows('accordion_repeater') ) : the_row();
 						$accordion_title = get_sub_field('accordion_title');
@@ -116,7 +116,7 @@ get_header();
         while ( have_rows('wholesale_form_group')): the_row(); ?>
             <section class="wholesale-form">
                 <h2><?php echo $form_heading ?></h2>
-                <div class="wholesale-form__inner inner-section-1440">
+                <div class="wholesale-form__inner inner-section-1366">
                     <div class="wholesale-form-block">
                         <?php echo do_shortcode($form_shortcode); ?>
                     </div>

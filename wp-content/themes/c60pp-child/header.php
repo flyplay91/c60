@@ -51,16 +51,13 @@
 
 		<header class="site-header">
 			<div class="header-top">
-				<div class="inner-section-1440 header-top__inner">
+				<div class="inner-section-1366 header-top__inner">
 					<?php if ($phone_number) : ?>
 						<div class="header-top-mobile">
 							<a href="tel:<?php echo $phone_number ?>"><?php echo $phone_number ?></a>
 						</div>
 					<?php endif; ?>
 					<ul class="header-top-social">
-						<li class="header-top-account">
-							<a href="/my-account">My Account</a>
-						</li>
 						<?php if ($instagram_link) : ?>
 							<li class="header-instagram">
 								<a href="<?php echo $instagram_link ?>" target="_blank">
@@ -113,7 +110,7 @@
 			</div>
 
 			<div class="header-bottom">
-				<div class="inner-section-1440 header-bottom__inner">
+				<div class="inner-section-1366 header-bottom__inner">
 					<div class="header-logo">
 						<a href="/">
 							<img src="<?php echo $logo_img ?>" alt="<?php echo $logo_alt ?>">

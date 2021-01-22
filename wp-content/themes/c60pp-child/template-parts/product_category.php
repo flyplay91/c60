@@ -116,7 +116,7 @@ get_header();
 		?>
 			<?php while ( have_rows('category_more_group')): the_row(); ?>
 				<section class="category__blog">
-					<div class="category__blog__inner inner-section-1440">
+					<div class="category__blog__inner inner-section-1366">
 						<h2><?php echo $category_more_heading ?></h2>
 						<?php echo do_shortcode($category_more_shortcode); ?>
 					</div>
