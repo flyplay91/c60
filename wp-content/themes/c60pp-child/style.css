@@ -3363,8 +3363,8 @@ body.single-product .qib-button.qib-button-wrapper {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 22px;
   line-height: 35px;
-  display: flex;
-  align-items: center;
+  padding-left: 20px;
+  position: relative;
 }
 
 .why-c60-mission__inner ul li:before {
@@ -3374,7 +3374,9 @@ body.single-product .qib-button.qib-button-wrapper {
   background-color: white;
   display: block;
   border-radius: 50%;
-  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 13px;
 }
 
 .why-c60-team {
@@ -6886,5 +6888,219 @@ body.single-product .qib-button.qib-button-wrapper {
 
   .blog-collection-bottom {
     height: 450px;
+  }
+}
+
+/* =========== Healthy page =========== */
+.healthy-hero {
+  margin-top: 50px;
+}
+
+.healthy-hero__inner label {
+  font-family: 'NeurialGrotesk-Bold';
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-size: 16px;
+}
+
+.healthy-hero__img-text {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 50px;
+}
+
+.healthy-hero__text h2 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-dark-pink);
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.healthy-hero__text ul {
+  margin-bottom: 30px;
+}
+
+.healthy-hero__text ul li {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+    line-height: 1.7;
+  padding-left: 20px;
+  position: relative;
+}
+
+.healthy-hero__text ul li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-light-pink);
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+
+.healthy-hero__img-text img {
+  border-radius: 10px;
+}
+
+.healthy-hero__inner > p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.healthy-way {
+  margin-top: 50px;
+}
+
+.healthy-way__img-text {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-gap: 50px;
+}
+
+.healthy-way__img-text img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.healthy-way__text h2 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-dark-pink);
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.healthy-way__text p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.healthy-way__summary {
+  margin-top: 50px;
+}
+
+.healthy-way__summary h3 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 36px;
+  color: var(--color-pink);
+  margin-bottom: 30px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.healthy-way__summary p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--color-text);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.healthy-video {
+  margin-top: 50px;
+}
+
+.healthy-video__inner h2 {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 57px;
+  color: var(--color-dark-pink);
+  margin-bottom: 30px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.healthy-video__inner > a {
+  display: block;
+  max-width: 250px;
+  background-color: var(--color-dark-pink);
+  color: var(--color-white);
+  text-align: center;
+  margin: 40px auto 60px;
+  padding: 20px 0;
+  border-radius: 25px;
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 20px;
+}
+
+.healthy-video__inner > a:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+.healthy-video__inner iframe {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.healthy-video__source {
+  margin-top: 50px;
+}
+
+.healthy-video__source label {
+  text-transform: uppercase;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+  color: var(--color-text);
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.healthy-video__source-links a {
+  display: flex;
+  color: var(--color-green);
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.healthy-video__source-links a span {
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+@media(max-width: 1024px) {
+  .healthy-hero__text h2,
+  .healthy-way__text h2,
+  .healthy-video__inner h2 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .healthy-way__img-text {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 767px) {
+  .healthy-hero {
+    margin-top: 0;
+  }
+
+  .healthy-hero__img-text {
+    grid-template-columns: 1fr;
+  }
+
+  .healthy-hero__text h2, .healthy-way__text h2, .healthy-video__inner h2 {
+    font-size: 26px;
+  }
+
+  .healthy-hero__text h2 br, .healthy-way__text h2 br, .healthy-video__inner h2 br {
+    display: none;
+  }
+
+  .healthy-video__source-links a {
+    font-size: 14px;
   }
 }
