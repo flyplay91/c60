@@ -2550,6 +2550,195 @@ body.single-product .qib-button.qib-button-wrapper {
   width: 100%;
 }
 
+.related-products {
+  margin-top: 50px;
+}
+
+.related-products__inner .related-product__sub_heading {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+
+.related-products__inner .related-product__title {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--color-pink);
+}
+
+.related-product__items {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.related-product__items-item {
+  min-height: 300px;
+  background-color: var(--color-light-pink);
+  border-radius: 25px;
+  padding: 15px;
+  position: relative;
+}
+
+.related-product-title-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.related-product-title-des > a {
+  margin: -60px auto 0;
+  display: block;
+}
+
+.related-product__items-item:nth-child(2) .related-product-title-des > a,
+.related-product__items-item:last-child .related-product-title-des > a {
+  max-width: 37%;
+}
+
+.related-product-title > label a {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.related-product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.related-product-content-left {
+  width: 49%;
+}
+
+.related-product-content-left img {
+  height: 20px;
+}
+
+.related-product-content-left a span {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.related-product-content-left a span:before {
+  content: '';
+  background-image: url('assets/images/starting-at-line.png');
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 2px;
+}
+
+.related-product-content-right {
+  width: 49%;
+}
+
+.related-product-select-btn > label {
+  font-size: 14px;
+  text-align: center;
+  border: solid 2px var(--color-pink);
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.related-product-select-btn:hover .related-product-cart-block {
+  display: block;
+}
+
+.related-product-cart-block:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 15px 20px;
+  border-color: transparent transparent var(--color-dark-pink) transparent;
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: 21%;
+}
+
+.related-product-select-btn > label:before {
+  background-image: url('assets/images/down-arrow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 8px;
+  content: '';
+  margin-top: 3px;
+  display: block;
+}
+
+.related-product-select-btn label:hover {
+  transition: .2s;
+  transform: scale(1.01);
+}
+
+.related-product-product-cart {
+  z-index: 1;
+}
+
+.related-product-cart-block {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  bottom: -198px;
+  display: none;
+  position: absolute;
+  background-color: var(--color-dark-pink);
+  padding: 0 20px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.related-product-cart-item {
+  display: grid;
+  grid-template-columns: 5fr 3fr 3fr;
+  align-content: center;
+  grid-gap: 7px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.related-product-cart-item > label {
+  color: var(--color-white);
+  font-size: 14px;
+}
+
+.related-product-cart-item a {
+  color: var(--color-white);
+  border: solid 1px var(--color-white);
+  padding: 7px 15px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.related-product-cart-item a:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark-pink);
+}
+
 @media(max-width: 1023px) {
   .product-image-summary__inner {
     grid-template-columns: 1fr;
@@ -3117,7 +3306,16 @@ body.single-product .qib-button.qib-button-wrapper {
   color: var(--color-pink);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
+  .related-product__items {
+    grid-template-columns: 1fr;
+  }
+
+  .related-product__items-item {
+    width: 500px;
+    margin: 0 auto 50px;
+  }
+
   .product-category__des {
     margin-top: 0;
   }
@@ -3134,14 +3332,23 @@ body.single-product .qib-button.qib-button-wrapper {
     box-shadow: 0px 0px 6px 0px var(--color-black);
     margin-bottom: 30px;
   }
-}
 
-@media(max-width: 500px) {
+  .related-product__items-item {
+    width: 350px;
+  }
+
   .category__blog__inner h2 {
     font-size: 30px;
     line-height: 40px;
   }
+
+  .related-product__sub_heading {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
 }
+
 
 /* ======== Why C60 Page ========== */
 .why-c60-hero {

@@ -146,9 +146,8 @@
 						<li class="header-cart">
 							<a href="/cart/">
 								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/cart-icon.png" alt="C60 Purple Power Cart">
-								<?php if ($cart_count > 0) : ?>
-									<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
-								<?php endif; ?>
+								
+								<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
 							</a>
 						</li>
 					</ul>
@@ -158,9 +157,8 @@
 							<a href="/cart/">
 								<?php $cart_count = WC()->cart->get_cart_contents_count(); ?>
 								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/cart-icon.png" alt="C60 Purple Power Cart">
-								<?php if ($cart_count > 0) : ?>
-									<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
-								<?php endif; ?>
+								
+								<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
 							</a>
 						</div>
 						<a href="javascript:void(0)" class="btn-mobile-nav">

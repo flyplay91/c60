@@ -66,38 +66,38 @@ get_header( 'shop' ); ?>
 
 		<?php if( have_rows('related_product_group')) : ?>
 			<?php while ( have_rows('related_product_group')): the_row(); ?>
-			<section class="home-product">
-				<div class="inner-section-1220 home-prduct__inner">
-					<h4 class="home-product__sub_heading"><?php echo $related_product_sub_heading ?></h4>
-					<h2 class="home-product__title"><?php echo $related_product_heading ?></h2>
-					<div class="home-product__items">
-						<div class="home-product__items-item">
-							<div class="home-product-title-des">
+			<section class="related-products">
+				<div class="inner-section-1220 related-products__inner">
+					<h4 class="related-product__sub_heading"><?php echo $related_product_sub_heading ?></h4>
+					<h2 class="related-product__title"><?php echo $related_product_heading ?></h2>
+					<div class="related-product__items">
+						<div class="related-product__items-item">
+							<div class="related-product-title-des">
 								<a href="<?php echo $related_first_product_link ?>">
 									<img src="<?php echo $related_first_product_img_url ?>" alt="<?php echo $related_first_product_img_alt ?>">
 								</a>
-								<div class="home-product-title">
+								<div class="related-product-title">
 									<label><a href="<?php echo $related_first_product_link ?>"><?php echo $related_first_product_title ?></a></label>
-									<div class="home-product-content">
-										<div class="home-product-content-left">
+									<div class="related-product-content">
+										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
 											<a href="<?php echo $related_first_product_link ?>"><span>Starting at $49</span></a>
 										</div>
-										<div class="home-product-content-right">
-											<div class="home-product-select-btn">
+										<div class="related-product-content-right">
+											<div class="related-product-select-btn">
 												<label>Select Option</label>
-												<div class="home-product-cart">
-													<div class="home-cart-block">
+												<div class="related-product-cart">
+													<div class="related-product-cart-block">
 														<?php
 															$related_first_product = new WC_Product_Variable( $related_first_product_id );
 															$related_first_variations = $related_first_product->get_available_variations();
 															foreach ($related_first_variations as $related_first_variation) {
 																$related_first_variant_id = $related_first_variation["variation_id"];
 															?>
-																<div class="home-cart-item">
+																<div class="related-product-cart-item">
 																	<label>2 oz - $49 / $39.20 mo</label>
-																	<a data-product_id="<?php echo $related_first_product_id ?>" data-variation_id="<?php echo $related_first_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
-																	<a href="" class="home-product-cart-btn">Subscribe</a>
+																	<a data-product_id="<?php echo $related_first_product_id ?>" data-variation_id="<?php echo $related_first_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="related-product-cart-btn">Add to Cart</a>
+																	<a href="" class="related-product-subscriber-btn">Subscribe</a>
 																</div>
 															<?php
 															}
@@ -111,33 +111,33 @@ get_header( 'shop' ); ?>
 							</div>
 						</div>
 						
-						<div class="home-product__items-item">
-							<div class="home-product-title-des">
+						<div class="related-product__items-item">
+							<div class="related-product-title-des">
 								<a href="<?php echo $related_second_product_link ?>">
 									<img src="<?php echo $related_second_product_img_url ?>" alt="<?php echo $related_second_product_img_alt ?>">
 								</a>
-								<div class="home-product-title">
+								<div class="related-product-title">
 									<label><a href="<?php echo $related_second_product_link ?>"><?php echo $related_second_product_title ?></a></label>
-									<div class="home-product-content">
-										<div class="home-product-content-left">
+									<div class="related-product-content">
+										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
 											<a href="<?php echo $related_second_product_link ?>"><span>Starting at $49</span></a>
 										</div>
-										<div class="home-product-content-right">
-											<div class="home-product-select-btn">
+										<div class="related-product-content-right">
+											<div class="related-product-select-btn">
 												<label>Select Option</label>
-												<div class="home-product-cart">
-													<div class="home-cart-block">
+												<div class="related-product-cart">
+													<div class="related-product-cart-block">
 														<?php
 															$related_second_product = new WC_Product_Variable( $related_second_product_id );
 															$related_second_variations = $related_second_product->get_available_variations();
 															foreach ($related_second_variations as $related_second_variation) {
 																$related_second_variant_id = $related_second_variation["variation_id"];
 															?>
-																<div class="home-cart-item">
+																<div class="related-product-cart-item">
 																	<label>2 oz - $49 / $39.20 mo</label>
-																	<a data-product_id="<?php echo $related_second_product_id ?>" data-variation_id="<?php echo $related_second_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
-																	<a href="" class="home-product-cart-btn">Subscribe</a>
+																	<a data-product_id="<?php echo $related_second_product_id ?>" data-variation_id="<?php echo $related_second_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="related-product-cart-btn">Add to Cart</a>
+																	<a href="" class="subscriber">Subscribe</a>
 																</div>
 															<?php
 															}
@@ -151,33 +151,33 @@ get_header( 'shop' ); ?>
 							</div>
 						</div>
 
-						<div class="home-product__items-item">
-							<div class="home-product-title-des">
+						<div class="related-product__items-item">
+							<div class="related-product-title-des">
 								<a href="<?php echo $related_third_product_link ?>">
 									<img src="<?php echo $related_third_product_img_url ?>" alt="<?php echo $related_third_product_img_alt ?>">
 								</a>
-								<div class="home-product-title">
+								<div class="related-product-title">
 									<label><a href="<?php echo $related_third_product_link ?>"><?php echo $related_third_product_title ?></a></label>
-									<div class="home-product-content">
-										<div class="home-product-content-left">
+									<div class="related-product-content">
+										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
 											<a href="<?php echo $related_third_product_link ?>"><span>Starting at $49</span></a>
 										</div>
-										<div class="home-product-content-right">
-											<div class="home-product-select-btn">
+										<div class="related-product-content-right">
+											<div class="related-product-select-btn">
 												<label>Select Option</label>
-												<div class="home-product-cart">
-													<div class="home-cart-block">
+												<div class="related-product-cart">
+													<div class="related-product-cart-block">
 														<?php
 															$related_third_product = new WC_Product_Variable( $related_third_product_id );
 															$related_third_variations = $related_third_product->get_available_variations();
 															foreach ($related_third_variations as $related_third_variation) {
 																$related_third_variant_id = $related_third_variation["variation_id"];
 															?>
-																<div class="home-cart-item">
+																<div class="related-product-cart-item">
 																	<label>2 oz - $49 / $39.20 mo</label>
-																	<a data-product_id="<?php echo $related_third_product_id ?>" data-variation_id="<?php echo $related_third_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="home-product-cart-btn">Add to Cart</a>
-																	<a href="" class="home-product-cart-btn">Subscribe</a>
+																	<a data-product_id="<?php echo $related_third_product_id ?>" data-variation_id="<?php echo $related_third_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="related-product-cart-btn">Add to Cart</a>
+																	<a href="" class="subscriber">Subscribe</a>
 																</div>
 															<?php
 															}
