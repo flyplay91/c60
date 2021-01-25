@@ -74,7 +74,9 @@ get_header();
 				<?php  
 					$args = array(
 						'post_type'      => 'product',
-						'posts_per_page' => 9999
+						'posts_per_page' => 9999,
+						'orderby' => 'date', 
+						'order' => 'ASC'
 					);
 
 					$loop = new WP_Query( $args );

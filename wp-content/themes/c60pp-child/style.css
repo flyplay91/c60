@@ -2953,15 +2953,19 @@ body.single-product .qib-button.qib-button-wrapper {
   display: none;
   position: absolute;
   margin: 0;
-  top: 57px;
+  top: 77px;
   z-index: 1;
-  left: 0;
+  left: -350%;
   background-color: var(--color-light-pink);
-  width: 600px;
+  width: 900px;
 }
 
 .shop-parent-nav > li:hover {
   background-color: var(--color-light-pink);
+}
+
+.shop-parent-nav > li:hover > span {
+  padding: 0px 40px;
 }
 
 .shop-parent-nav > li:hover > span a {
@@ -2996,11 +3000,15 @@ body.single-product .qib-button.qib-button-wrapper {
   grid-gap: 15px;
 }
 
+.shop-products-block > li {
+  margin-bottom: 40px;
+}
+
 .shop-products-block li .woocommerce-loop-product__title {
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   color: var(--color-text);
-  max-width: 200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 10px auto;
   font-size: 16px;
   text-align: center;
 }
@@ -3025,12 +3033,24 @@ body.single-product .qib-button.qib-button-wrapper {
   margin: 0 auto;
 }
 
-.page-template-shop .woocommerce-Price-amount {
+.shop-products-block li .attachment-woocommerce_thumbnail:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+/* .page-template-shop .woocommerce-Price-amount {
 	display: none;
+} */
+
+.page-template-shop  .wcsatt-sub-options {
+  display: none;
 }
 
 .custom-subscription-price {
-  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  justify-content: center;
 }
 
 .custom-subscription-price:before {
@@ -3040,11 +3060,10 @@ body.single-product .qib-button.qib-button-wrapper {
   width: 30px;
   height: 30px;
   display: block;
-  position: absolute;
   background-position: center;
   background-size: cover;
-  top: -8px;
-  left: -40px;
+  margin-top: -3px;
+  margin-right: 10px;
 }
 
 .shop-variant-select .add_to_cart_button {
@@ -3090,11 +3109,11 @@ body.single-product .qib-button.qib-button-wrapper {
   background-color: var(--color-dark-pink);
   padding: 15px;
   border-radius: 15px;
-  width: 450px;
+  width: 300px;
   margin: 0 auto;
   position: absolute;
   top: 50px;
-  z-index: 1;
+  z-index: 11;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -3115,7 +3134,7 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-variant-select .shop-variant-item {
   display: grid;
-  grid-template-columns: 5fr 3fr 3fr;
+  grid-template-columns: 1fr 1fr;
   align-content: center;
   grid-gap: 7px;
   margin: 15px 0;

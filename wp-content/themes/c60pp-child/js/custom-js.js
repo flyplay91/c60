@@ -103,9 +103,17 @@ $(document).ready(function() {
 	});
 
 	// Shoppage change product price
-	if ($('.page-template-shop span.price') != 0) {
-		$('.page-template-shop span.price').html('<span class="custom-subscription-price">Save 20% With Renewals</span>');
-	}
+	$('.page-template-shop .shop-products-block li').each(function() {
+		if ( ($(this).find('.price') != 0) && ($(this).find('.wcsatt-sub-options').length != 0) ) {
+			$(this).find('.price').after('<label class="custom-subscription-price">Save 20% With Renewals</label>');
+		}
+	});
+
+	$('body').on('click', '.shop-hero-down-arrow', function() {
+		$('html, body').animate({
+			scrollTop: $(".shop-products").offset().top
+		}, 100);
+	});
 
 	// Shoppage accordion
 	$('body').on('click', '.accordion-item > h4', function() {
