@@ -743,6 +743,11 @@ button:focus {
   margin: 0 auto;
 }
 
+.home-why-c60__item img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .home-why-c60__item label {
   display: block;
   color: var(--color-pink);
@@ -771,7 +776,7 @@ button:focus {
 
 .home-seen__title {
   font-family: 'NeurialGrotesk-Medium';
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.2;
   text-align: center;
   color: var(--color-grey-pink);
@@ -1419,7 +1424,7 @@ button:focus {
     max-width: 120px;
     margin-right: 10px;
   }
-  
+
   .home-lives__inner {
     padding: 25px 50px;
   }
