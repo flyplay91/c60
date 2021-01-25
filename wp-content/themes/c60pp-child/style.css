@@ -1041,7 +1041,7 @@ button:focus {
   line-height: 1.4;
 }
 
-.home-benefits__item--text a {
+.home-benefits__item--text a.home-benefits-btn {
   background-color: var(--color-dark-pink);
   color: var(--color-white);
   display: block;

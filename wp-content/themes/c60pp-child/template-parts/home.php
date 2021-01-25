@@ -237,11 +237,11 @@ get_header();
                             $benefits_button_link = get_sub_field('button_link');
                         ?>
                             <div class="home-benefits__item--img-text">
-                                <img src="<?php echo $benefits_img_url ?>" alt="<?php echo $benefits_img_alt ?>">
+                                <a href="<?php echo $benefits_button_link ?>"><img src="<?php echo $benefits_img_url ?>" alt="<?php echo $benefits_img_alt ?>"></a>
                                 <div class="home-benefits__item--text">
-                                    <h3><?php echo $benefits_heading ?></h3>
+                                    <h3><a href="<?php echo $benefits_button_link ?>"><?php echo $benefits_heading ?></a></h3>
                                     <p><?php echo $benefits_description ?></p>
-                                    <a href="<?php echo $benefits_button_link ?>">Read More</a>
+                                    <a href="<?php echo $benefits_button_link ?>" class="home-benefits-btn">Read More</a>
                                 </div>
                             </div>
                         <?php endwhile;
