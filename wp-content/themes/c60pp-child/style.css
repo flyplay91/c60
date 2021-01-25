@@ -663,6 +663,11 @@ button:focus {
   grid-gap: 50px;
 }
 
+.home-what-c60__img-text > img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .home-what-c60__img h3 {
   font-size: 30px;
   color: var(--color-pink);
@@ -1927,10 +1932,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .footer-nav {
   padding-top: 70px;
-}
-
-.footer-nav {
-  border-top: solid 1px rgba(177, 44, 144,0.4);
+  border-top: solid 1px rgba(107, 44, 144, 0.3);
 }
 
 .footer-menu-block {
