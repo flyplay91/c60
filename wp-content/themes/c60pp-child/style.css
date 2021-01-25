@@ -677,7 +677,7 @@ button:focus {
 
 .home-why-c60__text h2 {
   color: var(--color-pink);
-  font-size: 45px;
+  font-size: 40px;
   font-family: 'NeurialGrotesk-Medium';
   position: relative;
   padding-left: 60px;
@@ -938,7 +938,7 @@ button:focus {
   /* margin: 0 100px; */
   cursor: pointer;
   color: var(--color-pink);
-  font-size: 36px;
+  font-size: 40px;
   font-family: 'NeurialGrotesk-Bold';
   /* border-bottom: 5px solid var(--color-white); */
   padding-bottom: 5px;
@@ -975,7 +975,7 @@ button:focus {
 
 .home-benefits__title {
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
   text-align: center;
   color: var(--color-pink);
@@ -1158,7 +1158,7 @@ button:focus {
 }
 
 .home-lives__inner > h2 {
-  font-size: 50px;
+  font-size: 40px;
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Bold';
   text-align: center;
@@ -1265,7 +1265,7 @@ button:focus {
 
 .home-more__title {
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
   text-align: center;
   color: var(--color-pink);
@@ -1357,8 +1357,11 @@ button:focus {
   .home-what-c60__inner h1,
   .home-why-c60__text h2,
   .home-benefits__title,
-  .home-lives__inner > h2 {
-    font-size: 40px;
+  .home-lives__inner > h2,
+  .home-more__title,
+  .home-seen__title,
+  .home-products__inner .tabset > label {
+    font-size: 34px;
   }
 
   .home-what-c60__img h3 {
@@ -1375,10 +1378,7 @@ button:focus {
 
   .home-why-c60__items {
     margin-right: 20px;
-  }
-
-  .home-seen__title {
-    font-size: 36px;
+    margin-top: -10px;
   }
 
   .home-benefits__item--text h3 {
@@ -1401,12 +1401,17 @@ button:focus {
     font-size: 20px;
   }
 
-  .tabset > label {
-    font-size: 30px;
-  }
-
   .tab-panels {
     margin-top: 50px;
+  }
+
+  .btn-home-product {
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .home-benefits__title {
+    padding-top: 50px;
   }
 
   .product-rating-price img {
@@ -1449,6 +1454,32 @@ button:focus {
 }
 
 @media(max-width: 1000px) {
+  .klaviyo-popup__inner {
+    width: 600px;
+    padding: 15px;
+  }
+
+  .klaviyo-popup__inner form {
+    background-position: center;
+    padding: 15px;
+  }
+
+  .klaviyo-popup__inner form .klaviyo_block {
+    max-width: 300px;
+  }
+
+  .klaviyo-popup__inner form h2 {
+    font-size: 34px;
+  }
+
+  .klaviyo-popup__inner form h2 br {
+    display: none;
+  }
+
+  .klaviyo-popup__inner form h3 {
+    font-size: 22px;
+  }
+
   .home-hero__inner {
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1464,10 +1495,6 @@ button:focus {
     display: none;
   }
 
-  .home-what-c60__inner h1, .home-why-c60__text h2, .home-benefits__title, .home-lives__inner > h2, .home-more__title {
-    font-size: 34px;
-  }
-
   .home-what-c60__img h3 {
     font-size: 22px;
   }
@@ -1480,16 +1507,16 @@ button:focus {
   .tabset > label {
     margin: 0 30px;
   }
-
-  .product-item.product-item--1 > img {
+  
+  .product-item.product-item--1 a > img {
     max-width: 150px;
   }
 
-  .product-item.product-item--2 > img {
+  .product-item.product-item--2 a > img {
     max-width: 155px;
   }
 
-  .product-item.product-item--3 > img {
+  .product-item.product-item--3 a > img {
     max-width: 150px;
   }
 
@@ -1531,6 +1558,21 @@ button:focus {
 }
 
 @media(max-width: 767px) {
+  .klaviyo-popup__inner {
+    width: 90%;
+  }
+
+  .klaviyo-popup__inner form h2 {
+    font-size: 24px;
+  }
+
+  .klaviyo-popup__inner form h3 {
+    font-size: 20px;
+  }
+
+  .klaviyo-popup__inner form .klaviyo_block {
+    max-width: 250px;
+  }
 
   .header-menu {
     display: none;
