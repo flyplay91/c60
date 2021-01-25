@@ -64,11 +64,11 @@ get_header();
 
 	<section class="shop-products">
 		<div class="shop-products__inner inner-section-1120">
-			<div class="shop-breadcrumb">
+			<!-- <div class="shop-breadcrumb">
 				<nav class="woocommerce-breadcrumb">
 					<a href="/">C60 Purple Power</a> / Shop C60
 				</nav>
-			</div>
+			</div> -->
 
 			<div class="shop-products-block">
 				<?php  
