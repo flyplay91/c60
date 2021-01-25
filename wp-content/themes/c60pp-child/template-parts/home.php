@@ -115,7 +115,7 @@ get_header();
     <?php if( have_rows('home_seen')) : ?>
         <?php while ( have_rows('home_seen')): the_row(); ?>
         <section class="home-seen">
-            <div class="inner-section-1220 home-seen__inner">
+            <div class="inner-section-1366 home-seen__inner">
                 <h2 class="home-seen__title"><?php echo $seen_title ?></h2>
                 <div class="home-seen__imgs">
                     <?php if( have_rows('image_repeater') ) :
@@ -166,7 +166,6 @@ get_header();
                                         $product_title = get_sub_field('product_title');
                                         $product_star_image_url = get_sub_field('product_star_image')['url'];
                                         $product_star_image_alt = get_sub_field('product_star_image')['alt'];
-                                        $product_price = get_sub_field('product_price');
                                         $product_sale = get_sub_field('is_sale');
                                     ?>
                                         <div class="product-item product-item--<?php echo get_row_index() ?> <?php if ($product_sale == 'yes') { echo 'product-item--sale'; } ?>">
@@ -176,7 +175,6 @@ get_header();
                                             </a>
                                             <div class="product-rating-price">
                                                 <img src="<?php echo $product_star_image_url ?>" alt="<?php echo $product_star_image_alt ?>">
-                                                <span><?php echo $product_price ?></span>
                                             </div>
                                         </div>
                                         <?php endwhile;
