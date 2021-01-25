@@ -2240,16 +2240,23 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   max-width: 50px !important;
 }
 
+.shop-products-block > li .woocommerce-LoopProduct-link {
+  position: relative;
+  display: block;
+}
+
 .onsale {
+  content: '';
+  background-image: url('assets/images/sale_banner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  display: block;
   position: absolute;
-  background-color: var(--color-pink);
-  color: var(--color-white);
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  right: 0;
+  top: -20px;
+  font-size: 0;
 }
 
 .woocommerce-product-gallery .flex-control-nav li img {
@@ -3006,12 +3013,11 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-products-block li .woocommerce-loop-product__title {
   font-family: 'NeurialGrotesk-Medium';
-  color: var(--color-text);
-  max-width: 250px;
-  margin: 10px auto;
-  font-size: 16px;
-  text-align: center;
-  height: 50px;
+	color: var(--color-text);
+	max-width: 250px;
+	margin: 10px auto;
+	font-size: 16px;
+	text-align: center;
 }
 
 .shop-products-block li .star-rating {
