@@ -24,7 +24,7 @@ $productId = $product->get_id();
 
 if( $product->has_child() ) { ?>
 	<div class="shop-variant-select">
-		<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select option</a>
+		<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select options</a>
 		<div class="shop-variant-items">
 			<?php
 				if ( ( $variations = $product->get_children() ) ) {

@@ -2254,8 +2254,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   height: 100px;
   display: block;
   position: absolute;
-  right: 0;
-  top: -20px;
+  right: -50px;
+  top: -45px;
   font-size: 0;
 }
 
@@ -2940,6 +2940,7 @@ body.single-product .qib-button.qib-button-wrapper {
   justify-content: center;
   align-items: center;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .shop-parent-nav li {
@@ -3339,7 +3340,6 @@ body.single-product .qib-button.qib-button-wrapper {
   }
 
   .shop__hero-content p {
-    width: 100%;
     font-size: 18px;
     line-height: 28px;
   }
@@ -3351,6 +3351,10 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 @media(max-width: 767px) {
+  .shop__hero-content p {
+    width: 100%;
+  }
+
   .shop-products-block {
     grid-template-columns: repeat(2, 1fr);
   }
