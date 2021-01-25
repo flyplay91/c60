@@ -673,16 +673,20 @@ button:focus {
 
 .home-why-c60__text h2 {
   color: var(--color-pink);
-  font-size: 50px;
-  font-family: 'NeurialGrotesk-Bold';
+  font-size: 45x;
+  font-family: 'NeurialGrotesk-Medium';
 }
 
 .home-why-c60__text h3 {
   color: var(--color-light-black);
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 22px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
   margin: 20px 0;
   line-height: 1.4;
+}
+
+.home-why-c60__text {
+  padding-top:50px;
 }
 
 .home-why-c60__text p {
@@ -699,7 +703,7 @@ button:focus {
   align-items: center;
   margin-top: -70px;
   background-color: var(--color-light-pink);
-  padding: 40px 20px;
+  padding: 30px 20px 20px;
   z-index: 1;
   position: relative;
   margin-right: 50px;
@@ -708,7 +712,7 @@ button:focus {
 .home-why-c60__item {
   text-align: center;
   border-right: solid 1px rgb(107 44 144 / 0.15);
-  padding: 20px 15px 20px 0;
+  padding: 0 15px 0 0;
 }
 
 .home-why-c60__item:last-child {
@@ -725,7 +729,7 @@ button:focus {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Bold';
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 .home-why-c60__item span {
@@ -734,7 +738,7 @@ button:focus {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 14px;
   line-height: 1.2;
-  margin-top: 5px; 
+  margin-top: 50px; 
 }
 
 .home-seen {
