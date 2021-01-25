@@ -99,7 +99,6 @@ Text Domain: c60pp-child
   --color-pink: #6b2c90;
   --color-dark-pink: #501D6E;
   --color-light-pink: #F5E5FF;
-  --color-light-black: #360254;
   --color-inactive-dot: #B596C8;
   --color-review: #FFA900;
   --color-border: #B596C8;
@@ -238,6 +237,11 @@ button:focus {
   height: 90px;
 }
 
+.header-logo img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .header-menu {
   display: flex;
 }
@@ -326,6 +330,12 @@ button:focus {
 .sub-menu a {
   color: var(--color-white);
   position: relative;
+  display: block;
+}
+
+.sub-menu a:hover {
+  transition: .02s;
+  transform: scale(1.01);
 }
 
 .sub-menu:before {
@@ -697,7 +707,7 @@ button:focus {
 }
 
 .home-why-c60__text h3 {
-  color: var(--color-light-black);
+  color: var(--color-dark-pink);
   font-family: 'NeurialGrotesk-Regular';
   font-size: 20px;
   margin: 20px 0;
@@ -880,6 +890,7 @@ button:focus {
   line-height: 1.4;
   text-align: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .product-rating-price {
@@ -1003,6 +1014,13 @@ button:focus {
   grid-gap: 30px;
 }
 
+.home-benefits__item--img-text img:hover,
+.home-cfo__img-position img:hover,
+.home-lives__item > img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .home-benefits__item--text {
   display: flex;
   flex-direction: column;
@@ -1047,9 +1065,9 @@ button:focus {
 }
 
 .home-cfo__inner h4 {
-  font-size: 32px;
-  color: var(--color-text);
-  font-family: 'NeurialGrotesk-Bold';
+  font-size: 29px;
+  color: var(--color-dark-purple);
+  font-family: 'NeurialGrotesk-Medium';
   margin-bottom: 20px;
   text-align: center;
 }
@@ -1140,16 +1158,16 @@ button:focus {
 }
 
 .home-cfo-bottom-banner__text h3 {
-  font-size: 24px;
-  line-height: 1.4;
+  font-size: 22px;
+  line-height: 1.6;
   color: var(--color-dark-purple);
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   margin-bottom: 50px;
 }
 
 .home-cfo-bottom-banner__text label {
   font-family: 'NeurialGrotesk-Bold';
-  color: var(--color-light-black);
+  color: var(--color-dark-pink);
   font-size: 28px;
 }
 
@@ -1261,7 +1279,7 @@ button:focus {
 
 .lives__item-star-user label {
   font-family: 'NeurialGrotesk-Bold';
-  color: var(--color-light-black);
+  color: var(--color-dark-pink);
   font-size: 18px;
 }
 
@@ -1289,8 +1307,8 @@ button:focus {
   background-position: center;
   margin: 0 10px;
   position: relative;
-  min-height: 250px;
-  border: solid 5px var(--color-pink);
+  min-height: 205px;
+  border: solid 0px var(--color-pink);
 }
 
 .home-blog__block-item:hover {
@@ -1927,17 +1945,25 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   grid-gap: 10px;
 }
 
+.footer-menu-block .footer-logo a img {
+  padding: 10px;
+}
+
+.footer-menu-block .footer-logo {
+  margin-right: 10px;
+}
+
 .footer-menu__item h5 {
-  color: var(--color-text);
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 22px;
+  color: #2F024A;
+  font-family: 'NeurialGrotesk-Medium';
+  font-size: 20px;
   line-height: 38px;
 }
 
 .footer-menu__item ul li a {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 14px;
+  font-size: 13px;
   display: inline-block;
 }
 
@@ -1948,8 +1974,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .footer-nav-newsletter h3 {
   color: var(--color-text);
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 22px;
+  font-family: 'NeurialGrotesk-medium';
+  font-size: 20px;
   line-height: 38px;
 }
 
@@ -1960,6 +1986,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .footer-nav-newsletter .kl-private-reset-css-Xuajs1 input[type=email] {
   padding: 10px 0 8px 10px!important;
+  border-color: var(--color-dark-purple)!important;
 }
 
 .footer-nav-newsletter button.kl-private-reset-css-Xuajs1 {
@@ -1969,9 +1996,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 }
 
 .footer-des {
-  color: var(--color-text);
-  font-size: 14px;
+  color: var(--color-pink);
+  font-size: 13px;
   padding: 40px 0;
+  max-width: 80%;
 }
 
 .footer-contact-social {
@@ -1984,7 +2012,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .footer-mobile,
 .footer-work-time {
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-pink);
   display: flex;
   align-content: center;
@@ -1999,7 +2027,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .footer-mail {
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-pink);
   display: flex;
   align-content: center;
