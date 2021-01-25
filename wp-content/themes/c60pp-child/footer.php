@@ -42,12 +42,12 @@
 		<footer class="site-footer">
 			<div class="footer__inner inner-section-1220">
 				
-				<div class="footer-newsletter">
+				<!-- <div class="footer-newsletter">
 					<img src="<?php echo $newsleeter_img_url ?>" alt="<?php echo $newsleeter_img_alt ?>">
 					<h3 class="footer-newsletter__subtitle"><?php echo $newsletter_subtitle ?></h3>
 					<h2 class="footer-newsletter__title"><?php echo $newsletter_title ?></h2>
 					<div class="footer-newsletter__form"><?php echo $newsletter_form_shortcode ?></div>
-				</div>
+				</div> -->
 				
 				
 				<div class="footer-nav">
