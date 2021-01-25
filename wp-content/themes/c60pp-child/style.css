@@ -2962,9 +2962,9 @@ body.single-product .qib-button.qib-button-wrapper {
   margin: 0;
   top: 77px;
   z-index: 1;
-  left: -350%;
+  left: 0;
   background-color: var(--color-light-pink);
-  width: 900px;
+  width: 600px;
 }
 
 .shop-parent-nav > li:hover {
