@@ -111,7 +111,7 @@ $(document).ready(function() {
 
 	$('body').on('click', '.shop-hero-down-arrow', function() {
 		$('html, body').animate({
-			scrollTop: $(".shop-products").offset().top
+			scrollTop: $(".shop_nav").offset().top
 		}, 100);
 	});
 
