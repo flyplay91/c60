@@ -3004,12 +3004,19 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-products-block > li {
   margin-bottom: 40px;
+  padding : 20px;
+}
+
+.shop-products-block > li:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.1);
+  transition: all .3s ease-in-out;
+  
 }
 
 .shop-products-block li .woocommerce-loop-product__title {
   font-family: 'NeurialGrotesk-Medium';
 	color: var(--color-text);
-  max-width: 250px;
+  max-width: 255px;
   min-height:40px;
 	margin: 10px auto;
 	font-size: 16px;
@@ -3359,8 +3366,6 @@ body.single-product .qib-button.qib-button-wrapper {
 
   .shop-products-block > li {
     padding: 20px;
-    -webkit-box-shadow: 0px 0px 6px 0px var(--color-black);
-    box-shadow: 0px 0px 6px 0px var(--color-black);
     margin-bottom: 30px;
   }
 
