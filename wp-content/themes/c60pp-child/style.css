@@ -108,6 +108,7 @@ Text Domain: c60pp-child
   --color-input-bg: #FAFAFA;
   --color-light-grey: #DDEDE6;
   --color-dark-purple: #360254;
+  --color-grey-pink: #825A9C;
 }
 
 body {
@@ -769,11 +770,11 @@ button:focus {
 }
 
 .home-seen__title {
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   font-size: 40px;
   line-height: 1.2;
   text-align: center;
-  color: var(--color-pink);
+  color: var(--color-grey-pink);
 }
 
 .home-seen__imgs {
@@ -862,6 +863,11 @@ button:focus {
   margin: -70px auto 0;
 }
 
+.product-item a > img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .product-item label {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 18px;
@@ -879,7 +885,7 @@ button:focus {
 }
 
 .product-rating-price img {
-  max-width: 150px;
+  max-width: 125px;
   margin-right: 20px;
 }
 
@@ -936,7 +942,6 @@ button:focus {
   position: relative;
   display: inline-block;
   /* margin: 0 100px; */
-  cursor: pointer;
   color: var(--color-pink);
   font-size: 40px;
   font-family: 'NeurialGrotesk-Bold';
@@ -963,10 +968,6 @@ button:focus {
   text-align: center;
 }
 /*  */
-
-.home-benefits {
-  margin-top: 30px;
-}
 
 .home-benefits__inner > img {
   max-width: 250px;
@@ -1418,11 +1419,7 @@ button:focus {
     max-width: 120px;
     margin-right: 10px;
   }
-
-  .home-benefits {
-    margin-top: 0;
-  }
-
+  
   .home-lives__inner {
     padding: 25px 50px;
   }
