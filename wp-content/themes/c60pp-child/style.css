@@ -2944,8 +2944,7 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-parent-nav li {
   position: relative;
-  margin: 0 15px;
-  padding: 25px 15px;
+  padding: 25px;
 }
 
 .shop-parent-nav li span a {
@@ -2969,10 +2968,6 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-parent-nav > li:hover {
   background-color: var(--color-light-pink);
-}
-
-.shop-parent-nav > li:hover > span {
-  padding: 0px 40px;
 }
 
 .shop-parent-nav > li:hover > span a {
