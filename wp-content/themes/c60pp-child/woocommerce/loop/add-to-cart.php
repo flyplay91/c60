@@ -35,7 +35,6 @@ $productId = $product->get_id();
 			    	<div class="shop-variant-item">
 			    		<label><?php echo $variationName . ' - $' . $variationPrice; ?></label>
 						<a href="javascript:void(0)" class="btn-shop-add-cart" data-product_id="<?php echo $productId ?>" data-variant_id="<?php echo $variationId ?>">Add to cart</a>
-						<a href="" class="btn-shop-add-cart">Subscribe</a>
 			    	</div>
 			    <?php    
 			    }
