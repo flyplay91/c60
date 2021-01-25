@@ -201,8 +201,10 @@
 				<div class="header-banner__inner">
 					<?php if (have_rows('banner_repeater', 'option')) :
 						while (have_rows('banner_repeater', 'option')) : the_row();
-						$banner_text = get_sub_field('text'); ?>
-							<span><?php echo $banner_text ?></span>
+						$banner_text = get_sub_field('text');
+						$banner_link = get_sub_field('link');
+						?>
+							<a href="<?php echo $banner_link ?>"><span><?php echo $banner_text ?></span></a>
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
