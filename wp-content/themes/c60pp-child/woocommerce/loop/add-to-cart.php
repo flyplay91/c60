@@ -21,24 +21,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 $productId = $product->get_id();
-?>
-<div class="shop-variant-select">
-	<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select option</a>
-	<div class="shop-variant-items">
-		<?php
-			if ( ( $variations = $product->get_children() ) ) {
-			    foreach ( $variations as $variationId ) {
-			    	$variation = new WC_Product_Variation($variationId);
-			        $variationName = implode(" / ", $variation->get_variation_attributes());
-			        $variationPrice = $variation->get_price();
-			    ?>
-			    	<div class="shop-variant-item">
-			    		<label><?php echo $variationName . ' - $' . $variationPrice; ?></label>
-						<a href="javascript:void(0)" class="btn-shop-add-cart" data-product_id="<?php echo $productId ?>" data-variant_id="<?php echo $variationId ?>">Add to cart</a>
-			    	</div>
-			    <?php    
-			    }
-			}
-		?>
+
+if( $product->has_child() ) { ?>
+	<div class="shop-variant-select">
+		<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select option</a>
+		<div class="shop-variant-items">
+			<?php
+				if ( ( $variations = $product->get_children() ) ) {
+					foreach ( $variations as $variationId ) {
+						$variation = new WC_Product_Variation($variationId);
+						$variationName = implode(" / ", $variation->get_variation_attributes());
+						$variationPrice = $variation->get_price();
+					?>
+						<div class="shop-variant-item">
+							<label><?php echo $variationName . ' - $' . $variationPrice; ?></label>
+							<a href="javascript:void(0)" class="btn-shop-add-cart" data-product_id="<?php echo $productId ?>" data-variant_id="<?php echo $variationId ?>">Add to cart</a>
+						</div>
+					<?php    
+					}
+				}
+			?>
+		</div>
 	</div>
-<?php
+<?php } else { ?>
+	<a href="javascript:void(0)" class="btn-shop-add-cart-no-variant" data-product_id="<?php echo $productId ?>">Add to cart</a>
+<?php }
