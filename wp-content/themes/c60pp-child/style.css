@@ -3014,7 +3014,8 @@ body.single-product .qib-button.qib-button-wrapper {
 .shop-products-block li .woocommerce-loop-product__title {
   font-family: 'NeurialGrotesk-Medium';
 	color: var(--color-text);
-	max-width: 250px;
+  max-width: 250px;
+  min-height:40px;
 	margin: 10px auto;
 	font-size: 16px;
 	text-align: center;
