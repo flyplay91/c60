@@ -5,6 +5,8 @@ $(document).ready(function() {
 	});
 
   	$('.header-banner__inner').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
 		dots: false,
 		infinite: true,
 		slidesToShow: 1,
