@@ -2239,7 +2239,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   max-width: 50px !important;
 }
 
-.shop-products-block > li .woocommerce-LoopProduct-link {
+.shop-products-block > li .woocommerce-LoopProduct-link,
+.product-category__products__inner > li .woocommerce-LoopProduct-link {
   position: relative;
   display: block;
 }
@@ -3103,7 +3104,8 @@ body.single-product .qib-button.qib-button-wrapper {
 	display: none;
 } */
 
-.page-template-shop  .wcsatt-sub-options {
+.page-template-shop .wcsatt-sub-options,
+.page-template-product_category .wcsatt-sub-options {
   display: none;
 }
 
@@ -3482,10 +3484,10 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 .product-category__products li .woocommerce-loop-product__title {
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   color: var(--color-text);
-  max-width: 200px;
-  margin: 0 auto;
+  max-width: 260px;
+  margin: 10px auto;
   font-size: 16px;
   text-align: center;
 }
@@ -3508,10 +3510,6 @@ body.single-product .qib-button.qib-button-wrapper {
 .product-category__products li .attachment-woocommerce_thumbnail {
   max-width: 80%;
   margin: 0 auto;
-}
-
-.page-template-product_category .woocommerce-Price-amount {
-	display: none;
 }
 
 .product-category__des {
