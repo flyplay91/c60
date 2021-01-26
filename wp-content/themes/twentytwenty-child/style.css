@@ -1,16 +1,16 @@
 @charset "UTF-8";
 /*
-Theme Name: C60PP Child
-Theme URI: http://example.com/c60pp-child/
-description: c60pp child theme
+Theme Name: Twentytwenty Child
+Theme URI: http://example.com/twentytwenty-child/
+description: twentytwenty child theme
 Author: TFCmarketing
 Author URI: http://example.com
-Template: c60pp
+Template: twentytwenty
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
-Text Domain: c60pp-child
+Text Domain: twentytwenty-child
 */
 @font-face {font-family: "NeurialGrotesk-Bold";
 	src: url("assets/fonts/NeurialGrotesk-Bold.eot"); /* IE9*/
@@ -2234,6 +2234,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .woocommerce-product-gallery .flex-control-nav li {
   float: none;
   margin: 0 0 15px 0;
+  width: 100%;
 }
 
 .quantity.wqpmb_quantity {
@@ -2464,6 +2465,39 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 #ywar_reviews .review-rating-value {
   display: none;
+}
+
+.woocommerce-Reviews-title {
+  margin: 0 0 30px 0 !important;
+  color: var(--color-pink);
+}
+
+#review_form_wrapper {
+  margin-top: 20px;
+}
+
+.comment-respond {
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.comment-reply-title {
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-size: 24px;
+  color: var(--color-pink);
+}
+
+.comment-form {
+  margin: 0;
+  border: 2px solid var(--color-line);
+  padding: 20px;
+}
+
+.form-submit {
+  margin-bottom: 0;
 }
 
 .variations {
