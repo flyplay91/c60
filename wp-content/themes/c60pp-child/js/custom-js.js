@@ -217,9 +217,11 @@ $(document).ready(function() {
 	});
 
 	// Product category page change product price
-	if ($('.page-template-product_category span.price') != 0) {
-		$('.page-template-product_category span.price').html('<span class="custom-subscription-price">Save 20% With Renewals</span>');
-	}
+	$('.page-template-product_category .product-category__products__inner li').each(function() {
+		if ( ($(this).find('.price') != 0) && ($(this).find('.wcsatt-sub-options').length != 0) ) {
+			$(this).find('.price').after('<label class="custom-subscription-price">Save 20% With Renewals</label>');
+		}
+	});
 
 	// Mobile menu
 	$('body').on('click', '.btn-mobile-nav', function() {
