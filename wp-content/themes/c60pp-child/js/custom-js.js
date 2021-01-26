@@ -102,6 +102,17 @@ $(document).ready(function() {
 		});
 	});
 
+	// Shoppage sort
+	$('body').on('click', '.shop-sort > label', function() {
+		$('.shop-sort > ul').toggleClass('opened');
+	});
+
+	$('body').on('click', '.shop-sort > ul li', function() {
+		var currentSelectedVal = $('.shop-sort > label').text();
+		var newSelectedSortVal = $(this).text();
+		console.log(currentSelectedVal, newSelectedSortVal)
+	});
+
 	// Shoppage change product price
 	$('.page-template-shop .shop-products-block li').each(function() {
 		if ( ($(this).find('.price') != 0) && ($(this).find('.wcsatt-sub-options').length != 0) ) {
