@@ -63,15 +63,17 @@ get_header();
     endif; ?>
 
 	<section class="shop-products">
-		<div class="shop-sort">
-			<label>Default</label>
-			<ul class="">
-				<li data-title="sort_by_popularity">Sort by Popularity</li>
-				<li data-title="sort_by_rating">Sort by average rating</li>
-				<li data-title="sorty_by_latest">Sort by latest</li>
-				<li data-title="sort_by_low_high">Sort by price: low to high</li>
-				<li data-title="sort_by_high_low">Sort by price high to low</li>
-			</ul>
+		<div class="shop-sort inner-section-1120">
+			<div class="shop-sort__inner">
+				<label>Default</label>
+				<ul class="">
+					<li data-title="sort_by_popularity">Sort by Popularity</li>
+					<li data-title="sort_by_rating">Sort by average rating</li>
+					<li data-title="sorty_by_latest">Sort by latest</li>
+					<li data-title="sort_by_low_high">Sort by price: low to high</li>
+					<li data-title="sort_by_high_low">Sort by price high to low</li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="shop-products__inner inner-section-1120">
