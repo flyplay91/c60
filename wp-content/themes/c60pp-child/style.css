@@ -2991,14 +2991,11 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-products {
   margin-top: 50px;
-  position: relative;
 }
 
 .shop-sort {
-  position: absolute;
-  right: 50px;
-  top: 50px;
   width: 196px;
+  margin: 0 auto;
 }
 
 .shop-sort label {
@@ -3071,7 +3068,7 @@ body.single-product .qib-button.qib-button-wrapper {
 .shop-products-block li .woocommerce-loop-product__title {
   font-family: 'NeurialGrotesk-Medium';
 	color: var(--color-text);
-  max-width: 255px;
+  max-width: 260px;
 	margin: 10px auto;
 	font-size: 16px;
 	text-align: center;
@@ -3322,7 +3319,7 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-accordion-block > h3 {
   color: var(--color-pink);
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'NeurialGrotesk-Bold';
 }
 
@@ -3340,8 +3337,8 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .accordion-item h4 {
   color: var(--color-white);
-  font-size: 20px;
-  font-family: 'NeurialGrotesk-Bold';
+  font-size: 18px;
+  font-family: 'NeurialGrotesk-Medium';
   cursor: pointer;
   position: relative;
 }
@@ -3397,8 +3394,7 @@ body.single-product .qib-button.qib-button-wrapper {
     line-height: 28px;
   }
 
-  .shop-text h2,
-  .shop-accordion-block > h3 {
+  .shop-text h2 {
     font-size: 40px;
   }
 }

@@ -65,7 +65,7 @@ get_header();
 	<section class="shop-products">
 		<div class="shop-sort">
 			<label>Default</label>
-			<ul class="opened">
+			<ul class="">
 				<li data-title="sort_by_popularity">Sort by Popularity</li>
 				<li data-title="sort_by_rating">Sort by average rating</li>
 				<li data-title="sorty_by_latest">Sort by latest</li>
