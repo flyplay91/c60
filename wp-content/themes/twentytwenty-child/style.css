@@ -2205,6 +2205,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  position: relative;
 }
 
 .woocommerce-breadcrumb {
