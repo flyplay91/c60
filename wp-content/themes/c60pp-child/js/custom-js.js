@@ -137,6 +137,8 @@ $(document).ready(function() {
 		$(this).closest('.accordion-item').addClass('active');
 	});
 
+	homeUrl = window.location.origin;
+
 	// Shoppage add to cart product when has variants
 	var a = 'a.btn-shop-add-cart';
 		$(a).on('click', function(e){
@@ -149,7 +151,7 @@ $(document).ready(function() {
 			data: {
 				'action': 'variation_to_cart',
 				'pid'   : $(this).attr('data-product_id'),
-				'vid'   : $(this).attr('data-variation_id'),
+				'vid'   : $(this).attr('data-variant_id'),
 				'qty'   : 1,
 			},
 			success: function (response) {
@@ -165,6 +167,9 @@ $(document).ready(function() {
 					var currentCartCount = parseInt($('.header-cart span').attr('data-cart-total'));
 					$('.header-cart span').attr('data-cart-total', currentCartCount + 1);
 					$('.header-cart span').html(currentCartCount + 1);
+
+					
+					window.location.replace(homeUrl + '/cart/');
 				}
 			},
 			error: function (error) {
@@ -201,6 +206,8 @@ $(document).ready(function() {
 					var currentCartCount = parseInt($('.header-cart span').attr('data-cart-total'));
 					$('.header-cart span').attr('data-cart-total', currentCartCount + 1);
 					$('.header-cart span').html(currentCartCount + 1);
+					
+					window.location.replace(homeUrl + '/cart/');
 				}
 			},
 			error: function (error) {
