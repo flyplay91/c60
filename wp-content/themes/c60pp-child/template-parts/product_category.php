@@ -44,7 +44,9 @@ get_header();
 							$args = array(
 								'post_type'      => 'product',
 								'posts_per_page' => 9999,
-								'product_cat' => $category_slug_url
+								'product_cat' => $category_slug_url,
+								'orderby' => 'date', 
+								'order' => 'ASC'
 							);
 
 							$loop = new WP_Query( $args );

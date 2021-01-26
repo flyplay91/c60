@@ -3051,7 +3051,7 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-products-block > li,
 .product-category__products__inner > li {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding : 20px;
   display: flex;
   flex-direction: column;
@@ -3459,10 +3459,11 @@ body.single-product .qib-button.qib-button-wrapper {
 /* ========== Product category page ========= */
 .product-category__title-short-des h1 {
   line-height: 1;
-  color: var(--color-text);
-  font-family: 'NeurialGrotesk-Regular';
-  font-size: 34px;
-  margin-bottom: 10px;
+	color: var(--color-text);
+	font-family: 'NeurialGrotesk-Bold';
+	font-size: 34px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .product-category__title-short-des p {
