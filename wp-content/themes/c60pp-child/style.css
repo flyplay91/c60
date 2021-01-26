@@ -3512,21 +3512,25 @@ body.single-product .qib-button.qib-button-wrapper {
   margin: 0 auto;
 }
 
-.product-category__des {
-  margin-top: 100px;
-}
-
 .product-category__des--item {
   margin-bottom: 40px;
 }
 
 .product-category__des--item h2 {
-  font-size: 22px;
+  line-height: 1;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 34px;
   margin-bottom: 20px;
-  font-family: 'NeurialGrotesk-Regular';
-  color: var(--color-text);
-  text-align: left;
+  margin-top: 20px;
 }
+
+.product-category__accordion__inner h3 {
+  color: var(--color-pink);
+  font-size: 40px;
+  font-family: 'NeurialGrotesk-Bold';
+}
+
 
 .product-category__des--item p {
   text-align: left;
