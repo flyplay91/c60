@@ -2219,9 +2219,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 }
 
 .product_title {
-  font-size: 40px;
-  font-family: 'NeurialGrotesk-Bold';
-  color: var(--color-text);
+  font-size: 50px;
+	font-family: 'NeurialGrotesk-Medium';
+	color: var(--color-text);
+	max-width: 80%;
 }
 
 .woocommerce-product-gallery .flex-control-nav {
@@ -2508,6 +2509,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .reset_variations {
   text-decoration: underline;
+  display: none !important;
 }
 
 .variations .label {
@@ -2609,6 +2611,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.woocommerce-variation-add-to-cart .qib-button {
+  display: none !important;
 }
 
 body.single-product .qib-button.qib-button-wrapper {
