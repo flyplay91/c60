@@ -1312,8 +1312,7 @@ button:focus {
   background-position: center;
   margin: 0 10px;
   position: relative;
-  min-height: 205px;
-  border: solid 0px var(--color-pink);
+  min-height: 177px;
 }
 
 .home-blog__block-item:hover {
@@ -2993,12 +2992,12 @@ body.single-product .qib-button.qib-button-wrapper {
   margin-top: 50px;
 }
 
-.shop-sort {
+.shop-sort__inner {
   width: 196px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
-.shop-sort label {
+.shop-sort__inner label {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Medium';
   padding: 10px 0;
@@ -3008,7 +3007,7 @@ body.single-product .qib-button.qib-button-wrapper {
   cursor: pointer;
 }
 
-.shop-sort label:before {
+.shop-sort__inner label:before {
   background-image: url('assets/images/down-arrow.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -3020,18 +3019,18 @@ body.single-product .qib-button.qib-button-wrapper {
   top: 14px;
 }
 
-.shop-sort ul {
+.shop-sort__inner ul {
   background-color: var(--color-light-pink);
   border-radius: 15px;
   padding: 10px 0;
   display: none;
 }
 
-.shop-sort ul.opened {
+.shop-sort__inner ul.opened {
   display: block;
 }
 
-.shop-sort ul li {
+.shop-sort__inner ul li {
   font-size: 15px;
   padding: 5px 15px;
   text-align: right;
@@ -3040,7 +3039,7 @@ body.single-product .qib-button.qib-button-wrapper {
   cursor: pointer;
 }
 
-.shop-sort ul li:hover {
+.shop-sort__inner ul li:hover {
   color: var(--color-text);
 } 
 
@@ -3275,6 +3274,11 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop__image-text-block img {
   border-radius: 10px;
+}
+
+.shop__image-text-block img:hover {
+  transition: .02s;
+  transform: scale(1.01);
 }
 
 .shop-text h2 {

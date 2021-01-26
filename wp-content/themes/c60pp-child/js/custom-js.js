@@ -103,12 +103,12 @@ $(document).ready(function() {
 	});
 
 	// Shoppage sort
-	$('body').on('click', '.shop-sort > label', function() {
-		$('.shop-sort > ul').toggleClass('opened');
+	$('body').on('click', '.shop-sort__inner > label', function() {
+		$('.shop-sort__inner > ul').toggleClass('opened');
 	});
 
-	$('body').on('click', '.shop-sort > ul li', function() {
-		var currentSelectedVal = $('.shop-sort > label').text();
+	$('body').on('click', '.shop-sort__inner > ul li', function() {
+		var currentSelectedVal = $('.shop-sort__inner > label').text();
 		var newSelectedSortVal = $(this).text();
 		console.log(currentSelectedVal, newSelectedSortVal)
 	});
