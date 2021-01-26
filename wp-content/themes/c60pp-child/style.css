@@ -3049,12 +3049,17 @@ body.single-product .qib-button.qib-button-wrapper {
   grid-gap: 15px;
 }
 
-.shop-products-block > li {
+.shop-products-block > li,
+.product-category__products__inner > li {
   margin-bottom: 40px;
   padding : 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.shop-products-block > li:hover {
+.shop-products-block > li:hover,
+.product-category__products__inner > li:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.1);
   transition: all .3s ease-in-out;
   
@@ -3458,6 +3463,7 @@ body.single-product .qib-button.qib-button-wrapper {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 34px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .product-category__title-short-des p {
