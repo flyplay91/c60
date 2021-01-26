@@ -3459,7 +3459,7 @@ body.single-product .qib-button.qib-button-wrapper {
 /* ========== Product category page ========= */
 .product-category__title-short-des h1 {
   line-height: 1;
-	color: var(--color-text);
+	color: var(--color-pink);
 	font-family: 'NeurialGrotesk-Bold';
 	font-size: 34px;
 	margin-bottom: 20px;
