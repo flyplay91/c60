@@ -2991,7 +2991,61 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .shop-products {
   margin-top: 50px;
+  position: relative;
 }
+
+.shop-sort {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 196px;
+}
+
+.shop-sort label {
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Medium';
+  padding: 10px 0;
+  text-align: center;
+  font-size: 17px;
+  position: relative;
+  cursor: pointer;
+}
+
+.shop-sort label:before {
+  background-image: url('assets/images/down-arrow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 8px;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 14px;
+}
+
+.shop-sort ul {
+  background-color: var(--color-light-pink);
+  border-radius: 15px;
+  padding: 10px 0;
+  display: none;
+}
+
+.shop-sort ul.opened {
+  display: block;
+}
+
+.shop-sort ul li {
+  font-size: 15px;
+  padding: 5px 15px;
+  text-align: right;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Medium';
+  cursor: pointer;
+}
+
+.shop-sort ul li:hover {
+  color: var(--color-text);
+} 
 
 .shop-breadcrumb {
   margin-bottom: 50px;
