@@ -64,6 +64,11 @@ get_header( 'shop' ); ?>
 			
 		?>
 
+        <section class="home-more">
+            <h2 class="home-more__title">Learn More</h2>
+            <?php echo do_shortcode('[home_blogs]'); ?>
+        </section>
+
 		<?php if( have_rows('related_product_group')) : ?>
 			<?php while ( have_rows('related_product_group')): the_row(); ?>
 			<section class="related-products">
