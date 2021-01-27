@@ -100,9 +100,8 @@ get_header( 'shop' ); ?>
 																$related_first_variant_id = $related_first_variation["variation_id"];
 															?>
 																<div class="related-product-cart-item">
-																	<label>2 oz - $49 / $39.20 mo</label>
+																	<label>2 oz - $49</label>
 																	<a data-product_id="<?php echo $related_first_product_id ?>" data-variation_id="<?php echo $related_first_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="related-product-cart-btn">Add to Cart</a>
-																	<a href="" class="related-product-subscriber-btn">Subscribe</a>
 																</div>
 															<?php
 															}

@@ -2923,7 +2923,7 @@ body.single-product .qib-button.qib-button-wrapper {
 .related-product-cart-block {
   left: 50%;
   transform: translateX(-50%);
-  width: 450px;
+  width: 300px;
   bottom: -198px;
   display: none;
   position: absolute;
@@ -2935,7 +2935,7 @@ body.single-product .qib-button.qib-button-wrapper {
 
 .related-product-cart-item {
   display: grid;
-  grid-template-columns: 5fr 3fr 3fr;
+  grid-template-columns: 1fr 1fr;
   align-content: center;
   grid-gap: 7px;
   margin: 15px 0;
@@ -2953,6 +2953,7 @@ body.single-product .qib-button.qib-button-wrapper {
   padding: 7px 15px;
   border-radius: 16px;
   font-size: 14px;
+  text-align: center;
 }
 
 .related-product-cart-item a:hover {
