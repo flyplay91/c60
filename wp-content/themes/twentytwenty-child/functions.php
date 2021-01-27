@@ -76,6 +76,12 @@ if( function_exists('acf_add_options_page') ) {
 	));
 }
 
+// Change return to shop link
+add_filter( 'woocommerce_return_to_shop_redirect', 'bbloomer_change_return_shop_url' );
+function bbloomer_change_return_shop_url() {
+return home_url() . '/shop/';
+}
+
 // function mytheme_add_woocommerce_support() {
 // 	add_theme_support( 'woocommerce' );
 // 	add_theme_support( 'wc-product-gallery-slider' );
