@@ -2178,9 +2178,15 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .woocommerce-message > a {
   background-color: var(--color-pink);
-  border-radius: 5px;
-  font-family: 'NeurialGrotesk-Regular';
-  font-weight: 500;
+  font-family: 'NeurialGrotesk-Medium';
+  font-size: 18px;
+  color: var(--color-white);
+  padding: 10px;
+  text-align: center;
+}
+
+.single_variation_wrap .stock {
+  display: none;
 }
 
 .woocommerce-message > a:hover {
@@ -2699,7 +2705,7 @@ body.single-product .qib-button.qib-button-wrapper {
   margin: 0 auto !important;;
 }
 
-.screen-reader-text {
+body.single-product .screen-reader-text {
   display: inline-block;
   position: unset !important;
   clip-path: none;
@@ -7719,4 +7725,36 @@ body.single-product .qib-button.qib-button-wrapper {
 .athietes-hero__inner img {
   height: 100px;
   cursor: pointer;
+}
+
+/* Cart page */
+.cart_totals .checkout-button {
+  color: var(--color-white);
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.cart_totals .checkout-button:hover,
+.woocommerce-cart-form .actions .button:hover {
+  text-decoration: none !important;
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+.shipping-calculator-button {
+  text-decoration: underline;
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.woocommerce-cart-form .actions .button {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.woocommerce-cart-form__cart-item .screen-reader-text {
+  display: none;
+}
+
+.woocommerce-checkout form[name=checkout] {
+  width: 100%;
 }
