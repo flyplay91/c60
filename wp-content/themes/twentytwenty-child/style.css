@@ -7758,3 +7758,16 @@ body.single-product .screen-reader-text {
 .woocommerce-checkout form[name=checkout] {
   width: 100%;
 }
+
+/* My Account page */
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a {
+  color: var(--color-text);
+}
+
+.woocommerce-info a.button {
+  background-color: var(--color-pink);
+}
+
+.woocommerce-info {
+  border-top: solid 2px var(--color-pink);
+}
