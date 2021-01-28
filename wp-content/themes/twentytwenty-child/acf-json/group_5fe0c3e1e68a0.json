@@ -1344,6 +1344,21 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_6013052cb40d5",
+                            "label": "Item Link",
+                            "name": "item_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        },
+                        {
                             "key": "field_600838f6a3c97",
                             "label": "Item Description",
                             "name": "item_description",
@@ -1580,5 +1595,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1611592442
+    "modified": 1611859264
 }

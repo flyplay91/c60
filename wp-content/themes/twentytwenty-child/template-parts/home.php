@@ -313,14 +313,15 @@ get_header();
                             $item_image_url = get_sub_field('item_image')['url'];
                             $item_image_alt = get_sub_field('item_image')['alt'];
                             $item_title = get_sub_field('item_title');
+                            $item_link = get_sub_field('item_link');
                             $item_description = get_sub_field('item_description');
                             $item_star_image_url = get_sub_field('item_star_image')['url'];
                             $item_star_image_alt = get_sub_field('item_star_image')['alt'];
                             $item_user_name = get_sub_field('item_user_name');
                         ?>
                             <div class="home-lives__item lives-item--<?php echo get_row_index() ?>">
-                                <img src="<?php echo $item_image_url ?>" alt="<?php echo $item_image_alt ?>">
-                                <h4><?php echo $item_title ?></h4>
+                                <a href="<?php echo $item_link ?>"><img src="<?php echo $item_image_url ?>" alt="<?php echo $item_image_alt ?>"></a>
+                                <h4><a href="<?php echo $item_link ?>"><?php echo $item_title ?></a></h4>
                                 <p><?php echo $item_description ?></p>
                                 <div class="lives__item-star-user">
                                     <img src="<?php echo $item_star_image_url ?>" alt="<?php echo $item_star_image_alt ?>">
