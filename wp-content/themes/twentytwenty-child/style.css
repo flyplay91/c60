@@ -1250,16 +1250,17 @@ button:focus {
 
 
 
-.home-lives__item > img {
+.home-lives__item > a > img {
   max-height: 250px;
   margin: -200px auto 0;
 }
 
-.home-lives__item h4 {
+.home-lives__item h4 a {
   color: var(--color-text);
   text-align: center;
   font-family: 'NeurialGrotesk-Bold';
   font-size: 28px;
+  display: block;
 }
 
 .home-lives__item p {
