@@ -7771,3 +7771,34 @@ body.single-product .screen-reader-text {
 .woocommerce-info {
   border-top: solid 2px var(--color-pink);
 }
+
+.woocommerce-MyAccount-content h1 {
+  font-size: 50px;
+  margin: 0 0 20px;
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.woocommerce-MyAccount-content h3 {
+  font-size: 26px;
+  margin: 0 0 20px;
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Bold';
+}
+
+.woocommerce-MyAccount-content h4 {
+  font-size: 22px;
+  margin: 0 0 20px;
+  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.woocommerce-MyAccount-content > input {
+  float: left;
+  margin-right: 10px;
+  max-width: 600px;
+}
+
+.woocommerce-MyAccount-content #wcrs-link-copy {
+  padding: 15px 25px;
+}
