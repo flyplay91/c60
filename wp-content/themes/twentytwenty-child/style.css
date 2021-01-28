@@ -1257,6 +1257,11 @@ button:focus {
   margin: -200px auto 0;
 }
 
+.home-lives__item > a > img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .home-lives__item h4 a {
   color: var(--color-text);
   text-align: center;
