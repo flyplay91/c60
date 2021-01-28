@@ -360,8 +360,10 @@ get_header();
     <?php if( have_rows('home_more')) : ?>
         <?php while ( have_rows('home_more')): the_row(); ?>
         <section class="home-more">
-            <h2 class="home-more__title"><?php echo $more_title ?></h2>
-            <?php echo do_shortcode($more_shortcode); ?>
+            <div class="home-more__inner inner-section-1366">
+                <h2 class="home-more__title"><?php echo $more_title ?></h2>
+                <?php echo do_shortcode($more_shortcode); ?>
+            </div>
         </section>
         <?php endwhile;
     endif; ?>
