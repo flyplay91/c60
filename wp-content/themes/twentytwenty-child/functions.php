@@ -202,3 +202,18 @@ function discount_from_regular_callback() {
 	return true;
 }
 add_filter('wcsatt_discount_from_regular', 'discount_from_regular_callback');
+
+// My account page menu order
+function my_account_menu_order() {
+	$menuOrder = array(
+		'dashboard'          => __( 'Dashboard', 'woocommerce' ),
+		'orders'             => __( 'My Orders', 'woocommerce' ),
+		'subscriptions'      => __( 'My Subscriptions', 'woocommerce' ),
+		'referral-link'     => __( 'Referral Link', 'woocommerce' ),
+		'edit-address'       => __( 'Addresses', 'woocommerce' ),
+		'edit-account'    	 => __( 'Account Details', 'woocommerce' ),
+		'customer-logout'    => __( 'Logout', 'woocommerce' ),
+	);
+	return $menuOrder;
+}
+add_filter ( 'woocommerce_account_menu_items', 'my_account_menu_order' );
