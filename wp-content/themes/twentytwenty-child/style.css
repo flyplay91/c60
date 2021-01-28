@@ -96,8 +96,8 @@ Text Domain: twentytwenty-child
   --color-white: #ffffff;
   --color-line: #eaeaea;
   --color-text: #2F024A;
-  --color-pink: #6b2c90;
   --color-dark-pink: #501D6E;
+  --color-grey-pink: #825A9C;
   --color-light-pink: #F5E5FF;
   --color-inactive-dot: #B596C8;
   --color-review: #FFA900;
@@ -106,8 +106,9 @@ Text Domain: twentytwenty-child
   --color-black: #000000;
   --color-input-bg: #FAFAFA;
   --color-light-grey: #DDEDE6;
+  --color-pink: #6b2c90;
+  --color-heavy-pink: #6C2792;
   --color-dark-purple: #360254;
-  --color-grey-pink: #825A9C;
 }
 
 body {
@@ -633,9 +634,9 @@ button:focus {
 }
 
 .home-hero__btns a.home-hero-btn-shop {
-  background-color: var(--color-pink);
+  background-color: var(--color-heavy-pink);
   color: var(--color-white);
-  border: 2px solid var(--color-pink);
+  border: 2px solid var(--color-heavy-pink);
   margin-right: 20px;
 }
 
@@ -645,12 +646,12 @@ button:focus {
 }
 
 .home-what-c60 {
-  background-color: var(--color-light-pink);
+  background: linear-gradient(180deg, #6B2C90 0%, #4C2862 100%);
   padding: 50px 0;
 }
 
 .home-what-c60__inner h1 {
-  color: var(--color-pink);
+  color: var(--color-white);
   text-align: center;
   font-size: 50px;
   font-family: 'NeurialGrotesk-Bold';
@@ -670,13 +671,14 @@ button:focus {
 
 .home-what-c60__img h3 {
   font-size: 30px;
-  color: var(--color-pink);
+  color: var(--color-white);
   font-family: 'NeurialGrotesk-Medium';
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .home-what-c60__img p {
-  color: var(--color-text);
+  color: var(--color-white);
   font-family: 'NeurialGrotesk-Regular';
   font-size: 18px;
 }
@@ -712,7 +714,7 @@ button:focus {
 }
 
 .home-why-c60__text h3 {
-  color: var(--color-dark-pink);
+  color: var(--color-light-black);
   font-family: 'NeurialGrotesk-Regular';
   font-size: 20px;
   margin: 20px 0;
@@ -736,8 +738,8 @@ button:focus {
   grid-gap: 15px;
   align-items: center;
   margin-top: -70px;
-  background-color: var(--color-light-pink);
-  padding: 60px 20px 20px;
+  background: linear-gradient(180deg, #6B2C90 0%, #501D6E 100%);
+  padding: 40px 20px;
   z-index: 1;
   position: relative;
   margin-right: 50px;
@@ -745,7 +747,7 @@ button:focus {
 
 .home-why-c60__item {
   text-align: center;
-  border-right: solid 1px rgb(107 44 144 / 0.15);
+  border-right: solid 1px rgb(255 255 255 / 0.15);
   padding: 0 15px 0 0;
 }
 
@@ -765,7 +767,7 @@ button:focus {
 
 .home-why-c60__item label {
   display: block;
-  color: var(--color-pink);
+  color: var(--color-white);
   font-family: 'NeurialGrotesk-Bold';
   font-size: 18px;
   margin-top: 18px;
@@ -773,7 +775,7 @@ button:focus {
 
 .home-why-c60__item span {
   display: block;
-  color: var(--color-pink);
+  color: var(--color-white);
   font-family: 'NeurialGrotesk-Regular';
   font-size: 14px;
   line-height: 1.2;
@@ -1070,7 +1072,7 @@ button:focus {
 }
 
 .home-cfo__inner h4 {
-  font-size: 29px;
+  font-size: 28px;
   color: var(--color-dark-purple);
   font-family: 'NeurialGrotesk-Medium';
   margin-bottom: 20px;
@@ -1081,12 +1083,12 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .home-cfo__img-position img {
   border-radius: 50%;
   margin-right: 30px;
+  max-width: 170px;
 }
 
 .home-cfo__position label {
@@ -1412,10 +1414,6 @@ button:focus {
 
   .home-benefits__item--text h3 {
     font-size: 24px;
-  }
-
-  .home-cfo__inner h4 {
-    font-size: 28px;
   }
 
   .home-new-product__inner > label {
