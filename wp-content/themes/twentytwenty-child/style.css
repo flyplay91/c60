@@ -2737,7 +2737,7 @@ body.single-product .qib-button.qib-button-wrapper {
 }
 
 body.single-product .screen-reader-text {
-  display: inline-block;
+  display: none;
   position: unset !important;
   clip-path: none;
   overflow: visible;
@@ -2770,7 +2770,7 @@ body.single-product .screen-reader-text {
 }
 
 .single_add_to_cart_button {
-  margin: 10px auto;
+  margin: 20px auto;
   width: 100%;
   border-radius: 15px;
   text-transform: capitalize;
