@@ -30,6 +30,8 @@ if ( ! comments_open() ) {
 			Reviews
 		</h2>
 
+		<a href="javascript: void(0)" class="btn-write-comment">Write a comment</a>
+
 		<?php if ( have_comments() ) : ?>
 			<ol class="commentlist">
 				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>

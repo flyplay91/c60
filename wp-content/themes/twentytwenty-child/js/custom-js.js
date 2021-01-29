@@ -237,6 +237,9 @@ $(document).ready(function() {
 	// Testimonial page add file upload text in form
 	$('.testimonial-form__inner .gform_body li.testimonial-file input[type=file]').before('<button class="btn-testimonial-file-upload">Select Files</button>');
 
-
+	// Product page
+	$('body').on('click', '.btn-write-comment', function() {
+		$('#review_form_wrapper').toggleClass('opened');
+	});
 });
 	
