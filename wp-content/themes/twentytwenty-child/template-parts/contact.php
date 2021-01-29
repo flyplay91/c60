@@ -13,7 +13,7 @@ get_header();
 
 <main class="contact-page">
 
-    <?php if( have_rows('contact_hero_group')) :
+    <!-- <?php if( have_rows('contact_hero_group')) :
         $contact_hero_group = get_field('contact_hero_group');
         $hero_img_url = $contact_hero_group['hero_background_image']['url'];
         $hero_img_alt = $contact_hero_group['hero_background_image']['alt'];
@@ -30,7 +30,7 @@ get_header();
                 </div>
             </section>
         <?php endwhile;
-    endif; ?>
+    endif; ?> -->
 
     <?php if( have_rows('contact_information_group')) :
         $contact_information_group = get_field('contact_information_group');
