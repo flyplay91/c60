@@ -22,15 +22,17 @@ get_header();
 		$hero_arrow_img_url = $hero_group['hero_down_arrow']['url'];
 		$hero_arrow_img_alt = $hero_group['hero_down_arrow']['alt'];
 		
-		while ( have_rows('shop_hero_group')): the_row(); ?>
-			<section class="shop__hero" style="background-image: url(<?php echo $hero_img_url ?>)">
-				<div class="shop__hero-content">
-					<h1><?php echo $hero_heading ?></h1>
-					<p><?php echo $hero_sub_heading ?></p>
-					<img class="shop-hero-down-arrow" src="<?php echo $hero_arrow_img_url ?>" alt="<?php echo $hero_arrow_img_alt ?>">
-				</div>
-			</section>
-		<?php endwhile;
+		while ( have_rows('shop_hero_group')): the_row(); 
+			if ($hero_img_url) : ?>
+				<section class="shop__hero" style="background-image: url(<?php echo $hero_img_url ?>)">
+					<div class="shop__hero-content">
+						<h1><?php echo $hero_heading ?></h1>
+						<p><?php echo $hero_sub_heading ?></p>
+						<img class="shop-hero-down-arrow" src="<?php echo $hero_arrow_img_url ?>" alt="<?php echo $hero_arrow_img_alt ?>">
+					</div>
+				</section>
+			<?php endif; 
+		endwhile;
     endif; ?>
 
 	<?php if( have_rows('shop_menu_group')) : ?>
