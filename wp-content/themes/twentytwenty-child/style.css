@@ -2511,6 +2511,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   color: var(--color-pink);
 }
 
+.single-product .commentlist .meta {
+  margin-top: 10px;
+}
+
 .woocommerce-tabs .comment-reply-title {
   margin: 0 0 20px 0;
   text-align: left;

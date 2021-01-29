@@ -49,17 +49,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 *
 			 * @hooked woocommerce_review_display_meta - 10
 			 */
-			do_action( 'woocommerce_review_meta', $comment );
+			
 
 			do_action( 'woocommerce_review_before_comment_text', $comment );
-
+			
 			/**
 			 * The woocommerce_review_comment_text hook
 			 *
 			 * @hooked woocommerce_review_display_comment_text - 10
 			 */
 			do_action( 'woocommerce_review_comment_text', $comment );
-
+			do_action( 'woocommerce_review_meta', $comment );
 			do_action( 'woocommerce_review_after_comment_text', $comment );
 			?>
 
