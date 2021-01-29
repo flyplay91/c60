@@ -30,11 +30,11 @@ get_header();
         <?php endwhile;
     endif; ?>
 
-    <section class="science__breadcrumb">
+    <!-- <section class="science__breadcrumb">
         <div class="science__breadcrumb__inner inner-section-1220">
             <?php woocommerce_breadcrumb(); ?>
         </div>
-    </section>
+    </section> -->
 
     <?php if( have_rows('science_item_group')) :
         while ( have_rows('science_item_group')): the_row(); ?>
