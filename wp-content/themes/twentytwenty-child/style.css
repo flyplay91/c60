@@ -2515,6 +2515,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   margin-top: 10px;
 }
 
+.single-product .commentlist .star-rating {
+  font-size: 1em;
+}
+
 .woocommerce-tabs .comment-reply-title {
   margin: 0 0 20px 0;
   text-align: left;
