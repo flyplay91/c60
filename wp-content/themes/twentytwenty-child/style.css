@@ -2488,6 +2488,11 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 #review_form_wrapper {
   margin-top: 20px;
+  display: none;
+}
+
+#review_form_wrapper.opened {
+  display: block;
 }
 
 .woocommerce-tabs #tab-reviews .woocommerce-Reviews {
@@ -2517,6 +2522,20 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .single-product .commentlist .star-rating {
   font-size: 1em;
+}
+
+.btn-write-comment {
+  background-color: var(--color-pink);
+  color: var(--color-white) !important;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Regular' !important;
+}
+
+.btn-write-comment:hover {
+  transition: .02s;
+  transform: scale(1.01);
 }
 
 .woocommerce-tabs .comment-reply-title {
