@@ -518,9 +518,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "26"
+                "value": "template-parts\/shop.php"
             }
         ]
     ],
@@ -532,5 +532,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1609712872
+    "modified": 1611931683
 }
