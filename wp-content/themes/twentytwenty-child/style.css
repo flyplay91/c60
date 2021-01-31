@@ -5782,7 +5782,7 @@ body.single-product .screen-reader-text {
 .team-ceo-img-text {
   padding-top: 100px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
 
@@ -5838,6 +5838,7 @@ body.single-product .screen-reader-text {
 
 .about-team-item:last-child {
   margin-bottom: 0;
+  border: none;
 }
 
 .about-team-item .team-img-text {
@@ -5901,16 +5902,10 @@ body.single-product .screen-reader-text {
     max-width: 890px;
   }
 
-  .team-ceo-img-text,
-  .about-team-item .team-img-text.right-img,
-  .about-team-item .team-img-text.left-img {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .team-ceo-text h4,
   .about-team-item .team-text h4 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
