@@ -362,3 +362,41 @@ function checkedNewsletterBox() { ?>
     </script>
   <?php
 }
+
+// David Page Product Section
+add_shortcode('david_products', 'DavidProducts');
+function DavidProducts() { ?>
+
+<div class="david-products-block">
+    <div class="david-product-item">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/avocado-oil.png">
+        <div class="david-product-title">
+            <h3>C60 in Organic<br>Avocado Oil</h3>
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star-5-purple.png">
+            <span>Starting at <e>$49.00</e> <b>$44.10</b></span>
+            <a href="/c60-oil/c60-avocado-oil/">Select Options</a>
+        </div>
+    </div>
+    <div class="david-product-item">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/coconut-oil.png">
+        <div class="david-product-title">
+            <h3>C60 in Organic MCT<br>Coconut Oil</h3>
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star-5-purple.png">
+            <span>Starting at <e>$49.00</e> <b>$44.10</b></span>
+            <a href="/c60-oil/c60-mct-coconut-oil/">Select Options</a>
+        </div>
+    </div>
+    <div class="david-product-item">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/olive-oil.png">
+        <div class="david-product-title">
+            <h3>C60 in Organic Extra<br> Virgin Olive Oil</h3>
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star-5-purple.png">
+            <span>Starting at <e>$49.00</e> <b>$44.10</b></span>
+            <a href="/c60-oil/c60-olive-oil/">Select Options</a>
+        </div>
+    </div>
+</div>
+    
+<?php
+}
+

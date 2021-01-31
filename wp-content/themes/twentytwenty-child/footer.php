@@ -55,7 +55,7 @@
 						<?php if( have_rows('footer_logo_group', 'option')) : 
 							while ( have_rows('footer_logo_group', 'option')): the_row(); ?>
 								<div class="footer-logo">
-									<a href="/">
+									<a href="https://c60purplepower.com" title="C60 Purple Power">
 										<?php if ( have_rows('logo_repeater', 'option')) :
 											while (have_rows('logo_repeater', 'option')) : the_row(); 
 												$logo_img_url = get_sub_field('logo_image')['url'];

@@ -63,7 +63,7 @@ get_header();
                             <h3><?php echo $what_c60_left_heading ?></h3>
                             <p><?php echo $what_c60_left_description ?></p>
                         </div>
-                        <img src="<?php echo $what_c60_image_url ?>" alt="<?php echo $what_c60_image_alt ?>">
+                        <img class="whatisturn" src="<?php echo $what_c60_image_url ?>" alt="<?php echo $what_c60_image_alt ?>">
                         <div class="home-what-c60__img">
                             <h3><?php echo $what_c60_right_heading ?></h3>
                             <p><?php echo $what_c60_right_description ?></p>
@@ -293,7 +293,7 @@ get_header();
                             <p><?php echo $new_product_description ?></p>
                             <a href="<?php echo $new_product_link ?>">Shop Now</a>
                         </div>
-                        <img src="<?php echo $new_product_image_url ?>" alt="<?php echo $new_product_image_alt ?>">
+                        <a href="<?php echo $new_product_link ?>"><img src="<?php echo $new_product_image_url ?>" alt="<?php echo $new_product_image_alt ?>"></a>
                     </div>
                 </div>
             </section>

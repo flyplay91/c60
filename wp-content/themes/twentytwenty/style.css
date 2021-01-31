@@ -2403,7 +2403,7 @@ body:not(.singular) main > article:first-of-type {
 
 .singular .entry-header {
 	background-color: #fff;
-	padding: 4rem 0;
+	padding: 0rem 0 4rem 0;
 }
 
 .entry-categories {
@@ -5075,9 +5075,11 @@ a.to-the-top > * {
 	/* POST HEADER */
 
 	.singular .entry-header {
-		padding: 8rem 0;
+		padding: 0rem 0 4rem 0;
 	}
-
+	.singular .entry-title {
+		padding: 6rem 0;
+	}
 	.entry-categories {
 		margin-bottom: 3rem;
 	}
@@ -6121,7 +6123,9 @@ a.to-the-top > * {
 
 	h1,
 	.heading-size-1 {
-		font-size: 8.4rem;
+		font-size: 40px;
+	font-family: 'NeurialGrotesk-Medium';
+	color: var(--color-pink);
 	}
 
 	/* Helper Classes ------------------------ */
