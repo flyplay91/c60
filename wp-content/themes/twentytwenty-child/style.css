@@ -1964,6 +1964,19 @@ button:focus {
     font-size: 30px;
     line-height: 40px;
   }
+
+  .header-banner__inner .slick-next {
+    right: -2%;
+  }
+
+  .header-banner__inner .slick-prev {
+    left: -2%;
+  }
+
+  .header-banner__inner span {
+    font-size: 16px;
+  }
+  
 }
 
 /* ============= Footer ================== */
