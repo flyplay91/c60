@@ -24,12 +24,13 @@ get_header();
             <?php if( have_rows('carousel_repeater') ) :
                 while( have_rows('carousel_repeater') ) : the_row();
                     $img_url = get_sub_field('background_image')['url'];
+                    $img_mobi_url = get_sub_field('mobile_image')['url'];
                     $title = get_sub_field('title');
                     $subtitle = get_sub_field('subtitle');
                     $shop_btn_link = get_sub_field('shop_button_link');
                     $learn_more_btn_link = get_sub_field('learn_more_button_link');
                 ?>
-                    <div class="home-hero__carousel" style="background-image: url(<?php echo $img_url ?>)">
+                    <div class="home-hero__carousel">
                         <div class="home-hero__inner">
                             <h1 class="home-hero__title"><?php echo $title ?></h1>
                             <h4 class="home-hero__subtitle"><?php echo $subtitle ?></h4>
@@ -38,7 +39,17 @@ get_header();
                                 <a href="<?php echo $learn_more_btn_link ?>" class="home-hero-btn-more">Learn More</a>
                             </div>
                         </div>
-                    </div>        
+                    </div>
+                    <style>
+                        .home-hero__carousel {
+                            background-image: url('<?php echo $img_url ?>');
+                        }
+                        @media(max-width:767px) {
+                            .home-hero__carousel {
+                                background-image: url('<?php echo $img_mobi_url ?>');
+                            }
+                        }
+                    </style>
                 <?php endwhile;
             endif; ?>
         </sectoin>

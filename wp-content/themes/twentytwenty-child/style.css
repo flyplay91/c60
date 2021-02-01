@@ -582,10 +582,10 @@ button:focus {
 }
 
 /* ================ Home Page ============= */
-.home-hero {
+/* .home-hero {
   opacity: 0;
   visibility: hidden;
-}
+} */
 
 .home-hero__carousel {
   background-position: center right;
@@ -1333,8 +1333,6 @@ button:focus {
   background-color: var(--color-light-pink);
 }
 
-
-
 .home-lives__item > a > img {
   max-height: 250px;
   margin: -200px auto 0;
@@ -1669,6 +1667,10 @@ button:focus {
 }
 
 @media(max-width: 767px) {
+  .home-why-c60 {
+    margin-top: 0;
+  }
+
   .klaviyo-popup__inner {
     width: 90%;
   }
@@ -1905,11 +1907,20 @@ button:focus {
   .home-products__inner .tabset > label {
     margin: 0 50px;
   }
-}
 
-@media(max-width: 500px) {
   .header-top-social li {
     display: none;
+  }
+
+  .home-hero__inner {
+    position: unset;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    text-align: left;
   }
 
   .home-hero__title {
@@ -1917,12 +1928,35 @@ button:focus {
   }
 
   .home-hero__subtitle {
-    font-size: 18px;
+    font-size: 20px;
+    margin: 0;
+    max-width: 220px;
+  }
+
+  .home-hero__subtitle br {
+    display: none;
+  }
+
+  .home-hero__btns {
+    display: flex;
+    justify-content: space-between;
   }
 
   .home-hero__btns a {
-    font-size: 16px;
-    min-width: 140px;
+    font-size: 18px;
+    min-width: auto;
+    width: 47%;
+    font-family: 'NeurialGrotesk-Medium';
+  }
+
+  .home-hero__btns a.home-hero-btn-shop {
+    margin: 0;
+  }
+
+  .home-hero__btns a.home-hero-btn-more {
+    color: var(--color-heavy-pink);
+    border-color: var(--color-heavy-pink);
+    background-color: var(--color-white);
   }
 
   .home-seen__title,

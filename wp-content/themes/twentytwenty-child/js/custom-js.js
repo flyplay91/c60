@@ -49,19 +49,19 @@ $(document).ready(function() {
 		]
 	});
 
-	$('.home-hero').on('init', function(event, slick){
-		$('.home-hero.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
-	});
+	// $('.home-hero').on('init', function(event, slick){
+	// 	$('.home-hero.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
+	// });
 
-	$('.home-hero').slick({
-		dots: false,
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: true,
-  		autoplaySpeed: 8000
-	});
+	// $('.home-hero').slick({
+	// 	dots: false,
+	// 	infinite: true,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	arrows: false,
+	// 	autoplay: true,
+  	// 	autoplaySpeed: 8000
+	// });
 	  
 	// Homepage Product Cart
 	if ( typeof wc_add_to_cart_params === 'undefined' ) return false;
