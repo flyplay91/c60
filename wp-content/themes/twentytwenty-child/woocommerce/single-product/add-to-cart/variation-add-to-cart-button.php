@@ -36,4 +36,4 @@ global $product;
 	<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
 </div>
-<p class="extra-variant-text">Free shipping, cancel anytime,<br>satisfaction guaranteed.</p>
+<p class="extra-variant-text"></p>
