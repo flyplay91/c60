@@ -248,11 +248,11 @@ $(document).ready(function() {
 			$('.wcsatt-options-product li').each(function() {
 				if ($(this).find('input').prop("checked")) {
 					if ($(this).hasClass('one-time-option')) {
-						$('.single_add_to_cart_button').text('Buy Now');
-						$('.extra-variant-text').text('Free shipping in the US and<br />100% satisfaction guaranteed.');
+						$('.single_add_to_cart_button').html('Buy Now');
+						$('.extra-variant-text').html('Free shipping in the US and<br>100% satisfaction guaranteed.');
 					} else {
-						$('.single_add_to_cart_button').text('Subscribe Now');
-						$('.extra-variant-text').text('Free shipping in the US, cancel anytime, <br />satisfaction guaranteed.');
+						$('.single_add_to_cart_button').html('Subscribe Now');
+						$('.extra-variant-text').html('Free shipping in the US, cancel anytime, <br>satisfaction guaranteed.');
 					}
 				}
 			});
@@ -265,11 +265,11 @@ $(document).ready(function() {
 			$('.wcsatt-options-product li').each(function() {
 				if ($(this).find('input').prop("checked")) {
 					if ($(this).hasClass('one-time-option')) {
-						$('.single_add_to_cart_button').text('Buy Now');
-						$('.extra-variant-text').text('Free shipping in the US and<br />100% satisfaction guaranteed.');
+						$('.single_add_to_cart_button').html('Buy Now');
+						$('.extra-variant-text').html('Free shipping in the US and<br>100% satisfaction guaranteed.');
 					} else {
-						$('.single_add_to_cart_button').text('Subscribe Now');
-						$('.extra-variant-text').text('Free shipping in the US, cancel anytime, <br />satisfaction guaranteed.');
+						$('.single_add_to_cart_button').html('Subscribe Now');
+						$('.extra-variant-text').html('Free shipping in the US, cancel anytime, <br>satisfaction guaranteed.');
 					}
 				}
 			});
@@ -278,11 +278,11 @@ $(document).ready(function() {
 
 	$('body').on('click', '.wcsatt-options-product li input', function() {
 		if ($(this).closest('li').hasClass('one-time-option')) {
-			$('.single_add_to_cart_button').text('Buy Now');
-			$('.extra-variant-text').text('Free shipping in the US and<br />100% satisfaction guaranteed.');
+			$('.single_add_to_cart_button').html('Buy Now');
+			$('.extra-variant-text').html('Free shipping in the US and<br>100% satisfaction guaranteed.');
 		} else {
-			$('.single_add_to_cart_button').text('Subscribe Now');
-			$('.extra-variant-text').text('Free shipping in the US, cancel anytime, <br />satisfaction guaranteed.');
+			$('.single_add_to_cart_button').html('Subscribe Now');
+			$('.extra-variant-text').html('Free shipping in the US, cancel anytime, <br>satisfaction guaranteed.');
 		}
 	});
 });
