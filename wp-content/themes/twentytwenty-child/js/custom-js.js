@@ -249,10 +249,10 @@ $(document).ready(function() {
 				if ($(this).find('input').prop("checked")) {
 					if ($(this).hasClass('one-time-option')) {
 						$('.single_add_to_cart_button').text('Buy Now');
-						$('.extra-variant-text').text('Free shipping in the US and 100% satisfaction guaranteed.');
+						$('.extra-variant-text').text('Free shipping in the US and<br />100% satisfaction guaranteed.');
 					} else {
 						$('.single_add_to_cart_button').text('Subscribe Now');
-						$('.extra-variant-text').text('Free shipping in the US, cancel anytime, satisfaction guaranteed.');
+						$('.extra-variant-text').text('Free shipping in the US, cancel anytime, <br />satisfaction guaranteed.');
 					}
 				}
 			});
@@ -266,10 +266,10 @@ $(document).ready(function() {
 				if ($(this).find('input').prop("checked")) {
 					if ($(this).hasClass('one-time-option')) {
 						$('.single_add_to_cart_button').text('Buy Now');
-						$('.extra-variant-text').text('Free shipping in the US and 100% satisfaction guaranteed.');
+						$('.extra-variant-text').text('Free shipping in the US and<br />100% satisfaction guaranteed.');
 					} else {
 						$('.single_add_to_cart_button').text('Subscribe Now');
-						$('.extra-variant-text').text('Free shipping in the US, cancel anytime, satisfaction guaranteed.');
+						$('.extra-variant-text').text('Free shipping in the US, cancel anytime, <br />satisfaction guaranteed.');
 					}
 				}
 			});
@@ -279,10 +279,10 @@ $(document).ready(function() {
 	$('body').on('click', '.wcsatt-options-product li input', function() {
 		if ($(this).closest('li').hasClass('one-time-option')) {
 			$('.single_add_to_cart_button').text('Buy Now');
-			$('.extra-variant-text').text('Free shipping in the US and 100% satisfaction guaranteed.');
+			$('.extra-variant-text').text('Free shipping in the US and<br />100% satisfaction guaranteed.');
 		} else {
 			$('.single_add_to_cart_button').text('Subscribe Now');
-			$('.extra-variant-text').text('Free shipping in the US, cancel anytime, satisfaction guaranteed.');
+			$('.extra-variant-text').text('Free shipping in the US, cancel anytime, <br />satisfaction guaranteed.');
 		}
 	});
 });
