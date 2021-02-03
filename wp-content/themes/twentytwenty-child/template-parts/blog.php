@@ -12,6 +12,30 @@ get_header();
 ?>
 
 <main class="blog-page">
+    <?php if( have_rows('hero_group')) :
+        $hero_group = get_field('hero_group');
+        $hero_background_image_url = $hero_group['hero_background_image']['url'];
+        $hero_background_image_alt = $hero_group['hero_background_image']['alt'];
+        $hero_heading = $hero_group['hero_heading'];
+        $hero_description = $hero_group['hero_description'];
+        $hero_read_more_button_link = $hero_group['hero_read_more_button_link'];
+        while ( have_rows('hero_group')): the_row(); ?>
+            <section class="blog-hero" style="background-image: url(<?php echo $hero_background_image_url ?>)">
+                <div class="blog-hero__inner">
+                    <label>Blog | Most Popular</label>
+                    <h1><?php echo $hero_heading ?></h1>
+                    <ul>
+                        <li>52 likes</li>
+                        <li>16 comments</li>
+                        <li>3 mins read</li>
+                    </ul>
+                    <p><?php echo $hero_description ?></p>
+                    <a href="<?php echo $hero_read_more_button_link ?>">Read More</a>
+                </div>
+            </section>
+        <?php endwhile;
+    endif; ?>
+
     <section class="blog-post-list">
         <div class="blog-post-list__inner inner-section-1366">
             <?php
