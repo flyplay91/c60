@@ -5250,6 +5250,10 @@ body.single-product .screen-reader-text {
     padding-top: 15px;
     padding-left: 15px;
   }
+
+  .blog-post-list__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media(max-width: 767px) {
@@ -5267,6 +5271,11 @@ body.single-product .screen-reader-text {
 
   .blog-hero__inner a {
     font-size: 20px;
+  }
+
+  .blog-post-list__inner {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
   }
 }
 
