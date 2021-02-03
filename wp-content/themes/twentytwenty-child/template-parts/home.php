@@ -99,7 +99,7 @@ get_header();
                         <div class="home-why-c60__text">
                             <h2><?php echo $why_c60_heading ?></h2>
                             <h3><?php echo $why_c60_sub_heading ?></h3>
-                            <p><?php echo $why_c60_description ?></p>
+                            <h3><?php echo $why_c60_description ?></h3>
                         </div>
                         <img class="home-why-c60__img" src="<?php echo $why_c60_image_url ?>" alt="<?php echo $why_c60_image_alt ?>">
                     </div>

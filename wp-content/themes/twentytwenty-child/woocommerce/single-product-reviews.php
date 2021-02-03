@@ -32,46 +32,20 @@ if ( ! comments_open() ) {
 
 		<a href="javascript: void(0)" class="btn-write-comment">Write a comment</a>
 
-		<?php if ( have_comments() ) : ?>
-			<ol class="commentlist">
-				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
-			</ol>
-
-			<?php
-			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
-				echo '<nav class="woocommerce-pagination">';
-				paginate_comments_links(
-					apply_filters(
-						'woocommerce_comment_pagination_args',
-						array(
-							'prev_text' => '&larr;',
-							'next_text' => '&rarr;',
-							'type'      => 'list',
-						)
-					)
-				);
-				echo '</nav>';
-			endif;
-			?>
-		<?php else : ?>
-			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
-		<?php endif; ?>
-	</div>
-
-	<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->get_id() ) ) : ?>
+		<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->get_id() ) ) : ?>
 		<div id="review_form_wrapper">
 			<div id="review_form">
 				<?php
 				$commenter    = wp_get_current_commenter();
 				$comment_form = array(
 					/* translators: %s is product title */
-					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'woocommerce' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
+					'title_reply'         => have_comments() ? esc_html__( '', 'woocommerce' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
 					/* translators: %s is product title */
 					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'woocommerce' ),
 					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title">',
 					'title_reply_after'   => '</span>',
 					'comment_notes_after' => '',
-					'label_submit'        => esc_html__( 'Submit', 'woocommerce' ),
+					'label_submit'        => esc_html__( 'Submit Comment', 'woocommerce' ),
 					'logged_in_as'        => '',
 					'comment_field'       => '',
 				);
@@ -133,6 +107,34 @@ if ( ! comments_open() ) {
 	<?php else : ?>
 		<p class="woocommerce-verification-required"><?php esc_html_e( 'Only logged in customers who have purchased this product may leave a review.', 'woocommerce' ); ?></p>
 	<?php endif; ?>
+
+		<?php if ( have_comments() ) : ?>
+			<ol class="commentlist">
+				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
+			</ol>
+
+			<?php
+			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
+				echo '<nav class="woocommerce-pagination">';
+				paginate_comments_links(
+					apply_filters(
+						'woocommerce_comment_pagination_args',
+						array(
+							'prev_text' => '&larr;',
+							'next_text' => '&rarr;',
+							'type'      => 'list',
+						)
+					)
+				);
+				echo '</nav>';
+			endif;
+			?>
+		<?php else : ?>
+			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
+		<?php endif; ?>
+	</div>
+
+	
 
 	<div class="clear"></div>
 </div>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Health Benefit Template
+ * Template Name: Athletic Performance Template
  * Template Post Type: page
  *
  * @package WordPress
@@ -37,7 +37,7 @@ get_header();
                         <img src="<?php echo $hero_image_url ?>" alt="<?php echo $hero_image_alt ?>">
                     </div>
                 </div>  
-                    <?php echo $hero_description ?>
+                    <p><?php echo $hero_description ?></p>
                 </div>
             </section>
         <?php endwhile;
@@ -135,8 +135,8 @@ get_header();
                             <div class="customertestimonial__img-text">
                             
 
-                            <div class="customertestimonial__customer">
-                                    <img src="<?php echo $customer_image_url ?>" alt="<?php echo $customer_image_alt ?>">
+                            <div class="customertestimonial__customer" style="background:url(<?php echo $customer_image_url ?>); background-repeat:no-repeat;background-size:cover;background-position:left;">
+                                 
                             </div>      
 
 

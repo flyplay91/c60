@@ -279,10 +279,10 @@ $(document).ready(function() {
 	$('body').on('click', '.wcsatt-options-product li input', function() {
 		if ($(this).closest('li').hasClass('one-time-option')) {
 			$('.single_add_to_cart_button').html('Buy Now');
-			$('.extra-variant-text').html('Free shipping in the US and<br>100% satisfaction guaranteed.');
+			$('.extra-variant-text').html('Free shipping in the US<br />and satisfaction guaranteed.');
 		} else {
 			$('.single_add_to_cart_button').html('Subscribe Now');
-			$('.extra-variant-text').html('Free shipping in the US, cancel anytime, <br>satisfaction guaranteed.');
+			$('.extra-variant-text').html('Free shipping in the US, cancel anytime,<br>satisfaction guaranteed.');
 		}
 	});
 });

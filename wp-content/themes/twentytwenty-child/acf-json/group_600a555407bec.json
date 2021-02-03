@@ -1,10 +1,29 @@
 {
     "key": "group_600a555407bec",
-    "title": "Healthy Page",
+    "title": "Health Benefits Page",
     "fields": [
         {
+            "key": "field_601a20e27863e",
+            "label": "Page CSS Class Name",
+            "name": "page_css_class_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_600a556195f2e",
-            "label": "Healthy Hero",
+            "label": "Hero",
             "name": "healthy_hero",
             "type": "group",
             "instructions": "",
@@ -18,8 +37,27 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_6019adde00c50",
+                    "label": "Title",
+                    "name": "hero_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_600a556e95f2f",
-                    "label": "Hero Label",
+                    "label": "Sub Title",
                     "name": "hero_label",
                     "type": "text",
                     "instructions": "",
@@ -38,7 +76,7 @@
                 },
                 {
                     "key": "field_600a557b95f30",
-                    "label": "Hero Heading",
+                    "label": "List Title",
                     "name": "hero_heading",
                     "type": "text",
                     "instructions": "",
@@ -57,7 +95,7 @@
                 },
                 {
                     "key": "field_600a558995f31",
-                    "label": "Hero Short Description",
+                    "label": "List Description",
                     "name": "hero_short_description",
                     "type": "textarea",
                     "instructions": "",
@@ -100,7 +138,7 @@
                 },
                 {
                     "key": "field_600a55a095f33",
-                    "label": "Hero Description",
+                    "label": "Bottom Description",
                     "name": "hero_description",
                     "type": "textarea",
                     "instructions": "",
@@ -121,7 +159,7 @@
         },
         {
             "key": "field_600a72e15a378",
-            "label": "Healthy Way",
+            "label": "Content",
             "name": "healthy_way",
             "type": "group",
             "instructions": "",
@@ -136,7 +174,7 @@
             "sub_fields": [
                 {
                     "key": "field_600a72e85a379",
-                    "label": "Way Image",
+                    "label": "Left Image",
                     "name": "way_image",
                     "type": "image",
                     "instructions": "",
@@ -160,7 +198,7 @@
                 },
                 {
                     "key": "field_600a72f55a37a",
-                    "label": "Way Heading",
+                    "label": "Heading",
                     "name": "way_heading",
                     "type": "text",
                     "instructions": "",
@@ -179,7 +217,7 @@
                 },
                 {
                     "key": "field_600a73005a37b",
-                    "label": "Way Description",
+                    "label": "Description 1",
                     "name": "way_description",
                     "type": "textarea",
                     "instructions": "",
@@ -197,9 +235,174 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_600a73075a37c",
-                    "label": "Way Summary Description",
-                    "name": "way_summary_description",
+                    "key": "field_6019c8219ea89",
+                    "label": "Way Description Row 2",
+                    "name": "way_description_row_2",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_6019c8329ea8a",
+                    "label": "Right Image",
+                    "name": "way_right_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6019ea57896d3",
+                    "label": "Summary Title",
+                    "name": "summary_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6019ea64896d4",
+                    "label": "Summary Description",
+                    "name": "summary_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6019ec601ce91",
+            "label": "Customer Testimonial",
+            "name": "customer_testimonials",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6019f0f2f8506",
+                    "label": "Customer Image",
+                    "name": "customer_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6019ecda0281d",
+                    "label": "Review Stars",
+                    "name": "review_stars",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6019ed7336dae",
+                    "label": "Customer Review Title",
+                    "name": "customerreview_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6019ed8336daf",
+                    "label": "Customer Review Description",
+                    "name": "customerreview_description",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -219,7 +422,7 @@
         },
         {
             "key": "field_600a763fd9abb",
-            "label": "Healthy Video",
+            "label": "Ready Section",
             "name": "healthy_video",
             "type": "group",
             "instructions": "",
@@ -234,7 +437,7 @@
             "sub_fields": [
                 {
                     "key": "field_600a764bd9abc",
-                    "label": "Video Heading",
+                    "label": "Ready Heading",
                     "name": "video_heading",
                     "type": "text",
                     "instructions": "",
@@ -252,8 +455,51 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_6019f647f8112",
+                    "label": "Product Image",
+                    "name": "product_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6019f907a4505",
+                    "label": "Button Text",
+                    "name": "button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_600a7652d9abd",
-                    "label": "Video Order Link",
+                    "label": "Button Link",
                     "name": "video_order_link",
                     "type": "link",
                     "instructions": "",
@@ -267,9 +513,52 @@
                     "return_format": "url"
                 },
                 {
+                    "key": "field_6019f6be0a20e",
+                    "label": "Learn more Heading",
+                    "name": "learnmore_heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6019fc6b2f235",
+                    "label": "Blog Image",
+                    "name": "blog_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_600a7663d9abe",
-                    "label": "Video Link",
-                    "name": "video_link",
+                    "label": "Blog Image URL",
+                    "name": "blog_link",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -306,7 +595,7 @@
                     "sub_fields": [
                         {
                             "key": "field_600a767bd9ac0",
-                            "label": "Item Text",
+                            "label": "Citation",
                             "name": "item_text",
                             "type": "text",
                             "instructions": "",
@@ -335,6 +624,13 @@
                 "operator": "==",
                 "value": "template-parts\/healthy_aging.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/athletic-performance.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -345,5 +641,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1611298457
+    "modified": 1612327590
 }

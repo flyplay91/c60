@@ -55,9 +55,13 @@ get_header();
                         <img src="<?php echo $team_down_arrow_image_url ?>" alt="<?php echo $team_down_arrow_image_alt ?>">
                         <div class="team-ceo-img-text">
                             <img class="team-ceo-img" src="<?php echo $team_ceo_image_image_url ?>" alt="<?php echo $team_ceo_image_image_alt ?>">
-                            <div class="team-ceo-text"><?php echo $team_ceo_short_description ?></div>
+                            <div class="team-ceo-text">
+                                <?php echo $team_ceo_short_description ?>
+
+                                <?php echo $team_ceo_description ?>
+                            </div>
                         </div>
-                        <p><?php echo $team_ceo_description ?></p>
+                        
                     </div>
                 </div>
 
