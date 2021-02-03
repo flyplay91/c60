@@ -5120,9 +5120,9 @@ body.single-product .screen-reader-text {
 .blog-hero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 900px;
   background-position: center;
-  border-bottom: solid 70px var(--color-pink);
+  border-bottom: solid 60px var(--color-pink);
 }
 
 .blog-hero__inner {
@@ -5216,6 +5216,58 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
   color: var(--color-text);
   font-size: 22px;
+}
+
+@media(max-width: 1440px) {
+  .blog-hero__inner {
+    padding-top: 50px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .blog-hero {
+    height: 600px;
+  }
+
+  .blog-hero__inner h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .blog-hero__inner ul {
+    margin-bottom: 20px;
+  }
+
+  .blog-hero__inner p {
+    width: 40%;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .blog-hero__inner {
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media(max-width: 767px) {
+  .blog-hero {
+    height: 480px;
+  }
+
+  .blog-hero__inner h1 {
+    font-size: 30px;
+  }
+
+  .blog-hero__inner p {
+    width: 100%;
+  }
+
+  .blog-hero__inner a {
+    font-size: 20px;
+  }
 }
 
 /* ======== FAQ page ========= */
