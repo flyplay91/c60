@@ -82,85 +82,6 @@
             ]
         },
         {
-            "key": "field_601c2fb274119",
-            "label": "Post Description Group",
-            "name": "post_description_group",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_601c2fbf59269",
-                    "label": "Description Video",
-                    "name": "description_video",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_601c2fbf5cddb",
-                    "label": "Description Image",
-                    "name": "description_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_601c2fbf60881",
-                    "label": "Description Content",
-                    "name": "description_content",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
-                }
-            ]
-        },
-        {
             "key": "field_601c2fb277afd",
             "label": "Post Related Group",
             "name": "post_related_group",
@@ -326,5 +247,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612471630
+    "modified": 1612472581
 }

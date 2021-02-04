@@ -43,40 +43,25 @@ get_header();
         <?php endwhile;
     endif; ?>
 
-    <?php if( have_rows('post_description_group')) :
-        $post_description_group = get_field('post_description_group');
-        $description_video = $post_description_group['description_video'];
-        $description_image_url = $post_description_group['description_image']['url'];
-        $description_image_alt = $post_description_group['description_image']['alt'];
-        $description_content = $post_description_group['description_content'];
-        while ( have_rows('post_description_group')): the_row(); ?>
-            <section class="post-content">
-                <div class="post-video-img inner-section-1120">
-                    <?php if ($description_video) : ?>
-                        <iframe width="420" height="220" src="<?php echo $description_video ?>" frameborder="0" allowfullscreen></iframe>
-                    <?php endif; ?>
-                    
-                    <?php if ($description_image_url) : ?>
-                        <img src="<?php echo$description_image_url ?>" alt="<?php echo $description_image_alt ?>">
-                    <?php endif; ?>
-                </div>
+    <?php
+        the_content();
+    ?>
 
-                <div class="post-description inner-section-1120">
-                    <div class="post-content"><?php echo $description_content ?></div>
-                    <ul>
-                        <?php
-                        $posttags = get_the_tags();
-                        if ($posttags) {
-                            foreach($posttags as $tag) { ?>
-                                <li><?php echo $tag->name ?></li>
-                            <?php }
-                        }
-                        ?>
-                    </ul>
-                </div>
-            </section>
-        <?php endwhile;
-    endif; ?>
+    <section class="">
+        <div class="post-description inner-section-1120">
+            <div class="post-content"><?php echo $description_content ?></div>
+            <ul>
+                <?php
+                $posttags = get_the_tags();
+                if ($posttags) {
+                    foreach($posttags as $tag) { ?>
+                        <li><?php echo $tag->name ?></li>
+                    <?php }
+                }
+                ?>
+            </ul>
+        </div>
+    </section>
 
     <?php if( have_rows('post_related_group')) :
         $post_related_group = get_field('post_related_group');
