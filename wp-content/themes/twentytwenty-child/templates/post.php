@@ -45,8 +45,8 @@ get_header();
         $description_image_alt = $post_description_group['description_image']['alt'];
         $description_content = $post_description_group['description_content'];
         while ( have_rows('post_description_group')): the_row(); ?>
-            <section class="blog-article-content">
-                <div class="blog-article-video-img inner-section-1120">
+            <section class="post-content">
+                <div class="post-video-img inner-section-1120">
                     <?php if ($description_video) : ?>
                         <iframe width="420" height="220" src="<?php echo $description_video ?>" frameborder="0" allowfullscreen></iframe>
                     <?php endif; ?>
@@ -56,8 +56,8 @@ get_header();
                     <?php endif; ?>
                 </div>
 
-                <div class="blog-article-description inner-section-1120">
-                    <div class="blog-article-content"><?php echo $description_content ?></div>
+                <div class="post-description inner-section-1120">
+                    <div class="post-content"><?php echo $description_content ?></div>
                     <ul>
                         <?php if( have_rows('description_option_repeater') ) :
                             while( have_rows('description_option_repeater') ) : the_row();
@@ -80,7 +80,7 @@ get_header();
         $description_image_alt = $post_related_group['description_image']['alt'];
         $description_content = $post_related_group['description_content'];
         while ( have_rows('post_related_group')): the_row(); ?>
-            <section class="blog-article-related">
+            <section class="post-related">
                 <div class="blog-collection-posts inner-section-1366">
                     <?php if( have_rows('article_related_repeater') ) :
                         while( have_rows('article_related_repeater') ) : the_row();
