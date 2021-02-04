@@ -1,6 +1,7 @@
 .DB_Store
 Thumbs.db
 wp-config.php
+wp-content/ai1wm-backups/*
 wp-content/uploads/
 wp-content/upgrade/*
 wp-content/updraft/*
