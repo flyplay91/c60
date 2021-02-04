@@ -191,8 +191,10 @@ get_header();
                                         <?php endwhile;
                                     endif; ?>
                                 </div>
-                                <a class="btn-home-product" href="<?php echo $products_button_link ?>">Shop Now</a>
+                                <h3><a class="btn-home-product" href="<?php echo $products_button_link ?>">Shop Now</a></h3>
                             </div>
+                           
+                           <!-- Disabled -->
                             <div id="beginner" class="tab-panel">
                                 <div class="product-items">
                                     <?php if( have_rows('products_second_repeater') ) :
@@ -221,6 +223,7 @@ get_header();
                                 </div>
                                 <a class="btn-home-product" href="<?php echo $products_button_link ?>">Shop Now</a>
                             </div>
+                            <!-- End Disabled -->
                         </div>
                     </div>
                 </div>
@@ -237,7 +240,7 @@ get_header();
         <section class="home-benefits">
             <div class="home-benefits__inner inner-section-1366">
                 <img src="<?php echo $benefits_logo_url ?>" alt="<?php echo $benefits_logo_alt ?>">
-                <h2 class="home-benefits__title"><?php echo $benefits_title ?></h2>
+                <h3 class="home-benefits__title"><?php echo $benefits_title ?></h3>
                 <div class="home-benefits__items">
                     <?php if( have_rows('benefits_repeater') ) :
                         while( have_rows('benefits_repeater') ) : the_row();

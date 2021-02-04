@@ -991,28 +991,27 @@ button:focus {
 }
 
 .btn-home-product {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-green);
   color: var(--color-white);
-  padding: 20px;
+  padding: 10px;
   display: block;
-  max-width: 70%;
+  max-width: 90%;
   margin: 85px auto 0;
   z-index: 1;
   position: relative;
   text-align: center;
   border-radius: 20px;
-  font-family: 'NeurialGrotesk-Regular';
-  font-size: 25px;
-  letter-spacing: 1.5px;
-  border: 2px solid var(--color-dark-pink);
+  font-family: 'NeurialGrotesk-Medium';
+  font-size: 40px;
+  border: 2px solid var(--color-green);
   text-transform:uppercase;
 }
 
 .btn-home-product:hover {
   transition: .02s;
   transform: scale(1.01);
-  color: var(--color-dark-pink);
-  background: #fff;
+  color: var(--color-white);
+  background:var(--color-dark-pink);
   border: 2px solid var(--color-dark-pink);
 }
 
