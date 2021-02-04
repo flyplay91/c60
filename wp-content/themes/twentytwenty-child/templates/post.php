@@ -30,8 +30,13 @@ get_header();
                     <h1><?php echo $hero_title ?></h1>
                     <p><?php echo $hero_description ?></p>
                     <div class="post-hero__user">
-                        <img src="<?php echo $hero_user_image_url ?>" alt="<?php echo $hero_user_image_alt ?>">
-                        <label><?php echo $hero_user_name ?></label>
+                        <?php
+                            $user_info = get_userdata(1);
+                            $user_name = $user_info->display_name;
+                        ?>
+                        <!-- <img src="<?php echo $hero_user_image_url ?>" alt="<?php echo $hero_user_image_alt ?>"> -->
+                        <img src="<?php print get_avatar_url($user->ID, ['size' => '40']); ?>">
+                        <label>by <?php echo $user_name ?></label>
                     </div>
                 </div>
             </sectoin>
@@ -59,14 +64,14 @@ get_header();
                 <div class="post-description inner-section-1120">
                     <div class="post-content"><?php echo $description_content ?></div>
                     <ul>
-                        <?php if( have_rows('description_option_repeater') ) :
-                            while( have_rows('description_option_repeater') ) : the_row();
-                                $option_title = get_sub_field('option_title');
-                                $option_link = get_sub_field('option_link');
-                            ?>
-                                <li><a href="<?php echo $option_link ?>"><?php echo $option_title ?></a></li>
-                            <?php endwhile;
-                        endif; ?>
+                        <?php
+                        $posttags = get_the_tags();
+                        if ($posttags) {
+                            foreach($posttags as $tag) { ?>
+                                <li><?php echo $tag->name ?></li>
+                            <?php }
+                        }
+                        ?>
                     </ul>
                 </div>
             </section>

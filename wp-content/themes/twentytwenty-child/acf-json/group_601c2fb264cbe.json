@@ -56,49 +56,6 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_601c2fb44f97d",
-                    "label": "Hero User Image",
-                    "name": "hero_user_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_601c2fb453417",
-                    "label": "Hero User Name",
-                    "name": "hero_user_name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
                     "key": "field_601c2fb456fa9",
                     "label": "Hero Background Image",
                     "name": "hero_image",
@@ -424,5 +381,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612462690
+    "modified": 1612471367
 }
