@@ -13,24 +13,7 @@ get_header();
 
 <main class="faq-page">
 
-    <?php if( have_rows('faq_hero_group')) :
-        $faq_hero_group = get_field('faq_hero_group');
-        $hero_background_image_url = $faq_hero_group['hero_background_image']['url'];
-        $hero_background_image_alt = $faq_hero_group['hero_background_image']['alt'];
-        $hero_heading = $faq_hero_group['hero_heading'];
-        $hero_description = $faq_hero_group['hero_description'];
-        $hero_down_arrow_img_url = $faq_hero_group['hero_down_arrow']['url'];
-        $hero_down_arrow_img_alt = $faq_hero_group['hero_down_arrow']['alt'];
-        while ( have_rows('faq_hero_group')): the_row(); ?>
-            <section class="faq-hero" style="background-image: url(<?php echo $hero_background_image_url ?>)">
-                <div class="faq-hero__inner">
-                    <h1><?php echo $hero_heading ?></h1>
-                    <p><?php echo $hero_description ?></p>
-                    <img src="<?php echo $hero_down_arrow_img_url ?>" alt="<?php echo $hero_down_arrow_img_alt ?>">
-                </div>
-            </section>
-        <?php endwhile;
-    endif; ?>
+    
 
     <?php if( have_rows('faq_accordion_group')) : ?>
 		<?php while ( have_rows('faq_accordion_group')): the_row(); ?>
@@ -41,7 +24,9 @@ get_header();
 						$accordion_title = get_sub_field('accordion_title');
 					?>
 						<div class="faq-accordion-block <?php if (get_row_index() == 1) echo 'first-accordion'; ?>">
-							<h3><?php echo $accordion_title ?></h3>
+							<h1><?php echo $accordion_title ?></h1>
+
+
 							<div class="accordion-item-block">
 								<?php if( have_rows('accordion_item_repeater') ) :
 									while( have_rows('accordion_item_repeater') ) : the_row();

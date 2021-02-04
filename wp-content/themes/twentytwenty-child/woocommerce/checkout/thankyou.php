@@ -11,7 +11,7 @@
  * the readme will list any important changes.
  *
  * @see https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce\Templates
+ * @package WooCommerce/Templates
  * @version 3.7.0
  */
 
@@ -86,3 +86,117 @@ defined( 'ABSPATH' ) || exit;
 	<?php endif; ?>
 
 </div>
+<!-- datalayer event transaction for gtm -->
+<script>
+ var dataLayer = window.dataLayer || [];            
+    dataLayer.push({
+        'event': 'transaction',
+      'ecommerce': {
+        'purchase': {
+          'actionField': {
+            'id': '<?php echo $order->get_order_number(); ?>',
+            'affiliation': 'Online Store',
+            'revenue': '<?php echo number_format($order->get_total(),2,'.',''); ?>',
+            'tax':'<?php echo number_format($order->get_total_tax(),2,'.',''); ?>',
+            'shipping': '<?php echo number_format($order->calculate_shipping(),2,'.',''); ?>',
+            'coupon': '<?php echo implode("-",$order->get_used_coupons()); ?>'
+          },
+          'products': [<?php 
+            $item_count = count($order->get_items()); $i=1;
+            foreach( $order->get_items() as $key => $item ) {                         
+                if( $item->get_quantity() > 0 ){
+                    $product_id = $item->get_product_id();                           
+                    $product = wc_get_product($product_id);
+                    $variant_name = ($item->get_variation_id())?wc_get_product($item->get_variation_id()):'';
+                 ?>{  
+                'name': '<?php echo $item->get_name(); ?>',
+                'id': '<?php echo $item->get_product_id(); ?>',
+                'price': '<?php echo $item->get_total(); ?>',
+                'brand': '[Client Name]',
+                'category': '<?php echo strip_tags($product->get_categories(", ", "","")); ?>',
+                'variant': '<?php echo ($variant_name)?implode("-",$variant_name->get_variation_attributes()):""; ?>',
+                'quantity': <?php echo $item->get_quantity();?>,
+                'coupon': ''
+               }<?php if($i < $item_count){?>,<?php }?><?php 
+                    $i++; }
+                } ?>]
+        }
+      }
+    });
+    </script>
+
+
+
+
+
+<?php add_action( 'woocommerce_thankyou', 'my_custom_tracking' );
+
+function my_custom_tracking( $order_id ) {
+// Lets grab the order
+    $order = wc_get_order( $order_id );
+
+    //Everflow order objects
+    $efOrder = array();
+    $efOrder['items'] = array();
+    $efOrder['oid'] = $order_id;
+    $efOrder['amt'] = $order->get_total();
+    $efOrder['bs'] = $order->get_billing_state();
+    $efOrder['bc'] = $order->get_billing_country();
+
+    // Determine if any coupons were used for this transaction
+    $coupons = "";
+    $couponCount = 0;
+    foreach ($order->get_used_coupons() as $coupon) {
+        $couponCount++;
+        if($couponCount > 1) { // do not add comma unless more than one coupon
+            $coupons .= ',';
+        }
+        $coupons .= $coupon;
+    }
+    $efOrder['cc'] = $coupons;
+
+    // This is how to grab line items from the order
+    $line_items = $order->get_items();
+
+    // This loops over line items
+    $efItems = array();
+    foreach ( $line_items as $item ) {
+        //Init Everflow item
+        $efItem = array();
+        // This will be a product
+        $product = $order->get_product_from_item( $item );
+        // This is the products SKU (variant or parent)
+        $efItem['vs'] = '';
+        $efItem['ps'] = '';
+        if ( $product->get_type() === 'variation' )
+            { $efItem['vs'] = $product->get_sku(); }
+        else
+            { $efItem['ps'] = $product->get_sku(); }
+        // This is the qty purchased
+        $efItem['qty'] = $item['qty'];
+        // Line item total cost including taxes and rounded
+        $efItem['p'] = $order->get_line_total( $item, true, true );
+        // Add this to Everflow items
+        $efItems[] = $efItem;
+    }
+    $efOrder['items'] = $efItems;
+
+    $javascriptCode = '
+    <script type="text/javascript"
+    src="https://www.mon8tkr.com/scripts/sdk/everflow.js"></script>
+
+<script type="text/javascript">
+EF.conversion({
+    aid: 1,
+    amount: '.$order->get_total().',
+    adv1: "", //Optional
+    adv2: "", //Optional
+    adv3: "", //Optional
+    adv4: "", //Optional
+    adv5: "", //Optional
+    order: '.json_encode($efOrder).',
+});
+</script>';
+        echo $javascriptCode;
+    }
+?>

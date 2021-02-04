@@ -13,7 +13,7 @@
  * the readme will list any important changes.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce\Templates
+ * @package WooCommerce/Templates
  * @version 3.0.0
  */
 
@@ -23,12 +23,21 @@ $notes = $order->get_customer_order_notes();
 ?>
 <p>
 <?php
+
+$statusName = wc_get_order_status_name( $order->get_status() );
+
+if($order->get_status() == 'rebill'){
+    $statusName = "Active";
+} elseif($order->get_status() == 'crebill'){
+    $statusName = "Cancelled";
+}
+
 printf(
 	/* translators: 1: order number 2: order date 3: order status */
 	esc_html__( 'Order #%1$s was placed on %2$s and is currently %3$s.', 'woocommerce' ),
 	'<mark class="order-number">' . $order->get_order_number() . '</mark>', // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	'<mark class="order-date">' . wc_format_datetime( $order->get_date_created() ) . '</mark>', // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-	'<mark class="order-status">' . wc_get_order_status_name( $order->get_status() ) . '</mark>' // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	'<mark class="order-status">' . $statusName . '</mark>' // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 );
 ?>
 </p>

@@ -225,35 +225,106 @@ function theme_wc_disable_credit_card_subscriptions( $available_gateways ) {
 }
 add_filter( 'woocommerce_available_payment_gateways', 'theme_wc_disable_credit_card_subscriptions' );
 
-// @snippet 20% OFF Select Variants - Automatically Add Coupon to Cart
+// Coupons disabled on subscription products
+add_filter( "woocommerce_coupon_is_valid_for_product", "sw_wc_apfs_disable_on_susbcription", 10, 4 );
+
+function sw_wc_apfs_disable_on_susbcription( $is_valid, $product, $instance, $values ) {
+
+    if ( ! empty( $values[ "wcsatt_data"][ "active_subscription_scheme" ] ) ) {
+        $is_valid = false;
+    }
+
+    return $is_valid;
+}
+
+
+// Redirect wp-admin to /backoffice
+function redirect_login_page(){
+    $page_viewed = basename($_SERVER['REQUEST_URI']);
+    $login_page  = 'https://c60purplepower.com/wp-admin';
+    if( trim($_SERVER['REQUEST_URI']) == '/backoffice/') {
+     wp_redirect($login_page);
+     exit();
+   
+    }
+   }  
+add_action('init','redirect_login_page');
+
+
+
+/**
+ * @snippet 18% OFF Select Variants - Automatically Add Coupon to Cart
+ **
+ * 
 add_action( 'woocommerce_before_cart', 'tfc_apply_matched_coupons' );
+ 
 function tfc_apply_matched_coupons() {
-    $coupon_code = '20OFF2OZ';
+ 
+    $coupon_code = '18OFF2OZ';
+ 
     if ( WC()->cart->has_discount( $coupon_code ) ) return;
+ 
     foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-		// this is your variant ID
-		$autocoupon = array(152104, 152113);
-		if ( in_array( $cart_item['variation_id'], $autocoupon ) ) {   
-			WC()->cart->apply_coupon( $coupon_code );
-			wc_print_notices();
-		}
+ 
+    // this is your variant ID
+    $autocoupon = array(152104, 152113);
+    
+    if ( in_array( $cart_item['variation_id'], $autocoupon ) ) {   
+        WC()->cart->apply_coupon( $coupon_code );
+        wc_print_notices();
+    }
+ 
     }
 }
 
 add_action('woocommerce_checkout_before_order_review', 'tfc_apply_coupon_checkout');
 function tfc_apply_coupon_checkout() {
-    $coupon_code = '20OFF2OZ';
+    $coupon_code = '18OFF2OZ';
+ 
     if ( WC()->cart->has_discount( $coupon_code ) ) return;
+ 
     foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-		// this is your variant ID
-		$autocoupon = array(152104, 152113);
-		if ( in_array( $cart_item['variation_id'], $autocoupon ) ) {   
-			WC()->cart->apply_coupon( $coupon_code );
-			// wc_print_notices();
-		}
+ 
+    // this is your variant ID
+    $autocoupon = array(152104, 152113);
+    
+    if ( in_array( $cart_item['variation_id'], $autocoupon ) ) {   
+        WC()->cart->apply_coupon( $coupon_code );
+        // wc_print_notices();
+    }
  
     }
 }
+ * 
+**/
+
+
+/**
+ * @snippet 20% OFF Select Whole Products and All Variants - Automatically Add Coupon to Cart
+
+add_action( 'woocommerce_before_cart', 'tfc_apply_matched_coupons_1' );
+  
+function tfc_apply_matched_coupons_1() {
+  
+    $coupon_code = '20OFF16OZ'; 
+  
+    if ( WC()->cart->has_discount( $coupon_code ) ) return;
+  
+    foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+  
+    // this is your product ID
+    $autocoupon = array(953362, 955031);
+  
+    if ( in_array( $cart_item['product_id'], $autocoupon ) ) {   
+        WC()->cart->apply_coupon( $coupon_code );
+        wc_print_notices();
+    }
+  
+    }
+}
+  * 
+**/
+
 
 // R.Stern, Pirate Labs, March 30, 2020, call function that inserts GTM tags:
 function add_gtm_tags_to_footer() {
@@ -301,6 +372,9 @@ function payment_gateway_disable_country( $available_gateways ) {
     return $available_gateways;
 }
 add_filter( 'woocommerce_available_payment_gateways', 'payment_gateway_disable_country' );
+
+
+
 
 // Add some custom order status
 add_filter( 'wc_order_statuses','add_wc_order_statuses', 9,1 );

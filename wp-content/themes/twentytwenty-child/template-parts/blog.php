@@ -24,11 +24,7 @@ get_header();
                 <div class="blog-hero__inner">
                     <label>Blog | Most Popular</label>
                     <h1><?php echo $hero_heading ?></h1>
-                    <ul>
-                        <li>52 likes</li>
-                        <li>16 comments</li>
-                        <li>3 mins read</li>
-                    </ul>
+                    
                     <p><?php echo $hero_description ?></p>
                     <a href="<?php echo $hero_read_more_button_link ?>">Read More</a>
                 </div>

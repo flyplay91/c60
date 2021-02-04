@@ -25,11 +25,68 @@
 				delay_seconds: 3,
 				success: function () {
 					$('.klaviyo_subscription_form').hide();
-					$('.success_message').html('<div class="klaviyo_block"><h2>Thank you for<br> signing up!</h2><h3>USE CODE: <b>EMAIL15</b></h3><h2>FOR 15% OFF</h2><h4>YOUR ORDER</h4><a href="">SHOP NOW</a></div>');
+					$('.success_message').html('<div class="klaviyo_block"><h2>Thank you for<br> signing up!</h2><h3>USE CODE: <b>WELCOME10</b></h3><h2>FOR 10% OFF</h2><h4>YOUR ORDER</h4><a href="/welcome10" title="Shop Now">SHOP NOW</a></div>');
 				}
 			});
 		</script>
+
 		<?php wp_head(); ?>
+
+
+				<!-- Everflow -->
+		<script type="text/javascript"
+			src="https://www.mon8tkr.com/scripts/sdk/everflow.js"></script>
+
+		<script type="text/javascript">
+		EF.click({
+			offer_id: EF.urlParameter('oid'),
+			affiliate_id: EF.urlParameter('affid'),
+			sub1: EF.urlParameter('sub1'),
+			sub2: EF.urlParameter('sub2'),
+			sub3: EF.urlParameter('sub3'),
+			sub4: EF.urlParameter('sub4'),
+			sub5: EF.urlParameter('sub5'),
+			uid: EF.urlParameter('uid'),
+			transaction_id: EF.urlParameter('tid'),
+		});
+		</script>
+		<!-- Everflow -->
+
+
+		<!-- Facebook Pixel Code -->
+		<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '283825335797733'); 
+     fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=283825335797733&ev=PageView
+    &noscript=1"/>
+    </noscript>
+<!-- End Facebook Pixel Code -->
+
+<script type="text/javascript">
+  var button = document.querySelector('.single_add_to_cart_button');
+  button.addEventListener(
+    'click', 
+    function() { 
+      fbq('track', 'AddToCart', {
+      });          
+    },
+    false
+  );
+</script>
+
+<meta name="ahrefs-site-verification" content="74362bcdedbc58e71293af78216fb5a229ed088be125cf6b8d9363549678811b">
+
 
 	</head>
 
@@ -212,13 +269,14 @@
 
 			<div class="klaviyo-popup klaviyo_modal" id="k_id_modal" style="display:none;">
 				<div class="klaviyo-popup__inner">
+				<a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
 					<!-- <div class="klaviyo-form-RDdXu4"></div> -->
 					<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate" class="klaviyo_subscription_form">
 						<input type="hidden" name="g" value="H8vQEK">
 						<div class="klaviyo_block">
-							<h2>Being healthy<br> doesn't have<br> to be complicated</h2>
-							<h3>Register for our VIP list<br> and <b>save 15%</b> today</h3>
-						</div>
+							<h2>Register<br />and save 10%<br />off today</h2>
+							<h3>Get all of our VIP perks, exclusive offers and inside scoops.</h3>
+						</div> 
 						<div class="klaviyo_block">
 						<div class="klaviyo_field_group">
 							<input type="email" id="k_id_modal_$email" name="email" placeholder="Enter Email"></div>

@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+
 	$('.header-banner__inner').on('init', function(event, slick){
     	$('.header-banner__inner.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
 	});
@@ -216,6 +217,47 @@ $(document).ready(function() {
 		});
 	});
 
+
+	// Auto Renew loading in my account page
+	if (('.subscription-auto-renew-toggle-mod').length != 0) {
+		$('.subscription-auto-renew-toggle-mod').on('click', function() {
+			if ($(this).hasClass('subscription-auto-renew-toggle--on')) {
+				$(this).append("<span>Pausing your subscription..</span>");
+				$.cookie('clickBtn', 'on', {path: '/'});
+				$.cookie('renew', 'off', {
+					path: '/'
+				});
+			} else {
+				$(this).append("<span>Renewing your subscription..</span>");
+				$.cookie('clickBtn', 'on', {path: '/'});
+				$.cookie('renew', 'on', {
+					path: '/'
+				});
+			}
+
+		});
+	}
+
+	if ((typeof($.cookie('renew')) !== 'undefined') && (typeof($.cookie('clickBtn')) !== 'undefined')) {
+		if ($.cookie('renew') == 'on') {
+			$('.subscription-auto-renew-toggle-mod').append('<span>Subscription Actived</span>');
+			setTimeout(function() { 
+				$('.subscription-auto-renew-toggle-mod span').remove();
+			}, 5000);
+			
+		} else if ($.cookie('renew') == 'off') {
+			$('.subscription-auto-renew-toggle-mod').append('<span>Subscription Paused</span>');
+			setTimeout(function() { 
+				$('.subscription-auto-renew-toggle-mod span').remove();
+			}, 5000);
+		}
+	}
+
+	$.removeCookie('renew', { path: '/' });
+	$.removeCookie('clickBtn', { path: '/' });
+	// End Auto Renew loading in my account page 
+
+
 	// Product category page change product price
 	$('.page-template-product_category .product-category__products__inner li').each(function() {
 		if ( ($(this).find('.price') != 0) && ($(this).find('.wcsatt-sub-options').length != 0) ) {
@@ -285,5 +327,6 @@ $(document).ready(function() {
 			$('.extra-variant-text').html('Free shipping in the US, cancel anytime,<br>satisfaction guaranteed.');
 		}
 	});
+
 });
 	

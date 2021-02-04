@@ -466,7 +466,6 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .klaviyo-popup__inner form {
   background-image: url('assets/images/klaviyo_popup_join_img.jpg');
   background-repeat: no-repeat;
@@ -487,7 +486,7 @@ button:focus {
   color: var(--color-black);
   opacity: 0.8;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 30px;
   font-family: 'NeurialGrotesk-Regular';
   font-style: italic;
@@ -575,6 +574,16 @@ button:focus {
   font-family: 'NeurialGrotesk-Regular';
   text-transform: uppercase;
   color: var(--color-white);
+}
+
+#close-btn {
+  position: relative;
+  z-index: 99999;
+  top: 40px;
+  right: 0px;
+  left: 96%;
+  font-size: 25px;
+  color: var(--color-grey-pink);
 }
 
 @media(max-width: 767px) {
@@ -986,16 +995,17 @@ button:focus {
   color: var(--color-white);
   padding: 20px;
   display: block;
-  max-width: 350px;
-  margin: -35px auto 0;
+  max-width: 70%;
+  margin: 85px auto 0;
   z-index: 1;
   position: relative;
   text-align: center;
   border-radius: 20px;
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 1.5px;
   border: 2px solid var(--color-dark-pink);
+  text-transform:uppercase;
 }
 
 .btn-home-product:hover {
@@ -1245,9 +1255,14 @@ button:focus {
   align-items: center;
   background-color: var(--color-light-pink);
 }
-
+.home-cfo-bottom-banner__img img {
+  border-radius: 50%;
+  max-width: 50%;
+  text-align: center;
+  float: right;
+}
 .home-cfo-bottom-banner__text {
-  padding: 0 100px;
+  padding: 30px 100px;
 }
 
 .home-cfo-bottom-banner__text h3 {
@@ -2327,9 +2342,11 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 /* ============ Product Detail Page =============  */
 .singular .entry-title {
-  padding: 0;
+  padding: 55px 0px;
 }
-
+.woocommerce-account .entry-title {
+  display:none;
+}
 .product-page-breadcrumb {
   margin-bottom: 20px;
 }
@@ -5318,15 +5335,19 @@ body.single-product .screen-reader-text {
   margin-top: 50px;
 }
 
-.faq-accordion-block > h3 {
+.faq-accordion-block > h1,
+.faq-page .gform_wrapper h2 {
   color: var(--color-pink);
   font-size: 40px;
   font-family: 'NeurialGrotesk-Medium';
 }
-
+.faq-page .gform_wrapper h2 {
+  font-weight:800;
+}
 .faq-accordion-block {
   margin-top: 50px;
 }
+
 
 .faq-accordion-block.first-accordion {
   margin-top: 0;
@@ -5335,7 +5356,20 @@ body.single-product .screen-reader-text {
 .faq-contact {
   margin-top: 50px;
 }
-
+.faq-page #gform_wrapper_10 {
+  margin-top:55px;
+}
+.faq-page .gform_wrapper label.gfield_label {
+  font-weight:500;
+}
+.faq-page .gform_wrapper .top_label input.medium, 
+.faq-page .gform_wrapper .top_label select.medium {
+  width: 100%;
+  min-height: 50px;
+}
+.faq-page .gform_wrapper .gform_footer input[type="submit"] {
+  width:100%;
+}
 .faq-contact__inner {
   max-width: 550px;
   margin: 0 auto;
@@ -5400,7 +5434,8 @@ body.single-product .screen-reader-text {
   }
 
   .faq-text h2,
-  .faq-accordion-block > h3 {
+  .faq-accordion-block > h1 ,
+  .faq-page .gform_wrapper h2 {
     font-size: 40px;
   }
 }
@@ -5412,7 +5447,7 @@ body.single-product .screen-reader-text {
   }
 
   .faq-text h2,
-  .faq-accordion-block > h3,
+  .faq-accordion-block > h1,
   .faq__blog__inner > h2 {
     font-size: 30px;
     line-height: 40px;
@@ -8080,12 +8115,28 @@ body.single-product .screen-reader-text {
     max-width: 100%;
   }
 }
-
-
-
+.woocommerce-error li {
+  color:#fff;
+}
+.woocommerce-checkout .entry-header,
+.woocommerce-cart .entry-header {
+  display:none;
+}
+.woocommerce-checkout .entry-content,
+.woocommerce-cart #site-content {
+  margin-top:55px;
+}
+.cart_totals h2 {
+  font-family: 'NeurialGrotesk-Medium';
+  text-transform:uppercase;
+  font-size:30px;
+}
 
 .customer-testimonial-block {
   display:block;
+  width:100%;
+  float:left;
+  margin: 80px 0;
 }
 .customertestimonial__img-text {
   display: flex;
@@ -8576,17 +8627,22 @@ body.single-product .screen-reader-text {
 }
 
 .woocommerce-MyAccount-content h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0 0 20px;
   color: var(--color-text);
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
 }
-
+.woocommerce-account .woocommerce-MyAccount-content h1{
+  display:none;
+}
+.woocommerce-account .entry-content {
+  margin-top:55px;
+}
 .woocommerce-MyAccount-content h3 {
   font-size: 26px;
   margin: 0 0 20px;
   color: var(--color-text);
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
 }
 
 .woocommerce-MyAccount-content h4 {
