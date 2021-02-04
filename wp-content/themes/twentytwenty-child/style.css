@@ -417,12 +417,12 @@ button:focus {
 }
 
 .header-banner__inner .slick-prev {
-  left: -10%;
+  left: 0;
   background-image: url('assets/images/header-banner-left-arrow.png');
 }
 
 .header-banner__inner .slick-next {
-  right: -10%;
+  right: 0;
   background-image: url('assets/images/header-banner-right-arrow.png');
 }
 .header-banner__inner .slick-arrow:hover {
@@ -7651,6 +7651,27 @@ body.single-product .screen-reader-text {
   justify-content: center;
 }
 
+.blog-collection-post a span {
+  position: relative;
+}
+
+.blog-collection-post a span:after {
+  content: '';
+  background-image: url('assets/images/right_arrow_triangle_white.png');
+  display: block;
+  width: 100px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -120px;
+  top: 5px;
+}
+
+.blog-collection-post.post--2 a span:after {
+  background-image: url('assets/images/right_arrow_triangle.png');
+}
+
 .blog-collection-post a img {
   max-width: 100px;
   padding-top: 5px;
@@ -8567,6 +8588,60 @@ body.single-product .screen-reader-text {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Regular';
   font-size: 18px;
+}
+
+.blog-article-description p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 22px;
+  line-height: 1.3;
+  color: var(--color-text);
+  margin-bottom: 45px;
+}
+
+.blog-article-description ul {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+.blog-article-description ul li {
+  border: solid 1px var(--color-pink);
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.blog-article-description ul li a {
+  display: block;
+  font-family: 'NeurialGrotesk-Medium';
+  font-size: 16px;
+  padding: 3px 0;
+}
+
+@media(max-width: 1024px) {
+  .blog-article-hero__inner {
+    padding: 50px 15px 0;
+  }
+
+  .blog-article-hero__text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .blog-article-hero__text p {
+    font-size: 22px;
+    width: 100%;
+  }
+}
+
+@media(max-width: 767px) {
+  .blog-article-description ul li {
+    margin-right: 3px;
+  }
+
+  .blog-article-description ul li a {
+    font-size: 12px;
+  }
 }
 
 /* ============ Athietes page ============== */

@@ -66,7 +66,7 @@ get_header();
                         <li>3 mins read</li>
                     </ul>
                     <p>Research suggests that avocado oil can help to prevent several health issues, including diabetes and high cholesterol.</p>
-                    <a href=""><span>Read More</span><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/right_arrow_triangle_white.png"></a>
+                    <a href=""><span>Read More</span></a>
                 </div>
                 <div class="blog-collection-post post--2">
                     <h2>What to know about coconut oil.</h2>
@@ -76,7 +76,7 @@ get_header();
                         <li>3 mins read</li>
                     </ul>
                     <p>Coconut oil has grown in popularity in recent years, amid claims that it can do everything from supporting weight loss to slowing the progression of Alzheimer’s disease.</p>
-                    <a href=""><span>Read More</span><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/right_arrow_triangle.png"></a>
+                    <a href=""><span>Read More</span></a>
                 </div>
             </div>
         </div>
