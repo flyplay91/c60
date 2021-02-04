@@ -157,61 +157,6 @@
                     "maxlength": "",
                     "rows": "",
                     "new_lines": ""
-                },
-                {
-                    "key": "field_601c2fbf64357",
-                    "label": "Description Option Repeater",
-                    "name": "description_option_repeater",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "table",
-                    "button_label": "",
-                    "sub_fields": [
-                        {
-                            "key": "field_601c2fc5b7018",
-                            "label": "Option Title",
-                            "name": "option_title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_601c2fc5baae7",
-                            "label": "Option Link",
-                            "name": "option_link",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "url"
-                        }
-                    ]
                 }
             ]
         },
@@ -381,5 +326,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612471367
+    "modified": 1612471630
 }
