@@ -126,7 +126,7 @@ $(document).ready(function() {
 	// Shoppage change product price
 	$('.page-template-shop .shop-products-block li').each(function() {
 		if ( ($(this).find('.price') != 0) && ($(this).find('.wcsatt-sub-options').length != 0) ) {
-			$(this).find('.price').after('<label class="custom-subscription-price">Save 20% With Renewals</label>');
+			$(this).find('.price').after('<label class="custom-subscription-price">Save 20% - Start a subscription</label>');
 		}
 	});
 
@@ -270,7 +270,7 @@ $(document).ready(function() {
 	// Product category page change product price
 	$('.page-template-product_category .product-category__products__inner li').each(function() {
 		if ( ($(this).find('.price') != 0) && ($(this).find('.wcsatt-sub-options').length != 0) ) {
-			$(this).find('.price').after('<label class="custom-subscription-price">Save 20% With Renewals</label>');
+			$(this).find('.price').after('<label class="custom-subscription-price">Save 20% - Start a subscription</label>');
 		}
 	});
 

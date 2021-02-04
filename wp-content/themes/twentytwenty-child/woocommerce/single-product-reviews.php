@@ -30,7 +30,7 @@ if ( ! comments_open() ) {
 			Reviews
 		</h2>
 
-		<a href="javascript: void(0)" class="btn-write-comment">Write a comment</a>
+		<a href="javascript: void(0)" class="btn-write-comment">Write a Review</a>
 
 		<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->get_id() ) ) : ?>
 		<div id="review_form_wrapper">

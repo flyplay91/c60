@@ -4939,8 +4939,9 @@ body.single-product .screen-reader-text {
 
 .testimonial-form__inner .gform_body li label {
   color: var(--color-pink);
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 14px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 15px;
+  letter-spacing:.4px;
 }
 
 .testimonial-form__inner .gform_body li label.hidden_sub_label {
@@ -4995,7 +4996,7 @@ body.single-product .screen-reader-text {
 .testimonial-form__inner .gform_wrapper .gform_footer input {
   width: 100% !important;
   margin-bottom: 0 !important;
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   text-transform: capitalize;
 }
 
@@ -6069,7 +6070,7 @@ body.single-product .screen-reader-text {
 
 .team-ceo-text p {
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.475;
   color: var(--color-text);
   margin-bottom:20px;
@@ -6156,7 +6157,7 @@ body.single-product .screen-reader-text {
 
 .about-team-item p {
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.475;
   color: var(--color-text);
   margin-bottom:20px;
