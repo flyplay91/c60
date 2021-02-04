@@ -1418,14 +1418,14 @@ button:focus {
   visibility: hidden;
 }
 
-.home-blog__block-item {
+/* .home-blog__block-item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 0 10px;
   position: relative;
   min-height: 186px;
-}
+} */
 
 .home-blog__block-item:hover {
   transition: .02s;
@@ -1438,6 +1438,24 @@ button:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.home-blog__block-item {
+  margin: 0 10px;
+}
+
+.home-blog__block-item a.popup-youtube {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 186px;
+  width: 100%;
+  display: block;
+}
+
+.home-blog__block-item a.popup-youtube:focus {
+  outline: none;
 }
 
 .home-blog__block .slick-dots {
@@ -8761,9 +8779,6 @@ body.single-product .screen-reader-text {
   }
   .home-benefits__item--text {
     justify-content: flex-start;
-  }
-  .home-cfo-bottom-banner {
-    grid-template-columns: .9fr 2fr;
   }
   .home-blog__block-item {
     min-height: 154px;

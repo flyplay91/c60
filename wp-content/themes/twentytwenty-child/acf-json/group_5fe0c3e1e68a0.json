@@ -1581,10 +1581,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5fe0da1a8d907",
-                    "label": "Shortcode",
-                    "name": "shortcode",
-                    "type": "text",
+                    "key": "field_601be599c2d20",
+                    "label": "Video Repeater",
+                    "name": "video_repeater",
+                    "type": "repeater",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -1593,11 +1593,56 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_601be5a1c2d21",
+                            "label": "Video Image",
+                            "name": "video_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_601be5aec2d22",
+                            "label": "Video Url",
+                            "name": "video_url",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
                 }
             ]
         }
@@ -1619,5 +1664,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612194760
+    "modified": 1612441021
 }

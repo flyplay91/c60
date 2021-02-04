@@ -15,6 +15,15 @@ $(document).ready(function() {
 		arrow: true
 	});
 
+	$('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+
 	$('.home-blog__block').on('init', function(event, slick){
 		$('.home-blog__block.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
 	});
@@ -238,23 +247,23 @@ $(document).ready(function() {
 		});
 	}
 
-	if ((typeof($.cookie('renew')) !== 'undefined') && (typeof($.cookie('clickBtn')) !== 'undefined')) {
-		if ($.cookie('renew') == 'on') {
-			$('.subscription-auto-renew-toggle-mod').append('<span>Subscription Actived</span>');
-			setTimeout(function() { 
-				$('.subscription-auto-renew-toggle-mod span').remove();
-			}, 5000);
+	// if ((typeof($.cookie('renew')) !== 'undefined') && (typeof($.cookie('clickBtn')) !== 'undefined')) {
+	// 	if ($.cookie('renew') == 'on') {
+	// 		$('.subscription-auto-renew-toggle-mod').append('<span>Subscription Actived</span>');
+	// 		setTimeout(function() { 
+	// 			$('.subscription-auto-renew-toggle-mod span').remove();
+	// 		}, 5000);
 			
-		} else if ($.cookie('renew') == 'off') {
-			$('.subscription-auto-renew-toggle-mod').append('<span>Subscription Paused</span>');
-			setTimeout(function() { 
-				$('.subscription-auto-renew-toggle-mod span').remove();
-			}, 5000);
-		}
-	}
+	// 	} else if ($.cookie('renew') == 'off') {
+	// 		$('.subscription-auto-renew-toggle-mod').append('<span>Subscription Paused</span>');
+	// 		setTimeout(function() { 
+	// 			$('.subscription-auto-renew-toggle-mod span').remove();
+	// 		}, 5000);
+	// 	}
+	// }
 
-	$.removeCookie('renew', { path: '/' });
-	$.removeCookie('clickBtn', { path: '/' });
+	// $.removeCookie('renew', { path: '/' });
+	// $.removeCookie('clickBtn', { path: '/' });
 	// End Auto Renew loading in my account page 
 
 

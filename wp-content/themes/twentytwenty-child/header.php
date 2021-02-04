@@ -74,15 +74,17 @@
 <!-- End Facebook Pixel Code -->
 
 <script type="text/javascript">
-  var button = document.querySelector('.single_add_to_cart_button');
-  button.addEventListener(
-    'click', 
-    function() { 
-      fbq('track', 'AddToCart', {
-      });          
-    },
-    false
-  );
+  	var button = document.querySelector('.single_add_to_cart_button');
+  	if(button){
+		button.addEventListener(
+			'click', 
+			function() { 
+				fbq('track', 'AddToCart', {
+				});
+			},
+			false
+		);
+  	}
 </script>
 
 <meta name="ahrefs-site-verification" content="74362bcdedbc58e71293af78216fb5a229ed088be125cf6b8d9363549678811b">

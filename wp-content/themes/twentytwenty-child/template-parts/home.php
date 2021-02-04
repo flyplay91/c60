@@ -373,7 +373,19 @@ get_header();
         <section class="home-more">
             <div class="home-more__inner inner-section-1366">
                 <h2 class="home-more__title"><?php echo $more_title ?></h2>
-                <?php echo do_shortcode($more_shortcode); ?>
+                <div class="home-blog__block">
+                    <?php if( have_rows('video_repeater') ) :
+                        while( have_rows('video_repeater') ) : the_row();
+                            $video_image_url = get_sub_field('video_image')['url'];
+                            $video_image_alt = get_sub_field('video_image')['alt'];
+                            $video_url = get_sub_field('video_url');
+                        ?>
+                            <div class="home-blog__block-item">
+                                <a class="popup-youtube" href="<?php echo $video_url ?>" style="background-image: url(<?php echo $video_image_url ?>);"></a>
+                            </div>
+                        <?php endwhile;
+                    endif; ?>
+                </div>
             </div>
         </section>
         <?php endwhile;
