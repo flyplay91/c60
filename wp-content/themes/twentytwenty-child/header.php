@@ -20,6 +20,12 @@
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+
+
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/slick.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/custom-js.js"></script>
 		<script>
 			KlaviyoSubscribe.attachToModalForm('#k_id_modal', {
 				delay_seconds: 3,
