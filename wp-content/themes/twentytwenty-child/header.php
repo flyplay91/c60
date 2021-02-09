@@ -32,6 +32,8 @@
 
 		<?php wp_head(); ?>
 
+	
+
 
 				<!-- Everflow -->
 		<script type="text/javascript"

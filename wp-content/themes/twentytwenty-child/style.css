@@ -2535,6 +2535,16 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   position: relative;
   display: block;
 }
+.woocommerce-loop-product__link .star-rating::before{
+  content:"\73\73\73\73\73";
+  float:left;
+  top:0;
+  left:20px !important;
+  position:absolute;
+}
+.woocommerce-loop-product__link  .star-rating span {
+  left:20px !important;
+}
 
 .onsale {
   content: '';
@@ -3298,28 +3308,28 @@ body.single-product .screen-reader-text {
 .shop__hero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 485px;
   background-position: center;
 }
 
 .shop__hero-content  {
   padding-left: 50px;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .shop__hero-content h1 {
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 57px;
+  font-size: 48px;
   color: var(--color-text);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .shop__hero-content p {
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 21px;
+  line-height: 30px;
   color: var(--color-text);
-  width: 34%;
+  width: 48%;
   margin-bottom: 45px;
 }
 
@@ -3394,6 +3404,7 @@ body.single-product .screen-reader-text {
 .shop-sort__inner {
   width: 196px;
   margin-left: auto;
+  display:none;
 }
 
 .shop-sort__inner label {
@@ -3520,14 +3531,14 @@ body.single-product .screen-reader-text {
 
 .custom-subscription-price:before {
   content: '';
-  background-image: url('assets/images/package.svg');
+  background-image: url('assets/images/subscribe_and_save.png');
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   display: block;
   background-position: center;
   background-size: cover;
-  margin-top: -3px;
+  margin-top: 0px;
   margin-right: 10px;
 }
 
@@ -8394,8 +8405,22 @@ body.single-product .screen-reader-text {
   padding: 0px 0px 0px 0px;
 }
 .supports-immune-function .healthy-way-2 .healthy-way__img-text img {
-  margin-left: 60px;
+  
 }
+.promotes-healthy-libido .healthy-way-2 img {
+  width: 44%;
+}
+.promotes-healthy-libido .top-content-2 {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.supports-brain-function .healthy-way-2 img {
+  width: 43%;
+}
+
+
+
 @media(max-width:414px) {
   .supports-immune-function .healthy-hero__inner h1 {
     font-size: 49px;
