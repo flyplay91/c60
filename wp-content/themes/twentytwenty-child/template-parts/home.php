@@ -359,13 +359,17 @@ get_header();
         $cfo_position = $home_cfo_bottom_banner['cfo_position'];
         while ( have_rows('home_cfo_bottom_banner')): the_row(); ?>
             <section class="home-cfo-bottom-banner">
-                <div class="home-cfo-bottom-banner__img">
-                    <img src="<?php echo $cfo_banner_image_url ?>" alt="<?php echo $cfo_banner_image_alt ?>">
-                </div>
-                <div class="home-cfo-bottom-banner__text">
-                    <h3><?php echo $cfo_banner_description ?></h3>
-                    <label><?php echo $cfo_name ?></label>
-                    <span><?php echo $cfo_position ?></span>
+                <div class="home-cfo-bottom-banner__inner inner-section-1220">
+                    <div class="home-cfo-bottom-banner__img">
+                        <img src="<?php echo $cfo_banner_image_url ?>" alt="<?php echo $cfo_banner_image_alt ?>">
+                        <div class="home-cfo-bottom-banner__user">
+                            <label><?php echo $cfo_name ?></label>
+                            <span><?php echo $cfo_position ?></span>
+                        </div>
+                    </div>
+                    <div class="home-cfo-bottom-banner__text">
+                        <h3><?php echo $cfo_banner_description ?></h3>
+                    </div>
                 </div>
             </section>
         <?php endwhile;
