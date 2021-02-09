@@ -1337,13 +1337,14 @@ button:focus {
   background-color: transparent;
   font-size: 0;
   position: absolute;
-  top: 55%;
+  top: 61%;
   transform: translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
-  width: 55px;
-  height: 45px;
+  width: 35px;
+  height: 25px;
+  opacity:.13;
 }
 
 .home-lives__inner .home-lives-carousel .slick-prev {
@@ -1428,7 +1429,8 @@ button:focus {
   margin: -200px auto 0;
 }
 
-.home-lives__item > a > img:hover {
+.home-lives__item > a > img:hover,
+.home-cfo-bottom-banner__img img:hover {
   transition: .02s;
   transform: scale(1.01);
 }
@@ -8245,8 +8247,17 @@ body.single-product .screen-reader-text {
   margin-top: 50px;
   float:left;
 }
+.page-template-healthy_aging .healthy-way__img-text img {
+  width:43%;
+}
+.page-template-healthy_aging .healthy-way-2 img {
+  width:35%;
+}
+.page-template-healthy_aging .healthy-way__text h3 {
+  width:100%;
+}
 .healthy-way-2 {
-  margin-top:0px;
+  margin-top:25px;
   margin-bottom:50px;
 }
 .healthy-way__text {
@@ -8256,10 +8267,24 @@ body.single-product .screen-reader-text {
 .healthy-way-2 .healthy-way__img-text {
   display: block;
 }
-.healthy-way-2 .healthy-way__img-text img {
+.healthy-way-2 .healthy-way__img-text-caption {
   float:right;
   margin-right:0px;
-  margin-left:120px;
+  margin-left:100px;
+}
+.healthy-way__img-text .healthy-way__img-text-caption img {
+  width:100%;
+  margin-right:0px;
+  float:none;
+}
+.healthy-way-2 .healthy-way__img-text-caption .img-caption {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 13px;
+  display: block;
+  float:left;
+  margin-top:15px;
 }
 .healthy-way__img-text.image__right {
   margin-top:55px;

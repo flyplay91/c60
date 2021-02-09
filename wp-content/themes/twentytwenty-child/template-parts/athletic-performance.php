@@ -72,13 +72,19 @@ get_header();
         $healthy_way_group = get_field('healthy_way');
         $way_right_image_url = $healthy_way_group['way_right_image']['url'];
         $way_right_image_alt = $healthy_way_group['way_right_image']['alt'];
+        $way_right_image_caption = $healthy_way_group['way_right_image']['caption'];
         $way_description_row_2 = $healthy_way_group['way_description_row_2'];
         while ( have_rows('healthy_way')): the_row(); ?>
 
             <section class="healthy-way healthy-way-2">
                 <div class="healthy-way__inner inner-section-1220">
                     <div class="healthy-way__img-text">
+                   <div class="healthy-way__img-text-caption">     
                     <img src="<?php echo $way_right_image_url ?>" alt="<?php echo $way_right_image_alt ?>">
+                    <span class="img-caption">
+                        Tasha Danvers 
+                        Olympic Medalist & enthusiastic C60 Purple Power user</span>
+                    </div>  
                         <div class="healthy-way__text">  
                         <?php echo $way_description_row_2 ?>
                         </div>
@@ -189,13 +195,13 @@ get_header();
                          <?php echo $button_text ?>
                     </a>
 
-                    <h4><?php echo $learnmore_heading ?></h4>
+                  <!--  <h4><?php echo $learnmore_heading ?></h4>
 
                     <div class="blog_image_custom">
                         <a href="<?php echo $blog_link ?>">
                             <img src="<?php echo $blog_image_url ?>" alt="<?php echo $blog_image_alt ?>">
                         </a>
-                    </div>  
+                    </div> --> 
                    
                     
                    

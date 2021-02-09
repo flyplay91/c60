@@ -189,13 +189,13 @@ get_header();
                          <?php echo $button_text ?>
                     </a>
 
-                    <h4><?php echo $learnmore_heading ?></h4>
+                    <!--<h4><?php echo $learnmore_heading ?></h4>
 
                     <div class="blog_image_custom">
                         <a href="<?php echo $blog_link ?>">
                             <img src="<?php echo $blog_image_url ?>" alt="<?php echo $blog_image_alt ?>">
                         </a>
-                    </div>  
+                    </div>  -->
                    
                     
                    
