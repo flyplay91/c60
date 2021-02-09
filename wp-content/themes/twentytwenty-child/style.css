@@ -868,14 +868,36 @@ button:focus {
 }
 
 .home-seen__imgs {
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  align-items: center;
-  grid-gap: 20px 20px;
-  max-width: 75%;
+  display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   margin: 45px auto;
+  max-width:80%;
 }
-
+.home-seen__imgs-item {
+  flex: 0 0 calc(16% - 20px);
+  min-height: auto;
+  margin:20px auto;
+  text-align:center;
+}
+.home-seen__imgs-item:nth-child(3) {
+  margin-left:30px;
+}
 .home-seen__imgs-item img {
   margin: 0 auto;
 }
@@ -1254,32 +1276,38 @@ button:focus {
 .home-cfo-bottom-banner__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding:35px 0px;
 }
-
+.home-cfo-bottom-banner__img {
+  width: 25%;
+  text-align: center;
+  padding: 0px 25px;
+}
 .home-cfo-bottom-banner__img img {
   border-radius: 50%;
-  max-width: 200px;
+  max-width: 100px;
   text-align: center;
+  margin:0 auto;
 }
 
 .home-cfo-bottom-banner__user {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .home-cfo-bottom-banner__user label {
   font-family: 'NeurialGrotesk-Medium';
   color: var(--color-dark-pink);
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .home-cfo-bottom-banner__user span {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Medium';
-  font-size: 18px;
+  font-size: 14px;
 }
 .home-cfo-bottom-banner__text {
-  padding: 30px 100px;
+  width:75%;
 }
 
 .home-cfo-bottom-banner__text h3 {
@@ -3070,7 +3098,7 @@ body.single-product .screen-reader-text {
 
 .related-product__items-item:nth-child(2) .related-product-title-des > a,
 .related-product__items-item:last-child .related-product-title-des > a {
-  max-width: 37%;
+  max-width: auto;
 }
 
 .related-product-title > label a {
