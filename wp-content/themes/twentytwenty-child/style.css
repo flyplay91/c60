@@ -1431,13 +1431,13 @@ button:focus {
   transform: scale(1.01);
 }
 
-.home-blog__block-item img {
+/* .home-blog__block-item img {
   width: 56px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .home-blog__block-item {
   margin: 0 10px;

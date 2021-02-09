@@ -384,7 +384,9 @@ get_header();
                             $video_url = get_sub_field('video_url');
                         ?>
                             <div class="home-blog__block-item">
-                                <a class="popup-youtube" href="<?php echo $video_url ?>" style="background-image: url(<?php echo $video_image_url ?>);"></a>
+                                <a class="popup-youtube" href="<?php echo $video_url ?>">
+                                    <img src="<?php echo $video_image_url ?>">
+                                </a>
                             </div>
                         <?php endwhile;
                     endif; ?>
