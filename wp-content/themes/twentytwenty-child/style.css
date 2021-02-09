@@ -1328,11 +1328,49 @@ button:focus {
   text-align: center;
 }
 
+.home-lives__inner .home-lives-carousel {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.home-lives__inner .home-lives-carousel .slick-arrow {
+  background-color: transparent;
+  font-size: 0;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 55px;
+  height: 45px;
+}
+
+.home-lives__inner .home-lives-carousel .slick-prev {
+  background-image: url('assets/images/home_carousel_left_arrow.png');
+  left: -20px;
+}
+
+.home-lives__inner .home-lives-carousel .slick-next {
+  background-image: url('assets/images/home_carousel_right_arrow.png');
+  right: -20px;
+} 
+
+.home-lives:focus,
+.home-lives__inner .home-lives-carousel:focus,
+.home-lives__inner:focus,
+.home-lives__inner .home-lives-carousel .slick-slide:focus,
+.home-lives__item > a > img:focus,
+.home-lives__item > a:focus {
+  outline: none;
+}
+
 .home-lives__items {
   margin-top: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 80px;
 }
 
 .home-lives__item {

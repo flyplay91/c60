@@ -59,6 +59,20 @@ $(document).ready(function() {
 		]
 	});
 
+	$('.home-lives-carousel').on('init', function(event, slick){
+		$('.home-lives-carousel.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
+	});
+
+	$('.home-lives-carousel').slick({
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true
+	});
+
+	
+
 	// $('.home-hero').on('init', function(event, slick){
 	// 	$('.home-hero.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
 	// });
