@@ -68,7 +68,9 @@ $(document).ready(function() {
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: true
+		arrows: true,
+		autoplay: true,
+  		autoplaySpeed: 2000
 	});
 
 	
