@@ -2525,7 +2525,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   margin: 0 0 15px 0;
   width: 100%;
 }
-
+.single-product .summary p.price {
+  font-size: 22px;
+  font-family: 'NeurialGrotesk-Medium';
+}
 .quantity.wqpmb_quantity {
   max-width: 50px !important;
 }
@@ -3108,6 +3111,7 @@ body.single-product .screen-reader-text {
 }
 .product-page .product_title.entry-title {
   padding: 55px 0px 0px 0px;
+  max-width:100%;
 }
 .related-products__inner .related-product__sub_heading {
   font-family: 'NeurialGrotesk-Regular';
@@ -3912,7 +3916,8 @@ body.single-product .screen-reader-text {
 
 .product-category__title-short-des p {
   text-align: left;
-  color: var(--color-text);
+  color: var(--color-black);
+  font-family: 'NeurialGrotesk-Regular';
 }
 
 .product-category__products {
@@ -3976,9 +3981,18 @@ body.single-product .screen-reader-text {
 
 .product-category__des--item p {
   text-align: left;
-  color: var(--color-text);
+  color: var(--color-black);
+  font-family: 'NeurialGrotesk-Regular';
 }
-
+.product-category__des--item ul {
+  list-style: outside;
+  margin-left:50px;
+}
+.product-category__des--item ul li {
+  list-style: disc;
+  color: var(--color-black);
+  font-family: 'NeurialGrotesk-Regular';
+}
 .category__blog__inner h2 {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 40px;
@@ -4614,9 +4628,10 @@ body.single-product .screen-reader-text {
 .post-hero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 650px;
   background-position: center;
   display: block;
+  margin-bottom:50px;
 }
 
 .post-hero__inner {
@@ -4632,12 +4647,20 @@ body.single-product .screen-reader-text {
   text-transform: uppercase;
   color: var(--color-text);
 }
-
+.post-hero__breadcrumb a {
+  display:block;
+  width:auto;
+  float:left;
+}
+.post-hero__breadcrumb a:hover {
+  color: var(--color-black);
+}
 .post-hero__inner h1 {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 57px;
   color: var(--color-text);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  max-width:50%;
 }
 
 .post-hero__inner p {
@@ -4696,13 +4719,36 @@ body.single-product .screen-reader-text {
 .post-block {
   padding: 25px 0;
 }
-
+.post-page .elementor .elementor-element .elementor-text-editor p {
+  margin-bottom:25px;
+  font-size:20px;
+  line-height:1.575;
+  font-family: 'NeurialGrotesk-Regular';
+  color:var(--color-black);
+}
 .img-text-block.one-half {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
-
+.post-narrow-width {
+  max-width:65%;
+  margin:0 auto;
+}
+#post-advert-1 {
+  margin:0 auto;
+}
+#post-advert-1 h4.elementor-heading-title {
+  margin:0 auto;
+  font-family: 'NeurialGrotesk-Medium';
+  font-size:33px;
+  line-height:40px;
+}
+#post-advert-1 .elementor-text-editor {
+  font-size:20px;
+  color:var(--color-white);
+  line-height:1.475;
+}
 .img-text-block.one-third {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -4747,7 +4793,9 @@ body.single-product .screen-reader-text {
   margin-left: 20px;
   margin-bottom: 40px;
 }
-
+.blog-post-item p {
+  font-family: 'NeurialGrotesk-Regular';
+}
 .post-block ul li{
   font-family: 'NeurialGrotesk-Regular';
   font-size: 18px;
@@ -4941,7 +4989,7 @@ body.single-product .screen-reader-text {
   left: 0;
   top: 8px;
 }
-
+.postid-1201646 
 @media(max-width: 1024px) {
   .post-hero__inner {
     padding: 50px 15px 0;
@@ -5605,11 +5653,13 @@ body.single-product .screen-reader-text {
 }
 
 .blog-post-item .post-item-title h2 {
-  font-family: 'NeurialGrotesk-Regular';
+  font-family: 'NeurialGrotesk-Medium';
   color: var(--color-text);
   font-size: 22px;
 }
-
+.blog-post-list__inner .blog-post-item .excerpt {
+  font-family: 'NeurialGrotesk-Regular';
+}
 @media(max-width: 1440px) {
   .blog-hero__inner {
     padding-top: 50px;

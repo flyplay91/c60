@@ -14,6 +14,7 @@ get_header();
 <main class="post-page">
     <?php if( have_rows('post_hero_group')) :
         $post_hero_group = get_field('post_hero_group');
+        $hero_breadcrumbs = $post_hero_group['breadcrumbs'];
         $hero_title = $post_hero_group['hero_title'];
         $hero_description = $post_hero_group['hero_description'];
         $hero_user_image_url = $post_hero_group['hero_user_image']['url'];
@@ -22,24 +23,24 @@ get_header();
         $hero_image_url = $post_hero_group['hero_image']['url'];
         $hero_image_alt = $post_hero_group['hero_image']['alt'];
         while ( have_rows('post_hero_group')): the_row(); ?>
-            <sectoin class="post-hero" style="background-image: url(<?php echo $hero_image_url ?>)">
+            <section class="post-hero" style="background-image: url(<?php echo $hero_image_url ?>)">
                 <div class="post-hero__inner">
                     <nav class="post-hero__breadcrumb">
-                        <a href="/">C60 Blog > </a>LONGEVITY
+                        <?php echo $hero_breadcrumbs ?>
                     </nav>
                     <h1><?php echo $hero_title ?></h1>
-                    <p><?php echo $hero_description ?></p>
-                    <div class="post-hero__user">
+                    <p class="excerpt"><?php echo $hero_description ?></p>
+                 <!--  <div class="post-hero__user">
                         <?php
-                            $user_info = get_userdata(1);
+                            $user_info = get_userdata(2);
                             $user_name = $user_info->display_name;
                         ?>
-                        <!-- <img src="<?php echo $hero_user_image_url ?>" alt="<?php echo $hero_user_image_alt ?>"> -->
+                        <img src="<?php echo $hero_user_image_url ?>" alt="<?php echo $hero_user_image_alt ?>"> 
                         <img src="<?php print get_avatar_url($user->ID, ['size' => '40']); ?>">
-                        <label>by <?php echo $user_name ?></label>
+                        <label>by <?php echo $user_name ?></label> -->
                     </div>
                 </div>
-            </sectoin>
+            </section>
         <?php endwhile;
     endif; ?>
 

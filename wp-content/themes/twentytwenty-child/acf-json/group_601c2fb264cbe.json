@@ -1,6 +1,6 @@
 {
     "key": "group_601c2fb264cbe",
-    "title": "Post Page",
+    "title": "Blog Article - NEW",
     "fields": [
         {
             "key": "field_601c2fb270446",
@@ -17,6 +17,25 @@
             },
             "layout": "block",
             "sub_fields": [
+                {
+                    "key": "field_6023fe0adfe30",
+                    "label": "Breadcrumbs",
+                    "name": "breadcrumbs",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
                 {
                     "key": "field_601c2fb4485e3",
                     "label": "Hero Title",
@@ -247,5 +266,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612472581
+    "modified": 1612971570
 }
