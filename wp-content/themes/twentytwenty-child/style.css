@@ -2740,6 +2740,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   display: none !important;
 }
 
+.product-image-summary__inner .price {
+  opacity: 0;
+}
+
 #reviews.ywar-review-content #review_form_wrapper .form-submit {
   margin: 0;
 }
