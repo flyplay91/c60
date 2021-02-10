@@ -405,6 +405,25 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_6023eef0bc5b1",
+            "label": "post excerpt",
+            "name": "post_excerpt",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -424,5 +443,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612450128
+    "modified": 1612967679
 }

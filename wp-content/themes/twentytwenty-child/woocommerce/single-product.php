@@ -88,29 +88,17 @@ get_header( 'shop' ); ?>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
-											<a href="<?php echo $related_first_product_link ?>"><span>Starting at $49</span></a>
+											
 										</div>
 										<div class="related-product-content-right">
+										<a href="<?php echo $related_first_product_link ?>">
 											<div class="related-product-select-btn">
-												<label>Select Option</label>
-												<div class="related-product-cart">
-													<div class="related-product-cart-block">
-														<?php
-															$related_first_product = new WC_Product_Variable( $related_first_product_id );
-															$related_first_variations = $related_first_product->get_available_variations();
-															foreach ($related_first_variations as $related_first_variation) {
-																$related_first_variant_id = $related_first_variation["variation_id"];
-															?>
-																<div class="related-product-cart-item">
-																	<label>2 oz - $49</label>
-																	<a data-product_id="<?php echo $related_first_product_id ?>" data-variation_id="<?php echo $related_first_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="related-product-cart-btn">Add to Cart</a>
-																</div>
-															<?php
-															}
-														?>
-													</div>
-												</div>
+											
+												<label>Learn More</label>
+										
+												
 											</div>
+										</a>
 										</div>
 									</div>
 								</div>
@@ -127,30 +115,14 @@ get_header( 'shop' ); ?>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
-											<a href="<?php echo $related_second_product_link ?>"><span>Starting at $49</span></a>
+											
 										</div>
 										<div class="related-product-content-right">
+										<a href="<?php echo $related_second_product_link ?>">
 											<div class="related-product-select-btn">
-												<label>Select Option</label>
-												<div class="related-product-cart">
-													<div class="related-product-cart-block">
-														<?php
-															$related_second_product = new WC_Product_Variable( $related_second_product_id );
-															$related_second_variations = $related_second_product->get_available_variations();
-															foreach ($related_second_variations as $related_second_variation) {
-																$related_second_variant_id = $related_second_variation["variation_id"];
-															?>
-																<div class="related-product-cart-item">
-																	<label>2 oz - $49 / $39.20 mo</label>
-																	<a data-product_id="<?php echo $related_second_product_id ?>" data-variation_id="<?php echo $related_second_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="related-product-cart-btn">Add to Cart</a>
-																	<a href="" class="subscriber">Subscribe</a>
-																</div>
-															<?php
-															}
-														?>
-													</div>
-												</div>
+												<label>Learn More</label>
 											</div>
+										</a>	
 										</div>
 									</div>
 								</div>
@@ -167,30 +139,14 @@ get_header( 'shop' ); ?>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
-											<a href="<?php echo $related_third_product_link ?>"><span>Starting at $49</span></a>
+											<a href="<?php echo $related_third_product_link ?>"></a>
 										</div>
 										<div class="related-product-content-right">
+										<a href="<?php echo $related_third_product_link ?>">
 											<div class="related-product-select-btn">
-												<label>Select Option</label>
-												<div class="related-product-cart">
-													<div class="related-product-cart-block">
-														<?php
-															$related_third_product = new WC_Product_Variable( $related_third_product_id );
-															$related_third_variations = $related_third_product->get_available_variations();
-															foreach ($related_third_variations as $related_third_variation) {
-																$related_third_variant_id = $related_third_variation["variation_id"];
-															?>
-																<div class="related-product-cart-item">
-																	<label>2 oz - $49 / $39.20 mo</label>
-																	<a data-product_id="<?php echo $related_third_product_id ?>" data-variation_id="<?php echo $related_third_variant_id ?>" data-quantity="1" href="javascript: void(0)" class="related-product-cart-btn">Add to Cart</a>
-																	<a href="" class="subscriber">Subscribe</a>
-																</div>
-															<?php
-															}
-														?>
-													</div>
-												</div>
+												<label>Learn More</label>
 											</div>
+										</a>
 										</div>
 									</div>
 								</div>

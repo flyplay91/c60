@@ -71,7 +71,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 	}
 	
 	?>
-	<h3 style="font-size: 16px;">Just add items to your cart and proceed to checkout for the discount to be applied automatically to non-subscription items only.</h3>
+	<h4 class="order-loyalty-msg">Just add items to your cart and proceed to checkout for the discount to be applied automatically to non-subscription items only.</h4>
 
 	<table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
 		<thead>

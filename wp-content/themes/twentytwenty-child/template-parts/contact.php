@@ -40,6 +40,16 @@ get_header();
         while ( have_rows('contact_information_group')): the_row(); ?>
             <section class="contact-content">
                 <div class="contact-content__inner inner-section-1220">
+                    
+                
+                    <div class="contact-content__form">
+                        <h2><?php echo $contact_form_title ?></h2>
+                        <div class="contact-form_shortcode">
+                            <?php echo do_shortcode($contact_form_shortcode); ?>
+                        </div>
+                    </div>
+
+
                     <div class="contact-content__info">
                         <div class="contact-info__items">
                             <?php if( have_rows('information_repeater') ) :
@@ -58,12 +68,8 @@ get_header();
                             <p><?php echo $information_short_description ?></p>
                         </div>
                     </div>
-                    <div class="contact-content__form">
-                        <h2><?php echo $contact_form_title ?></h2>
-                        <div class="contact-form_shortcode">
-                            <?php echo do_shortcode($contact_form_shortcode); ?>
-                        </div>
-                    </div>
+
+                    
                 </div>
             </section>
         <?php endwhile;

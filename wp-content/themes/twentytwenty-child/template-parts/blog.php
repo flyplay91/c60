@@ -22,7 +22,7 @@ get_header();
         while ( have_rows('hero_group')): the_row(); ?>
             <section class="blog-hero" style="background-image: url(<?php echo $hero_background_image_url ?>)">
                 <div class="blog-hero__inner">
-                    <label>Blog | Most Popular</label>
+                   <label><a href="https://c60purplepower.com/blog" title="C60 Purple Power Blog">Blog</a> | Most Popular</label>
                     <h1><?php echo $hero_heading ?></h1>
                     
                     <p><?php echo $hero_description ?></p>
@@ -54,9 +54,7 @@ get_header();
                             <a class="post-item-title" href="<?php the_permalink(); ?>">
                                 <h2><?php echo the_title() ?></h2>
                             </a>
-                            <span class="post-date">
-                                <?php echo $post_date ?>
-                            </span>
+                            
                             <p class="post-item-excerpt">
                                 <?php echo wp_trim_words( the_excerpt(), 10, '...' ); ?>
                             </p>
