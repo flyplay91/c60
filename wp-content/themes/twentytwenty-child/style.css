@@ -4662,16 +4662,30 @@ body.single-product .screen-reader-text {
   margin-bottom: 30px;
   max-width:50%;
 }
-
+.elementor-widget-text-editor {
+  color: var( --color-black ) !important;
+  font-size:18px;
+  line-height:1.475;
+}
 .post-hero__inner p {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 25px;
   line-height: 1.4;
   color: var(--color-text);
   width: 30%;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
-
+.post-page .elementor-text-editor h4 {
+  color:var(--color-pink);
+  margin-bottom:20px;
+}
+.post-page .elementor-text-editor hr {
+  padding: 0;
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 50px 0px;
+}
 .post-hero__user {
   display: flex;
   align-items: center;
@@ -4681,7 +4695,12 @@ body.single-product .screen-reader-text {
   max-width: 45px;
   margin-right: 10px;
 }
-
+.post-page .elementor-text-editor ul {
+  margin-left:50px;
+}
+.post-page .elementor-text-editor ul li {
+  list-style: disc;
+}
 .post-hero__user label {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Regular';
@@ -4734,6 +4753,9 @@ body.single-product .screen-reader-text {
 .post-narrow-width {
   max-width:65%;
   margin:0 auto;
+}
+.post-disclaimer p{
+  font-size:14px !important;
 }
 #post-advert-1 {
   margin:0 auto;
@@ -4989,7 +5011,12 @@ body.single-product .screen-reader-text {
   left: 0;
   top: 8px;
 }
-.postid-1201646 
+.post-hero ul {
+  margin-left:50px;
+}
+.post-hero ul li{
+  list-style:disc;
+}
 @media(max-width: 1024px) {
   .post-hero__inner {
     padding: 50px 15px 0;
@@ -5639,7 +5666,12 @@ body.single-product .screen-reader-text {
   box-shadow: 0px 0px 6px 0px var(--color-black);
   margin-bottom: 30px;
 }
-
+.blog-post-item:hover {
+  -webkit-box-shadow: 0px 0px 6px 0px var(--color-dark-purple);
+  box-shadow: 0px 0px 6px 0px var(--color-dark-purple);
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 .blog-post-item > a,
 .post-date {
   display: block;
@@ -5648,8 +5680,9 @@ body.single-product .screen-reader-text {
 
 .blog-post-item .post-item-image img {
   max-height: 200px;
+  min-height:200px;
   object-fit: cover;
-  width: 1009%;
+  width: 100%;
 }
 
 .blog-post-item .post-item-title h2 {
