@@ -116,10 +116,10 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5fff5d96b912d",
-                    "label": "Logo Repeater",
-                    "name": "logo_repeater",
-                    "type": "repeater",
+                    "key": "field_602427606b738",
+                    "label": "Logo Image",
+                    "name": "logo_image",
+                    "type": "image",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -128,37 +128,16 @@
                         "class": "",
                         "id": ""
                     },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "table",
-                    "button_label": "",
-                    "sub_fields": [
-                        {
-                            "key": "field_5fff5da5b912e",
-                            "label": "Logo Image",
-                            "name": "logo_image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "full",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ]
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         },
@@ -519,5 +498,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612337314
+    "modified": 1612982125
 }
