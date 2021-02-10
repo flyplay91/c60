@@ -161,7 +161,7 @@ function woocommerce_template_single_excerpt() {
 }
 
 // Remove price in product page
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 
 // Change Choose your option to Size in variant dropdown
 add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'cinchws_filter_dropdown_args', 10 );

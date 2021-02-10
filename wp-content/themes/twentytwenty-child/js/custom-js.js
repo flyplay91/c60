@@ -290,6 +290,14 @@ $(document).ready(function() {
 		}
 	});
 
+	if ($('.product-image-summary__inner').lenght != 0) {
+		if ($('.product-image-summary__inner .price .wcsatt-sub-options').length != 0) {
+			$('.product-image-summary__inner .price').css('display', 'none');
+		} else {
+			$('.product-image-summary__inner .price').css('opacity', '1');
+		}
+	}
+
 	// Mobile menu
 	$('body').on('click', '.btn-mobile-nav', function() {
 		$(this).toggleClass('active');
