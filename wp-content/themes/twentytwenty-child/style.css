@@ -177,6 +177,20 @@ button:focus {
 
 
 /* Header Style */
+.loading-icon {
+  width: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+
+.loading-icon.active {
+  display: block;
+}
+
 .header-top {
   border-bottom: 1px solid var(--color-line);
 }

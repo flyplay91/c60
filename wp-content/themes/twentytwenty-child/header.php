@@ -116,6 +116,7 @@
 	?>
 
 	<body <?php body_class(); ?>>
+	  <img class="loading-icon" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/loader.gif">
 
 		<header class="site-header">
 			<div class="header-top">
