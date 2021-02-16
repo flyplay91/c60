@@ -5353,6 +5353,11 @@ blockquote {
   cursor: pointer;
 }
 
+.testimonial-hero__content img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .testimonial-hero__image img {
   border-radius: 10px;
 }

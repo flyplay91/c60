@@ -361,5 +361,12 @@ $(document).ready(function() {
 		}
 	});
 
+	// Testimonial page
+	$('body').on('click', '.testimonial-hero__content img', function() {
+		$('html, body').animate({
+			scrollTop: ($('.testimonial-form__inner').offset().top)
+		},100);
+	});
+
 });
 	
