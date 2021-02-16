@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Shop Template
+ * Template Name: BkUp Shop Template
  * Template Post Type: page
  *
  * @package WordPress
@@ -35,7 +35,7 @@ get_header();
 		endwhile;
     endif; ?>
 
-<!--	<?php if( have_rows('shop_menu_group')) : ?>
+	<?php if( have_rows('shop_menu_group')) : ?>
         <?php while ( have_rows('shop_menu_group')): the_row(); ?>
 			<section class="shop_nav">
 				<ul class="shop-parent-nav">
@@ -46,7 +46,7 @@ get_header();
 					?>
 						<li>
 							<span><a href="<?php echo $main_menu_link ?>"><?php echo $main_menu_title ?></a></span>
-							<ul class="shop-child-nav">
+						<!--	<ul class="shop-child-nav">
 								<?php if( have_rows('sub_menu_repeater') ) :
 									while( have_rows('sub_menu_repeater') ) : the_row(); 
 									$sub_menu_title = get_sub_field('sub_menu_title');
@@ -55,14 +55,14 @@ get_header();
 									<li><a href="<?php echo $sub_menu_link ?>"><?php echo $sub_menu_title ?></a></li>
 									<?php endwhile;
 								endif; ?>
-							</ul>
+							</ul>-->
 						</li>
 						<?php endwhile;
     				endif; ?>
 				</ul>
 			</section>
 		<?php endwhile;
-    endif; ?>-->
+    endif; ?>
 
 	<section class="shop-products">
 		<div class="shop-sort inner-section-1120">
@@ -107,7 +107,7 @@ get_header();
 		</div>
 	</section>
 	
-	<!--<?php if( have_rows('shop_image_text_group')) : ?>
+	<?php if( have_rows('shop_image_text_group')) : ?>
 		<?php while ( have_rows('shop_image_text_group')): the_row(); ?>
 			<section class="shop__image-text">
 				<div class="shop__image-text__inner inner-section-1120">
@@ -127,9 +127,9 @@ get_header();
 				</div>
 			</section>
 		<?php endwhile;
-	endif; ?>-->
+	endif; ?>
 
-<!--	<?php if( have_rows('shop_accordion_group')) : ?>
+	<?php if( have_rows('shop_accordion_group')) : ?>
 		<?php while ( have_rows('shop_accordion_group')): the_row(); ?>
 			<section class="shop__accordion">
 				<div class="shop__accordion__inner inner-section-1120">
@@ -160,7 +160,7 @@ get_header();
 				</div>
 			</section>
 		<?php endwhile;
-	endif; ?> -->
+	endif; ?>
 
 	<!--<?php if( have_rows('shop_more_group')) : 
 		$shop_more_group = get_field('shop_more_group');

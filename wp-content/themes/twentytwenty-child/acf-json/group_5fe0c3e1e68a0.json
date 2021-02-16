@@ -1273,7 +1273,7 @@
         },
         {
             "key": "field_600838bba3c92",
-            "label": "Home Lives",
+            "label": "Homepage Testimonials",
             "name": "home_lives",
             "type": "group",
             "instructions": "",
@@ -1288,7 +1288,7 @@
             "sub_fields": [
                 {
                     "key": "field_600838caa3c93",
-                    "label": "Lives Heading",
+                    "label": "Testimonials Heading",
                     "name": "lives_heading",
                     "type": "text",
                     "instructions": "",
@@ -1307,7 +1307,7 @@
                 },
                 {
                     "key": "field_6022ba81dbfcc",
-                    "label": "Lives Repeater",
+                    "label": "Testimonials Repeater",
                     "name": "lives_repeater",
                     "type": "repeater",
                     "instructions": "",
@@ -1685,5 +1685,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612888863
+    "modified": 1612985913
 }

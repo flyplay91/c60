@@ -12,7 +12,7 @@ get_header();
 ?>
 
 <main class="blog-page">
-    <?php if( have_rows('hero_group')) :
+<!--    <?php if( have_rows('hero_group')) :
         $hero_group = get_field('hero_group');
         $hero_background_image_url = $hero_group['hero_background_image']['url'];
         $hero_background_image_alt = $hero_group['hero_background_image']['alt'];
@@ -30,7 +30,7 @@ get_header();
                 </div>
             </section>
         <?php endwhile;
-    endif; ?>
+    endif; ?>-->
 
     <section class="blog-post-list">
         <div class="blog-post-list__inner inner-section-1366">
@@ -55,9 +55,14 @@ get_header();
                                 <h2><?php echo the_title() ?></h2>
                             </a>
                             
-                            <p class="post-item-excerpt">
-                                <?php echo wp_trim_words( the_excerpt(), 10, '...' ); ?>
-                            </p>
+                            <div class="post-excerpt">
+                                
+                                    <?php echo wp_trim_words( the_excerpt(), 10, '...' ); ?>
+                                
+                            </div>
+                            <a class="button readmore-button" href="<?php the_permalink(); ?>">
+                                Read More
+                            </a>
                         </div>
                     <?php
                     }

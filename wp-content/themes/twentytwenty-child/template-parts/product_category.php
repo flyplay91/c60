@@ -63,7 +63,7 @@ get_header();
 			<?php endwhile;
 		endif; ?>
 
-		<?php if( have_rows('category_description_group')) : 
+	<!--	<?php if( have_rows('category_description_group')) : 
 			while ( have_rows('category_description_group')): the_row(); ?>
 				<section class="product-category__des">
 					<div class="product-category__des__inner inner-section-1120">
@@ -81,9 +81,9 @@ get_header();
 					</div>
 				</section>
 			<?php endwhile;
-		endif; ?>
+		endif; ?>-->
 
-		<?php if( have_rows('category_accordion_group')) : 
+	<!--	<?php if( have_rows('category_accordion_group')) : 
 			$category_accordion_group = get_field('category_accordion_group');
 			$accordion_title = $category_accordion_group['accordion_title'];
 		?>
@@ -109,8 +109,8 @@ get_header();
 					</div>
 				</section>
 			<?php endwhile;
-		endif; ?>
-
+		endif; ?>-->
+<!--
 		<?php if( have_rows('category_more_group')) : 
 			$category_more_group = get_field('category_more_group');
 			$category_more_heading = $category_more_group['category_more_heading'];
@@ -124,8 +124,9 @@ get_header();
 					</div>
 				</section>
 			<?php endwhile;
-		endif; ?>
+		endif; ?> -->
 	</div>
+	
 </main>
 
 <?php get_footer(); ?>

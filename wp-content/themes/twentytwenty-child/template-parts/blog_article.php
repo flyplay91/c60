@@ -96,11 +96,11 @@ get_header();
                         ?>
                             <div class="blog-collection-post post--<?php echo get_row_index() ?>">
                                 <h2><?php echo $related_title ?></h2>
-                                <ul>
+                               <!-- <ul>
                                     <li><?php echo $related_likes_count ?> likes</li>
                                     <li><?php echo $related_comments_count ?> comments</li>
                                     <li><?php echo $related_mins_count ?> mins read</li>
-                                </ul>
+                                </ul>-->
                                 <p><?php echo $related_description ?></p>
                                 <a href="<?php echo $related_read_more_button_link ?>"><span>Read More</span></a>
                             </div>

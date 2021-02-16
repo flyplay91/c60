@@ -60,21 +60,13 @@ get_header();
             <div class="blog-collection-posts inner-section-1220">
                 <div class="blog-collection-post post--1">
                     <h2>Other health benefits of avocado oil</h2>
-                    <ul>
-                        <li>52 likes</li>
-                        <li>16 comments</li>
-                        <li>3 mins read</li>
-                    </ul>
+                    
                     <p>Research suggests that avocado oil can help to prevent several health issues, including diabetes and high cholesterol.</p>
                     <a href=""><span>Read More</span></a>
                 </div>
                 <div class="blog-collection-post post--2">
                     <h2>What to know about coconut oil.</h2>
-                    <ul>
-                        <li>52 likes</li>
-                        <li>16 comments</li>
-                        <li>3 mins read</li>
-                    </ul>
+                    
                     <p>Coconut oil has grown in popularity in recent years, amid claims that it can do everything from supporting weight loss to slowing the progression of Alzheimer’s disease.</p>
                     <a href=""><span>Read More</span></a>
                 </div>
