@@ -14,7 +14,6 @@ get_header();
 
     $more_group = get_field('home_more');
     $more_title = $more_group['title'];
-    $more_shortcode = $more_group['shortcode'];
 ?>
 
 <main class="home-page">

@@ -254,10 +254,8 @@ add_action('init','redirect_login_page');
 
 
 
-/**
- * @snippet 18% OFF Select Variants - Automatically Add Coupon to Cart
- **
- * 
+
+//  snippet 18% OFF Select Variants - Automatically Add Coupon to Cart
 add_action( 'woocommerce_before_cart', 'tfc_apply_matched_coupons' );
  
 function tfc_apply_matched_coupons() {
@@ -297,13 +295,8 @@ function tfc_apply_coupon_checkout() {
  
     }
 }
- * 
-**/
 
-
-/**
- * @snippet 20% OFF Select Whole Products and All Variants - Automatically Add Coupon to Cart
-
+//@snippet 20% OFF Select Whole Products and All Variants - Automatically Add Coupon to Cart
 add_action( 'woocommerce_before_cart', 'tfc_apply_matched_coupons_1' );
   
 function tfc_apply_matched_coupons_1() {
@@ -324,8 +317,6 @@ function tfc_apply_matched_coupons_1() {
   
     }
 }
-  * 
-**/
 
 
 // R.Stern, Pirate Labs, March 30, 2020, call function that inserts GTM tags:
@@ -374,8 +365,6 @@ function payment_gateway_disable_country( $available_gateways ) {
     return $available_gateways;
 }
 add_filter( 'woocommerce_available_payment_gateways', 'payment_gateway_disable_country' );
-
-
 
 
 // Add some custom order status
@@ -476,3 +465,36 @@ function DavidProducts() { ?>
 <?php
 }
 
+// Limit Available Product Text
+add_filter( 'woocommerce_get_stock_html', 'astra_woo_product_in_stock', 10, 2 );
+if ( ! function_exists( 'astra_woo_product_in_stock' ) ) :
+	/**
+	 * Availability: in stock string updated
+	 *
+	 * @param  string $markup  Markup.
+	 * @param  object $product Object of Product.
+	 *
+	 * @since 1.1.0
+	 */
+	function astra_woo_product_in_stock( $markup, $product ) {
+
+		if ( is_product() ) {
+			$product_avail  = $product->get_availability();
+			$stock_quantity = $product->get_stock_quantity();
+			$availability   = $product_avail['availability'];
+			$avail_class    = $product_avail['class'];
+			if ( ! empty( $availability ) && $stock_quantity ) {
+				ob_start();
+				?>
+				<p class="ast-stock-detail">
+					<span class="ast-stock-avail" style="color: red;"><?php esc_html_e( 'Limited Availability', 'astra' ); ?></span>
+					<!--<span class="stock <?php echo esc_html( $avail_class ); ?>"><?php echo esc_html( $availability ); ?></span>-->
+				</p>
+				<?php
+				$markup = ob_get_clean();
+			}
+		}
+
+		return $markup;
+	}
+endif;
