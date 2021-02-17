@@ -130,14 +130,23 @@ $(document).ready(function() {
 
 	// Shoppage sort
 	$('body').on('click', '.shop-sort__inner > label', function() {
-		$('.shop-sort__inner > ul').toggleClass('opened');
+		$('.shop-sort__inner form').toggleClass('opened');
 	});
 
-	$('body').on('click', '.shop-sort__inner > ul li', function() {
-		var currentSelectedVal = $('.shop-sort__inner > label').text();
-		var newSelectedSortVal = $(this).text();
-		console.log(currentSelectedVal, newSelectedSortVal)
+	$('body').on('click', '.shop-sort__inner ul li', function() {
+		// var currentSelectedVal = $('.shop-sort__inner > label').text();
+		// var newSelectedSortVal = $(this).text();
+		// console.log(currentSelectedVal, newSelectedSortVal)
+		var selectedVal = $(this).data('title');
+		$('.sort-btn').val(selectedVal);
+		$('#sort_form').submit();
 	});
+
+	if ($('.shop-sort__inner label').text() == 'Default') {
+		$('.default-sort').css('display', 'none');
+	} else {
+		$('.default-sort').css('display', 'block');
+	}
 
 	// Shoppage change product price
 	$('.page-template-shop .shop-products-block li').each(function() {
