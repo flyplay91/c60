@@ -67,14 +67,38 @@ get_header();
 	<section class="shop-products">
 		<div class="shop-sort inner-section-1120">
 			<div class="shop-sort__inner">
-				<label>Default</label>
-				<ul class="">
-					<li data-title="sort_by_popularity">Sort by Popularity</li>
-					<li data-title="sort_by_rating">Sort by average rating</li>
-					<li data-title="sorty_by_latest">Sort by latest</li>
-					<li data-title="sort_by_low_high">Sort by price: low to high</li>
-					<li data-title="sort_by_high_low">Sort by price high to low</li>
-				</ul>
+				<?php 
+				if (isset($_POST['sortBtn'])) {
+					$filterVal = $_POST['sortBtn'];
+					if ($filterVal == 'sort_by_popularity') { ?>
+						<label>Sort by popularity</label>
+					<?php } else if ($filterVal == 'sort_by_rating') { ?>
+						<label>Sort by average rating</label>
+					<?php } else if ($filterVal == 'sorty_by_latest') { ?>
+						<label>Sort by latest</label>
+					<?php } else if ($filterVal == 'sort_by_low_high') { ?>
+						<label>Sort by price: low to high</label>
+					<?php } else if ($filterVal == 'sort_by_high_low') { ?>
+						<label>Sort by price high to low</label>
+					<?php } else { ?>
+						<label>Default</label>
+					<?php }
+				} else { ?>
+					<label>Default</label>
+				<?php }
+				?>
+				
+				<form method="post" id="sort_form">
+					<input type="hidden" name="sortBtn" class="sort-btn" value="">
+					<ul>
+						<li class="default-sort" data-title="sort_by_default">Default</a></li>
+						<li data-title="sort_by_popularity">Sort by popularity</a></li>
+						<li data-title="sort_by_rating">Sort by average rating</li>
+						<li data-title="sorty_by_latest">Sort by latest</li>
+						<li data-title="sort_by_low_high">Sort by price: low to high</li>
+						<li data-title="sort_by_high_low">Sort by price high to low</li>
+					</ul>
+				</form>
 			</div>
 		</div>
 
@@ -86,13 +110,60 @@ get_header();
 			</div> -->
 
 			<div class="shop-products-block">
-				<?php  
-					$args = array(
-						'post_type'      => 'product',
-						'posts_per_page' => 9999,
-						'orderby' => 'date', 
-						'order' => 'ASC'
-					);
+				<?php
+					if (isset($_POST['sortBtn'])) {
+						$sortVal = $_POST['sortBtn'];
+						if ($sortVal == 'sort_by_popularity') {
+							$args = array(
+								'post_type'      => 'product',
+								'posts_per_page' => 9999,
+								'orderby' => 'popularity'
+							);
+						} else if ($sortVal == 'sort_by_rating') {
+							$args = array(
+								'post_type'      => 'product',
+								'posts_per_page' => 9999,
+								'orderby' => 'rating'
+							);
+						} else if ($sortVal == 'sorty_by_latest') {
+							$args = array(
+								'post_type'      => 'product',
+								'posts_per_page' => 9999,
+								'orderby' => 'date', 
+								'order' => 'DEC'
+							);
+						} else if ($sortVal == 'sort_by_low_high') {
+							$args = array(
+								'post_type'      => 'product',
+								'posts_per_page' => 9999,
+								'orderby' => 'price', 
+								'order' => 'DEC'
+							);
+							
+						} else if ($sortVal == 'sort_by_high_low') {
+							$args = array(
+								'post_type'      => 'product',
+								'posts_per_page' => 9999,
+								'orderby' => 'price', 
+								'order' => 'ASC'
+							);
+						} else {
+							$args = array(
+								'post_type'      => 'product',
+								'posts_per_page' => 9999,
+								'orderby' => 'date', 
+								'order' => 'ASC'
+							);
+						}
+					} else {
+						$args = array(
+							'post_type'      => 'product',
+							'posts_per_page' => 9999,
+							'orderby' => 'date', 
+							'order' => 'ASC'
+						);
+					}
+					
 
 					$loop = new WP_Query( $args );
 

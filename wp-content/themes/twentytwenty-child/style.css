@@ -3454,20 +3454,26 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
 }
 
+.shop-sort {
+  position: relative;
+}
+
 .shop-sort__inner {
-  width: 196px;
-  margin-left: auto;
-  display:none;
+  width: 250px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
 
 .shop-sort__inner label {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Medium';
-  padding: 10px 0;
+  padding: 10px 25px 10px;
   text-align: center;
   font-size: 17px;
   position: relative;
   cursor: pointer;
+  text-align: right;
 }
 
 .shop-sort__inner label:before {
@@ -3479,17 +3485,17 @@ body.single-product .screen-reader-text {
   content: '';
   position: absolute;
   right: 0;
-  top: 14px;
+  top: 18px;
 }
 
-.shop-sort__inner ul {
+.shop-sort__inner form {
   background-color: var(--color-light-pink);
   border-radius: 15px;
   padding: 10px 0;
   display: none;
 }
 
-.shop-sort__inner ul.opened {
+.shop-sort__inner form.opened {
   display: block;
 }
 
@@ -3500,6 +3506,10 @@ body.single-product .screen-reader-text {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Medium';
   cursor: pointer;
+}
+
+.shop-sort__inner ul li.default-sort {
+  display: none;
 }
 
 .shop-sort__inner ul li:hover {
