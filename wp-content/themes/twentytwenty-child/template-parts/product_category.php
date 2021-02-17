@@ -14,11 +14,14 @@ get_header();
 <main class="product-category-page">
 	<div class="product-category__inner">
 		
-		<!-- <section class="product-category__breadcrumb">
-			<div class="category__breadcrumb__inner inner-section-1120">
-				<?php woocommerce_breadcrumb(); ?>
-			</div>
-		</section> -->
+		<div class="shop-products__inner inner-section-1120">
+			 <div class="shop-breadcrumb">
+				<nav class="woocommerce-breadcrumb">
+				<?php $breadcrumb = get_field('breadcrumb'); ?>
+				<?php echo $breadcrumb ?> 
+				</nav>
+			</div> 
+		</div>
 			
 		<?php if( have_rows('category_heading_short_description_group')) : 
 			$category_heading_short_description_group = get_field('category_heading_short_description_group');

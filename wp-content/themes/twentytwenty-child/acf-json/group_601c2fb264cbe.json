@@ -1,10 +1,10 @@
 {
     "key": "group_601c2fb264cbe",
-    "title": "Blog Article - NEW",
+    "title": "1-Single Blog Article - Latest",
     "fields": [
         {
             "key": "field_601c2fb270446",
-            "label": "Post Hero Group",
+            "label": "Article Details",
             "name": "post_hero_group",
             "type": "group",
             "instructions": "",
@@ -38,7 +38,7 @@
                 },
                 {
                     "key": "field_601c2fb4485e3",
-                    "label": "Hero Title",
+                    "label": "Page Title",
                     "name": "hero_title",
                     "type": "text",
                     "instructions": "",
@@ -56,9 +56,182 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_601c2fb44bf6e",
-                    "label": "Hero Description",
-                    "name": "hero_description",
+                    "key": "field_602d375734117",
+                    "label": "Post Date",
+                    "name": "post_date",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d41e0c3da7",
+                    "label": "Author Name",
+                    "name": "author_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "The C60 Show Team",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d41e8c3da8",
+                    "label": "Title: About the Author",
+                    "name": "title_about_the_author",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "About The C60 Show Team",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d45bafef02",
+                    "label": "Author Image",
+                    "name": "author_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_602d4215c3da9",
+                    "label": "About the Author Description",
+                    "name": "about_the_author_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "The C60 Show is co-hosted by Ken Swartz, research scientist and founder of C60 Purple Power, and Sierra Samuel, Health Coach and Marketing Director at C60 Purple Power.",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_602d44518bd1c",
+                    "label": "Overview Title",
+                    "name": "overview_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Overview",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d44598bd1d",
+                    "label": "Overview Description",
+                    "name": "overview_description",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d43a0bc3fd",
+                    "label": "Video URL",
+                    "name": "video_embed_code",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
+                },
+                {
+                    "key": "field_602d48e05727d",
+                    "label": "Podcast Title",
+                    "name": "podcast_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Listen to our Podcast",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d4893083ba",
+                    "label": "Podcast Embed Code",
+                    "name": "podcast_embed_code",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -75,10 +248,10 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_601c2fb456fa9",
-                    "label": "Hero Background Image",
-                    "name": "hero_image",
-                    "type": "image",
+                    "key": "field_602d49f3e1e61",
+                    "label": "Summary Title",
+                    "name": "summary_title",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -87,16 +260,68 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "default_value": "Episode Summary",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d621711108",
+                    "label": "Summary Description",
+                    "name": "summary_description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_602d61c992b09",
+                    "label": "Research Title",
+                    "name": "research_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602d49f9e1e62",
+                    "label": "Research Description",
+                    "name": "research_description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 }
             ]
         },
@@ -266,5 +491,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612971570
+    "modified": 1613588076
 }

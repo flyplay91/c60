@@ -3,6 +3,25 @@
     "title": "Product Category",
     "fields": [
         {
+            "key": "field_602d2aab9f74d",
+            "label": "breadcrumb",
+            "name": "breadcrumb",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ff29b2cd8202",
             "label": "Category Heading Short Description Group",
             "name": "category_heading_short_description_group",
@@ -337,5 +356,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1609761436
+    "modified": 1613572804
 }

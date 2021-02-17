@@ -106,6 +106,25 @@
             ]
         },
         {
+            "key": "field_602d28703f7e3",
+            "label": "breadcrumb",
+            "name": "breadcrumb",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ff1fac5f67d8",
             "label": "Shop Menu Group",
             "name": "shop_menu_group",
@@ -532,5 +551,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1611931683
+    "modified": 1613572236
 }

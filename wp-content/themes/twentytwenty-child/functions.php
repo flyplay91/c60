@@ -1,5 +1,7 @@
 <?php
 require_once 'konnektive-functions.php';
+
+
 // Disable default color setting
 add_filter( 'theme_mod_accent_accessible_colors', 'op_change_default_colours', 10, 1 );
 

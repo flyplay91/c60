@@ -39,7 +39,9 @@ get_header();
                     'post_type'      => 'post',
                     'posts_per_page' => 500,
                     'post_status'    => 'publish',
-                    'post_parent'    => null
+                    'post_parent'    => null,
+                    'orderby' => 'date',
+                    'order'   => 'DESC'
                 ) );
                  
                 if ( $attachments ) {
@@ -56,8 +58,8 @@ get_header();
                             </a>
                             
                             <div class="post-excerpt">
-                                
-                                    <?php echo wp_trim_words( the_excerpt(), 10, '...' ); ?>
+
+                                    <?php echo the_excerpt() ; ?>
                                 
                             </div>
                             <a class="button readmore-button" href="<?php the_permalink(); ?>">
