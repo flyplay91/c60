@@ -3461,8 +3461,13 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
 }
 
-.shop-sort {
+.shop-sort-breadcrumb {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  min-height: 50px;
+  z-index: 11;
 }
 
 .shop-sort__inner {
