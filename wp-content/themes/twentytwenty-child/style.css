@@ -2528,7 +2528,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .woocommerce-breadcrumb a {
   color: var(--color-pink);
 }
-.product-category-page .shop-breadcrumb {
+.product-category-page .shop-breadcrumb,
+.page-template-shop .shop-breadcrumb {
   margin-bottom: 0;
 }
 .product-category-page .woocommerce-breadcrumb {
@@ -3465,8 +3466,6 @@ body.single-product .screen-reader-text {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
-  min-height: 50px;
   z-index: 11;
 }
 
