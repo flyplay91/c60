@@ -144,16 +144,18 @@ get_header();
 							$args = array(
 								'post_type'      => 'product',
 								'posts_per_page' => 9999,
-								'orderby' => 'price', 
-								'order' => 'DEC'
+								'orderby'        => 'meta_value_num',
+								'meta_key'       => '_price',
+								'order'          => 'asc'
 							);
 							
 						} else if ($sortVal == 'sort_by_high_low') {
 							$args = array(
 								'post_type'      => 'product',
 								'posts_per_page' => 9999,
-								'orderby' => 'price', 
-								'order' => 'ASC'
+								'orderby'        => 'meta_value_num',
+								'meta_key'       => '_price',
+								'order'          => 'dec'
 							);
 						} else {
 							$args = array(
