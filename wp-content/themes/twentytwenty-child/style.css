@@ -493,7 +493,7 @@ button:focus {
   font-size: 40px;
   line-height: 1.2;
   text-transform: uppercase;
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
 }
 
 .klaviyo-popup__inner form h3 {
@@ -506,7 +506,9 @@ button:focus {
   font-style: italic;
   margin-bottom: 10px;
 }
-
+.klaviyo_modal .klaviyo_header_close {
+  right: 30px !important;
+}
 .klaviyo-popup__inner form .klaviyo_field_group input::-webkit-input-placeholder {
   font-style: italic;
 }
@@ -5402,10 +5404,10 @@ blockquote {
 }
 
 .testimonial-hero__content h1 {
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   font-size: 57px;
   color: var(--color-text);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .testimonial-hero__content h1 span {
@@ -5517,7 +5519,6 @@ blockquote {
 
 .testimonial-form__inner .gform_wrapper .gform_footer {
   width: calc(50% - 10px);
-  margin-left: auto;
   padding-bottom: 0;
 }
 

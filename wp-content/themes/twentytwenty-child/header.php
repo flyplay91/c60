@@ -288,7 +288,7 @@
 					<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate" class="klaviyo_subscription_form">
 						<input type="hidden" name="g" value="H8vQEK">
 						<div class="klaviyo_block">
-							<h2>Register<br />and save 10%<br />off today</h2>
+							<h2>Register<br /> and save 10%<br /> off today</h2>
 							<h3>Get all of our VIP perks, exclusive offers and inside scoops.</h3>
 						</div> 
 						<div class="klaviyo_block">
