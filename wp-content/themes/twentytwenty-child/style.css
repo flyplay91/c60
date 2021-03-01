@@ -882,7 +882,7 @@ button:focus {
   font-size: 35px;
   line-height: 1.2;
   text-align: center;
-  color: var(--color-grey-pink);
+  color: var(--color-pink);
 }
 
 .home-seen__imgs {
@@ -1364,6 +1364,7 @@ button:focus {
   width: 55px;
   height: 40px;
   opacity:1;
+  z-index: 1;
 }
 
 .home-lives__inner .home-lives-carousel .slick-prev {
@@ -2041,10 +2042,24 @@ button:focus {
 
   .product-item.product-item--sale:after {
     right: -15px;
+    width: 60px;
+    height: 60px;
   }
 
   .home-products__inner .tabset > label {
     margin: 0 50px;
+  }
+
+  .home-benefits__item--text a.home-benefits-btn {
+    padding: 12px 0;
+  }
+
+  .btn-home-product {
+    margin: 35px auto 0;
+  }
+
+  .home-lives__items {
+    padding: 0;
   }
 
   .header-top-social li {
@@ -9175,6 +9190,31 @@ blockquote {
     border-radius: 25px 25px 0px 0px;
   }
 
+  .home-lives__inner .home-lives-carousel .slick-arrow {
+    width: 30px;
+    height: 26px;
+  }
+
+  .home-lives__inner .home-lives-carousel .slick-next {
+    right: -8px;
+  }
+
+  .home-lives__inner .home-lives-carousel .slick-prev {
+    left: -8px;
+  }
+
+  .home-cfo-bottom-banner__inner {
+    flex-direction: column;
+  }
+
+  .home-cfo-bottom-banner__img {
+    width: 100%;
+  }
+
+  .home-cfo-bottom-banner__text {
+    padding: 0;
+  }
+
 }
 @media(max-width: 414px) {
   .customer-testimonial-block h4 {
@@ -9542,7 +9582,7 @@ button.woocommerce-form-register__submit {
 /* Max 480px */
 @media(max-width:480px){
   .home-hero__title {
-    font-size: 48px;
+    font-size: 32px;
   }
   .home-hero__btns a {
     font-size: 16px
@@ -9550,13 +9590,25 @@ button.woocommerce-form-register__submit {
   .home-what-c60__img-text {
     margin-top: 25px;
   } 
-  .home-what-c60__inner h1, 
+  
   .home-why-c60__text h2,  
   .home-what-c60__img h3, 
   .home-what-c60__img p, 
   .home-why-c60__text h3, 
   .home-why-c60__text p {
     text-align: left;
+  }
+  .home-what-c60__inner h1 {
+    font-size: 32px;
+    text-align: left;
+  }
+  .home-why-c60__text h2 {
+    padding-left: 30px;
+    font-size: 26px;
+  }
+  .home-why-c60__text h2:before {
+    width: 20px;
+    top: 16px;
   }
   .home-why-c60__item {
     margin:15px 0px;
