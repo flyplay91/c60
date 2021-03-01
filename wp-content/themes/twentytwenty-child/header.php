@@ -127,6 +127,7 @@
 						</div>
 					<?php endif; ?>
 					<ul class="header-top-social">
+						<li><a href="/my-account">My Account</a></li>
 						<?php if ($instagram_link) : ?>
 							<li class="header-instagram">
 								<a href="<?php echo $instagram_link ?>" target="_blank">

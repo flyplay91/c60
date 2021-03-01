@@ -225,6 +225,7 @@ button:focus {
 
 .header-top-social li {
   margin: 0 0 0 16px;
+  line-height: 1;
 }
 
 .header-top-social li a {
