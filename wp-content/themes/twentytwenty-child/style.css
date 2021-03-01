@@ -2224,7 +2224,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .footer-menu-block {
   display: grid;
-  grid-template-columns: 15% 18% 7% 10% 30% 20%;
+  grid-template-columns: 15% 18% 17% 30% 20%;
   grid-gap: 10px;
 }
 
@@ -6600,7 +6600,6 @@ blockquote {
 .team-ceo-text h3 {
   font-size: 50px;
   line-height: 1.2;
-  margin-bottom: 20px;
   font-family: 'NeurialGrotesk-Bold';
   color: var(--color-dark-pink);
 }
@@ -6619,7 +6618,7 @@ blockquote {
   line-height: 34px;
   color: var(--color-text);
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 18px;
 }
 
 .team-ceo-text p {
@@ -6729,6 +6728,10 @@ blockquote {
     font-size: 18px;
     line-height: 24px;
   }
+
+  .team-ceo-text label {
+    margin-bottom: 10px;
+  }
 }
 
 @media(max-width: 1024px) {
@@ -6750,6 +6753,10 @@ blockquote {
     text-align: center;
   }
 
+  .about-hero-description p {
+    padding: 0;
+  }
+
   .about-hero-content img {
     order: 2;
     margin: 0 auto;
@@ -6761,7 +6768,6 @@ blockquote {
 
   .about-team-ceo__inner > img {
     position: unset;
-    margin: 0 auto;
   }
 
   .team-ceo-img-text,
@@ -6773,7 +6779,6 @@ blockquote {
   .team-ceo-img-text img,
   .about-team-item .team-img-text.left-img img {
     max-width: 80%;
-    margin: 0 auto;
   }
 
   .about-team-item .team-img-text.right-img img {
@@ -6788,6 +6793,10 @@ blockquote {
     margin-bottom: 0;
   }
 
+  .team-ceo-img-text {
+    margin: auto;
+  }
+
   .about-team-ceo__inner > img {
     display: none;
   }
@@ -6800,6 +6809,18 @@ blockquote {
   .about-team-item .team-img-text.left-img img,
   .about-team-item .team-img-text.right-img img {
     max-width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  .about-team-ceo,
+  .about-team-item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .about-team-items {
+    padding: 0;
   }
 }
 
@@ -8939,8 +8960,6 @@ blockquote {
   margin: 0px auto 60px;
 }
 
-
-
 .healthy-video__inner > a:hover {
   transition: .02s;
   transform: scale(1.01);
@@ -9028,7 +9047,6 @@ blockquote {
   .athletic-performance .healthy-way-2 .healthy-way__img-text img {
     margin-left: 60px;
   }
-
 }
 
 @media(max-width: 1000px) {
@@ -9073,8 +9091,6 @@ blockquote {
   .healthy-way__text h3 {
     width: 100%;
   }
-  
-
 }
 
 @media(max-width: 767px) {
