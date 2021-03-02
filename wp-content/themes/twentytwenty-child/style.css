@@ -3703,10 +3703,10 @@ body.single-product .screen-reader-text {
   background-color: var(--color-dark-pink);
   padding: 15px;
   border-radius: 15px;
-  width: 300px;
+  width: 270px;
   margin: 0 auto;
   position: absolute;
-  top: 50px;
+  top: 65px;
   z-index: 11;
   left: 50%;
   transform: translateX(-50%);
@@ -3959,13 +3959,6 @@ body.single-product .screen-reader-text {
     line-height: 40px;
   }
 
-  .shop-variant-select .shop-variant-items {
-    width: 350px;
-  }
-
-  .shop-variant-select .shop-variant-item {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 /* ========== Product category page ========= */
