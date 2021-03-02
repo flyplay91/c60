@@ -69,7 +69,7 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
-		autoplay: true,
+		autoplay: false,
   		autoplaySpeed: 2000
 	});
 

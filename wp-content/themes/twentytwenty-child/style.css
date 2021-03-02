@@ -1325,7 +1325,7 @@ button:focus {
   font-size: 14px;
 }
 .home-cfo-bottom-banner__text {
-  width:75%;
+  width:100%;
 }
 
 .home-cfo-bottom-banner__text h3 {
@@ -2132,6 +2132,8 @@ button:focus {
   }
 
 }
+
+
 
 /* ============= Footer ================== */
 .site-footer {
@@ -9491,39 +9493,9 @@ button.woocommerce-form-register__submit {
     max-width: 62%;
   }
 }
-
-
-/* Max 1280px */
-@media(max-width:1280px){
-  .sub-menu a,
-  .home-benefits__item--text p,
-  .header-menu > li > a,
-  .home-lives__item p,
-  .home-why-c60__text h3,
-  .home-new-product__text p
-   {
-    font-size: 16px;
-  }
-
-  .home-blog__block-item {
-    min-height: 164px;
-  }
-  .home-new-product__text a,
-  .home-benefits__item--text a.home-benefits-btn {
-    font-size:18px;
-  }
-  .home-benefits__item--text a.home-benefits-btn {
-    margin-top:0px;
-  }
-  .home-benefits__item--text h3 {
-    margin-bottom:0px;
-  }
-  .site-footer .inner-section-1366 {
-    max-width: 90%;
-  }
-}
 /* Max 1200px */
 @media(max-width:1280px){
+  
   .home-benefits__item--text h3 {
     margin-bottom: 10px;
   }
@@ -9539,22 +9511,10 @@ button.woocommerce-form-register__submit {
   .btn-home-product {
     font-size:18px;
   }
-  .home-lives__item.lives-item--2 {
-    margin-right: -15px;
-  }
-  .home-lives__item.lives-item--1 {
-    margin-left: 35px;
-  }
-  .home-lives__item.lives-item--3 {
-    margin-left: -15px;
-  }
-  .home-lives__item.lives-item--4 {
-    margin-right: 35px;
-  }
   
 }
 /* Max 1024px */
-@media(max-width:1280px){
+@media(max-width:1024px){
   .home-why-c60__text {
     padding-top: 0;
   }
@@ -9623,12 +9583,20 @@ button.woocommerce-form-register__submit {
     margin:15px 0px;
   }
   .home-seen__imgs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    grid-gap: 20px 40px;
     max-width: 90%;
     margin: 45px auto;
+  }
+  .home-seen__imgs-item {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+  .home-seen__imgs-item:nth-child(3) {
+    margin-left: 0;
+  }
+  .home-seen__imgs-item:last-child {
+    width: 100%;
+    flex: 0 0 100%;
   }
   .home-benefits__title,
   .home-benefits__item--text h3,
@@ -9651,7 +9619,8 @@ button.woocommerce-form-register__submit {
     margin: 0 auto;
   }
   .home-cfo-bottom-banner {
-    padding-top:0px;
+    padding-top: 0;
+    margin-top: 0;
   }
   .home-cfo-bottom-banner__img > img {
     width: 100%;
@@ -9699,10 +9668,10 @@ button.woocommerce-form-register__submit {
 
 }
 /* Max 414px */
-@media(max-width:414px){
+@media(max-width:414px) {
   .home-benefits__items {
     padding: 0px;
-}
+  }
   .home-benefits__item--text h3 {
     margin-bottom: 10px;
     font-size: 38px;
@@ -9716,20 +9685,20 @@ button.woocommerce-form-register__submit {
   .home-lives__inner {
     padding: 25px 20px;
   }
-  .home-lives__item.lives-item--1 {
+  .home-lives__item.home-lives__item.lives-item--1 {
     margin-left: 0px;
     order:1;
   } 
-  .home-lives__item.lives-item--2 {
+  .home-lives__item.home-lives__item.lives-item--2 {
     margin-right: 0;
     order: 2;
   }
-  .home-lives__item.lives-item--4 {
+  .home-lives__item.home-lives__item.lives-item--4 {
     margin-right: 0;
     order: 3;
     margin-bottom: 250px;
   }
-  .home-lives__item.lives-item--3 {
+  .home-lives__item.home-lives__item.lives-item--3 {
     margin-left: 0;
     order: 4;
     margin-bottom:0px;
@@ -9745,11 +9714,10 @@ button.woocommerce-form-register__submit {
   }
   .footer-menu__item ul li a,
   .footer-mobile, 
-  .footer-work-time { {
+  .footer-work-time {
     font-size:16px;
     line-height:1.5;
   }
-
 }
 
 /* Max 375px */
