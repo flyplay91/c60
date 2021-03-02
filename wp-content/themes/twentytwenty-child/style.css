@@ -3497,7 +3497,7 @@ body.single-product .screen-reader-text {
 .shop-sort__inner label {
   color: var(--color-pink);
   font-family: 'NeurialGrotesk-Medium';
-  padding: 10px 25px 10px;
+  padding: 0 25px 0 0;
   text-align: center;
   font-size: 17px;
   position: relative;
@@ -3514,7 +3514,7 @@ body.single-product .screen-reader-text {
   content: '';
   position: absolute;
   right: 0;
-  top: 18px;
+  top: 8px;
 }
 
 .shop-sort__inner form {
@@ -3918,6 +3918,7 @@ body.single-product .screen-reader-text {
 @media(max-width: 767px) {
   .shop__hero-content p {
     width: 100%;
+    margin-bottom: 10px;
   }
 
   .shop-products-block {
