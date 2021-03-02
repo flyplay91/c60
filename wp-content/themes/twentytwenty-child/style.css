@@ -1369,12 +1369,12 @@ button:focus {
 
 .home-lives__inner .home-lives-carousel .slick-prev {
   background-image: url('assets/images/home_carousel_left_arrow.png');
-  left: -20px;
+  left: 0;
 }
 
 .home-lives__inner .home-lives-carousel .slick-next {
   background-image: url('assets/images/home_carousel_right_arrow.png');
-  right: -20px;
+  right:0;
 } 
 
 .home-lives:focus,
@@ -9211,13 +9211,6 @@ blockquote {
     height: 26px;
   }
 
-  .home-lives__inner .home-lives-carousel .slick-next {
-    right: -8px;
-  }
-
-  .home-lives__inner .home-lives-carousel .slick-prev {
-    left: -8px;
-  }
 
   .home-cfo-bottom-banner__inner {
     flex-direction: column;
