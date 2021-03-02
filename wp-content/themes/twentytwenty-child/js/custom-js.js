@@ -380,6 +380,12 @@ $(document).ready(function() {
 			scrollTop: ($('.testimonial-form__inner').offset().top)
 		},100);
 	});
+	// affiliate-area
+	$('body').on('click', '.affiliate-hero__inner img', function() {
+		$('html, body').animate({
+			scrollTop: ($('.affiliate-form').offset().top)
+		},100);
+	});
 
 });
 	
