@@ -112,6 +112,8 @@ get_header();
                 <h4><?php echo $podcast_title ?></h4>
                 <br />
             <?php echo $podcast_embed_code ?>
+            <br />
+            If you like the show, please review it on <a href="https://podcasts.apple.com/us/podcast/the-c60-show/id1466120483">iTunes</a>
             </div>
         </section>
 
