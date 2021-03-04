@@ -3364,14 +3364,45 @@ body.single-product .screen-reader-text {
 }
 
 @media(max-width: 500px) {
-  .product_title {
-    font-size: 30px;
+  .product-page .product_title.entry-title{
+    font-size: 26px;
     line-height: 40px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .woocommerce-Tabs-panel ul {
+    width: 100%;
+  }
+
+  .woocommerce-Tabs-panel ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px 0;
+  }
+
+  .woocommerce-Tabs-panel {
+    padding-top: 0;
+  }
+
+  .variations_form table {
+    margin: 1rem 0;
+  }
+
+  .woocommerce-variation-price .wcsatt-options-product-wrapper,
+  .woocommerce-variation-add-to-cart,
+  .extra-variant-text {
+    width: 100%;
+    max-width: 100%;
   }
 
   .woocommerce-product-gallery img {
     width: 350px;
     margin: 0 auto;
+  }
+
+  .woocommerce-tabs #reviews li.comment, .woocommerce-tabs #reviews li.review {
+    margin-bottom: 0;
   }
 }
 
