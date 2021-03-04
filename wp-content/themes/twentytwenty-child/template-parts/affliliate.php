@@ -118,19 +118,14 @@ get_header();
         $affiliate_form_group = get_field('affiliate_form_group');
         $form_heading = $affiliate_form_group['form_heading'];
         $form_sub_heading = $affiliate_form_group['form_sub_heading'];
-        $form_shortcode = $affiliate_form_group['form_shortcode'];
-        $form_image_url = $affiliate_form_group['form_image']['url'];
-        $form_image_alt = $affiliate_form_group['form_image']['alt'];
+        $form_btn_link = $affiliate_form_group['form_button_link'];
         while ( have_rows('affiliate_form_group')): the_row(); ?>
             <section class="affiliate-form">
                 <div class="affiliate-form__inner inner-section-1366">
                     <h2><?php echo $form_heading ?></h2>
                     <h4><?php echo $form_sub_heading ?></h4>
                     <div class="affiliate-form__block">
-                        <div class="affiliate-form__content">
-                            <?php echo do_shortcode($form_shortcode); ?>
-                        </div>
-                        <img src="<?php echo $form_image_url ?>" alt="<?php echo $form_image_alt ?>">
+                        <a target="_blank" href="<?php echo $form_btn_link; ?>">Sign Up</a>
                     </div>
                 </div>
             </section>

@@ -521,8 +521,8 @@
                 },
                 {
                     "key": "field_6005bda203af8",
-                    "label": "Form Shortcode",
-                    "name": "form_shortcode",
+                    "label": "Form Button Link",
+                    "name": "form_button_link",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -537,30 +537,6 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
-                {
-                    "key": "field_6005bda803af9",
-                    "label": "Form Image",
-                    "name": "form_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
                 }
             ]
         }
@@ -582,5 +558,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1610988984
+    "modified": 1614872791
 }

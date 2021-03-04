@@ -5419,6 +5419,11 @@ blockquote {
   font-family: 'NeurialGrotesk-Bold';
 }
 
+.contact-content__form .zrf-form #zendesk_field_zen_submit input:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 @media(max-width: 1024px) {
   .contact-hero {
     height: 450px;
@@ -7747,6 +7752,11 @@ blockquote {
   cursor: pointer;
 }
 
+.affiliate-hero__inner img:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
 .affiliate-intro {
   margin-top: 50px;
 }
@@ -7935,55 +7945,24 @@ blockquote {
 }
 
 .affiliate-form__block {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1.4fr 2fr;
-  grid-gap: 80px;
+  margin-top: 50px;  
 }
 
-.affiliate-form__block img {
-  border-radius: 10px;
-}
-
-.affiliate-form__block .gform_heading {
-  display: none;
-}
-
-.affiliate-form__block .gform_body li label {
-  color: var(--color-pink);
+.affiliate-form__block a {
+  background-color: var(--color-dark-pink);
+  width: 100%;
   font-family: 'NeurialGrotesk-Bold';
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
-.affiliate-form__block .gform_body li label.hidden_sub_label {
-  display: none;
-}
-
-.affiliate-form__block .gform_body li input,
-.affiliate-form__block .gform_body li textarea {
-  background-color: var(--color-input-bg);
-  border: 1px solid var(--color-line);
-  margin-bottom: 0 !important;
-}
-
-.affiliate-form__block .gform_body li {
-  margin-bottom: 30px;
-  margin-top: 0 !important;
-}
-
-.affiliate-form__block .gform_body li input {
-  height: 50px;
-}
-
-.affiliate-form__block .gform_wrapper .gform_footer input {
-  width: calc(100% - 16px) !important;
-  margin-bottom: 0 !important;
-  font-family: 'NeurialGrotesk-Bold';
-  text-transform: capitalize;
-}
-
-.affiliate-form__block .gform_wrapper .gform_footer input:hover {
-  text-decoration: none;
+.affiliate-form__block a:hover {
   transition: .02s;
   transform: scale(1.01);
 }
@@ -8026,10 +8005,6 @@ blockquote {
   .affiliate-form {
     margin-top: 0;
   }
-
-  .affiliate-form__block {
-    grid-gap: 30px;
-  }
 }
 
 @media(max-width: 767px) {
@@ -8063,16 +8038,8 @@ blockquote {
     font-size: 18px;
   }
 
-  .affiliate-form__block {
-    grid-template-columns: 1fr;
-  }
-
   .affiliate-form__inner h4 {
     font-size: 24px;
-  }
-
-  .affiliate-form__block .gform_wrapper .gform_footer input {
-    width: 100% !important;
   }
 
   .affiliate-form__content {
