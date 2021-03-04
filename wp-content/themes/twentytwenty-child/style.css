@@ -4711,6 +4711,10 @@ body.single-product .screen-reader-text {
 }
 
 /* ======== Blog post page ========== */
+
+.wp-block-column {
+  padding: 15px;
+}
 /* ========== Blog article page =========== */
 .post-hero {
   background-repeat: no-repeat;
@@ -4965,8 +4969,6 @@ blockquote {
 .blog-post-item p {
   font-family: 'NeurialGrotesk-Regular';
 }
-.blog-post-item .post-excerpt {
-}
 .readmore-button {
   margin-top:30px;
 }
@@ -5197,6 +5199,12 @@ blockquote {
 
   .post-description > ul li a {
     font-size: 12px;
+  }
+}
+
+@media(max-width: 500px) {
+  .post-tags > ul li {
+    margin-bottom: 5px;
   }
 }
 
@@ -6854,7 +6862,16 @@ blockquote {
   }
 }
 
+
 @media(max-width: 500px) {
+  .team-ceo-img-text img, .about-team-item .team-img-text.left-img img, .about-team-item .team-img-text.right-img img{
+    width: 100%;
+    float: none;
+  }
+  .team-ceo-text,
+  .team-text {
+    margin-top: 20px;
+  }
   .about-team-ceo,
   .about-team-item {
     padding-top: 0;
@@ -9590,6 +9607,9 @@ button.woocommerce-form-register__submit {
 }
 /* Max 480px */
 @media(max-width:480px){
+  .inner-section-1366.header-bottom__inner {
+    padding: 15px;
+  }
   .home-hero__title {
     font-size: 32px;
   }
