@@ -4759,10 +4759,18 @@ body.single-product .screen-reader-text {
   width: 30%;
   margin-bottom: 25px;
 }
+.post-page .post-summary-section h2,
+.post-page .post-summary-section h3 {
+  font-size: 3.2rem;
+}
+.post-page .post-summary-section figure {
+  margin:0;
+}
 .post-page .elementor-text-editor h4 {
   color:var(--color-pink);
   margin-bottom:20px;
 }
+
 .post-page .featured-image img {
   text-align:center;
   margin: 30px auto;
@@ -4773,6 +4781,13 @@ body.single-product .screen-reader-text {
   width: 100%;
   float: left;
   margin: 50px 0px;
+}
+.post-page .post-summary-section ul {
+  margin-left:55px;
+}
+.post-page .post-summary-section li {
+  list-style:disc;
+  padding:10px 0px;
 }
 .date-sep {
   padding:0px 10px;
