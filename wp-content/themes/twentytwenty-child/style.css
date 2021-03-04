@@ -1807,6 +1807,9 @@ button:focus {
 }
 
 @media(max-width: 767px) {
+  .header-top {
+    display: none;
+  }
   .home-why-c60 {
     margin-top: 0;
   }

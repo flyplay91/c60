@@ -266,6 +266,7 @@
 
 					}
 					?>
+					<li><a href="/my-account/">My Account</a></li>
 				</ul>
 			</div>
 
