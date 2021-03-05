@@ -4804,7 +4804,7 @@ body.single-product .screen-reader-text {
   margin-right: 10px;
   position: absolute;
   left: 0;
-  top: 13px;
+  top: 10px;
 }
 .date-sep {
   padding:0px 10px;
@@ -8597,7 +8597,7 @@ ul.gfield_checkbox li input {
   margin-right: 10px;
   position: absolute;
   left: 0;
-  top: 13px;
+  top: 10px;
 }
 
 .healthy-hero__img-text img {
