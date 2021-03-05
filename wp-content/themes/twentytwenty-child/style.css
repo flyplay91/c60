@@ -335,7 +335,7 @@ button:focus {
   top: 100%;
   transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
   transform: translateY(6px);
-  width: 240px;
+  width: 260px;
   z-index: 2;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -4835,6 +4835,22 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
   font-weight: normal;
 }
+.textwidget ul {
+  margin-left:50px;
+}
+.textwidget ul li {
+  list-style: disc;
+  font-family: 'NeurialGrotesk-Regular';
+  font-weight: normal;
+}
+.elementor-text-editor ul {
+  margin-left:50px;
+}
+.elementor-text-editor ul li {
+  list-style: disc;
+  font-family: 'NeurialGrotesk-Regular';
+  font-weight: normal;
+}
 blockquote {
   margin-left:50px;
 }
@@ -7738,7 +7754,7 @@ blockquote {
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
-  background-position: center;
+  background-position: top center;
 }
 
 .affiliate-hero__inner {
@@ -7780,7 +7796,7 @@ blockquote {
 .affiliate-intro__text p {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.475;
   color: var(--color-text);
   margin-top: 30px;
 }
@@ -7799,7 +7815,7 @@ blockquote {
   font-size: 50px;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   color: var(--color-dark-pink);
 }
 
@@ -7819,20 +7835,20 @@ blockquote {
 }
 
 .affiliate-products h3 {
-  font-family: 'NeurialGrotesk-Bold';
-  font-size: 58px;
-  line-height: 64px;
-  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Medium';
+  font-size: 50px;
+  line-height: 1.2;
+  color: var(--color-dark-pink);
   text-align: center;
 }
 
 .affiliate-products p {
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 1.475;
   color: var(--color-text);
   text-align: center;
-  max-width: 800px;
+  max-width: 65%;
   margin: 50px auto;
 }
 
@@ -7855,8 +7871,8 @@ blockquote {
   font-size: 50px;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-family: 'NeurialGrotesk-Bold';
-  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Medium';
+  color: var(--color-dark-pink);
   text-align: center;
   margin-top: 20px;
 }
@@ -7865,9 +7881,9 @@ blockquote {
   color: var(--color-text);
   font-family: 'NeurialGrotesk-Regular';
   font-size: 18px;
-  line-height: 1.8;
-  max-width: 600px;
-  text-align: center;
+  line-height: 1.475;
+  max-width: 75%;
+  text-align: left;
   margin: 0 auto;
 }
 
@@ -7910,17 +7926,17 @@ blockquote {
   font-size: 50px;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-family: 'NeurialGrotesk-Bold';
-  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Medium';
+  color: var(--color-dark-pink);
   text-align: center;
   margin-top: 20px;
 }
 
 .affiliate-earnings__inner p {
-  color: var(--color-pink);
+  color: var(--color-text);
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 28px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.475;
   text-align: center;
 }
 
@@ -7936,8 +7952,8 @@ blockquote {
   font-size: 50px;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-family: 'NeurialGrotesk-Bold';
-  color: var(--color-text);
+  font-family: 'NeurialGrotesk-Medium';
+  color: var(--color-dark-pink);
   text-align: center;
 }
 
@@ -7957,7 +7973,7 @@ blockquote {
 .affiliate-form__block a {
   background-color: var(--color-dark-pink);
   width: 100%;
-  font-family: 'NeurialGrotesk-Bold';
+  font-family: 'NeurialGrotesk-Medium';
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7966,6 +7982,7 @@ blockquote {
   max-width: 300px;
   margin: 0 auto;
   padding: 15px 0;
+  letter-spacing:1px;
 }
 
 .affiliate-form__block a:hover {
@@ -8052,6 +8069,27 @@ blockquote {
     order: 2;
   }
 }
+@media(max-width: 480px) {
+  .affiliate-hero__inner h1 {
+    max-width: 50%;
+  }
+  .affiliate-products h3 {
+    margin-bottom:20px;
+  }
+  .affiliate-products p {
+    max-width:85%;
+  }
+  .affiliate-opportunity__inner > p {
+    max-width:95%;
+  }
+  .affiliate-opportunity-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
 
 /* ========== Blog collection page =========== */
 .blog-collection-hero {
@@ -9577,6 +9615,9 @@ button.woocommerce-form-register__submit {
   .footer-menu-block .footer-badge img {
     max-width: 90%;
   }
+  .athletic-performance .healthy-way-2 .healthy-way__img-text img {
+    margin-left: 0;
+  } 
 }
 /* Max 480px */
 @media(max-width:480px){
@@ -9697,6 +9738,10 @@ button.woocommerce-form-register__submit {
   .footer-des {
     margin: 0;
     max-width: 100%;
+  }
+  .healthy-way-2 .healthy-way__img-text-caption {
+    float: none;
+    margin-left: 0;
   }
 
 }
