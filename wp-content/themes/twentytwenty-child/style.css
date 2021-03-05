@@ -5573,16 +5573,19 @@ ul.gfield_checkbox li input {
   background-color: var(--color-input-bg);
   border: 1px solid var(--color-line);
   margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.testimonial-form__inner .gform_body li input:focus,
+.testimonial-form__inner .gform_body li textarea:focus,
+.testimonial-form__inner .gform_body li select:focus {
+  outline: none;
 }
 
 .testimonial-form__inner .gform_body li textarea {
   height: 168px;
 }
 
-.testimonial-form__inner .gform_body li input,
-.testimonial-form__inner .gform_body li select {
-  margin-top: 0 !important;
-}
 
 .testimonial-form__inner .gform_body li.testimonial-file {
   position: relative;
