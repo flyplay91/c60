@@ -4833,16 +4833,11 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
   font-weight: normal;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 751f8ea12cd4930cc50d5a1235b252a3382944e9
 .textwidget ul {
   margin-left:50px;
 }
 .textwidget ul li {
   list-style: disc;
-  font-family: 'NeurialGrotesk-Regular';
   font-weight: normal;
 }
 .elementor-text-editor ul {
