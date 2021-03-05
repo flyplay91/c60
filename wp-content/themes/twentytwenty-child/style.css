@@ -4786,9 +4786,25 @@ body.single-product .screen-reader-text {
 .post-page .post-summary-section ul {
   margin-left:55px;
 }
-.post-page .post-summary-section li {
-  list-style:disc;
-  padding:10px 0px;
+.post-summary-section li {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.47;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.post-summary-section li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-light-pink);
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 13px;
 }
 .date-sep {
   padding:0px 10px;
