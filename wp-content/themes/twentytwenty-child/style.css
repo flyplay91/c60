@@ -4829,13 +4829,11 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
   font-weight: normal;
 }
-
 .textwidget ul {
   margin-left:50px;
 }
 .textwidget ul li {
   list-style: disc;
-  font-family: 'NeurialGrotesk-Regular';
   font-weight: normal;
 }
 .elementor-text-editor ul {
@@ -5221,7 +5219,10 @@ blockquote {
     margin-bottom: 5px;
   }
 }
-
+ul.gfield_checkbox li input {
+  height:15px;
+  margin-right:10px;
+}
 
 /* ========== Blog article page =========== */
 .blog-article-hero__inner {
