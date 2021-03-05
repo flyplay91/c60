@@ -136,10 +136,6 @@ body {
   padding: 25px 15px;
 }
 
-li::marker {
-  content: none;
-}
-
 li {
   list-style-type: none;
 }
@@ -4833,10 +4829,7 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
   font-weight: normal;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 751f8ea12cd4930cc50d5a1235b252a3382944e9
 .textwidget ul {
   margin-left:50px;
 }
