@@ -5581,7 +5581,7 @@ ul.gfield_checkbox li input {
 
 .testimonial-form__inner .gform_body li input,
 .testimonial-form__inner .gform_body li select {
-  height: 50px;
+  margin-top: 0 !important;
 }
 
 .testimonial-form__inner .gform_body li.testimonial-file {
