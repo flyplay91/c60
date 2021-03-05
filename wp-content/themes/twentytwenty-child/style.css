@@ -2485,9 +2485,6 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .woocommerce-account .entry-title {
   display:none;
 }
-.product-page-breadcrumb {
-  margin-bottom: 20px;
-}
 
 .woocommerce-message {
   margin: 0;
@@ -2544,6 +2541,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   font-size: 16px;
   font-family: 'NeurialGrotesk-Regular';
   font-weight: 600;
+  margin: 0;
 }
 
 .woocommerce-breadcrumb a {
@@ -4835,6 +4833,10 @@ body.single-product .screen-reader-text {
   font-family: 'NeurialGrotesk-Regular';
   font-weight: normal;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 751f8ea12cd4930cc50d5a1235b252a3382944e9
 .textwidget ul {
   margin-left:50px;
 }
