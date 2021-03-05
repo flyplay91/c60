@@ -5536,9 +5536,9 @@ ul.gfield_checkbox li input {
   margin-bottom: 50px;
 }
 
-.testimonial-form__inner .gform_body ul {
-  column-count: 2;
-}
+/*.testimonial-form__inner .gform_body ul {
+  column-count: 1;
+}*/
 
 .testimonial-form__inner .gform_body li {
   margin-bottom: 30px;
@@ -9541,6 +9541,100 @@ button.woocommerce-form-register__submit {
   padding-bottom:0px;
 
 }
+
+/* ========= C60 Pet Benefits Page ========== */
+.c60-pet-benefits .test_1 {
+  padding: 50px 40px 40px 40px;
+  background: var(--color-light-pink);
+  border-radius: 25px;
+  margin-left: 35px;
+  padding:20px;
+  text-align:center;
+}
+.c60-pet-benefits .test_1 h4 {
+  font-size:22px;
+  margin-bottom:20px;
+}
+.c60-pet-benefits .test_1 p {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.47;
+  margin-bottom: 10px;
+  position: relative;
+}
+.c60-pet-benefits .test_1::after {
+  content: url('assets/images/testimonial-arrow.png');
+  position: absolute;
+  z-index: 100000;
+  margin-left: -33px;
+  transform: rotate(270deg);
+  margin-top: -30px;
+}
+.c60-pet-benefits .test_name {
+  text-align: center;
+  margin-top: 25px;
+  font-family: 'NeurialGrotesk-Medium';
+}
+.c60-pet-benefits .c60-pets2,
+.c60-pet-benefits .c60-pets3,
+.c60-pet-benefits .c60-pets4,
+.c60-pet-benefits .c60-pets5 {
+  margin-top:50px;
+}
+.c60-pet-benefits .healthy-way__text {
+  margin-top:30px;
+}
+.c60-pet-benefits .c60-pets2 h2 {
+  font-size: 50px;
+  color: var(--color-dark-pink);
+  font-family: 'NeurialGrotesk-Medium';
+}
+.c60-pet-benefits .c60-pets2  ul {
+  margin-left:50px;
+}
+.c60-pet-benefits .healthy-way__text ul {
+  margin-left:50px;
+  list-style: disc;
+}
+.c60-pet-benefits .healthy-way__text ul li {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 18px;
+  line-height: 1.47;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.c60-pet-benefits .healthy-way__text ul li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-light-pink);
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+.c60-pet-benefits .c60-pets5 .healthy-hero__img-text {
+  grid-template-columns: 1fr 1.5fr;
+}
+.c60-pet-benefits .c60-pets5 .test_1 {
+  margin-left:0px;
+}
+.c60-pet-benefits .c60-pets5 .healthy-hero__img-text {
+  margin-top:40px;
+}
+.c60-pet-benefits .c60-pets5 .test_1::after {
+  margin-left: -23px;
+}
+
+
+
+
+
+
+
 /* Max 1366px */
 @media(max-width:1366px){
   .inner-section-1366.header-bottom__inner {
