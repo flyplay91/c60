@@ -1560,8 +1560,8 @@ button:focus {
 .home-blog__block .slick-dots li button {
   font-size: 0;
   padding: 0;
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   background-color: var(--color-inactive-dot);
   border: none;
   border-radius: 60px;
