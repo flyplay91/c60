@@ -3675,8 +3675,22 @@ body.single-product .screen-reader-text {
   cursor: pointer;
 }
 
+.archive .woocommerce-ordering {
+  padding: 0;
+}
+
 .archive .woocommerce-ordering .orderby:focus {
   outline: none;
+}
+
+.archive .shop-products__inner .woocommerce-breadcrumb {
+  float: left;
+  font-weight: 600;
+  font-family: 'NeurialGrotesk-Medium';
+}
+
+.archive .shop-products__inner .woocommerce-result-count {
+  display: none;
 }
 
 .custom-subscription-price {

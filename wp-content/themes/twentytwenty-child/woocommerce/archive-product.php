@@ -32,6 +32,7 @@ get_header( 'shop' );
 <main class="product-category-page">
 	<div class="product-category__inner">
 		<div class="shop-products__inner inner-section-1120">
+			<?php woocommerce_breadcrumb(); ?>
 			<?php echo do_action( 'woocommerce_before_shop_loop' ); ?>
 		</div>
 
