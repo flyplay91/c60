@@ -17,6 +17,8 @@ get_header();
 		$hero_group = get_field('shop_hero_group');
 		$hero_img_url = $hero_group['hero_background_image']['url'];
 		$hero_img_alt = $hero_group['hero_background_image']['alt'];
+		$hero_mobi_img_url = $hero_group['hero_mobile_image']['url'];
+		$hero_mobi_img_alt = $hero_group['hero_mobile_image']['alt'];
 		$hero_heading = $hero_group['hero_heading'];
 		$hero_sub_heading = $hero_group['hero_sub_heading'];
 		$hero_arrow_img_url = $hero_group['hero_down_arrow']['url'];
@@ -24,7 +26,17 @@ get_header();
 		
 		while ( have_rows('shop_hero_group')): the_row(); 
 			if ($hero_img_url) : ?>
-				<section class="shop__hero" style="background-image: url(<?php echo $hero_img_url ?>)">
+				<section class="shop__hero">
+				<style>
+					.shop__hero {
+						background-image: url(<?php echo $hero_img_url ?>);
+					}
+					@media(max-width: 500px) {
+						.shop__hero {
+							background-image: url(<?php echo $hero_mobi_img_url ?>);
+						}
+					}
+				</style>
 					<div class="shop__hero-content">
 						<h1><?php echo $hero_heading ?></h1>
 						<p><?php echo $hero_sub_heading ?></p>

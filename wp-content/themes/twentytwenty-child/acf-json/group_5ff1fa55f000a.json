@@ -42,6 +42,30 @@
                     "mime_types": ""
                 },
                 {
+                    "key": "field_60464bde520fa",
+                    "label": "Hero Mobile Image",
+                    "name": "hero_mobile_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_5ff1fa87f67d5",
                     "label": "Hero Heading",
                     "name": "hero_heading",
@@ -551,5 +575,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1613572236
+    "modified": 1615219702
 }
