@@ -45,9 +45,9 @@ get_header( 'shop' );
 					<h1>C60 Pets</h1>
 					<p>Our C60 oil for pets has been specifically formulated for the wellness needs of the furriest members of your family. Our C60 products are made with 99.99% pure sublimated carbon fullerenes (never exposed to solvents), and 100% Certified Organic, healthy, farm-direct oils, ensuring the best possible C60 in the industry today. <br><br>
 					If you are looking to supplement your pet’s health with natural, scientifically-backed methods, look no further than C60 Purple Power. We encourage you to explore our site to learn more about the unique benefits of C60 and what makes our company the best manufacturer and retailer of organic C60 for pets today.</p>
-				<?php elseif(is_product_category('bundles')) : ?>
+				<?php elseif(is_product_category('c60-bundles')) : ?>
 					<h1>Bundles</h1>
-				<?php elseif(is_product_category('merchandise')) : ?>
+				<?php elseif(is_product_category('c60-merchandise')) : ?>
 					<h1>Merchandise</h1>
 				<?php endif; ?>
 			</div>
