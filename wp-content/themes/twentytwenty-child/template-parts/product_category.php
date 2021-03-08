@@ -131,7 +131,8 @@ get_header();
 									'post_type'      => 'product',
 									'posts_per_page' => 9999,
 									'orderby' => 'date', 
-									'order' => 'ASC'
+									'order' => 'ASC',
+									'product_cat' => $category_slug_url
 								);
 							}
 							

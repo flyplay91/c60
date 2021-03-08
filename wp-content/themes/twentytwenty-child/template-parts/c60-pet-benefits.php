@@ -99,11 +99,7 @@ get_header();
                                     </ul>
 
                                     </p>
-                                <p>
-                                    
-                                In addition to the power benefits of C60, the 100% certified organic, healthy, farm-direct oils we use in our pet products offer additional benefits which may support other aspects of your pet’s health.
-
-                                </p>
+                                
 
                                 </div>
                             
@@ -123,7 +119,18 @@ get_header();
                                 <div class="test_name">Laurie S.</div>
 
                             </div>
+
+                           
+
+
                         </div>  
+
+                        <p>
+                                    
+                                    In addition to the power benefits of C60, the 100% certified organic, healthy, farm-direct oils we use in our pet products offer additional benefits which may support other aspects of your pet’s health.
+    
+                                    </p>
+
                  </div>
         </section>
 
@@ -131,6 +138,8 @@ get_header();
         <section class="c60-pets3">
                 <div class="healthy-hero__inner inner-section-1220">
                             <h2>Why Choose Our C60 Oils for Your Furry Friend?</h2>
+                        
+                        <div class="healthy-hero__img-text">
 
                             <div class="healthy-way__text">
                            
@@ -141,6 +150,13 @@ get_header();
                             
                             
                             </div>
+
+                            <div class="healthy-hero__img">
+                              <img src="/wp-content/uploads/2021/03/c60-for-horses-1.jpeg" alt="Why Choose Our C60 Oils for Your Furry Friend?">
+                            </div>
+                        </div>
+
+
                  </div>
         </section>
         
@@ -219,6 +235,10 @@ get_header();
                             
 
                         </div>  
+
+                        <div class="healthy-hero__img2">
+                              <img src="/wp-content/uploads/2021/03/dog-eating-c60.jpeg" alt="What are the benefits of C60 for pets?">
+                            </div>
 
                                     <h5><strong>What is the best way to give C60 to my pets?</strong></h5>
 

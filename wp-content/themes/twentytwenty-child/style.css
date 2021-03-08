@@ -4764,6 +4764,10 @@ body.single-product .screen-reader-text {
 .post-page .post-summary-section h3 {
   font-size: 3.2rem;
 }
+.post-summary-section h5 {
+  font-size:21px;
+  margin-bottom:5px;
+}
 .post-page .post-summary-section figure {
   margin:0;
 }
@@ -9007,6 +9011,9 @@ ul.gfield_checkbox li input {
   line-height: 44px;
   margin-bottom: 10px;
 }
+.customer-review-desc {
+  color: var(--color-pink);
+}
 .customer-review-desc p{
   margin-bottom:25px;
   color: var(--color-pink);
@@ -9307,6 +9314,9 @@ ul.gfield_checkbox li input {
 
   .home-cfo-bottom-banner__text {
     padding: 0;
+  }
+  .page-template-healthy_aging .healthy-way__img-text img {
+    width: 100%;
   }
 
 }
@@ -9635,6 +9645,16 @@ button.woocommerce-form-register__submit {
 .c60-pet-benefits .c60-pets5 .healthy-hero__img-text {
   grid-template-columns: 1fr 1.5fr;
 }
+
+.c60-pet-benefits .c60-pets5 .healthy-hero__img2 {
+  float: left;
+  max-width: 42%;
+  padding-right: 40px;
+}
+.c60-pet-benefits .c60-pets5 .healthy-hero__img2 img {
+  border-radius:10px;
+}
+
 .c60-pet-benefits .c60-pets5 .test_1 {
   margin-left:0px;
 }
@@ -9644,7 +9664,36 @@ button.woocommerce-form-register__submit {
 .c60-pet-benefits .c60-pets5 .test_1::after {
   margin-left: -23px;
 }
-
+@media(max-width:480px) {
+  .c60-pet-benefits .test_1 {
+    margin-left:0px;
+  }
+  .c60-pet-benefits .test_1::after {
+    margin-left: -18px;
+  }
+  .c60-pet-benefits .healthy-hero__inner h1 {
+    margin-bottom: 30px;
+  }
+  .c60-pet-benefits .healthy-way__text {
+    margin-top: 0px;
+  }
+  .c60-pet-benefits .healthy-way__text {
+    padding: 25px 0px 0px 0px;
+  }
+  .c60-pet-benefits .c60-pets2 ul,
+  .c60-pet-benefits .healthy-way__text ul {
+    margin-left: 0;
+  }
+  .healthy-way-2 .healthy-way__img-text-caption .img-caption {
+    margin-top:0px;
+    margin-bottom:30px;
+  }
+  .c60-pet-benefits .c60-pets5 .healthy-hero__img2 {
+    max-width:100%;
+    padding-right:0px;
+    margin-bottom:20px;
+  }
+}
 
 
 
@@ -9850,6 +9899,9 @@ button.woocommerce-form-register__submit {
   }
   .healthy-way-2 .healthy-way__img-text-caption {
     float: none;
+    margin-left: 0;
+  }
+  .post-page .post-summary-section ul {
     margin-left: 0;
   }
 
