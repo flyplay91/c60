@@ -3659,8 +3659,24 @@ body.single-product .screen-reader-text {
 } */
 
 .page-template-shop .wcsatt-sub-options,
-.page-template-product_category .wcsatt-sub-options {
+.page-template-product_category .wcsatt-sub-options,
+.archive .wcsatt-sub-options {
   display: none;
+}
+
+.archive .woocommerce-ordering .orderby {
+  border: none;
+  color: var(--color-pink);
+  font-family: 'NeurialGrotesk-Medium';
+  padding: 0 25px 0 0;
+  text-align: center;
+  font-size: 17px;
+  position: relative;
+  cursor: pointer;
+}
+
+.archive .woocommerce-ordering .orderby:focus {
+  outline: none;
 }
 
 .custom-subscription-price {

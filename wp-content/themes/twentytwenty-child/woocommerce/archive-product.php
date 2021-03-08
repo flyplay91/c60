@@ -26,80 +26,54 @@ get_header( 'shop' );
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-do_action( 'woocommerce_before_main_content' );
+// do_action( 'woocommerce_before_main_content' );
 
 ?>
-<header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
+<main class="product-category-page">
+	<div class="product-category__inner">
+		<div class="shop-products__inner inner-section-1120">
+			<?php echo do_action( 'woocommerce_before_shop_loop' ); ?>
+		</div>
 
-	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
-</header>
+		<section class="product-category__title-short-des">
+			<div class="product-category__title-short-des__inner inner-section-1120">
+				<?php if( is_product_category('c60-oil') ) : ?>
+					<h1>C60 Oil</h1>
+					<p>If you are looking for the very best organic C60 oils, look no further than C60 Purple Power. Our C60 products are made with 99.99% pure sublimated carbon fullerenes (never exposed to solvents), and 100% Certified Organic, healthy, farm-direct oils, ensuring the best possible C60 in the industry today. <br> <br>
+					C60 is believed to be one of the most powerful antioxidants ever discovered due to its natural benefits that protect the body from oxidative stress. By scavenging free radicals and reducing oxidative stress, Carbon 60 oil tackles the main cause of aging and cellular damage, protecting the body and allowing it to heal naturally.</p>
+				<?php elseif(is_product_category('c60-pets')) : ?>
+					<h1>C60 Pets</h1>
+					<p>Our C60 oil for pets has been specifically formulated for the wellness needs of the furriest members of your family. Our C60 products are made with 99.99% pure sublimated carbon fullerenes (never exposed to solvents), and 100% Certified Organic, healthy, farm-direct oils, ensuring the best possible C60 in the industry today. <br><br>
+					If you are looking to supplement your pet’s health with natural, scientifically-backed methods, look no further than C60 Purple Power. We encourage you to explore our site to learn more about the unique benefits of C60 and what makes our company the best manufacturer and retailer of organic C60 for pets today.</p>
+				<?php elseif(is_product_category('bundles')) : ?>
+					<h1>Bundles</h1>
+				<?php elseif(is_product_category('merchandise')) : ?>
+					<h1>Merchandise</h1>
+				<?php endif; ?>
+			</div>
+		</section>
+
+		<section class="product-category__products">
+			<?php
+			if ( woocommerce_product_loop() ) { ?>
+				<div class="product-category__products__inner inner-section-1120">				
+				<?php
+				if ( wc_get_loop_prop( 'total' ) ) {
+					while ( have_posts() ) {
+						the_post();
+						do_action( 'woocommerce_shop_loop' );
+						wc_get_template_part( 'content', 'product' );
+					}
+				} ?>
+				</div>
+				<?php
+			} else {
+				do_action( 'woocommerce_no_products_found' );
+			}
+			?>
+		</section>
+	</div>
+</main>
+
 <?php
-if ( woocommerce_product_loop() ) {
-
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked woocommerce_output_all_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
-	do_action( 'woocommerce_before_shop_loop' );
-
-	woocommerce_product_loop_start();
-
-	if ( wc_get_loop_prop( 'total' ) ) {
-		while ( have_posts() ) {
-			the_post();
-
-			/**
-			 * Hook: woocommerce_shop_loop.
-			 */
-			do_action( 'woocommerce_shop_loop' );
-
-			wc_get_template_part( 'content', 'product' );
-		}
-	}
-
-	woocommerce_product_loop_end();
-
-	/**
-	 * Hook: woocommerce_after_shop_loop.
-	 *
-	 * @hooked woocommerce_pagination - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop' );
-} else {
-	/**
-	 * Hook: woocommerce_no_products_found.
-	 *
-	 * @hooked wc_no_products_found - 10
-	 */
-	do_action( 'woocommerce_no_products_found' );
-}
-
-/**
- * Hook: woocommerce_after_main_content.
- *
- * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
- */
-do_action( 'woocommerce_after_main_content' );
-
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
-
 get_footer( 'shop' );

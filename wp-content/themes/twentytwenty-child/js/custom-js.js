@@ -303,6 +303,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.archive .product-category__products__inner li').each(function() {
+		if ( ($(this).find('.price') != 0) && ($(this).find('.wcsatt-sub-options').length != 0) ) {
+			$(this).find('.price').after('<label class="custom-subscription-price">Save 20% - Start a subscription</label>');
+		}
+	});
+
 	if ($('.product-image-summary__inner').lenght != 0) {
 		if ($('.product-image-summary__inner .price .wcsatt-sub-options').length != 0) {
 			$('.product-image-summary__inner .price').css('display', 'none');
