@@ -113,7 +113,7 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_first_product_link ?>"><?php echo $related_first_product_title ?></a></label>
-									<span class="related-product-price"><?php echo woocommerce_price($related_first_product_price) ?></span>
+									<span class="related-product-price"><?php echo wc_price($related_first_product_price) ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
@@ -137,7 +137,7 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_second_product_link ?>"><?php echo $related_second_product_title ?></a></label>
-									<span class="related-product-price"><?php echo woocommerce_price($related_second_product_price) ?></span>
+									<span class="related-product-price"><?php echo wc_price($related_second_product_price) ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
@@ -161,7 +161,7 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_third_product_link ?>"><?php echo $related_third_product_title ?></a></label>
-									<span class="related-product-price"><?php echo woocommerce_price($related_third_product_price) ?></span>
+									<span class="related-product-price"><?php echo wc_price($related_third_product_price) ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
