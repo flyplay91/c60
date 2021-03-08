@@ -2532,12 +2532,24 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   position: relative;
 }
 
-.woocommerce-breadcrumb {
-  color: var(--color-text);
+.product-page-breadcrumb {
+  width: 100% !important;
+}
+
+.product-page-breadcrumb a {
   font-size: 16px;
   font-family: 'NeurialGrotesk-Regular';
   font-weight: 600;
   margin: 0;
+  color: var(--color-pink);
+}
+
+.product-page-breadcrumb a:last-child {
+  color: var(--color-text);
+}
+
+.product-page-breadcrumb a:last-child span {
+  display: none;
 }
 
 .woocommerce-breadcrumb a {
@@ -3157,7 +3169,7 @@ body.single-product .screen-reader-text {
   margin-top: 50px;
 }
 .product-page .product_title.entry-title {
-  padding: 55px 0px 0px 0px;
+  padding: 20px 0 0 0;
   max-width:100%;
 }
 .related-products__inner .related-product__sub_heading {
