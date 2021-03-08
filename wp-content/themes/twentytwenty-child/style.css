@@ -2583,6 +2583,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .single-product .summary p.price {
   font-size: 22px;
   font-family: 'NeurialGrotesk-Medium';
+  margin-bottom: 1.5rem;
+}
+.ast-stock-detail {
+  margin-bottom: 1.5rem;
 }
 .quantity.wqpmb_quantity {
   max-width: 50px !important;
