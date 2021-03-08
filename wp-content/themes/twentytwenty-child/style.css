@@ -3234,6 +3234,15 @@ body.single-product .screen-reader-text {
   margin-top: 20px;
 }
 
+.related-product-price {
+  font-family: 'NeurialGrotesk-Bold';
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.4;
+  text-align: center;
+  display: block;
+}
+
 .related-product-content {
   display: block;
   margin-top: 15px;

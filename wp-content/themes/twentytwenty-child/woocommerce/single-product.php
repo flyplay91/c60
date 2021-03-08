@@ -60,6 +60,9 @@ get_header( 'shop' ); ?>
 				$related_third_product_title = $related_product_group['third_product_title'];
 				$related_third_product_link = $related_product_group['third_product_link'];
 				$related_third_product_id = $related_product_group['third_product_id'];
+				$related_first_product = wc_get_product( $related_first_product_id );
+				$related_second_product = wc_get_product( $related_second_product_id );
+				$related_third_product = wc_get_product( $related_third_product_id );
 			}
 			
 		?>
@@ -85,20 +88,17 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_first_product_link ?>"><?php echo $related_first_product_title ?></a></label>
+									<span class="related-product-price"><?php echo $related_first_product->get_price(); ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
-											
 										</div>
 										<div class="related-product-content-right">
-										<a href="<?php echo $related_first_product_link ?>">
-											<div class="related-product-select-btn">
-											
-												<label>Learn More</label>
-										
-												
-											</div>
-										</a>
+											<a href="<?php echo $related_first_product_link ?>">
+												<div class="related-product-select-btn">
+													<label>Add To Cart</label>
+												</div>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -112,17 +112,17 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_second_product_link ?>"><?php echo $related_second_product_title ?></a></label>
+									<span class="related-product-price"><?php echo $related_second_product->get_price(); ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
-											
 										</div>
 										<div class="related-product-content-right">
-										<a href="<?php echo $related_second_product_link ?>">
-											<div class="related-product-select-btn">
-												<label>Learn More</label>
-											</div>
-										</a>	
+											<a href="<?php echo $related_second_product_link ?>">
+												<div class="related-product-select-btn">
+													<label>Add To Cart</label>
+												</div>
+											</a>	
 										</div>
 									</div>
 								</div>
@@ -136,6 +136,7 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_third_product_link ?>"><?php echo $related_third_product_title ?></a></label>
+									<span class="related-product-price"><?php echo $related_third_product->get_price(); ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
@@ -144,7 +145,7 @@ get_header( 'shop' ); ?>
 										<div class="related-product-content-right">
 										<a href="<?php echo $related_third_product_link ?>">
 											<div class="related-product-select-btn">
-												<label>Learn More</label>
+												<label>Add To Cart</label>
 											</div>
 										</a>
 										</div>
