@@ -27,20 +27,6 @@ $heading = apply_filters( 'woocommerce_product_description_heading', __( 'Descri
 	<h2><?php echo esc_html( $heading ); ?></h2>
 <?php endif; ?>
 
-<?php if( have_rows('breadcrumb_group')) :
-	while ( have_rows('breadcrumb_group')): the_row(); ?>
-		<div class="product-page-breadcrumb">
-			<?php if( have_rows('breadcrumb_repeater') ) :
-				while( have_rows('breadcrumb_repeater') ) : the_row();
-				$title = get_sub_field('title');
-				$link = get_sub_field('link');
-			?>
-				<a href="<?php echo $link ?>"><?php echo $title ?> <span>/</span> </a>
-				<?php endwhile;
-			endif; ?>
-		</div>
-		<?php endwhile;
-	endif;
-?>
+
 
 <?php the_content(); ?>
