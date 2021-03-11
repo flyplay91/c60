@@ -1515,6 +1515,16 @@ button:focus {
   min-height: 186px;
 } */
 
+.home-blog__block-item .carousel-image:focus,
+.home-blog__block-item .carousel-link:focus {
+  outline: none;
+}
+
+.home-blog__block .slick-list,
+.home-blog__block .slick-track {
+  transform: none !important;
+}
+
 .home-blog__block-item:hover {
   transition: .02s;
   transform: scale(1.01);
@@ -2226,7 +2236,6 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .footer-menu-block {
   display: grid;
   grid-template-columns: 15% 18% 17% 30% 20%;
-  grid-gap: 10px;
 }
 
 .footer-menu-block .footer-logo a {
@@ -2342,8 +2351,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .footer-contact-social {
   display: grid;
-  grid-template-columns: 36% 33% 33%;
-  grid-gap: 10px;
+  grid-template-columns: 34% 33% 33%;
   margin-top: 50px;
 }
 

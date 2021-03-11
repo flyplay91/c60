@@ -15,15 +15,6 @@ $(document).ready(function() {
 		arrow: true
 	});
 
-	$('.popup-youtube').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });
-
 	$('.home-blog__block').on('init', function(event, slick){
 		$('.home-blog__block.slick-initialized').css({'opacity': '1', 'visibility': 'visible'});
 	});
@@ -57,6 +48,21 @@ $(document).ready(function() {
 				}
 		  	}
 		]
+	});
+
+	$('.home-blog__block').magnificPopup({
+		delegate: '.carousel-link',
+		gallery:{enabled:true},
+		type: 'image',
+		callbacks: {
+		  	elementParse: function(item) {
+				if (item.el[0].classList.contains('video-link')) {
+					item.type = 'iframe';
+				} else {
+					item.type = 'image';
+				}
+		  	}
+		}
 	});
 
 	$('.home-lives-carousel').on('init', function(event, slick){

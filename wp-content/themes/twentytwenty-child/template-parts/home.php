@@ -396,8 +396,8 @@ get_header();
                             $video_url = get_sub_field('video_url');
                         ?>
                             <div class="home-blog__block-item">
-                                <a class="popup-youtube" href="<?php echo $video_url ?>">
-                                    <img src="<?php echo $video_image_url ?>">
+                                <a href="<?php echo $video_url ?>" class="carousel-link video-link">
+                                    <img src="<?php echo $video_image_url ?>" alt="" class="carousel-image">  
                                 </a>
                             </div>
                         <?php endwhile;
