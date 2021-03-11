@@ -3759,7 +3759,8 @@ body.single-product .screen-reader-text {
   margin-top: 3px;
 }
 
-.btn-shop-add-cart-no-variant {
+.btn-shop-add-cart-no-variant,
+.btn-shop-add-cart-no-qty {
   background-color: transparent;
   border: solid 1px var(--color-pink);
   color: var(--color-pink);
