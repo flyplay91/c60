@@ -2548,7 +2548,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .product-page-breadcrumb a,
 .about-breadcrumb a,
 .blog-breadcrumb a,
-.contact-breadcrumb a {
+.contact-breadcrumb a,
+.testimonial-breadcrumb a {
   font-size: 16px;
   font-family: 'NeurialGrotesk-Regular';
   font-weight: 600;
@@ -2560,7 +2561,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .shop-breadcrumb a:last-child,
 .about-breadcrumb a:last-child,
 .blog-breadcrumb a:last-child,
-.contact-breadcrumb a:last-child {
+.contact-breadcrumb a:last-child,
+.testimonial-breadcrumb a:last-child {
   color: var(--color-text);
 }
 
@@ -2568,7 +2570,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .shop-breadcrumb a:last-child span,
 .about-breadcrumb a:last-child span,
 .blog-breadcrumb a:last-child span,
-.contact-breadcrumb a:last-child span {
+.contact-breadcrumb a:last-child span,
+.testimonial-breadcrumb a:last-child span {
   display: none;
 }
 
@@ -5577,10 +5580,6 @@ ul.gfield_checkbox li input {
 }
 
 /* ======= Testimonial Page ======== */
-.testimonial-hero {
-  margin-top: 50px;
-}
-
 .testimonial-hero__inner {
   display: grid;
   grid-template-columns: 2fr 3fr;
