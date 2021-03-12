@@ -45,20 +45,16 @@ if ( post_password_required() ) {
 			?>
 
 			<div class="summary entry-summary">
-				<?php if( have_rows('breadcrumb_group')) : ?>
-					<?php while ( have_rows('breadcrumb_group')): the_row(); ?>
-						<div class="product-page-breadcrumb">
-							<?php if( have_rows('breadcrumb_repeater') ) :
-								while( have_rows('breadcrumb_repeater') ) : the_row();
-								$title = get_sub_field('title');
-								$link = get_sub_field('link');
-							?>
-								<a href="<?php echo $link ?>"><?php echo $title ?> <span>/</span> </a>
-								<?php endwhile;
-							endif; ?>
+				<?php if( have_rows('breadcrumb_group')) : 
+					$breadcrumb_group = get_field('breadcrumb_group');
+					$breadcrumb_text = $breadcrumb_group['breadcrumb_text'];
+					
+					while ( have_rows('breadcrumb_group')): the_row(); ?>
+						<div class="page-breadcrumb">
+							<?php echo $breadcrumb_text ?>
 						</div>
-						<?php endwhile;
-					endif; ?>
+					<?php endwhile;
+				endif; ?>
 				<?php
 				/**
 				 * Hook: woocommerce_single_product_summary.

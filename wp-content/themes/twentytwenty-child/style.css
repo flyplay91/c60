@@ -2540,9 +2540,6 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   position: relative;
 }
 
-.product-page-breadcrumb {
-  width: 100% !important;
-}
 
 .page-breadcrumb {
   font-weight: 600;
@@ -2553,7 +2550,6 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   font-size: 16px;
 }
 
-.product-page-breadcrumb a,
 .page-breadcrumb a {
   margin: 0;
   color: var(--color-pink);
@@ -2561,14 +2557,6 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .page-breadcrumb span {
   margin: 0 5px;
-}
-
-.product-page-breadcrumb a:last-child {
-  color: var(--color-text);
-}
-
-.product-page-breadcrumb a:last-child span {
-  display: none;
 }
 
 .woocommerce-breadcrumb a {
