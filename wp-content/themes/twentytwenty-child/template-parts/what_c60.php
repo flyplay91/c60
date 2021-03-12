@@ -12,6 +12,21 @@ get_header();
 ?>
 
 <main class="what-c60-page">
+    <?php if( have_rows('breadcrumb_group')) : ?>
+        <?php while ( have_rows('breadcrumb_group')): the_row(); ?>
+            <div class="what-c60-breadcrumb inner-section-1366">
+                <?php if( have_rows('breadcrumb_repeater') ) :
+                    while( have_rows('breadcrumb_repeater') ) : the_row();
+                    $title = get_sub_field('title');
+                    $link = get_sub_field('link');
+                ?>
+                    <a href="<?php echo $link ?>"><?php echo $title ?> <span>/</span> </a>
+                    <?php endwhile;
+                endif; ?>
+            </div>
+        <?php endwhile;
+    endif; ?>
+
     <?php if( have_rows('what_c60_hero_group')) :
         $what_c60_hero_group = get_field('what_c60_hero_group');
         $hero_background_image_url = $what_c60_hero_group['hero_background_image']['url'];

@@ -2549,7 +2549,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .about-breadcrumb a,
 .blog-breadcrumb a,
 .contact-breadcrumb a,
-.testimonial-breadcrumb a {
+.testimonial-breadcrumb a,
+.what-c60-breadcrumb a {
   font-size: 16px;
   font-family: 'NeurialGrotesk-Regular';
   font-weight: 600;
@@ -2562,7 +2563,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .about-breadcrumb a:last-child,
 .blog-breadcrumb a:last-child,
 .contact-breadcrumb a:last-child,
-.testimonial-breadcrumb a:last-child {
+.testimonial-breadcrumb a:last-child,
+.what-c60-breadcrumb a:last-child {
   color: var(--color-text);
 }
 
@@ -2571,7 +2573,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 .about-breadcrumb a:last-child span,
 .blog-breadcrumb a:last-child span,
 .contact-breadcrumb a:last-child span,
-.testimonial-breadcrumb a:last-child span {
+.testimonial-breadcrumb a:last-child span,
+.what-c60-breadcrumb a:last-child span {
   display: none;
 }
 
@@ -6215,7 +6218,7 @@ ul.gfield_checkbox li input {
 .what-c60-hero-bg-img {
   max-width: 800px;
   position: absolute;
-  top: 0;
+  top: -72px;
   left: 0;
 }
 
@@ -6232,7 +6235,6 @@ ul.gfield_checkbox li input {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 57px;
   color: var(--color-dark-pink);
-  margin-top: 50px;
   margin-bottom: 20px;
 }
 

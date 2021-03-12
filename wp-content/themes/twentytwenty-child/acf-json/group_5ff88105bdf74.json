@@ -3,6 +3,78 @@
     "title": "What C60 Page",
     "fields": [
         {
+            "key": "field_604b49fd4bb1d",
+            "label": "Breadcrumb Group",
+            "name": "breadcrumb_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_604b4a134bb1e",
+                    "label": "Breadcrumb Repeater",
+                    "name": "breadcrumb_repeater",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_604b4a1e4bb1f",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_604b4a244bb20",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "field_5ff88110bf983",
             "label": "What C60 Hero Group",
             "name": "what_c60_hero_group",
@@ -562,5 +634,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1611069472
+    "modified": 1615546947
 }
