@@ -12,6 +12,20 @@ get_header();
 ?>
 
 <main class="about-page">
+    <?php if( have_rows('breadcrumb_group')) : ?>
+        <?php while ( have_rows('breadcrumb_group')): the_row(); ?>
+            <div class="about-breadcrumb inner-section-1366">
+                <?php if( have_rows('breadcrumb_repeater') ) :
+                    while( have_rows('breadcrumb_repeater') ) : the_row();
+                    $title = get_sub_field('title');
+                    $link = get_sub_field('link');
+                ?>
+                    <a href="<?php echo $link ?>"><?php echo $title ?> <span>/</span> </a>
+                    <?php endwhile;
+                endif; ?>
+            </div>
+        <?php endwhile;
+    endif; ?>
 
     <?php if( have_rows('about_hero_group')) :
         $about_hero_group = get_field('about_hero_group');
