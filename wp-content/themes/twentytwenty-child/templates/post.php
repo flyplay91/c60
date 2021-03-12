@@ -35,6 +35,7 @@ get_header();
 
         $hero_image_url = $post_hero_group['hero_image']['url'];
         $hero_image_alt = $post_hero_group['hero_image']['alt'];
+
         while ( have_rows('post_hero_group')): the_row(); ?>
             
             <section class="post-hero">

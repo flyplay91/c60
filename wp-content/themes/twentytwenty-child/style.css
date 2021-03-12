@@ -2546,7 +2546,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .shop-breadcrumb a,
 .product-page-breadcrumb a,
-.about-breadcrumb a {
+.about-breadcrumb a,
+.blog-breadcrumb a {
   font-size: 16px;
   font-family: 'NeurialGrotesk-Regular';
   font-weight: 600;
@@ -2556,13 +2557,15 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 
 .product-page-breadcrumb a:last-child,
 .shop-breadcrumb a:last-child,
-.about-breadcrumb a:last-child {
+.about-breadcrumb a:last-child,
+.blog-breadcrumb a:last-child {
   color: var(--color-text);
 }
 
 .product-page-breadcrumb a:last-child span,
 .shop-breadcrumb a:last-child span,
-.about-breadcrumb a:last-child span {
+.about-breadcrumb a:last-child span,
+.blog-breadcrumb a:last-child span {
   display: none;
 }
 
@@ -5940,7 +5943,6 @@ ul.gfield_checkbox li input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  margin-top:55px;
 }
 
 .blog-post-item {
