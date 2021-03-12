@@ -1,9 +1,9 @@
 {
-    "key": "group_604b45046e928",
-    "title": "Breadcrumb on Blog page",
+    "key": "group_604b8cf19e950",
+    "title": "What C60 Pets Page",
     "fields": [
         {
-            "key": "field_604b45116a9bd",
+            "key": "field_604b8d09f59d9",
             "label": "Breadcrumb Group",
             "name": "breadcrumb_group",
             "type": "group",
@@ -18,7 +18,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_604b8a444a3f4",
+                    "key": "field_604b8d14f59da",
                     "label": "Breadcrumb Text",
                     "name": "breadcrumb_text",
                     "type": "text",
@@ -44,7 +44,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-parts\/blog.php"
+                "value": "template-parts\/c60-pet-benefits.php"
             }
         ]
     ],
@@ -56,5 +56,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615563346
+    "modified": 1615564060
 }

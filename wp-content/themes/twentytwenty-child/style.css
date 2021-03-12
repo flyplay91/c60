@@ -2544,37 +2544,30 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   width: 100% !important;
 }
 
-.shop-breadcrumb a,
-.product-page-breadcrumb a,
-.about-breadcrumb a,
-.blog-breadcrumb a,
-.contact-breadcrumb a,
-.testimonial-breadcrumb a,
-.what-c60-breadcrumb a {
-  font-size: 16px;
-  font-family: 'NeurialGrotesk-Regular';
+.page-breadcrumb {
   font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 16px;
+}
+
+.product-page-breadcrumb a,
+.page-breadcrumb a {
   margin: 0;
   color: var(--color-pink);
 }
 
-.product-page-breadcrumb a:last-child,
-.shop-breadcrumb a:last-child,
-.about-breadcrumb a:last-child,
-.blog-breadcrumb a:last-child,
-.contact-breadcrumb a:last-child,
-.testimonial-breadcrumb a:last-child,
-.what-c60-breadcrumb a:last-child {
+.page-breadcrumb span {
+  margin: 0 5px;
+}
+
+.product-page-breadcrumb a:last-child {
   color: var(--color-text);
 }
 
-.product-page-breadcrumb a:last-child span,
-.shop-breadcrumb a:last-child span,
-.about-breadcrumb a:last-child span,
-.blog-breadcrumb a:last-child span,
-.contact-breadcrumb a:last-child span,
-.testimonial-breadcrumb a:last-child span,
-.what-c60-breadcrumb a:last-child span {
+.product-page-breadcrumb a:last-child span {
   display: none;
 }
 
@@ -8599,9 +8592,6 @@ ul.gfield_checkbox li input {
 }
 
 /* =========== Health Benefits page =========== */
-.healthy-hero {
-  margin-top: 50px;
-}
 .healthy-hero__inner h1 {
   font-size:50px;
   color: var(--color-dark-pink);
@@ -8945,9 +8935,6 @@ ul.gfield_checkbox li input {
 .promotes-healthy-libido .customertestimonial__customer img {
   margin-top: 61px;
   border-radius: 50%;
-}
-.healthy-page .inner-section-1220 {
-  padding: 0px 15px;
 }
 @media(max-width:480px) {
   .promotes-healthy-libido .top-content-1 h4,
