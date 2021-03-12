@@ -80,13 +80,20 @@ get_header();
 
 		<div class="shop-products__inner inner-section-1120">
 			<div class="shop-sort-breadcrumb">
-				<div class="shop-breadcrumb">
-					<nav class="woocommerce-breadcrumb">
-						<?php $breadcrumb = get_field('breadcrumb'); 
-							echo $breadcrumb; 
-						?>
-					</nav>
-				</div>
+				<?php if( have_rows('breadcrumb_group')) : ?>
+					<?php while ( have_rows('breadcrumb_group')): the_row(); ?>
+						<div class="shop-breadcrumb">
+							<?php if( have_rows('breadcrumb_repeater') ) :
+								while( have_rows('breadcrumb_repeater') ) : the_row();
+								$title = get_sub_field('title');
+								$link = get_sub_field('link');
+							?>
+								<a href="<?php echo $link ?>"><?php echo $title ?> <span>/</span> </a>
+								<?php endwhile;
+							endif; ?>
+						</div>
+					<?php endwhile;
+				endif; ?>
 				<div class="shop-sort__inner">
 					<?php 
 					if (isset($_POST['sortBtn'])) {

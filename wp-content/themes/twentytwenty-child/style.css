@@ -2544,6 +2544,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   width: 100% !important;
 }
 
+.shop-breadcrumb a,
 .product-page-breadcrumb a {
   font-size: 16px;
   font-family: 'NeurialGrotesk-Regular';
@@ -2552,11 +2553,13 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   color: var(--color-pink);
 }
 
-.product-page-breadcrumb a:last-child {
+.product-page-breadcrumb a:last-child,
+.shop-breadcrumb a:last-child {
   color: var(--color-text);
 }
 
-.product-page-breadcrumb a:last-child span {
+.product-page-breadcrumb a:last-child span,
+.shop-breadcrumb a:last-child span {
   display: none;
 }
 
