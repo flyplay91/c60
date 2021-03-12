@@ -76,7 +76,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		arrows: true,
 		autoplay: true,
-  		autoplaySpeed: 4000
+  		autoplaySpeed: 4500
 	});
 
 	
