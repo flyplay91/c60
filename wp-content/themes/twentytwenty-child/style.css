@@ -1505,6 +1505,10 @@ button:focus {
   opacity: 0;
   visibility: hidden;
 }
+.slick-slide img:focus,
+.slick-slide a:focus {
+  outline: none;
+}
 
 .home-blog__block .slick-dots {
   text-align: center;
@@ -1539,37 +1543,11 @@ button:focus {
     display: inline-block;
 }
 
-/* .home-blog__block-item {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 0 10px;
-  position: relative;
-  min-height: 186px;
-} */
-
-.home-blog__block-item .carousel-image:focus,
-.home-blog__block-item .carousel-link:focus {
-  outline: none;
-}
-
-.home-blog__block .slick-list,
-.home-blog__block .slick-track {
-  transform: none !important;
-}
 
 .home-blog__block-item:hover {
   transition: .02s;
   transform: scale(1.01);
 }
-
-/* .home-blog__block-item img {
-  width: 56px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 .home-blog__block-item {
   margin: 0 10px;

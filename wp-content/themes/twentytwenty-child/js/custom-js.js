@@ -23,28 +23,25 @@ $(document).ready(function() {
 		dots: true,
 		infinite: true,
 		slidesToShow: 4,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		arrows: false,
 		responsive: [
 			{
 				breakpoint: 1100,
 				settings: {
-				  slidesToShow: 3,
-				  slidesToScroll: 1
+				  slidesToShow: 3
 				}
 		  	},
 		  	{
 				breakpoint: 800,
 				settings: {
-				  slidesToShow: 2,
-				  slidesToScroll: 1
+				  slidesToShow: 2
 				}
 		  	},
 		  	{
 				breakpoint:550,
 				settings: {
-				  slidesToShow: 1,
-				  slidesToScroll: 1
+				  slidesToShow: 1
 				}
 		  	}
 		]
