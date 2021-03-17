@@ -27,16 +27,17 @@ get_header();
             <section class="healthy-hero">
                 <div class="healthy-hero__inner inner-section-1220">
                     <h1><?php echo $hero_title ?></h1>
-                <div class="healthy-hero__img-text">
-                    <div class="healthy-hero__text">
-                        <h2><?php echo $hero_label ?></h2>  
-                        <h3><?php echo $hero_heading ?></h3>
-                        <?php echo $hero_short_description ?>
-                    </div>
-                    <div class="healthy-hero__img">
-                        <img src="<?php echo $hero_image_url ?>" alt="<?php echo $hero_image_alt ?>">
-                    </div>
-                </div>  
+                    <div class="healthy-hero__img-text">
+                        <div class="healthy-hero__text">
+                            <h2><?php echo $hero_label ?></h2>  
+                            <h3><?php echo $hero_heading ?></h3>
+                            <?php echo $hero_short_description ?>
+                        </div>
+                        <div class="healthy-hero__img">
+                            <img src="<?php echo $hero_image_url ?>" alt="<?php echo $hero_image_alt ?>">
+                        </div>
+                    </div>  
+                    <a href="/shop/" class="healthy-btn">Try C60 Purple Power</a>
                     <p><?php echo $hero_description ?></p>
                 </div>
             </section>
