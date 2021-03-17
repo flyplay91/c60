@@ -8671,7 +8671,7 @@ ul.gfield_checkbox li input {
 }
 .healthy-btn {
   display: block;
-  max-width: 250px;
+  max-width: 300px;
   background-color: var(--color-dark-pink);
   color: var(--color-white);
   text-align: center;
@@ -8688,9 +8688,9 @@ ul.gfield_checkbox li input {
 }
 
 .healthy-way__text.dark-bg-text p {
-  background-color: var(--color-dark-pink);
-  padding: 20px;
-  border-radius: 10px;
+  background-color: var(--color-pink);
+  border-radius: 23px;
+  padding: 30px;
   color: white;
 }
 
@@ -9130,8 +9130,12 @@ ul.gfield_checkbox li input {
   width: 125px;
   height: 25px;
 }
-.customertestimonial__customer img{
+.customertestimonial__customer > img{
   margin-top:61px;
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
 }
 .customer-testimonial-block h4 {
   font-family: 'NeurialGrotesk-Regular';
