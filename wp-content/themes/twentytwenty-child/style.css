@@ -8687,6 +8687,12 @@ ul.gfield_checkbox li input {
   transform: scale(1.01);
 }
 
+.healthy-way__text.dark-bg-text p {
+  background-color: var(--color-dark-pink);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
 
 .healthy-hero__text ul {
   margin-bottom: 30px;
@@ -8825,6 +8831,19 @@ ul.gfield_checkbox li input {
   font-family: 'NeurialGrotesk-Medium';
   line-height:60px;
   color: var(--color-dark-purple);
+  position: relative;
+  padding-left: 50px;
+}
+.healthy-summary .healthy-summary__img-text h3:before {
+  content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-image: url('assets/images/horizontal_short_line.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -40px;
+    bottom: 27px
 }
 .athletic-performance .healthy-hero__inner h1 {
   max-width: 53%;

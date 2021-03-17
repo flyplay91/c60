@@ -103,7 +103,7 @@ get_header();
                                 <h3><?php echo $way_summary_title ?></h3>
                                 
 
-                                <div class="healthy-way__text">  
+                                <div class="healthy-way__text dark-bg-text">  
 
                                 <?php echo $way_summary_description ?>
 
