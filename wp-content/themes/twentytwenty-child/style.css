@@ -8668,10 +8668,31 @@ ul.gfield_checkbox li input {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 50px;
-  margin-bottom:25px;
 }
+.healthy-btn {
+  display: block;
+  max-width: 250px;
+  background-color: var(--color-dark-pink);
+  color: var(--color-white);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 15px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.healthy-btn:hover {
+  transition: .02s;
+  transform: scale(1.01);
+}
+
+
 .healthy-hero__text ul {
   margin-bottom: 30px;
+  background-color: var(--color-light-pink);
+  padding: 20px 20px 20px 30px;
+  border-radius: 10px;
 }
 
 .healthy-hero__text ul li {
@@ -8687,7 +8708,7 @@ ul.gfield_checkbox li input {
   content: '';
   width: 10px;
   height: 10px;
-  background-color: var(--color-light-pink);
+  background-color: var(--color-pink);
   display: block;
   border-radius: 50%;
   margin-right: 10px;

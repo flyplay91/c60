@@ -36,7 +36,8 @@ get_header();
                     <div class="healthy-hero__img">
                         <img src="<?php echo $hero_image_url ?>" alt="<?php echo $hero_image_alt ?>">
                     </div>
-                </div>  
+                </div>
+                    <a href="/shop/" class="healthy-btn">Try C60 Purple Power</a>
                     <?php echo $hero_description ?>
                 </div>
             </section>
