@@ -9133,9 +9133,6 @@ ul.gfield_checkbox li input {
 .customertestimonial__customer > img{
   margin-top:61px;
   border-radius: 50%;
-  width: 210px;
-  height: 210px;
-  object-fit: cover;
 }
 .customer-testimonial-block h4 {
   font-family: 'NeurialGrotesk-Regular';
