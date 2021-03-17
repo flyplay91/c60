@@ -8687,7 +8687,8 @@ ul.gfield_checkbox li input {
   transform: scale(1.01);
 }
 
-.healthy-way__text.dark-bg-text p {
+.healthy-way__text.dark-bg-text p,
+.healthy-way__text.dark-bg-text {
   background-color: var(--color-pink);
   border-radius: 23px;
   padding: 30px;
