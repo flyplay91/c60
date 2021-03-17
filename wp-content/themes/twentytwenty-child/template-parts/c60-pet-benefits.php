@@ -102,7 +102,7 @@ get_header();
                     <p>Not only was our company founded by a biogeochemist, but every product we offer has been formulated with research and science behind it. We are pioneers in the industry and have gained a reputation for being the leading choice for all C60 products. We encourage you to explore our site to learn more about the unique benefits of C60 for pets and why thousands are making the switch to C60 Purple Power every day.</p>
                 </div>
                 <div class="healthy-hero__img">
-                    <img src="/wp-content/uploads/2021/03/c60-for-horses-1.jpeg" alt="Why Choose Our C60 Oils for Your Furry Friend?">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/c60-for-horses-1.jpeg" alt="Why Choose Our C60 Oils for Your Furry Friend?">
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@ get_header();
             </div>  
 
             <div class="healthy-hero__img2">
-                <img src="/wp-content/uploads/2021/03/dog-eating-c60.jpeg" alt="What are the benefits of C60 for pets?">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/dog-eating-c60.jpeg" alt="What are the benefits of C60 for pets?">
             </div>
 
             <h5><strong>What is the best way to give C60 to my pets?</strong></h5>
@@ -170,6 +170,10 @@ get_header();
                     *Please consult your veterinarian or medical professional. These statements and products have not been evaluated by the Food & Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
                 </span>
             </p>
+
+            <div class="healthy-bottom__img">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/C60-Pets.jpeg">
+            </div>
 
             <div class="healthy-video__source">
                 <label>Sources</label>

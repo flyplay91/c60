@@ -9744,6 +9744,12 @@ button.woocommerce-form-register__submit {
   border-radius:10px;
 }
 
+.healthy-bottom__img img {
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 .c60-pet-benefits .c60-pets5 .test_1 {
   margin-left:0px;
 }
