@@ -484,6 +484,11 @@ button:focus {
   max-height: 100%;
   padding: 50px;
 }
+@media(max-width: 767px) {
+  .klaviyo-popup__inner form {
+    background-size: contain;
+  }
+}
 
 .klaviyo-popup__inner form h2 {
   color: var(--color-pink);
@@ -547,11 +552,14 @@ button:focus {
   max-height: 100%;
   padding: 50px;
 }
-
 .success_message .klaviyo_block {
   padding-left: 350px;
   text-align: left;
 }
+
+
+
+
 
 .success_message .klaviyo_block h2 {
   color: var(--color-pink);
@@ -602,6 +610,30 @@ button:focus {
 @media(max-width: 767px) {
   .header-banner {
     padding: 15px;
+  }
+
+  .klaviyo-popup__inner .success_message {
+    background-size: contain;
+    padding: 10px;
+  }
+  .success_message .klaviyo_block {
+    padding-left: 110px;
+  }
+  .success_message .klaviyo_block h2 {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .success_message .klaviyo_block h3 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .success_message .klaviyo_block h4 {
+    font-size: 15px;
+  }
+  .success_message .klaviyo_block a {
+    padding: 5px 10px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
   }
 }
 
