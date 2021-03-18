@@ -126,46 +126,7 @@ get_header();
             endif; ?>
 
 
-            <?php if( have_rows('customer_testimonials')) :
-                $testimonials_group = get_field('customer_testimonials');
-                $customer_image_url = $testimonials_group['customer_image']['url'];
-                $customer_image_alt = $testimonials_group['customer_image']['alt'];
-                $reviewstars_image_url = $testimonials_group['review_stars']['url'];
-                $reviewstars_image_alt = $testimonials_group['review_stars']['alt'];
-                $customerreview_title = $testimonials_group['customerreview_title'];
-                $customerreview_description = $testimonials_group['customerreview_description'];
-                
-                while ( have_rows('customer_testimonials')): the_row(); ?>
-
-                    <section class="customer-testimonial-block">
-                        <div class="customertestimonial__inner inner-section-1220">
-                            <div class="customertestimonial__img-text">
-                            
-
-                            <div class="customertestimonial__customer" style="background:url(<?php echo $customer_image_url ?>); background-repeat:no-repeat;background-size:cover;background-position:left;">
-                                 
-                            </div>      
-
-
-                                <div class="customertestimonial__text">  
-
-                                    <img src="<?php echo $reviewstars_image_url ?>" alt="<?php echo $reviewstars_image_alt ?>">
-                                            
-                                    <h4><?php echo $customerreview_title ?></h4>
-
-                                    <div class="customer-review-desc">
-                                        <?php echo $customerreview_description ?>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            
-                        </div>
-                    </section>
-                    <?php endwhile;
-            endif; ?>
+            
 
 
 
@@ -203,6 +164,47 @@ get_header();
                             <img src="<?php echo $blog_image_url ?>" alt="<?php echo $blog_image_alt ?>">
                         </a>
                     </div> --> 
+
+                    <?php if( have_rows('customer_testimonials')) :
+                        $testimonials_group = get_field('customer_testimonials');
+                        $customer_image_url = $testimonials_group['customer_image']['url'];
+                        $customer_image_alt = $testimonials_group['customer_image']['alt'];
+                        $reviewstars_image_url = $testimonials_group['review_stars']['url'];
+                        $reviewstars_image_alt = $testimonials_group['review_stars']['alt'];
+                        $customerreview_title = $testimonials_group['customerreview_title'];
+                        $customerreview_description = $testimonials_group['customerreview_description'];
+                        
+                        while ( have_rows('customer_testimonials')): the_row(); ?>
+
+                            <section class="customer-testimonial-block">
+                                <div class="customertestimonial__inner inner-section-1220">
+                                    <div class="customertestimonial__img-text">
+                                    
+
+                                    <div class="customertestimonial__customer" style="background:url(<?php echo $customer_image_url ?>); background-repeat:no-repeat;background-size:cover;background-position:left;">
+                                        
+                                    </div>      
+
+
+                                        <div class="customertestimonial__text">  
+
+                                            <img src="<?php echo $reviewstars_image_url ?>" alt="<?php echo $reviewstars_image_alt ?>">
+                                                    
+                                            <h4><?php echo $customerreview_title ?></h4>
+
+                                            <div class="customer-review-desc">
+                                                <?php echo $customerreview_description ?>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    
+                                </div>
+                            </section>
+                            <?php endwhile;
+                    endif; ?>
                    
                     
                    
