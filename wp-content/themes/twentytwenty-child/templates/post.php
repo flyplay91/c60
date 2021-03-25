@@ -23,12 +23,13 @@ get_header();
         $overview_title = $post_hero_group['overview_title'];
         $overview_description = $post_hero_group['overview_description'];
         $video_embed_code = $post_hero_group['video_embed_code'];
-        $podcast_title = $post_hero_group['podcast_title'];
-        $podcast_embed_code = $post_hero_group['podcast_embed_code'];
-        $summary_title = $post_hero_group['summary_title'];
-        $summary_description = $post_hero_group['summary_description'];
-        $research_title = $post_hero_group['research_title'];
-        $research_description = $post_hero_group['research_description'];
+      
+        //$podcast_title = $post_hero_group['podcast_title'];
+        //$podcast_embed_code = $post_hero_group['podcast_embed_code'];
+        //$summary_title = $post_hero_group['summary_title'];
+        //$summary_description = $post_hero_group['summary_description'];
+        //$research_title = $post_hero_group['research_title'];
+        //$research_description = $post_hero_group['research_description'];
 
         $author_image_url = $post_hero_group['author_image']['url'];
         $author_image_alt = $post_hero_group['author_image']['alt'];
@@ -107,16 +108,33 @@ get_header();
             </div>
         </section>
 
+        <?php endwhile;
+    endif; ?>
+
+<?php 
+$podcast_title = $post_hero_group['podcast_title'];
+$podcast_embed_code = $post_hero_group['podcast_embed_code'];
+
+if ( $podcast_title !== '' && $podcast_embed_code !=='' ): ?>
 
         <section>
             <div class="post-podcast-section inner-section-1120">
                 <h4><?php echo $podcast_title ?></h4>
+                
                 <br />
             <?php echo $podcast_embed_code ?>
             <br />
             If you like the show, please review it on <a href="https://podcasts.apple.com/us/podcast/the-c60-show/id1466120483">iTunes</a>
             </div>
         </section>
+<?php endif; ?>
+
+
+<?php 
+$summary_title = $post_hero_group['summary_title'];
+$summary_description = $post_hero_group['summary_description'];
+
+if ( $summary_title !== '' && $summary_description !=='' ): ?>
 
         <section>
             <div class="post-summary-section inner-section-1120">
@@ -125,7 +143,13 @@ get_header();
             <?php echo $summary_description ?>
             </div>
         </section>
+ <?php endif; ?>
 
+ <?php 
+$research_title = $post_hero_group['research_title'];
+$research_description = $post_hero_group['research_description'];
+
+if ( $research_title !== '' && $research_description !=='' ): ?>
         <section>
             <div class="post-research-section inner-section-1120">
                 <h4><?php echo $research_title ?></h4>
@@ -134,12 +158,11 @@ get_header();
             </div>
         </section>
 
+<?php endif; ?>
 
 
 
-
-        <?php endwhile;
-    endif; ?>
+     
 
 
     <?php
