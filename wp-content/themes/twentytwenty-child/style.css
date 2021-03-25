@@ -604,6 +604,7 @@ button:focus {
   }
 
   .klaviyo-popup__inner .success_message {
+    background-position: 25%;
     height: 250px;
     padding: 10px;
     display: flex;
@@ -614,7 +615,7 @@ button:focus {
     top: 30px !important;
   }
   .success_message .klaviyo_block {
-    padding-left: 110px;
+    padding-left: 160px;
   }
   .success_message .klaviyo_block h2 {
     font-size: 20px;
@@ -1858,10 +1859,6 @@ button:focus {
   }
   .home-why-c60 {
     margin-top: 0;
-  }
-
-  .klaviyo-popup__inner {
-    width: 90%;
   }
 
   .klaviyo-popup__inner form h2 {
