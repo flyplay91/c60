@@ -1861,6 +1861,10 @@ button:focus {
     margin-top: 0;
   }
 
+  .klaviyo-popup__inner {
+    width: 100%;
+  }
+
   .klaviyo-popup__inner form h2 {
     font-size: 24px;
   }
