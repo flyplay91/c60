@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Health Benefits Template
+ * Template Name: Health Benefits LP Template
  * Template Post Type: page
  *
  * @package WordPress

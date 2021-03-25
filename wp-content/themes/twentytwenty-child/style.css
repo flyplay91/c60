@@ -10101,3 +10101,9 @@ button.woocommerce-form-register__submit {
   }
 
 }
+
+
+/* new checkout button */
+.checkout-button.checkoutbutton-2 {
+  padding:14px;
+}
