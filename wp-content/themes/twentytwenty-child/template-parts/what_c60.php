@@ -84,6 +84,37 @@ get_header();
         <?php endwhile;
     endif; ?>
 
+<?php if( have_rows('cfo_banner')) :
+        $home_cfo_bottom_banner = get_field('cfo_banner');
+        $cfo_banner_image_url = $home_cfo_bottom_banner['cfo_image']['url'];
+        $cfo_banner_image_alt = $home_cfo_bottom_banner['cfo_image']['alt'];
+        $cfo_banner_description = $home_cfo_bottom_banner['cfo_description'];
+        $cfo_name = $home_cfo_bottom_banner['cfo_name'];
+        $cfo_position = $home_cfo_bottom_banner['cfo_position'];
+        while ( have_rows('cfo_banner')): the_row(); ?>
+            <section class="home-cfo-bottom-banner">
+                <div class="home-cfo-bottom-banner__inner inner-section-1220">
+                    
+                    <div class="home-cfo-bottom-banner__text">
+                    <h2>The Health Benefits of C60</h2>
+                        <h3><?php echo $cfo_banner_description ?></h3>
+                    </div>
+
+                    <div class="home-cfo-bottom-banner__img">
+                        <img src="<?php echo $cfo_banner_image_url ?>" alt="<?php echo $cfo_banner_image_alt ?>">
+                        <div class="home-cfo-bottom-banner__user">
+                            <label><?php echo $cfo_name ?></label>
+                            <span><?php echo $cfo_position ?></span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        <?php endwhile;
+    endif; ?>
+
+
+
     <?php if( have_rows('what_c60_items_group')) :
         $what_c60_items_group = get_field('what_c60_items_group');
         $items_heading = $what_c60_items_group['items_heading'];

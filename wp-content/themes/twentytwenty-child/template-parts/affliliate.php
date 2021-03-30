@@ -127,6 +127,13 @@ get_header();
                     <div class="affiliate-form__block">
                         <a target="_blank" href="<?php echo $form_btn_link; ?>">Sign Up</a>
                     </div>
+                    <div class="affiliate-gvform">
+                     <h5>Or fill out our form below: </h5>
+
+                     <?php echo do_shortcode("[gravityform id='2' title='false' description='false']"); ?>
+                    </div>
+
+
                 </div>
             </section>
         <?php endwhile;

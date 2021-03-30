@@ -467,6 +467,35 @@ function DavidProducts() { ?>
 <?php
 }
 
+
+/* Phone Number Formatting on Checkout Page
+add_action('wp_footer', 'jg_format_checkout_billing_phone');
+function jg_format_checkout_billing_phone() {
+    if ( is_checkout() && ! is_wc_endpoint_url() ) :
+    ?>
+    <script type="text/javascript">
+    jQuery( function($){
+        $('#billing_phone').focusout(function() {
+            var p = $(this).val();
+			p = p.replace(/[^0-9]/g,"");
+			var p_length = p.length;
+			if(p_length == 10){
+				p = p.replace(/(\d{3})(\d{3})(\d{4})/, "$1$2$3");
+			}else if(p_length == 11){
+				p = p.replace(/(\d{1})(\d{3})(\d{3})(\d{4})/, "$2$3$4");
+			}else{
+				p = p;
+			}
+            $(this).val(p);
+        });
+    });
+    </script>
+    <?php
+    endif;
+}
+
+ */
+
 // Limit Available Product Text
 add_filter( 'woocommerce_get_stock_html', 'astra_woo_product_in_stock', 10, 2 );
 if ( ! function_exists( 'astra_woo_product_in_stock' ) ) :

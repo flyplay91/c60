@@ -10111,3 +10111,43 @@ button.woocommerce-form-register__submit {
 .checkout-button.checkoutbutton-2 {
   padding:14px;
 }
+
+/* Affiliate Page Form */
+.affiliate-gvform {
+  margin-top:50px;
+  margin-bottom:20px;
+  text-align:center;
+}
+.affiliate-gvform #gform_wrapper_2 {
+  max-width:75%;
+  margin:0 auto;
+}
+
+
+/* What is C60 Changes*/
+.what-c60-page .home-cfo-bottom-banner__text {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: 'NeurialGrotesk-Bold';
+  color: var(--color-dark-pink);
+}
+.what-c60-page .home-benefits-btn {
+  background-color: var(--color-dark-pink);
+  color: var(--color-white);
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 17px 0;
+  max-width: 250px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 20px;
+  border: 2px solid var(--color-dark-pink);
+  text-decoration:none;
+}
+@media(max-width:480px) {
+  .what-c60-page .home-benefits-btn {
+    text-align:center;
+    margin:0 auto;
+  }
+}
