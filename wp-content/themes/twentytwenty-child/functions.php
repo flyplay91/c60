@@ -468,13 +468,17 @@ function DavidProducts() { ?>
 }
 
 
-/* Phone Number Formatting on Checkout Page
+// Phone Number Formatting on Checkout Page
 add_action('wp_footer', 'jg_format_checkout_billing_phone');
 function jg_format_checkout_billing_phone() {
-    if ( is_checkout() && ! is_wc_endpoint_url() ) :
+    if ( is_checkout()  ) :
+        // var_dump('aaa-bbb');exit;
     ?>
     <script type="text/javascript">
     jQuery( function($){
+        var billPhone = $('#billing_phone').val();
+        $('#billing_phone').val(billPhone.replace(/-|\s/g,""));
+        
         $('#billing_phone').focusout(function() {
             var p = $(this).val();
 			p = p.replace(/[^0-9]/g,"");
@@ -494,7 +498,7 @@ function jg_format_checkout_billing_phone() {
     endif;
 }
 
- */
+ 
 
 // Limit Available Product Text
 add_filter( 'woocommerce_get_stock_html', 'astra_woo_product_in_stock', 10, 2 );
