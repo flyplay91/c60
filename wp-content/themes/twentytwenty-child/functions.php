@@ -477,8 +477,8 @@ function jg_format_checkout_billing_phone() {
     <script type="text/javascript">
     jQuery( function($){
         var billPhone = $('#billing_phone').val();
-        $('#billing_phone').val(billPhone.replace(/-|\s/g,""));
-        
+        $('#billing_phone').val(billPhone.replace(/[^0-9]/g, ''));
+
         $('#billing_phone').focusout(function() {
             var p = $(this).val();
 			p = p.replace(/[^0-9]/g,"");
