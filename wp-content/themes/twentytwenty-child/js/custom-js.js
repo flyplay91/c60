@@ -353,8 +353,18 @@ $(document).ready(function() {
 					}
 				}
 			});
+
+			var regularPrice = $('.subscription-option .subscription-price del .woocommerce-Price-amount  bdi').text();
+			var regularPriceVal = parseInt(regularPrice.split('$')[1]);
+			var salePrice = $('.one-time-option-details .woocommerce-Price-amount bdi:first-child').text();
+			var salePriceVal = parseInt(salePrice.split('$')[1]);
+
+			if (regularPriceVal > salePriceVal) {
+				$('.one-time-option-details .woocommerce-Price-amount').append('<bdi class="subscription-regular-price"> — <span>' + regularPrice +'</span></bdi>');
+			}
 		}	
 	}, 1000);
+
 	
 
 	$('body').on('change', '#select-size', function() {
@@ -370,6 +380,16 @@ $(document).ready(function() {
 					}
 				}
 			});
+
+			var regularPrice = $('.subscription-option .subscription-price del .woocommerce-Price-amount  bdi').text();
+			var regularPriceVal = parseInt(regularPrice.split('$')[1]);
+			var salePrice = $('.one-time-option-details .woocommerce-Price-amount bdi:first-child').text();
+			var salePriceVal = parseInt(salePrice.split('$')[1]);
+
+			if (regularPriceVal > salePriceVal) {
+				$('.one-time-option-details .woocommerce-Price-amount').append('<bdi class="subscription-regular-price"> — <span>' + regularPrice +'</span></bdi>');
+			}
+			
 		}
 	});
 
