@@ -477,8 +477,16 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.klaviyo-popup__inner form {
+
+.klaviyo-popup-blog .klaviyo-popup__inner form {
+  background-image: url('assets/images/klaviyo-popup-blog.png');
+}
+
+.klaviyo-popup-normal .klaviyo-popup__inner form {
   background-image: url('assets/images/klaviyo_popup_join_img.jpg');
+}
+.klaviyo-popup__inner form {
+  
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100%;
@@ -539,16 +547,32 @@ button:focus {
 .klaviyo-popup__inner form .klaviyo_block {
   max-width: 400px;
 }
+.klaviyo-popup-blog .klaviyo-popup__inner .success_message {
+  background-image: url('assets/images/klaviyo-popup-blog-thankyou.png');
+}
+
+.klaviyo-popup-normal .klaviyo-popup__inner .success_message {
+  background-image: url('assets/images/klaviyo_popup_success_img.jpg');
+}
 
 .klaviyo-popup__inner .success_message {
-  background-image: url('assets/images/klaviyo_popup_success_img.jpg');
+
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100%;
   padding: 50px;
 }
-.success_message .klaviyo_block {
+
+.klaviyo-popup-blog .success_message .klaviyo_block {
+  padding-left: 390px;
+}
+
+.klaviyo-popup-normal .success_message .klaviyo_block {
   padding-left: 350px;
+}
+
+.success_message .klaviyo_block {
+  
   text-align: left;
 }
 
@@ -557,6 +581,22 @@ button:focus {
   font-size: 40px;
   line-height: 1.2;
   font-family: 'NeurialGrotesk-Bold';
+}
+
+.success_message .klaviyo_block p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  font-family: 'NeurialGrotesk-Regular';
+}
+
+.success_message .klaviyo_block h5 {
+  color: var(--color-pink);
+  font-weight: 600;
+  font-size: 26px;
+  font-style: italic;
+  font-family: 'NeurialGrotesk-Regular';
+  margin-bottom: 10px;
 }
 
 .success_message .klaviyo_block h3 {
@@ -614,16 +654,33 @@ button:focus {
   .klaviyo_modal .klaviyo_header_close {
     top: 30px !important;
   }
-  .success_message .klaviyo_block {
+  .klaviyo-popup-normal .success_message .klaviyo_block {
     padding-left: 160px;
   }
+
+  .klaviyo-popup-blog .success_message .klaviyo_block {
+    padding-left: 180px;
+  }
   .success_message .klaviyo_block h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1;
   }
   .success_message .klaviyo_block h3 {
     font-size: 15px;
     margin-top: 10px;
+  }
+
+  .success_message .klaviyo_block p {
+    font-size: 16px;
+  }
+
+  .success_message .klaviyo_block h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .success_message .klaviyo_block p br {
+    display: none;
   }
   .success_message .klaviyo_block h4 {
     font-size: 15px;
@@ -1873,8 +1930,12 @@ button:focus {
     font-size: 20px;
   }
 
-  .klaviyo-popup__inner form .klaviyo_block {
+  .klaviyo-popup-normal .klaviyo-popup__inner form .klaviyo_block {
     max-width: 250px;
+  }
+
+  .klaviyo-popup-blog .klaviyo-popup__inner form .klaviyo_block {
+    max-width: 210px;
   }
 
   .header-menu {

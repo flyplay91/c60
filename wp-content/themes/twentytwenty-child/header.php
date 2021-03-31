@@ -19,24 +19,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
-
-
+		
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.magnific-popup.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/slick.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/custom-js.js"></script>
 		
-		<script>
-			KlaviyoSubscribe.attachToModalForm('#k_id_modal', {
-				delay_seconds: 3,
-				success: function () {
-					$('.klaviyo_subscription_form').hide();
-					$('.success_message').html('<div class="klaviyo_block"><h2>Thank you for<br> signing up!</h2><h3>USE CODE: <b>WELCOME10</b></h3><h2>FOR 10% OFF</h2><h4>YOUR ORDER</h4><a href="/welcome10" title="Shop Now">SHOP NOW</a></div>');
-				}
-			});
-		</script>
-
+		
 		<?php wp_head(); ?>
 
 	
@@ -283,31 +272,104 @@
 				</div>
 			</div>
 
-			<div class="klaviyo-popup klaviyo_modal" id="k_id_modal" style="display:none;">
-				<div class="klaviyo-popup__inner">
-				<a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
-					<!-- <div class="klaviyo-form-RDdXu4"></div> -->
-					<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate" class="klaviyo_subscription_form">
-						<input type="hidden" name="g" value="H8vQEK">
-						<div class="klaviyo_block">
-							<h2>Register<br /> and save 10%<br /> off today</h2>
-							<h3>Get all of our VIP perks, exclusive offers and inside scoops.</h3>
-						</div> 
-						<div class="klaviyo_block">
-						<div class="klaviyo_field_group">
-							<input type="email" id="k_id_modal_$email" name="email" placeholder="Enter Email"></div>
-						</div> 
-						<div class="klaviyo_fine_print"></div>
-						<div class="klaviyo_form_actions">
-							<button type="submit">
-								<span>Join Now</span>
-							</button>
+			<?php if ((get_page_template_slug() == "template-parts/athletic-performance.php") || (get_page_template_slug() == "template-parts/healthy_aging.php") || (get_page_template_slug() == "template-parts/blog.php") || (get_page_template_slug() == "templates/post.php")) : ?>
+				<div class="klaviyo-popup klaviyo-popup-blog klaviyo_modal" id="k_id_modal" style="display:none;">
+					<div class="klaviyo-popup__inner">
+						<a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
+						<!-- <div class="klaviyo-form-RDdXu4"></div> -->
+						<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate" class="klaviyo_subscription_form">
+							<input type="hidden" name="g" value="H8vQEK">
+							<div class="klaviyo_block">
+								<h2>Get A Free<br />C60 Recipe<br /> E-Book</h2>
+								<h3>When you register for our VIP list</h3>
+							</div> 
+							<div class="klaviyo_block">
+							<div class="klaviyo_field_group">
+								<input type="email" id="k_id_modal_$email" name="email" placeholder="Enter Email"></div>
+							</div> 
+							<div class="klaviyo_fine_print"></div>
+							<div class="klaviyo_form_actions">
+								<button type="submit">
+									<span>Join Now</span>
+								</button>
+							</div>
+							<div class="klaviyo_below_submit" ></div>
+						</form>
+						<div class="klaviyo_messages">
+							<div class="error_message" style="display: none;"></div>
+							<div class="success_message" style="display: none;">
+							    <div class="klaviyo_block">
+							        <h2>Thank you for<br> signing up!</h2>
+							        <p>We have emailed you healthy<br>and delicious recipes to<br> incorporate into your<br>C60 lifestyle.</p>
+							        <h5>Be sure to check your inbox</h5>
+							    </div>
+							</div>
 						</div>
-						<div class="klaviyo_below_submit" ></div>
-					</form>
-					<div class="error_message" ></div>
-					<div class="success_message" style="display: none;"></div>
+					</div>
 				</div>
-			</div>
+				
+				
+				<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+	    		<script>
+					KlaviyoSubscribe.attachToModalForm('#k_id_modal', {
+						delay_seconds: 3,
+						success: function () {
+							$('.klaviyo_subscription_form').hide();
+							$('.success_message').html('<div class="klaviyo_block"><h2>Thank you for<br> signing up!</h2><p>We have emailed you healthy<br>and delicious recipes to<br> incorporate into your<br>C60 lifestyle.</p><h5>Be sure to check your inbox</h5></div>');
+						}
+					});
+				</script>
+
+			<?php else: ?>
+
+				<div class="klaviyo-popup klaviyo-popup-normal klaviyo_modal" id="k_id_modal" style="display:none;">
+					<div class="klaviyo-popup__inner">
+						<a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
+						<!-- <div class="klaviyo-form-RDdXu4"></div> -->
+						<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate" class="klaviyo_subscription_form">
+							<input type="hidden" name="g" value="H8vQEK">
+							<div class="klaviyo_block">
+								<h2>Register<br /> and save 10%<br /> off today</h2>
+								<h3>Get all of our VIP perks, exclusive offers and inside scoops.</h3>
+							</div> 
+							<div class="klaviyo_block">
+							<div class="klaviyo_field_group">
+								<input type="email" id="k_id_modal_$email" name="email" placeholder="Enter Email"></div>
+							</div> 
+							<div class="klaviyo_fine_print"></div>
+							<div class="klaviyo_form_actions">
+								<button type="submit">
+									<span>Join Now</span>
+								</button>
+							</div>
+							<div class="klaviyo_below_submit" ></div>
+						</form>
+						<div class="klaviyo_messages">
+							<div class="error_message" style="display: none;"></div>
+							<div class="success_message" style="display: none;">
+							    <div class="klaviyo_block">
+							        <h2>Thank you for<br> signing up!</h2>
+							        <h3>USE CODE: <b>WELCOME10</b></h3>
+							        <h2>FOR 10% OFF</h2>
+							        <h4>YOUR ORDER</h4>
+							        <a href="/welcome10" title="Shop Now">SHOP NOW</a>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+	    		<script>
+					KlaviyoSubscribe.attachToModalForm('#k_id_modal', {
+						delay_seconds: 3,
+						success: function () {
+							$('.klaviyo_subscription_form').hide();
+							$('.success_message').html('<div class="klaviyo_block"><h2>Thank you for<br> signing up!</h2><h3>USE CODE: <b>WELCOME10</b></h3><h2>FOR 10% OFF</h2><h4>YOUR ORDER</h4><a href="/welcome10" title="Shop Now">SHOP NOW</a></div>');
+						}
+					});
+				</script>
+			<?php endif; ?>
 		</header>
 		
