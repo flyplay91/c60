@@ -393,10 +393,10 @@ $(document).ready(function() {
 		}
 	});
 
-	if (($('.ast-stock-detail').length != 0) && ($('.product-image-summary__inner .onsale') != 0)) {
+	if (($('.ast-stock-detail').length != 0) && ($('.product-image-summary__inner .onsale').length != 0)) {
 		$('.product-image-summary__inner .onsale').hide();
 		$('.product-image-summary__inner').append('<span class="low-qty-badget"></span>');
-	} else if ((($('.ast-stock-detail').length != 0) && ($('.product-image-summary__inner .onsale') == 0))) {
+	} else if ((($('.ast-stock-detail').length != 0) && ($('.product-image-summary__inner .onsale').length == 0))) {
 		$('.product-image-summary__inner').append('<span class="low-qty-badget"></span>');
 	}
 
