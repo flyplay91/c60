@@ -2744,8 +2744,19 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   background-color: transparent;
 }
 
-.onsale.low-qty-badget {
+.low-qty-badget {
+  content: '';
   background-image: url('assets/images/low-stock-badge.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -45px;
+  font-size: 0 !important;
+  background-color: transparent;
 }
 
 .woocommerce-product-gallery .flex-control-nav li img {

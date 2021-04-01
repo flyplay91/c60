@@ -516,6 +516,7 @@ if ( ! function_exists( 'astra_woo_product_in_stock' ) ) :
 		if ( is_product() ) {
 			$product_avail  = $product->get_availability();
 			$stock_quantity = $product->get_stock_quantity();
+            
 			$availability   = $product_avail['availability'];
 			$avail_class    = $product_avail['class'];
 			if ( ! empty( $availability ) && $stock_quantity ) {

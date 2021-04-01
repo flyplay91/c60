@@ -48,6 +48,15 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_shop_loop_item_title' );
 
+	$product_avail  = $product->get_availability();
+	$stock_quantity = $product->get_stock_quantity();
+	$availability   = $product_avail['availability'];
+	
+	if ( ! empty( $availability ) && $stock_quantity ) {
+		?>
+			<div class="single-qty"></div>
+		<?php
+	}
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
 	 *

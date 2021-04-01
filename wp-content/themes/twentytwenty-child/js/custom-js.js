@@ -394,8 +394,20 @@ $(document).ready(function() {
 	});
 
 	if (($('.ast-stock-detail').length != 0) && ($('.product-image-summary__inner .onsale') != 0)) {
-		$('.product-image-summary__inner .onsale').addClass('low-qty-badget');
+		$('.product-image-summary__inner .onsale').hide();
+		$('.product-image-summary__inner').append('<span class="low-qty-badget"></span>');
+	} else if ((($('.ast-stock-detail').length != 0) && ($('.product-image-summary__inner .onsale') == 0))) {
+		$('.product-image-summary__inner').append('<span class="low-qty-badget"></span>');
 	}
+
+	$('.shop-products-block li').each(function() {
+		if (($(this).find('.single-qty').length != 0) && ($(this).find('.onsale').length != 0)) {
+			$(this).find('.onsale').hide();
+			$(this).find('.woocommerce-LoopProduct-link').append('<span class="low-qty-badget"></span>');
+		} else if (($(this).find('.single-qty').length != 0) && ($(this).find('.onsale').length == 0)) {
+			$(this).find('.woocommerce-LoopProduct-link').append('<span class="low-qty-badget"></span>');
+		}
+	});
 
 	$('body').on('click', '.wcsatt-options-product li input', function() {
 		if ($(this).closest('li').hasClass('one-time-option')) {
