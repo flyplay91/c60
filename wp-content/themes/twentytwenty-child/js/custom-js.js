@@ -360,7 +360,7 @@ $(document).ready(function() {
 			var salePriceVal = parseInt(salePrice.split('$')[1]);
 
 			if (regularPriceVal > salePriceVal) {
-				$('.one-time-option-details .woocommerce-Price-amount').append('<bdi class="subscription-regular-price"> — <span>' + regularPrice +'</span></bdi>');
+				$('.one-time-option-details .woocommerce-Price-amount').before('<bdi class="subscription-regular-price"><span>' + regularPrice +'</span> — </bdi>');
 			}
 		}	
 
@@ -404,7 +404,7 @@ $(document).ready(function() {
 			var salePriceVal = parseInt(salePrice.split('$')[1]);
 
 			if (regularPriceVal > salePriceVal) {
-				$('.one-time-option-details .woocommerce-Price-amount').append('<bdi class="subscription-regular-price"> — <span>' + regularPrice +'</span></bdi>');
+				$('.one-time-option-details .woocommerce-Price-amount').before('<bdi class="subscription-regular-price"><span>' + regularPrice +'</span> — </bdi>');
 			}
 			
 		}
