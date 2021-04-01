@@ -382,10 +382,9 @@ $(document).ready(function() {
 		});
 	}, 1000);
 
-	
 
-	$('body').on('change', '#select-size', function() {
-		if ($('.wcsatt-options-product').lenght != 0) {
+	$('.variations_form').on('woocommerce_update_variation_values', function() {
+		if ($('.wcsatt-options-product').length > 0) {
 			$('.wcsatt-options-product li').each(function() {
 				if ($(this).find('input').prop("checked")) {
 					if ($(this).hasClass('one-time-option')) {
