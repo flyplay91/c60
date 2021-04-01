@@ -383,7 +383,7 @@ $(document).ready(function() {
 	}, 1000);
 
 
-	$('.variations_form').on('woocommerce_update_variation_values', function() {
+	$('.variations_form').on('woocommerce_variation_has_changed', function() {
 		if ($('.wcsatt-options-product').length > 0) {
 			$('.wcsatt-options-product li').each(function() {
 				if ($(this).find('input').prop("checked")) {
