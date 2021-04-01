@@ -365,8 +365,8 @@ $(document).ready(function() {
 		}	
 
 		if ($('.ast-stock-detail').length > 0 && $('.product-image-summary__inner .onsale').length > 0) {
-			$('.product-image-summary__inner .onsale').hide();
-			$('.product-image-summary__inner').append('<span class="low-qty-badget"></span>');
+			// $('.product-image-summary__inner .onsale').hide();
+			// $('.product-image-summary__inner').append('<span class="low-qty-badget"></span>');
 		} else if ($('.ast-stock-detail').length > 0 && $('.product-image-summary__inner .onsale').length == 0) {
 			$('.product-image-summary__inner').append('<span class="low-qty-badget"></span>');
 		}
@@ -374,16 +374,24 @@ $(document).ready(function() {
 		$('.shop-products-block li').each(function() {
 			let $this = $(this);
 			if ($this.find('.single-qty').length > 0 && $this.find('.onsale').length > 0) {
-				$this.find('.onsale').hide();
-				$this.find('.woocommerce-LoopProduct-link').append('<span class="low-qty-badget"></span>');
+				// $this.find('.onsale').hide();
+				// $this.find('.woocommerce-LoopProduct-link').append('<span class="low-qty-badget"></span>');
 			} else if ($this.find('.single-qty').length > 0 && $this.find('.onsale').length == 0) {
 				$this.find('.woocommerce-LoopProduct-link').append('<span class="low-qty-badget"></span>');
 			}
 		});
 	}, 1000);
 
+	/*
+	$(".single_variation_wrap" ).on( "show_variation", function ( event, variation ) {
+	    // Fired when the user selects all the required dropdowns / attributes
+	    // and a final variation is selected / shown
+	    debugger;
+	    console.log(event);
+	});
+	*/
 
-	$('.variations_form').on('woocommerce_variation_has_changed', function() {
+	$('body').on('change', '#select-size', function() {
 		if ($('.wcsatt-options-product').length > 0) {
 			$('.wcsatt-options-product li').each(function() {
 				if ($(this).find('input').prop("checked")) {
@@ -408,7 +416,6 @@ $(document).ready(function() {
 			
 		}
 	});
-
 	
 
 	$('body').on('click', '.wcsatt-options-product li input', function() {
