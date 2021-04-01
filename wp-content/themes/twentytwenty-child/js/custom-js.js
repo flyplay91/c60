@@ -393,6 +393,10 @@ $(document).ready(function() {
 		}
 	});
 
+	if (($('.ast-stock-detail').length != 0) && ($('.product-image-summary__inner .onsale') != 0)) {
+		$('.product-image-summary__inner .onsale').addClass('low-qty-badget');
+	}
+
 	$('body').on('click', '.wcsatt-options-product li input', function() {
 		if ($(this).closest('li').hasClass('one-time-option')) {
 			$('.single_add_to_cart_button').html('Buy Now');

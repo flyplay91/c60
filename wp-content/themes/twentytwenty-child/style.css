@@ -2694,6 +2694,18 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   font-family: 'NeurialGrotesk-Medium';
   margin-bottom: 1.5rem;
 }
+.stock.out-of-stock {
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 15px;
+  text-transform: capitalize;
+  background-color: #6b2c90;
+  color: white;
+  text-align: center;
+  padding: 1.55rem 1.44em 1.59rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 .ast-stock-detail {
   margin-bottom: 1.5rem;
 }
@@ -2730,6 +2742,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   top: -45px;
   font-size: 0 !important;
   background-color: transparent;
+}
+
+.onsale.low-qty-badget {
+  background-image: url('assets/images/low-stock-badge.png');
 }
 
 .woocommerce-product-gallery .flex-control-nav li img {
