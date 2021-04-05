@@ -2744,6 +2744,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   background-color: transparent;
 }
 
+.bundle-product .onsale {
+  display: none !important;
+}
+
 .low-qty-badget {
   content: '';
   background-image: url('assets/images/low-stock-badge.png');
