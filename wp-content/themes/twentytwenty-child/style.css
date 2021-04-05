@@ -17,7 +17,7 @@ Text Domain: twentytwenty-child
 	src: url("assets/fonts/NeurialGrotesk-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 	url("assets/fonts/NeurialGrotesk-Bold.woff2") format("woff2"), /* chrome、firefox */
 	url("assets/fonts/NeurialGrotesk-Bold.woff") format("woff"), /* chrome、firefox */
-	url("assets/fonts/NeurialGrotesk-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("assets/fonts/NeurialGrotesk-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iO.klaviyo-popup__innerS 4.2+*/
 	url("assets/fonts/NeurialGrotesk-Bold.svg#NeurialGrotesk-Bold") format("svg"); /* iOS 4.1- */
 }
 @font-face {font-family: "NeurialGrotesk-BoldItalic";
@@ -477,16 +477,8 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.klaviyo-popup-blog .klaviyo-popup__inner form {
-  background-image: url('assets/images/klaviyo-popup-blog.png');
-}
-
-.klaviyo-popup-normal .klaviyo-popup__inner form {
-  background-image: url('assets/images/klaviyo_popup_join_img.jpg');
-}
 .klaviyo-popup__inner form {
-  
+  background-image: url('assets/images/klaviyo_popup_join_img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100%;
@@ -547,32 +539,17 @@ button:focus {
 .klaviyo-popup__inner form .klaviyo_block {
   max-width: 400px;
 }
-.klaviyo-popup-blog .klaviyo-popup__inner .success_message {
-  background-image: url('assets/images/klaviyo-popup-blog-thankyou.png');
-}
-
-.klaviyo-popup-normal .klaviyo-popup__inner .success_message {
-  background-image: url('assets/images/klaviyo_popup_success_img.jpg');
-}
 
 .klaviyo-popup__inner .success_message {
-
+  background-image: url('assets/images/klaviyo_popup_success_img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100%;
   padding: 50px;
 }
 
-.klaviyo-popup-blog .success_message .klaviyo_block {
-  padding-left: 390px;
-}
-
-.klaviyo-popup-normal .success_message .klaviyo_block {
-  padding-left: 350px;
-}
-
 .success_message .klaviyo_block {
-  
+  padding-left: 350px;
   text-align: left;
 }
 
@@ -581,22 +558,6 @@ button:focus {
   font-size: 40px;
   line-height: 1.2;
   font-family: 'NeurialGrotesk-Bold';
-}
-
-.success_message .klaviyo_block p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: black;
-  font-family: 'NeurialGrotesk-Regular';
-}
-
-.success_message .klaviyo_block h5 {
-  color: var(--color-pink);
-  font-weight: 600;
-  font-size: 26px;
-  font-style: italic;
-  font-family: 'NeurialGrotesk-Regular';
-  margin-bottom: 10px;
 }
 
 .success_message .klaviyo_block h3 {
@@ -641,54 +602,6 @@ button:focus {
 @media(max-width: 767px) {
   .header-banner {
     padding: 15px;
-  }
-
-  .klaviyo-popup__inner .success_message {
-    background-position: 25%;
-    height: 250px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .klaviyo_modal .klaviyo_header_close {
-    top: 30px !important;
-  }
-  .klaviyo-popup-normal .success_message .klaviyo_block {
-    padding-left: 160px;
-  }
-
-  .klaviyo-popup-blog .success_message .klaviyo_block {
-    padding-left: 180px;
-  }
-  .success_message .klaviyo_block h2 {
-    font-size: 24px;
-    line-height: 1;
-  }
-  .success_message .klaviyo_block h3 {
-    font-size: 15px;
-    margin-top: 10px;
-  }
-
-  .success_message .klaviyo_block p {
-    font-size: 16px;
-  }
-
-  .success_message .klaviyo_block h5 {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-
-  .success_message .klaviyo_block p br {
-    display: none;
-  }
-  .success_message .klaviyo_block h4 {
-    font-size: 15px;
-  }
-  .success_message .klaviyo_block a {
-    padding: 5px 10px;
-    font-size: 14px;
-    letter-spacing: 1.5px;
   }
 }
 
@@ -1439,7 +1352,7 @@ button:focus {
   background-color: transparent;
   font-size: 0;
   position: absolute;
-  top: 61%;
+  top: 56%;
   transform: translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1592,6 +1505,7 @@ button:focus {
   opacity: 0;
   visibility: hidden;
 }
+
 .slick-slide img:focus,
 .slick-slide a:focus {
   outline: none;
@@ -1630,11 +1544,11 @@ button:focus {
     display: inline-block;
 }
 
-
 .home-blog__block-item:hover {
   transition: .02s;
   transform: scale(1.01);
 }
+
 
 .home-blog__block-item {
   margin: 0 10px;
@@ -1921,6 +1835,43 @@ button:focus {
   .klaviyo-popup__inner {
     width: 100%;
   }
+  
+  .klaviyo-popup__inner .success_message {
+    background-position: 25%;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .success_message .klaviyo_block {
+      padding-left: 205px !important;
+  }
+  
+  .success_message .klaviyo_block h2 {
+      font-size: 20px;
+    line-height: 1;
+  }
+  
+  .success_message .klaviyo_block h3 {
+          font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .success_message .klaviyo_block h4 {
+          font-size: 15px;
+  }
+  
+  .success_message .klaviyo_block a {
+      padding: 5px 10px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  
+  .klaviyo_modal .klaviyo_header_close {
+          top: 30px !important;
+  }
 
   .klaviyo-popup__inner form h2 {
     font-size: 24px;
@@ -1930,12 +1881,8 @@ button:focus {
     font-size: 20px;
   }
 
-  .klaviyo-popup-normal .klaviyo-popup__inner form .klaviyo_block {
+  .klaviyo-popup__inner form .klaviyo_block {
     max-width: 250px;
-  }
-
-  .klaviyo-popup-blog .klaviyo-popup__inner form .klaviyo_block {
-    max-width: 210px;
   }
 
   .header-menu {
@@ -2642,23 +2589,24 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   position: relative;
 }
 
-
-.page-breadcrumb {
-  font-weight: 600;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  font-family: 'NeurialGrotesk-Regular';
-  font-size: 16px;
+.product-page-breadcrumb {
+  width: 100% !important;
 }
 
-.page-breadcrumb a {
+.product-page-breadcrumb a {
+  font-size: 16px;
+  font-family: 'NeurialGrotesk-Regular';
+  font-weight: 600;
   margin: 0;
   color: var(--color-pink);
 }
 
-.page-breadcrumb span {
-  margin: 0 5px;
+.product-page-breadcrumb a:last-child {
+  color: var(--color-text);
+}
+
+.product-page-breadcrumb a:last-child span {
+  display: none;
 }
 
 .woocommerce-breadcrumb a {
@@ -2693,18 +2641,6 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   font-size: 22px;
   font-family: 'NeurialGrotesk-Medium';
   margin-bottom: 1.5rem;
-}
-.stock.out-of-stock {
-  margin: 20px auto;
-  width: 100%;
-  border-radius: 15px;
-  text-transform: capitalize;
-  background-color: #6b2c90;
-  color: white;
-  text-align: center;
-  padding: 1.55rem 1.44em 1.59rem;
-  font-weight: 600;
-  font-size: 1.6rem;
 }
 .ast-stock-detail {
   margin-bottom: 1.5rem;
@@ -2744,7 +2680,7 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   background-color: transparent;
 }
 
-.bundle-product .onsale {
+.product_cat-bundles .onsale {
   display: none !important;
 }
 
@@ -3143,46 +3079,48 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 }
 
 .woocommerce-variation-price .price,
-.woocommerce-variation-price .wcsatt-options-product-prompt {
+.woocommerce-variation-price .wcsatt-options-product-prompt,
+.wcsatt-options-product-prompt {
   display: none;
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper {
+.wcsatt-options-product-wrapper {
   border: 1px solid #6B2C90;
   border-radius: 15px;
   width: 80%;
+  margin-bottom: 20px;
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper ul {
+.wcsatt-options-product-wrapper ul {
   margin: 0;
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper ul li {
+.wcsatt-options-product-wrapper ul li {
   margin: 0;
   padding: 10px 15px;
   display: flex;
   align-items: center;
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper ul li:first-child {
+.wcsatt-options-product-wrapper ul li:first-child {
   border-bottom: 1px solid var(--color-pink);
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper ul li label {
+.wcsatt-options-product-wrapper ul li label {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper ul li label > input {
-  width: 20px;
+.wcsatt-options-product-wrapper ul li label > input {
+  width: 20px !important;
   height: 20px;
   border-color: var(--color-pink);
   background-color: var(--color-pink);
   box-shadow: none;
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper ul li label > input:checked:before {
+.wcsatt-options-product-wrapper ul li label > input:checked:before {
   background-color: var(--color-pink);
   content: "";
   display: block;
@@ -3194,8 +3132,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   border-radius: 50%;
 }
 
-.woocommerce-variation-price .wcsatt-options-product-wrapper ul li label > span {
-  display: flex;
+.wcsatt-options-product-wrapper ul li label > span {
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -3205,8 +3143,8 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
 }
 
 .subscription-regular-price span {
-  text-decoration: line-through;
-  opacity: 0.5;
+        text-decoration: line-through;
+    opacity: 0.5;
 }
 
 .woocommerce-variation.single_variation {
@@ -3224,7 +3162,6 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 80%;
 }
 
 .woocommerce-variation-add-to-cart .qib-button {
@@ -3269,8 +3206,8 @@ body.single-product .screen-reader-text {
 }
 
 .single_add_to_cart_button {
-  margin: 20px auto;
-  width: 100%;
+  margin-top: 20px;
+  width: 80%;
   border-radius: 15px;
   text-transform: capitalize;
 }
@@ -3935,7 +3872,7 @@ body.single-product .screen-reader-text {
   width: 270px;
   margin: 0 auto;
   position: absolute;
-  top: 65px;
+  top: 54px;
   z-index: 11;
   left: 50%;
   transform: translateX(-50%);
@@ -4123,7 +4060,7 @@ body.single-product .screen-reader-text {
 
 @media(max-width: 1024px) {
   .shop__hero {
-    height: 450px;
+    height: 550px;
   }
 
   .shop__hero-content {
@@ -4328,8 +4265,13 @@ body.single-product .screen-reader-text {
     margin-bottom: 15px;
   }
 }
-
-
+ /**** Lost Password ***/
+ #post-63 .woocommerce p {
+     margin-top:30px;
+ }
+ #post-63 .woocommerce .woocommerce-Button.button {
+     margin-top:20px;
+ }
 /* ======== Why C60 Page ========== */
 .why-c60-hero {
   height: 800px;
@@ -4949,8 +4891,8 @@ body.single-product .screen-reader-text {
   text-align:left;
 }
 .elementor-widget-text-editor {
-  color: var( --color-black ) !important;
-  font-size:20px;
+  color: var( --color-text ) !important;
+  font-size:18px;
   line-height:1.475;
 }
 .post-hero__inner p {
@@ -5592,6 +5534,7 @@ ul.gfield_checkbox li input {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 100px;
+  padding-top: 100px;
 }
 
 .contact-info__item {
@@ -5702,6 +5645,10 @@ ul.gfield_checkbox li input {
 }
 
 /* ======= Testimonial Page ======== */
+.testimonial-hero {
+  margin-top: 50px;
+}
+
 .testimonial-hero__inner {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -6066,6 +6013,7 @@ ul.gfield_checkbox li input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
+  margin-top:55px;
 }
 
 .blog-post-item {
@@ -6337,7 +6285,7 @@ ul.gfield_checkbox li input {
 .what-c60-hero-bg-img {
   max-width: 800px;
   position: absolute;
-  top: -72px;
+  top: 0;
   left: 0;
 }
 
@@ -6354,6 +6302,7 @@ ul.gfield_checkbox li input {
   font-family: 'NeurialGrotesk-Bold';
   font-size: 57px;
   color: var(--color-dark-pink);
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -6556,7 +6505,7 @@ ul.gfield_checkbox li input {
 }
 
 .what-c60-img-text-item.right-img {
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 4fr 1fr;
 }
 
 .what-c60-img-text-item.left-img {
@@ -6808,6 +6757,7 @@ ul.gfield_checkbox li input {
 /* ======== About us page ======= */
 .about-hero {
   position: relative;
+  margin-top: 50px;
 }
 
 .about-hero-bg-img {
@@ -6841,7 +6791,8 @@ ul.gfield_checkbox li input {
 
 .about-hero-description p {
   font-family: 'NeurialGrotesk-Regular';
-  font-size: 20px;
+  text-align:left !important;
+  font-size: 18px;
   line-height: 1.476;
   color: var(--color-text);
   margin-bottom:20px;
@@ -8718,6 +8669,9 @@ ul.gfield_checkbox li input {
 }
 
 /* =========== Health Benefits page =========== */
+.healthy-hero {
+  margin-top: 50px;
+}
 .healthy-hero__inner h1 {
   font-size:50px;
   color: var(--color-dark-pink);
@@ -8766,37 +8720,10 @@ ul.gfield_checkbox li input {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 50px;
+  margin-bottom:25px;
 }
-.healthy-btn {
-  display: block;
-  max-width: 300px;
-  background-color: var(--color-dark-pink);
-  color: var(--color-white);
-  text-align: center;
-  padding: 10px 0;
-  border-radius: 15px;
-  font-family: 'NeurialGrotesk-Regular';
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.healthy-btn:hover {
-  transition: .02s;
-  transform: scale(1.01);
-}
-
-.healthy-way__text.dark-bg-text p {
-  background-color: var(--color-pink);
-  border-radius: 23px;
-  padding: 30px;
-  color: white;
-}
-
 .healthy-hero__text ul {
   margin-bottom: 30px;
-  background-color: var(--color-light-pink);
-  padding: 20px 20px 20px 30px;
-  border-radius: 10px;
 }
 
 .healthy-hero__text ul li {
@@ -8812,7 +8739,7 @@ ul.gfield_checkbox li input {
   content: '';
   width: 10px;
   height: 10px;
-  background-color: var(--color-pink);
+  background-color: var(--color-light-pink);
   display: block;
   border-radius: 50%;
   margin-right: 10px;
@@ -8929,19 +8856,6 @@ ul.gfield_checkbox li input {
   font-family: 'NeurialGrotesk-Medium';
   line-height:60px;
   color: var(--color-dark-purple);
-  position: relative;
-  padding-left: 50px;
-}
-.healthy-summary .healthy-summary__img-text h3:before {
-  content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-image: url('assets/images/horizontal_short_line.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: -40px;
-    bottom: 27px
 }
 .athletic-performance .healthy-hero__inner h1 {
   max-width: 53%;
@@ -8972,7 +8886,10 @@ ul.gfield_checkbox li input {
   width: 80%;
   border-radius: 0px 25px 25px 0px;
 }
-/* Support Joint Health */
+
+
+
+/* =========== Supports Joint Health page =========== */
 .supports-healthy-joints .healthy-way-2 {
   display:none;
 }
@@ -9019,6 +8936,13 @@ ul.gfield_checkbox li input {
 .supports-brain-function .healthy-way-2 img {
   width: 43%;
 }
+/* =========== Order Thank you Page =========== */
+.woocommerce-order-received p.woocommerce-customer-details--phone {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+
 
 
 
@@ -9075,7 +8999,15 @@ ul.gfield_checkbox li input {
     margin-top: 30px;
   }
 }
-
+/* new checkout button */
+.checkout-button.checkoutbutton-2 {
+  padding:14px !important;
+}
+@media (max-width:480px) {
+    .checkout-button.checkoutbutton-2 {
+   margin-bottom:20px !important;
+    }
+}
 /* Supports Healhy Libido */
 .promotes-healthy-libido .top-content-1 {
   padding-top:20px;
@@ -9101,6 +9033,9 @@ ul.gfield_checkbox li input {
 .promotes-healthy-libido .customertestimonial__customer img {
   margin-top: 61px;
   border-radius: 50%;
+}
+.healthy-page .inner-section-1220 {
+  padding: 0px 15px;
 }
 @media(max-width:480px) {
   .promotes-healthy-libido .top-content-1 h4,
@@ -9228,9 +9163,8 @@ ul.gfield_checkbox li input {
   width: 125px;
   height: 25px;
 }
-.customertestimonial__customer > img{
+.customertestimonial__customer img{
   margin-top:61px;
-  border-radius: 50%;
 }
 .customer-testimonial-block h4 {
   font-family: 'NeurialGrotesk-Regular';
@@ -9259,7 +9193,10 @@ ul.gfield_checkbox li input {
   font-size:50px;
   color: var(--color-dark-pink);
   line-height: 1.1;
-  max-width: 70%; 
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;   
+  text-align:center;
 }
 
 
@@ -9882,12 +9819,6 @@ button.woocommerce-form-register__submit {
   border-radius:10px;
 }
 
-.healthy-bottom__img img {
-  max-width: 450px;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
 .c60-pet-benefits .c60-pets5 .test_1 {
   margin-left:0px;
 }
@@ -9897,6 +9828,14 @@ button.woocommerce-form-register__submit {
 .c60-pet-benefits .c60-pets5 .test_1::after {
   margin-left: -23px;
 }
+.healthy-bottom__img img {
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+
 @media(max-width:480px) {
   .c60-pet-benefits .test_1 {
     margin-left:0px;
@@ -10204,12 +10143,6 @@ button.woocommerce-form-register__submit {
 
 }
 
-
-/* new checkout button */
-.checkout-button.checkoutbutton-2 {
-  padding:14px;
-}
-
 /* Affiliate Page Form */
 .affiliate-gvform {
   margin-top:50px;
@@ -10220,8 +10153,15 @@ button.woocommerce-form-register__submit {
   max-width:75%;
   margin:0 auto;
 }
+@media(max-width:480px){
+    .affiliate-gvform #gform_wrapper_2 {
+        max-width:90%;
+        margin:55px auto 20px auto;
+    }
+}
 
 
+<<<<<<< HEAD
 /* What is C60 Changes*/
 .what-c60-page .home-cfo-bottom-banner__text {
   font-size: 50px;
@@ -10262,3 +10202,9 @@ button.woocommerce-form-register__submit {
   line-height: 44px;
   margin-bottom: 10px
 }
+=======
+/* Hide Woo Discount Rules Discount Table on Product Page */
+#woo_discount_rules_variant_table {
+	display:none !important;
+}
+>>>>>>> 00a946f682ea4b17047d984f6f0f9a667ba2fc63
