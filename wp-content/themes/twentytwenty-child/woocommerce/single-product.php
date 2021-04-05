@@ -63,29 +63,38 @@ get_header( 'shop' ); ?>
 
 				$related_first_product = wc_get_product( $related_first_product_id );
 				$related_first_product_type = $related_first_product->get_type();
+
+
 				if ($related_first_product_type == 'variable') {
 					$related_first_product_available_variations = $related_first_product->get_available_variations();
-					$related_first_product_price = $related_first_product_available_variations[0]['display_price']; 
+					$fromRelated_first_product_price = $related_first_product_available_variations[0]['display_price']; 
+					$toRelated_first_product_price = end($related_first_product_available_variations)['display_price'];
+					$related_first_product_price = wc_price($fromRelated_first_product_price) . ' - '. wc_price($toRelated_first_product_price);
 				} else {
-					$related_first_product_price = $related_first_product->get_price();
+					$related_first_product_price = wc_price($related_first_product->get_price());
 				}
 
 				$related_second_product = wc_get_product( $related_second_product_id );
 				$related_second_product_type = $related_second_product->get_type();
 				if ($related_second_product_type == 'variable') {
 					$related_second_product_available_variations = $related_second_product->get_available_variations();
-					$related_second_product_price = $related_second_product_available_variations[0]['display_price']; 
+					$fromRelated_second_product_price = $related_second_product_available_variations[0]['display_price']; 
+					$toRelated_second_product_price = end($related_second_product_available_variations)['display_price'];
+					$related_second_product_price = wc_price($fromRelated_second_product_price) . ' - ' . wc_price($toRelated_second_product_price);
 				} else {
-					$related_second_product_price = $related_second_product->get_price();
+					$related_second_product_price = wc_price($related_second_product->get_price());
 				}
 
 				$related_third_product = wc_get_product( $related_third_product_id );
 				$related_third_product_type = $related_third_product->get_type();
+				
 				if ($related_third_product_type == 'variable') {
 					$related_third_product_available_variations = $related_third_product->get_available_variations();
-					$related_third_product_price = $related_third_product_available_variations[0]['display_price']; 
+					$fromRelated_third_product_price = $related_third_product_available_variations[0]['display_price']; 
+					$toRelated_third_product_price = end($related_third_product_available_variations)['display_price'];
+					$related_third_product_price = wc_price($fromRelated_third_product_price) . ' - ' . wc_price($toRelated_third_product_price);
 				} else {
-					$related_third_product_price = $related_third_product->get_price();
+					$related_third_product_price = wc_price($related_third_product->get_price());
 				}
 
 			}
@@ -113,17 +122,50 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_first_product_link ?>"><?php echo $related_first_product_title ?></a></label>
-									<span class="related-product-price"><?php echo wc_price($related_first_product_price) ?></span>
+									<span class="related-product-price"><?php echo $related_first_product_price ?></span>
+									
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
 										</div>
 										<div class="related-product-content-right">
-											<a href="<?php echo $related_first_product_link ?>">
+											<!-- <a href="<?php echo $related_first_product_link ?>">
 												<div class="related-product-select-btn">
 													<label>Add To Cart</label>
 												</div>
-											</a>
+											</a> -->
+											<?php
+											if ( ! $related_first_product->is_in_stock() ) { ?>
+												<a href="javascript:void(0)" class="btn-shop-add-cart-no-qty" data-product_id="<?php echo $related_first_product_id ?>">Out of Stock</a>
+											<?php } else {
+												if( $related_first_product->has_child() ) { ?>
+													<div class="shop-variant-select">
+														<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select options</a>
+														<div class="shop-variant-items">
+															<?php
+																if ( ( $variations = $related_first_product->get_children() ) ) {
+																	foreach ( $variations as $variationId ) {
+																		$variation = new WC_Product_Variation($variationId);
+																		$variationName = implode(" / ", $variation->get_variation_attributes());
+																		$variationPrice = $variation->get_price();
+																	?>
+																		<div class="shop-variant-item">
+																			<label><?php echo $variationName . ' - $' . $variationPrice; ?></label>
+																			<a href="javascript:void(0)" class="btn-shop-add-cart" data-product_id="<?php echo $related_first_product_id ?>" data-variant_id="<?php echo $variationId ?>">Add to cart</a>
+																		</div>
+																	<?php    
+																	}
+																}
+															?>
+														</div>
+													</div>
+													
+												<?php } else { ?>
+													<a href="javascript:void(0)" class="btn-shop-add-cart-no-variant" data-product_id="<?php echo $productId ?>">Add to cart</a>
+												<?php }
+											}
+											?>
+
 										</div>
 									</div>
 								</div>
@@ -137,17 +179,48 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_second_product_link ?>"><?php echo $related_second_product_title ?></a></label>
-									<span class="related-product-price"><?php echo wc_price($related_second_product_price) ?></span>
+									<span class="related-product-price"><?php echo $related_second_product_price ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
 										</div>
 										<div class="related-product-content-right">
-											<a href="<?php echo $related_second_product_link ?>">
+											<!-- <a href="<?php echo $related_second_product_link ?>">
 												<div class="related-product-select-btn">
 													<label>Add To Cart</label>
 												</div>
-											</a>	
+											</a>	 -->
+											<?php
+											if ( ! $related_second_product->is_in_stock() ) { ?>
+												<a href="javascript:void(0)" class="btn-shop-add-cart-no-qty" data-product_id="<?php echo $related_second_product_id ?>">Out of Stock</a>
+											<?php } else {
+												if( $related_second_product->has_child() ) { ?>
+													<div class="shop-variant-select">
+														<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select options</a>
+														<div class="shop-variant-items">
+															<?php
+																if ( ( $variations = $related_second_product->get_children() ) ) {
+																	foreach ( $variations as $variationId ) {
+																		$variation = new WC_Product_Variation($variationId);
+																		$variationName = implode(" / ", $variation->get_variation_attributes());
+																		$variationPrice = $variation->get_price();
+																	?>
+																		<div class="shop-variant-item">
+																			<label><?php echo $variationName . ' - $' . $variationPrice; ?></label>
+																			<a href="javascript:void(0)" class="btn-shop-add-cart" data-product_id="<?php echo $related_second_product_id ?>" data-variant_id="<?php echo $variationId ?>">Add to cart</a>
+																		</div>
+																	<?php    
+																	}
+																}
+															?>
+														</div>
+													</div>
+													
+												<?php } else { ?>
+													<a href="javascript:void(0)" class="btn-shop-add-cart-no-variant" data-product_id="<?php echo $related_second_product_id ?>">Add to cart</a>
+												<?php }
+											}
+											?>
 										</div>
 									</div>
 								</div>
@@ -161,18 +234,49 @@ get_header( 'shop' ); ?>
 								</a>
 								<div class="related-product-title">
 									<label><a href="<?php echo $related_third_product_link ?>"><?php echo $related_third_product_title ?></a></label>
-									<span class="related-product-price"><?php echo wc_price($related_third_product_price) ?></span>
+									<span class="related-product-price"><?php echo $related_third_product_price ?></span>
 									<div class="related-product-content">
 										<div class="related-product-content-left">
 											<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/star_5.png" alt="C60 Purple Power Rating">
 											<a href="<?php echo $related_third_product_link ?>"></a>
 										</div>
 										<div class="related-product-content-right">
-										<a href="<?php echo $related_third_product_link ?>">
+										<!-- <a href="<?php echo $related_third_product_link ?>">
 											<div class="related-product-select-btn">
 												<label>Add To Cart</label>
 											</div>
-										</a>
+										</a> -->
+										<?php
+											if ( ! $related_third_product->is_in_stock() ) { ?>
+												<a href="javascript:void(0)" class="btn-shop-add-cart-no-qty" data-product_id="<?php echo $related_third_product_id ?>">Out of Stock</a>
+											<?php } else {
+												if( $related_third_product->has_child() ) { ?>
+													<div class="shop-variant-select">
+														<a href="javascript: void(0)" class="button product_type_variable add_to_cart_button shop-add-cart">Select options</a>
+														<div class="shop-variant-items">
+															<?php
+																if ( ( $variations = $related_third_product->get_children() ) ) {
+																	foreach ( $variations as $variationId ) {
+																		$variation = new WC_Product_Variation($variationId);
+																		$variationName = implode(" / ", $variation->get_variation_attributes());
+																		$variationPrice = $variation->get_price();
+																	?>
+																		<div class="shop-variant-item">
+																			<label><?php echo $variationName . ' - $' . $variationPrice; ?></label>
+																			<a href="javascript:void(0)" class="btn-shop-add-cart" data-product_id="<?php echo $related_third_product_id ?>" data-variant_id="<?php echo $variationId ?>">Add to cart</a>
+																		</div>
+																	<?php    
+																	}
+																}
+															?>
+														</div>
+													</div>
+													
+												<?php } else { ?>
+													<a href="javascript:void(0)" class="btn-shop-add-cart-no-variant" data-product_id="<?php echo $related_third_product_id ?>">Add to cart</a>
+												<?php }
+											}
+											?>
 										</div>
 									</div>
 								</div>

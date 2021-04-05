@@ -3142,6 +3142,11 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   text-transform: capitalize;
 }
 
+.subscription-regular-price span {
+        text-decoration: line-through;
+    opacity: 0.5;
+}
+
 .woocommerce-variation.single_variation {
   margin-bottom: 12px;
 }
@@ -3867,7 +3872,7 @@ body.single-product .screen-reader-text {
   width: 270px;
   margin: 0 auto;
   position: absolute;
-  top: 65px;
+  top: 54px;
   z-index: 11;
   left: 50%;
   transform: translateX(-50%);
