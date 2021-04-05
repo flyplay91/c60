@@ -30,10 +30,22 @@ if ( post_password_required() ) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
 }
+
+
+$product_id = $product->get_id();
+
+$isBundleCat = false;
+$product_cats = wp_get_post_terms( $product_id, 'product_cat' );
+
+foreach($product_cats as $product_cat) {
+	$product_cat_name = $product_cat->name;
+	var_dump($product_cat_name);
+}
+
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'product-block', $product ); ?>>
 	<div class="product-image-summary">
-		<div class="inner-section-1366 product-image-summary__inner">
+		<div class="inner-section-1366 product-image-summary__inner ">
 			<?php
 			/**
 			 * Hook: woocommerce_before_single_product_summary.
