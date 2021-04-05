@@ -10160,8 +10160,6 @@ button.woocommerce-form-register__submit {
     }
 }
 
-
-<<<<<<< HEAD
 /* What is C60 Changes*/
 .what-c60-page .home-cfo-bottom-banner__text {
   font-size: 50px;
@@ -10202,9 +10200,7 @@ button.woocommerce-form-register__submit {
   line-height: 44px;
   margin-bottom: 10px
 }
-=======
 /* Hide Woo Discount Rules Discount Table on Product Page */
 #woo_discount_rules_variant_table {
 	display:none !important;
 }
->>>>>>> 00a946f682ea4b17047d984f6f0f9a667ba2fc63
