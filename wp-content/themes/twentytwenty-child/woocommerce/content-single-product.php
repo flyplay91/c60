@@ -31,23 +31,10 @@ if ( post_password_required() ) {
 	return;
 }
 
-
-$product_id = $product->get_id();
-
-$isBundleCat = false;
-$product_cats = wp_get_post_terms( $product_id, 'product_cat' );
-
-foreach($product_cats as $product_cat) {
-	$product_cat_name = $product_cat->name;
-	if($product_cat_name == 'C60 Bundles') {
-		$isBundleCat = true;
-	}
-}
-
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'product-block', $product ); ?>>
 	<div class="product-image-summary">
-		<div class="inner-section-1366 product-image-summary__inner <?php if ($isBundleCat == true) {echo 'bundle-product';} ?>">
+		<div class="inner-section-1366 product-image-summary__inner">
 			<?php
 			/**
 			 * Hook: woocommerce_before_single_product_summary.
