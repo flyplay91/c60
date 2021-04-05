@@ -9262,6 +9262,7 @@ ul.gfield_checkbox li input {
   max-width: 70%; 
 }
 
+
 .healthy-video__inner > a {
   display: block;
   max-width: 250px;
@@ -10247,4 +10248,17 @@ button.woocommerce-form-register__submit {
     text-align:center;
     margin:0 auto;
   }
+}
+
+/* Health Benefit Page updates */ 
+.healthy-video h4 {
+  text-align:center;
+  margin:0 auto;
+}
+.customer-testimonial-block h4 {
+  font-family: 'NeurialGrotesk-Regular';
+  font-size: 27px;
+  color: #1D293F;
+  line-height: 44px;
+  margin-bottom: 10px
 }
