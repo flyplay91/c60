@@ -3142,9 +3142,10 @@ input.needsclick.TextInput__FormStyledTextInput-sc-1o6de9f-0.fsIKy.kl-private-re
   text-transform: capitalize;
 }
 
-.subscription-regular-price span {
-        text-decoration: line-through;
-    opacity: 0.5;
+.subscription-regular-price span,
+.related-regular-price {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .woocommerce-variation.single_variation {
