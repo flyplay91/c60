@@ -29,48 +29,60 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 	    'meta_key'    => '_customer_user',
 	    'meta_value'  => get_current_user_id(),
 	    'post_type'   => 'shop_order',
-	    'date_query' => array(
-            'after' => date('Y-m-d', strtotime('05/01/2020')),
-            'before' => date('Y-m-d', strtotime('today')) 
-        ),
+	    // 'date_query' => array(
+        //     'after' => date('Y-m-d', strtotime('05/01/2020')),
+        //     'before' => date('Y-m-d', strtotime('today')) 
+        // ),
 	    'post_status' => array_keys( wc_get_order_statuses() )
 	) );
 	$current_user = wp_get_current_user();
 	$userName = $current_user->display_name;
+	$acf_repeater_count = 0;
 
 	foreach($orders as $order) {
 		if ( ($order->post_status == 'wc-approved') || ($order->post_status == 'wc-completed') || ($order->post_status == 'wc-rebill')  || ($order->post_status == 'wc-processing') ) {
 			$order_obj = wc_get_order( $order ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+			$items = $order_obj->get_items();
+			foreach ( $items as $item ) {
+				$product_id = $item['product_id'];
+
+				if ( have_rows('bundle_product_group', $product_id) ): 
+					while( have_rows('bundle_product_group',  $product_id)) : the_row();
+						if( have_rows('product_repeater') ) :
+							while( have_rows('product_repeater') ) : the_row();
+								$acf_repeater_count++;
+							endwhile;
+						endif;	
+					endwhile;
+				endif;
+			}
+			
 			if ($order_obj != '0.00') {
 			    $item_count = $order_obj->get_item_count() - $order_obj->get_item_count_refunded();
 			    $completed_order_count += $item_count;    
 			}
-			$dividedOrder = $completed_order_count % 13;
-			$remainItem = 12 - $dividedOrder;
 		}
 	}
-	
+
+	$dividedOrder = ($completed_order_count + $acf_repeater_count) % 13;
+	$remainItem = 12 - $dividedOrder;
 	
 	if ($completed_order_count < 12 AND $completed_order_count > 0 AND $completed_order_count <= 0) {
 		echo "<h3>You're " .  $remainItem . " items away from getting your free item!</h3>";
 	} 
 	
 	if ($completed_order_count == 0) {
-	    	echo "<h3>You're 12 items away from receiving your free item!</h3>";
-	}
-		
-	else {
-	    
-		if ($completed_order_count % 13 == 0 OR $completed_order_count == 12 OR $remainItem == 0) {
+		echo "<h3>You're 12 items away from receiving your free item!</h3>";
+	} else {
+	    if ($completed_order_count % 13 == 0 OR $completed_order_count == 12 OR $remainItem == 0) {
 			echo '<h3>Hurry! you earned a free item!</h3>';
-		}
-	    
-		else {
+		} else {
+			
 			echo "<h3>You're " . $remainItem . " more items away from receiving your free item!</h3>";
 		}
 	}
-	
 	?>
+
 	<h4 class="order-loyalty-msg">Just add items to your cart and proceed to checkout for the discount to be applied automatically to non-subscription items only.</h4>
 
 	<table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
