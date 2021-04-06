@@ -477,8 +477,14 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.klaviyo-popup__inner form {
+.klaviyo-popup-blog .klaviyo-popup__inner form {
+  background-image: url('assets/images/klaviyo-popup-blog.png');
+}
+
+.klaviyo-popup-normal .klaviyo-popup__inner form {
   background-image: url('assets/images/klaviyo_popup_join_img.jpg');
+}
+.klaviyo-popup__inner form {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100%;
@@ -540,8 +546,15 @@ button:focus {
   max-width: 400px;
 }
 
-.klaviyo-popup__inner .success_message {
+.klaviyo-popup-blog .klaviyo-popup__inner .success_message {
+  background-image: url('assets/images/klaviyo-popup-blog-thankyou.png');
+}
+
+.klaviyo-popup-normal .klaviyo-popup__inner .success_message {
   background-image: url('assets/images/klaviyo_popup_success_img.jpg');
+}
+
+.klaviyo-popup__inner .success_message {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100%;
@@ -552,7 +565,14 @@ button:focus {
   padding-left: 350px;
   text-align: left;
 }
+.klaviyo-popup-blog .success_message .klaviyo_block {
+  padding-left: 380px;
+}
 
+
+.klaviyo-popup-blog .success_message .klaviyo_block p {
+  margin: 20px 10px;
+}
 .success_message .klaviyo_block h2 {
   color: var(--color-pink);
   font-size: 40px;
