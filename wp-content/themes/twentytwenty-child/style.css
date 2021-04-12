@@ -6665,6 +6665,21 @@ ul.gfield_checkbox li input {
   font-weight: bold;
 }
 
+.reviews-section ul li .customer-product-img img {
+  width: 300px;
+}
+
+.reviews-section ul li .customer-reviews-img-text {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  grid-gap: 5%;
+  align-items: center;
+}
+
+.reviews-section ul li .customer-product-img label {
+  text-align: center;
+}
+
 @media(max-width: 1024px) {
   .what-c60-hero__inner .what-c60-hero-bg-img {
     max-width: 80%;
@@ -6742,6 +6757,18 @@ ul.gfield_checkbox li input {
 }
 
 @media(max-width: 767px) {
+  .reviews-section ul li .customer-reviews-img-text {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-section ul li .review-rating img {
+    margin: 0 auto;
+  }
+
+  .reviews-section ul li .customer-reviews-text {
+    text-align: center;
+  }
+
   .what-c60-hero__inner h1 {
     font-size: 30px;
     line-height: 40px;
