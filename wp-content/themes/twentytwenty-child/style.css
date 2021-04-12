@@ -6628,6 +6628,43 @@ ul.gfield_checkbox li input {
   top: 10px;
 }
 
+.reviews-section {
+  margin-top: 50px;
+}
+
+.reviews-section h3 {
+  color: var(--color-pink);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.reviews-section ul li {
+  margin: .5rem 0 5.5rem 0;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 50px;
+}
+
+.reviews-section ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin: 0;
+}
+
+.reviews-section ul li .review-rating img {
+  max-width: 100px;
+}
+
+.reviews-section ul li .review-content {
+  color: var(--color-pink);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.reviews-section ul li .review-user {
+  color: var(--color-pink);
+  font-weight: bold;
+}
+
 @media(max-width: 1024px) {
   .what-c60-hero__inner .what-c60-hero-bg-img {
     max-width: 80%;

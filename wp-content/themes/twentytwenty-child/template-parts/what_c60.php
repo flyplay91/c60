@@ -84,7 +84,7 @@ get_header();
         <?php endwhile;
     endif; ?>
 
-<?php if( have_rows('cfo_banner')) :
+    <?php if( have_rows('cfo_banner')) :
         $home_cfo_bottom_banner = get_field('cfo_banner');
         $cfo_banner_image_url = $home_cfo_bottom_banner['cfo_image']['url'];
         $cfo_banner_image_alt = $home_cfo_bottom_banner['cfo_image']['alt'];
@@ -173,6 +173,35 @@ get_header();
                             <?php endwhile;
                         endif; ?>
                     </div>
+                </div>
+            </section>
+        <?php endwhile;
+    endif; ?>
+
+    <?php if( have_rows('reviews_group')) :
+        while ( have_rows('reviews_group')): the_row(); ?>
+            <section class="reviews-section">
+                <div class="reviews-section__inner inner-section-1220">
+                <h3>Reviews</h3>
+                    <ul>
+                        <?php 
+                            if( have_rows('reviews_repeater') ) :
+                            while( have_rows('reviews_repeater') ) : the_row();
+                            $rating_image_url = get_sub_field('rating_image')['url'];
+                            $rating_image_alt = get_sub_field('rating_image')['alt'];
+                            $review_text = get_sub_field('review_content');
+                            $review_user = get_sub_field('review_user');
+                        ?>
+                            <li>
+                                <div class="review-rating">
+                                    <img src="<?php echo $rating_image_url ?>">
+                                </div>
+                                <div class="review-content"><?php echo $review_text ?></div>
+                                <div class="review-user"><?php echo $review_user ?></div>
+                            </li>
+                            <?php endwhile;
+                        endif; ?>
+                    </ul>
                 </div>
             </section>
         <?php endwhile;
