@@ -64,7 +64,9 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 		}
 	}
 
-	$dividedOrder = ($completed_order_count + $acf_repeater_count) % 13;
+	$completed_order_count = $completed_order_count + $acf_repeater_count;
+
+	$dividedOrder = $completed_order_count % 13;
 	$remainItem = 12 - $dividedOrder;
 	
 	if ($completed_order_count < 12 AND $completed_order_count > 0 AND $completed_order_count <= 0) {

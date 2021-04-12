@@ -312,7 +312,7 @@ $(document).ready(function() {
 		}
 	});
 
-	if ($('.product-image-summary__inner').lenght != 0) {
+	if ($('.product-image-summary__inner').length != 0) {
 		if ($('.product-image-summary__inner .price .wcsatt-sub-options').length != 0) {
 			$('.product-image-summary__inner .price').css('display', 'none');
 		} else {

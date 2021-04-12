@@ -62,59 +62,68 @@ get_header( 'shop' ); ?>
 				$related_third_product_id = $related_product_group['third_product_id'];
 
 				$related_first_product = wc_get_product( $related_first_product_id );
-				$related_first_product_type = $related_first_product->get_type();
+				if ( $related_first_product == true) {
+					$related_first_product_type = $related_first_product->get_type();
 
-
-				if ($related_first_product_type == 'variable') {
-					$related_first_product_available_variations = $related_first_product->get_available_variations();
-					$fromRelated_first_product_price = $related_first_product_available_variations[0]['display_price']; 
-					$toRelated_first_product_price = end($related_first_product_available_variations)['display_price'];
-					$related_first_product_price = wc_price($fromRelated_first_product_price) . ' - '. wc_price($toRelated_first_product_price);
-				} else {
-					$related_first_product_regular_price = wc_price($related_first_product->get_regular_price());
-					$related_first_product_sale_price = wc_price($related_first_product->get_sale_price());
-					if ($related_first_product_regular_price > $related_first_product_sale_price) {
-						$related_first_product_price = '<span class="related-regular-price">' . $related_first_product_regular_price .'</span> - '. $related_first_product_sale_price;
+					if ($related_first_product_type == 'variable') {
+						$related_first_product_available_variations = $related_first_product->get_available_variations();
+						$fromRelated_first_product_price = $related_first_product_available_variations[0]['display_price']; 
+						$toRelated_first_product_price = end($related_first_product_available_variations)['display_price'];
+						$related_first_product_price = wc_price($fromRelated_first_product_price) . ' - '. wc_price($toRelated_first_product_price);
 					} else {
-						$related_third_product_price = wc_price($related_third_product->get_price());
+						$related_first_product_regular_price = wc_price($related_first_product->get_regular_price());
+						$related_first_product_sale_price = wc_price($related_first_product->get_sale_price());
+						if ($related_first_product_regular_price > $related_first_product_sale_price) {
+							$related_first_product_price = '<span class="related-regular-price">' . $related_first_product_regular_price .'</span> - '. $related_first_product_sale_price;
+						} else {
+							$related_third_product_price = wc_price($related_third_product->get_price());
+						}
 					}
 				}
+				
+				
 
 				$related_second_product = wc_get_product( $related_second_product_id );
-				$related_second_product_type = $related_second_product->get_type();
-				if ($related_second_product_type == 'variable') {
-					$related_second_product_available_variations = $related_second_product->get_available_variations();
-					$fromRelated_second_product_price = $related_second_product_available_variations[0]['display_price']; 
-					$toRelated_second_product_price = end($related_second_product_available_variations)['display_price'];
-					$related_second_product_price = wc_price($fromRelated_second_product_price) . ' - ' . wc_price($toRelated_second_product_price);
-				} else {
-					$related_second_product_regular_price = wc_price($related_second_product->get_regular_price());
-					$related_second_product_sale_price = wc_price($related_second_product->get_sale_price());
-					if ($related_second_product_regular_price > $related_second_product_sale_price) {
-						$related_second_product_price = '<span class="related-regular-price">' . $related_second_product_regular_price .'</span> - '. $related_second_product_sale_price;
+				if ($related_second_product == true) {
+					$related_second_product_type = $related_second_product->get_type();
+
+					if ($related_second_product_type == 'variable') {
+						$related_second_product_available_variations = $related_second_product->get_available_variations();
+						$fromRelated_second_product_price = $related_second_product_available_variations[0]['display_price']; 
+						$toRelated_second_product_price = end($related_second_product_available_variations)['display_price'];
+						$related_second_product_price = wc_price($fromRelated_second_product_price) . ' - ' . wc_price($toRelated_second_product_price);
 					} else {
-						$related_third_product_price = wc_price($related_third_product->get_price());
+						$related_second_product_regular_price = wc_price($related_second_product->get_regular_price());
+						$related_second_product_sale_price = wc_price($related_second_product->get_sale_price());
+						if ($related_second_product_regular_price > $related_second_product_sale_price) {
+							$related_second_product_price = '<span class="related-regular-price">' . $related_second_product_regular_price .'</span> - '. $related_second_product_sale_price;
+						} else {
+							$related_third_product_price = wc_price($related_third_product->get_price());
+						}
 					}
 				}
+				
+				
 
 				$related_third_product = wc_get_product( $related_third_product_id );
-				$related_third_product_type = $related_third_product->get_type();
-				
-				if ($related_third_product_type == 'variable') {
-					$related_third_product_available_variations = $related_third_product->get_available_variations();
-					$fromRelated_third_product_price = $related_third_product_available_variations[0]['display_price']; 
-					$toRelated_third_product_price = end($related_third_product_available_variations)['display_price'];
-					$related_third_product_price = wc_price($fromRelated_third_product_price) . ' - ' . wc_price($toRelated_third_product_price);
-				} else {
-					$related_third_product_regular_price = wc_price($related_third_product->get_regular_price());
-					$related_third_product_sale_price = wc_price($related_third_product->get_sale_price());
-					if ($related_third_product_regular_price > $related_third_product_sale_price) {
-						$related_third_product_price = '<span class="related-regular-price">' . $related_third_product_regular_price .'</span> - '. $related_third_product_sale_price;
+				if ($related_third_product == true) {
+					$related_third_product_type = $related_third_product->get_type();
+
+					if ($related_third_product_type == 'variable') {
+						$related_third_product_available_variations = $related_third_product->get_available_variations();
+						$fromRelated_third_product_price = $related_third_product_available_variations[0]['display_price']; 
+						$toRelated_third_product_price = end($related_third_product_available_variations)['display_price'];
+						$related_third_product_price = wc_price($fromRelated_third_product_price) . ' - ' . wc_price($toRelated_third_product_price);
 					} else {
-						$related_third_product_price = wc_price($related_third_product->get_price());
+						$related_third_product_regular_price = wc_price($related_third_product->get_regular_price());
+						$related_third_product_sale_price = wc_price($related_third_product->get_sale_price());
+						if ($related_third_product_regular_price > $related_third_product_sale_price) {
+							$related_third_product_price = '<span class="related-regular-price">' . $related_third_product_regular_price .'</span> - '. $related_third_product_sale_price;
+						} else {
+							$related_third_product_price = wc_price($related_third_product->get_price());
+						}
 					}
 				}
-
 			}
 			
 		?>
@@ -125,9 +134,10 @@ get_header( 'shop' ); ?>
 				<?php echo do_shortcode('[home_blogs]'); ?>
 			</div>
         </section> -->
-
-		<?php if( have_rows('related_product_group')) : ?>
-			<?php while ( have_rows('related_product_group')): the_row(); ?>
+		
+	<?php if ($related_product_sub_heading != '') :
+		if( have_rows('related_product_group')) :
+			while ( have_rows('related_product_group')): the_row(); ?>
 			<section class="related-products">
 				<div class="inner-section-1220 related-products__inner">
 					<h4 class="related-product__sub_heading"><?php echo $related_product_sub_heading ?></h4>
@@ -305,7 +315,8 @@ get_header( 'shop' ); ?>
 				</div>
 			</section>
 			<?php endwhile;
-		endif; ?>
+		endif; 
+	endif; ?>
 
 </main>
 
