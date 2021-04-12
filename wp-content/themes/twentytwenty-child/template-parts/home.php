@@ -31,7 +31,7 @@ get_header();
                 ?>
                     <div class="home-hero__carousel">
                         <div class="home-hero__inner">
-                            <h1 class="home-hero__title"><?php echo $title ?></h1>
+                            <h3 class="home-hero__title"><?php echo $title ?></h3>
                             <h4 class="home-hero__subtitle"><?php echo $subtitle ?></h4>
                             <div class="home-hero__btns">
                                 <a href="<?php echo $shop_btn_link ?>" class="home-hero-btn-shop">Shop Now</a>
