@@ -3482,6 +3482,27 @@ body.single-product .screen-reader-text {
   color: var(--color-dark-pink);
 }
 
+.healthy-btn {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border-radius: 20px;
+  padding: 15px 50px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.healthy-btn:hover {
+  transition: .02s;
+  transform: scale(1.03);
+}
+
+.healthy-way__text.dark-bg-text p {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 25px 30px;
+  border-radius: 20px;
+}
+
 @media(max-width: 1023px) {
   .product-image-summary__inner {
     grid-template-columns: 1fr;
@@ -8808,7 +8829,10 @@ ul.gfield_checkbox li input {
   margin-bottom:25px;
 }
 .healthy-hero__text ul {
-  margin-bottom: 30px;
+  margin-bottom: 0;
+      background-color: var(--color-light-pink);
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .healthy-hero__text ul li {
@@ -8824,7 +8848,7 @@ ul.gfield_checkbox li input {
   content: '';
   width: 10px;
   height: 10px;
-  background-color: var(--color-light-pink);
+  background-color: var(--color-pink);
   display: block;
   border-radius: 50%;
   margin-right: 10px;
@@ -8941,6 +8965,19 @@ ul.gfield_checkbox li input {
   font-family: 'NeurialGrotesk-Medium';
   line-height:60px;
   color: var(--color-dark-purple);
+  letter-spacing: .4px;
+  margin-left: 40px;
+}
+.healthy-summary .healthy-summary__img-text h3:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-image: url('assets/images/horizontal_short_line.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 30px;
+  margin-left: -40px;
 }
 .athletic-performance .healthy-hero__inner h1 {
   max-width: 53%;
@@ -9257,6 +9294,8 @@ ul.gfield_checkbox li input {
   color: #1D293F;
   line-height: 44px;
   margin-bottom: 10px;
+  text-align: left;
+max-width: 100%;
 }
 .customer-review-desc {
   color: var(--color-pink);
