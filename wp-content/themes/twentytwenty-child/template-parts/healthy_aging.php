@@ -160,48 +160,38 @@ get_header();
                     </div>  -->
 
                     <?php if( have_rows('customer_testimonials')) :
-                        $testimonials_group = get_field('customer_testimonials');
-                        $customer_image_url = $testimonials_group['customer_image']['url'];
-                        $customer_image_alt = $testimonials_group['customer_image']['alt'];
-                        $reviewstars_image_url = $testimonials_group['review_stars']['url'];
-                        $reviewstars_image_alt = $testimonials_group['review_stars']['alt'];
-                        $customerreview_title = $testimonials_group['customerreview_title'];
-                        $customerreview_description = $testimonials_group['customerreview_description'];
-                        
                         while ( have_rows('customer_testimonials')): the_row(); ?>
-
                             <section class="customer-testimonial-block">
                                 <div class="customertestimonial__inner inner-section-1220">
-                                    <div class="customertestimonial__img-text">
-                                    
-
-                                    <div class="customertestimonial__customer">
-                                            <img src="<?php echo $customer_image_url ?>" alt="<?php echo $customer_image_alt ?>">
-                                    </div>      
-
-
-                                        <div class="customertestimonial__text">  
-
-                                            <img src="<?php echo $reviewstars_image_url ?>" alt="<?php echo $reviewstars_image_alt ?>">
-                                                    
-                                            <h4><?php echo $customerreview_title ?></h4>
-
-                                            <div class="customer-review-desc">
-                                                <?php echo $customerreview_description ?>
+                                    <?php if( have_rows('customer_testimonial_repeater') ) :
+                                        while( have_rows('customer_testimonial_repeater') ) : the_row();
+                                        
+                                        $customer_image_url = get_sub_field('customer_image')['url'];
+                                        $customer_image_alt = get_sub_field('customer_image')['alt'];
+                                        $reviewstars_image_url = get_sub_field('review_stars')['url'];
+                                        $reviewstars_image_alt = get_sub_field('review_stars')['alt'];
+                                        $customerreview_title = get_sub_field('customer_review_title');
+                                        $customerreview_description = get_sub_field('customer_review_description');
+                                        
+                                    ?>
+                                        <div class="customertestimonial__img-text">
+                                            <div class="customertestimonial__customer">
+                                                <img src="<?php echo $customer_image_url ?>" alt="<?php echo $customer_image_alt ?>">
                                             </div>
-
+                                            <div class="customertestimonial__text">  
+                                                <img src="<?php echo $reviewstars_image_url ?>" alt="<?php echo $reviewstars_image_alt ?>">
+                                                <h4><?php echo $customerreview_title ?></h4>
+                                                <div class="customer-review-desc">
+                                                    <?php echo $customerreview_description ?>
+                                                </div>
+                                            </div>
                                         </div>
-
-
-                                    </div>
-                                    
+                                        <?php endwhile;
+                                    endif; ?>
                                 </div>
                             </section>
-                            <?php endwhile;
+                        <?php endwhile;
                     endif; ?>
-                   
-                    
-                   
                    
                     <div class="healthy-video__source">
                         <label>Sources</label>
