@@ -10350,7 +10350,10 @@ button.woocommerce-form-register__submit {
   font-size: 27px;
   color: #1D293F;
   line-height: 44px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  text-align: left;
+    margin: auto;
+    max-width: 100%;
 }
 /* Hide Woo Discount Rules Discount Table on Product Page */
 #woo_discount_rules_variant_table {
