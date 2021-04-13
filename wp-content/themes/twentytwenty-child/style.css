@@ -3495,11 +3495,10 @@ body.single-product .screen-reader-text {
   transition: .02s;
   transform: scale(1.03);
 }
-
-.healthy-way__text.dark-bg-text p {
+.healthy-way__text.dark-bg-text {
   background-color: var(--color-pink);
   color: var(--color-white);
-  padding: 25px 30px;
+  padding: 25px 30px !important;
   border-radius: 20px;
 }
 
@@ -8790,7 +8789,7 @@ ul.gfield_checkbox li input {
 .healthy-hero__text h2 {
   font-family: 'NeurialGrotesk-Medium';
   font-size: 22px;
-  color: var(--color-dark-pink);
+  color: var(--color-pink);
   margin-bottom: 10px;
   text-transform:uppercase;
   letter-spacing:.4px;
@@ -8798,7 +8797,7 @@ ul.gfield_checkbox li input {
 .healthy-hero__text h3 {
   font-family: 'NeurialGrotesk-Regular';
   font-size: 22px;
-  color: var(--color-dark-pink);
+  color: var(--color-text);
   margin-bottom: 30px;
   letter-spacing:.4px;
   margin-left:40px;
@@ -8822,7 +8821,7 @@ ul.gfield_checkbox li input {
   margin-bottom: 20px;
 }
 .healthy-hero__img-text {
-  margin-top: 20px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 50px;
