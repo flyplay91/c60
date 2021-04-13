@@ -8884,6 +8884,22 @@ ul.gfield_checkbox li input {
 .page-template-healthy_aging .healthy-way__text h3 {
   width:100%;
 }
+
+.healthy_aging .customertestimonial__img-text:nth-child(2n) .customertestimonial__customer {
+  order: 2;
+  margin-left: 35px;
+}
+
+.healthy_aging .customertestimonial__img-text:nth-child(2n) .customertestimonial__text {
+  margin-left: 0;
+  position: relative;
+}
+
+.healthy_aging .customertestimonial__img-text:nth-child(2n) .customertestimonial__text:before {
+  right: -25px;
+  transform: rotate(-180deg);
+}
+
 .healthy-way-2 {
   margin-top:25px;
   margin-bottom:50px;
@@ -8995,6 +9011,18 @@ ul.gfield_checkbox li input {
 .athletic-performance .customertestimonial__img-text {
   max-width: 100%;
 }
+.athletic-performance .customertestimonial__img-text:nth-child(2n) .customertestimonial__customer {
+  order: 2;
+  border-radius: 0 25px 25px 0px;
+}
+.athletic-performance .customertestimonial__img-text:nth-child(2n) .customertestimonial__text {
+  border-radius: 25px 0 0 25px;
+}
+
+.athletic-performance .customertestimonial__img-text:nth-child(2n) .customertestimonial__text:before {
+  right: -25px;
+  transform: rotate(-180deg);
+}
 .athletic-performance .customertestimonial__customer {
   width: 40%;
   border-radius: 25px 0px 0px 25px;
@@ -9006,6 +9034,7 @@ ul.gfield_checkbox li input {
 .athletic-performance .customertestimonial__text {
   width: 80%;
   border-radius: 0px 25px 25px 0px;
+  position: relative;
 }
 
 
