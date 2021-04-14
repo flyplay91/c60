@@ -141,7 +141,7 @@ get_header( 'shop' ); ?>
 			</div>
         </section> -->
 		
-	<?php if ($related_product_sub_heading != '') :
+	<?php if ($related_first_product_title != '') :
 		if( have_rows('related_product_group')) :
 			while ( have_rows('related_product_group')): the_row(); ?>
 			<section class="related-products">
