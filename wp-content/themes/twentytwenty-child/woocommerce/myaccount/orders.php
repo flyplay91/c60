@@ -41,8 +41,10 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 
 	foreach($orders as $order) {
 		if ( ($order->post_status == 'wc-approved') || ($order->post_status == 'wc-completed') || ($order->post_status == 'wc-rebill')  || ($order->post_status == 'wc-processing') ) {
-			$order_obj = wc_get_order( $order ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+			$order_obj = wc_get_order( $order );
+			
 			$items = $order_obj->get_items();
+			
 			foreach ( $items as $item ) {
 				$product_id = $item['product_id'];
 
