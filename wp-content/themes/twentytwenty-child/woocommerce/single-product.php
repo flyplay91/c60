@@ -72,11 +72,11 @@ get_header( 'shop' ); ?>
 						$related_first_product_price = wc_price($fromRelated_first_product_price) . ' - '. wc_price($toRelated_first_product_price);
 					} else {
 						$related_first_product_regular_price = wc_price($related_first_product->get_regular_price());
-						$related_first_product_sale_price = wc_price($related_first_product->get_sale_price());
-						if ($related_first_product_regular_price > $related_first_product_sale_price) {
+						if (($related_first_product->get_sale_price() != null) && ($related_first_product_regular_price > $related_first_product_sale_price)){
+							$related_first_product_sale_price = wc_price($related_first_product->get_sale_price());
 							$related_first_product_price = '<span class="related-regular-price">' . $related_first_product_regular_price .'</span> - '. $related_first_product_sale_price;
 						} else {
-							$related_third_product_price = wc_price($related_third_product->get_price());
+							$related_first_product_price = wc_price($related_first_product->get_price());
 						}
 					}
 				}
@@ -94,11 +94,11 @@ get_header( 'shop' ); ?>
 						$related_second_product_price = wc_price($fromRelated_second_product_price) . ' - ' . wc_price($toRelated_second_product_price);
 					} else {
 						$related_second_product_regular_price = wc_price($related_second_product->get_regular_price());
-						$related_second_product_sale_price = wc_price($related_second_product->get_sale_price());
-						if ($related_second_product_regular_price > $related_second_product_sale_price) {
+						if (($related_second_product->get_sale_price() != null) && ($related_second_product_regular_price > $related_second_product_sale_price)){
+							$related_second_product_sale_price = wc_price($related_second_product->get_sale_price());
 							$related_second_product_price = '<span class="related-regular-price">' . $related_second_product_regular_price .'</span> - '. $related_second_product_sale_price;
 						} else {
-							$related_third_product_price = wc_price($related_third_product->get_price());
+							$related_second_product_price = wc_price($related_second_product->get_price());
 						}
 					}
 				}
@@ -116,12 +116,18 @@ get_header( 'shop' ); ?>
 						$related_third_product_price = wc_price($fromRelated_third_product_price) . ' - ' . wc_price($toRelated_third_product_price);
 					} else {
 						$related_third_product_regular_price = wc_price($related_third_product->get_regular_price());
-						$related_third_product_sale_price = wc_price($related_third_product->get_sale_price());
-						if ($related_third_product_regular_price > $related_third_product_sale_price) {
+						if (($related_third_product->get_sale_price() != null) && ($related_third_product_regular_price > $related_third_product_sale_price)){
+							$related_third_product_sale_price = wc_price($related_third_product->get_sale_price());
 							$related_third_product_price = '<span class="related-regular-price">' . $related_third_product_regular_price .'</span> - '. $related_third_product_sale_price;
 						} else {
 							$related_third_product_price = wc_price($related_third_product->get_price());
 						}
+						
+						// if ($related_third_product_regular_price > $related_third_product_sale_price) {
+						// 	$related_third_product_price = '<span class="related-regular-price">' . $related_third_product_regular_price .'</span> - '. $related_third_product_sale_price;
+						// } else {
+						// 	$related_third_product_price = wc_price($related_third_product->get_price());
+						// }
 					}
 				}
 			}

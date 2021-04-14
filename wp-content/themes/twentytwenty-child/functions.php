@@ -534,3 +534,68 @@ if ( ! function_exists( 'astra_woo_product_in_stock' ) ) :
 		return $markup;
 	}
 endif;
+
+// 13th free order
+add_action('init', 'runOnInit', 10, 0);
+function runOnInit() { 
+    $completed_order_count = 0;
+	$orders = get_posts( array(
+	    'numberposts' => -1,
+	    'meta_key'    => '_customer_user',
+	    'meta_value'  => get_current_user_id(),
+	    'post_type'   => 'shop_order',
+	    'post_status' => array_keys( wc_get_order_statuses() )
+	) );
+
+	$current_user = wp_get_current_user();
+	$userName = $current_user->display_name;
+	$acf_repeater_count = 0;
+    
+    foreach($orders as $order) {
+        
+        if ( ($order->post_status == 'wc-approved') || ($order->post_status == 'wc-completed') || ($order->post_status == 'wc-rebill')  || ($order->post_status == 'wc-processing') ) {
+			$order_obj = wc_get_order( $order );
+            $items = $order_obj->get_items();
+			foreach ( $items as $item ) {
+				$product_id = $item['product_id'];
+
+				if ( have_rows('bundle_product_group', $product_id) ): 
+					while( have_rows('bundle_product_group',  $product_id)) : the_row();
+						if( have_rows('product_repeater') ) :
+							while( have_rows('product_repeater') ) : the_row();
+								$acf_repeater_count++;
+							endwhile;
+						endif;	
+					endwhile;
+				endif;
+			}
+			
+			if ($order_obj != '0.00') {
+			    $item_count = $order_obj->get_item_count() - $order_obj->get_item_count_refunded();
+			    $completed_order_count += $item_count;    
+			}
+		}
+	}
+    $completed_order_count = $completed_order_count + $acf_repeater_count;
+
+	$dividedOrder = $completed_order_count % 13;
+	$remainItem = 12 - $dividedOrder;
+    global $woocommerce;
+    $discount_price = 15; 
+    if ($dividedOrder == 0) {
+        $cartObjs = WC()->cart->total;
+        
+        // foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+        //     $product = $cart_item['data'];
+        //     $product_id = $cart_item['product_id'];
+        //     $quantity = $cart_item['quantity'];
+        //     $price = WC()->cart->get_product_price( $product );
+        //     $subtotal = WC()->cart->get_product_subtotal( $product, $cart_item['quantity'] );
+        //     var_dump($price);
+        // }
+    }
+    
+}
+
+	
+
