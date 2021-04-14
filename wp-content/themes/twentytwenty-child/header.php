@@ -272,6 +272,7 @@
 				</div>
 			</div>
 
+<!-- Popup on Health Benefit LP's, Blogs & Home -->
 			<?php if ((get_page_template_slug() == "template-parts/athletic-performance.php") || (get_page_template_slug() == "template-parts/healthy_aging.php") || (get_page_template_slug() == "template-parts/blog.php") || (get_page_template_slug() == "templates/post.php")) : ?>
 				<div class="klaviyo-popup klaviyo-popup-blog klaviyo_modal" id="k_id_modal" style="display:none;">
 					<div class="klaviyo-popup__inner">
@@ -307,7 +308,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				
 				<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
 	    		<script>
@@ -371,5 +372,7 @@
 					});
 				</script>
 			<?php endif; ?>
+
+	<!-- End Popup on Health Benefit LP's and Blogs -->
 		</header>
 		
