@@ -579,20 +579,20 @@ function runOnInit() {
     $completed_order_count = $completed_order_count + $acf_repeater_count;
 
 	$dividedOrder = $completed_order_count % 13;
-	$remainItem = 12 - $dividedOrder;
+    $remainItem = 12 - $dividedOrder;
     global $woocommerce;
     $discount_price = 15; 
-    if ($dividedOrder == 0) {
-        $cartObjs = WC()->cart->total;
+    if ($completed_order_count % 13 == 0 OR $completed_order_count == 12 OR $remainItem == 0) {
+        add_action( 'woocommerce_before_calculate_totals', 'misha_recalc_price' );
+    }
+
+    function misha_recalc_price( $cart_object ) {
+        $cartObj = $cart_object->get_cart();
         
-        // foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-        //     $product = $cart_item['data'];
-        //     $product_id = $cart_item['product_id'];
-        //     $quantity = $cart_item['quantity'];
-        //     $price = WC()->cart->get_product_price( $product );
-        //     $subtotal = WC()->cart->get_product_subtotal( $product, $cart_item['quantity'] );
-        //     var_dump($price);
-        // }
+        foreach ( $cart_object->get_cart() as $hash => $value ) {
+            $value['data']->set_price( 0 );
+            return false;
+        }
     }
     
 }
