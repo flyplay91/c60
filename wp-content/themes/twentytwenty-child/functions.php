@@ -582,9 +582,12 @@ function runOnInit() {
     $remainItem = 12 - $dividedOrder;
     global $woocommerce;
     $discount_price = 15; 
-    if ($completed_order_count % 13 == 0 OR $completed_order_count == 12 OR $remainItem == 0) {
-        add_action( 'woocommerce_before_calculate_totals', 'misha_recalc_price' );
+    if ($completed_order_count > 0) {
+        if ($completed_order_count % 13 == 0 OR $completed_order_count == 12 OR $remainItem == 0) {
+            add_action( 'woocommerce_before_calculate_totals', 'misha_recalc_price' );
+        }
     }
+    
 
     function misha_recalc_price( $cart_object ) {
         $cartObj = $cart_object->get_cart();
