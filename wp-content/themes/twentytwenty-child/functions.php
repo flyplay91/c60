@@ -519,7 +519,8 @@ if ( ! function_exists( 'astra_woo_product_in_stock' ) ) :
             
 			$availability   = $product_avail['availability'];
 			$avail_class    = $product_avail['class'];
-			if ( ! empty( $availability ) && $stock_quantity ) {
+            $low_stock_quantity = $product->get_low_stock_amount();
+			if ( ! empty( $availability ) && $stock_quantity < $low_stock_quantity ) {
 				ob_start();
 				?>
 				<p class="ast-stock-detail">
@@ -535,7 +536,7 @@ if ( ! function_exists( 'astra_woo_product_in_stock' ) ) :
 	}
 endif;
 
-// 13th free order
+// Loyalty Program - 13th free order
 add_action('init', 'runOnInit', 10, 0);
 function runOnInit() { 
     $completed_order_count = 0;
