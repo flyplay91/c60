@@ -186,19 +186,19 @@ if ( $research_title !== '' && $research_description !=='' ): ?>
         </div>
 
         <div class="post-tags post-categories inner-section-1120">
-                <p><strong>Categories</strong></p>
-<ul>
+            <p><strong>Categories</strong></p>
+            <ul>
                 <?php
-            $categories = get_categories( array(
-                'orderby' => 'none',
-                'order'   => 'ASC'
-            ) );
+                    $categories = get_categories( array(
+                        'orderby' => 'none',
+                        'order'   => 'ASC'
+                    ) );
  
-if ($categories) {
+                if ($categories) {
                     foreach($categories as $category) { ?>
                     <?php $category_link = esc_url( get_category_link( $category->term_id )); ?>
                         <li>
-                            <?php echo $category->name ?>
+                            <a href="<?php echo $category_link ?>"><?php echo $category->name ?></a>
                         </li>
                     <?php }
                 } ?>
