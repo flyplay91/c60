@@ -177,7 +177,7 @@ if ( $research_title !== '' && $research_description !=='' ): ?>
                 $posttags = get_the_tags();
                 if ($posttags) {
                     foreach($posttags as $tag) { ?>
-                        <li><?php echo $tag->name ?></li>
+                        <li><a href="<?php echo get_tag_link($tag) ?>"><?php echo $tag->name ?></a></li>
                     <?php }
                 }
                 ?>
