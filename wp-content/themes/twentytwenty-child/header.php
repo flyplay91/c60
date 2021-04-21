@@ -25,7 +25,7 @@
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/slick.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/custom-js.js"></script>
 		
-		
+		<?php require_once 'custom-schema.php'; ?>
 		<?php wp_head(); ?>
 
 	
