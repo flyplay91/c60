@@ -1,33 +1,37 @@
 <?php
     $page_template_slug = get_page_template_slug();
-    
-    if ($page_template_slug == 'template-parts/home.php') { ?>
+    var_dump($page_template_slug);
+    if ($page_template_slug == 'template-parts/home.php') { 
+        $home_url = get_home_url();
+        ?>
         <script type="application/ld+json">
         {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "C60 Purple Power",
-        "url": "https://c60purplepower.com/",
-        "logo": "https://c60purplepower.com/wp-content/uploads/2021/01/c60_logo.png",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "1-800-367-9364",
-            "contactType": "customer service",
-            "contactOption": "TollFree",
-            "areaServed": ["US","GB","CA"],
-            "availableLanguage": "en"
-        },
-        "sameAs": [
-            "https://www.facebook.com/c60purplepower/",
-            "https://twitter.com/c60purplepower/",
-            "https://www.instagram.com/c60purplepower/",
-            "https://www.youtube.com/c/C60PurplePower/",
-            "https://www.pinterest.com/c60purplepower/"
-        ]
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "C60 Purple Power",
+            "url": "<?php echo $home_url ?>",
+            "logo": "https://c60purplepower.com/wp-content/uploads/2021/01/c60_logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "1-800-367-9364",
+                "contactType": "customer service",
+                "contactOption": "TollFree",
+                "areaServed": ["US","GB","CA"],
+                "availableLanguage": "en"
+            },
+            "sameAs": [
+                "https://www.facebook.com/c60purplepower/",
+                "https://twitter.com/c60purplepower/",
+                "https://www.instagram.com/c60purplepower/",
+                "https://www.youtube.com/c/C60PurplePower/",
+                "https://www.pinterest.com/c60purplepower/"
+            ]
         }
         </script>
     <?php
-    } else if ($page_template_slug == 'template-parts/shop.php') { ?>
+    } else if ($page_template_slug == 'template-parts/shop.php') { 
+        $home_url = get_home_url();
+        ?>
         <script type="application/ld+json">
         {
         "@context": "https://schema.org/", 
@@ -36,18 +40,19 @@
             "@type": "ListItem", 
             "position": 1, 
             "name": "C60 Purple Power",
-            "item": "https://c60purplepower.com/"  
+            "item": <?php echo $home_url ?>"  
         },{
             "@type": "ListItem", 
             "position": 2, 
             "name": "Shop C60 Products",
-            "item": "https://c60purplepower.com/shop/"  
+            "item": "<?php echo $home_url ?>/shop/"  
         }]
         }
         </script>
 
     <?php
     } else if (is_product_category()) { 
+        $home_url = get_home_url();
         $cat_objs = get_the_terms( get_the_ID(), 'product_cat' );
         $cat_name = $cat_objs[0]->name;
         $cat_id = $cat_objs[0]->term_id; 
@@ -63,7 +68,7 @@
                     "@type": "ListItem", 
                     "position": 1, 
                     "name": "C60 Purple Power",
-                    "item": "https://c60purplepower.com/"  
+                    "item": "<?php echo $home_url ?>"  
                 },
                 {
                     "@type": "ListItem", 
@@ -77,6 +82,7 @@
 
     <?php
     } else if (is_product()) { 
+        $home_url = get_home_url();
         $product = wc_get_product( get_the_id() );
         $product_title = $product->get_name();
         $product_link = get_permalink( $product->ID );
@@ -94,7 +100,7 @@
             "@type": "ListItem", 
             "position": 1, 
             "name": "C60 Purple Power",
-            "item": "https://c60purplepower.com/"  
+            "item": "<?php echo $home_url ?>"  
         },{
             "@type": "ListItem", 
             "position": 2, 
@@ -176,31 +182,40 @@
         </script>
 
     <?php
-    } else if ($page_template_slug == 'template-parts/blog.php') { ?>
+    } else if ($page_template_slug == 'templates/post.php') { 
+        $post_url = get_permalink();
+        $post_title = get_the_title();
+        $post_img_url = get_the_post_thumbnail_url();
+        $post_date = get_the_date();
+        global $post;
+        $author_id = $post->post_author;
+        $post_author_name = get_the_author_meta( 'nicename', $author_id );
+        
+        ?>
         <script type="application/ld+json">
         {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://c60purplepower.com/how-to-increase-stamina-endurance/"
+            "@id": "<?php echo $post_url ?>"
         },
         "headline": "How to Increase Stamina and Endurance Naturally",
-        "description": "It’s common knowledge that regular exercise is good for the body, improving muscle tone, digestion, cardiovascular strength, and a multitude of other systems. However, it may be hard to get off the couch for a few reasons. Age or lack of activity can make a new exercise routine seem impossible, knowing there will be discomfort and fatigue on the horizon. Even people who exercise regularly may dread the soreness in their limbs in the days after a hard workout.",
-        "image": "https://c60purplepower.com/wp-content/uploads/2021/02/how-to-increase-stamina-and-endurance-naturally-scaled.jpeg",  
+        "description": "<?php echo $post_title ?>",
+        "image": "<?php echo $post_img_url ?>",  
         "author": {
             "@type": "Person",
-            "name": "Sierra Samuel"
+            "name": "<?php echo $post_author_name ?>"
         },  
         "publisher": {
             "@type": "Organization",
             "name": "C60 Purple Power",
             "logo": {
             "@type": "ImageObject",
-            "url": "https://c60purplepower.com/wp-content/uploads/2017/12/11p-scaled-120x141.png"
+            "url": "<?php echo $post_img_url ?>"
             }
         },
-        "datePublished": "2021-03-04"
+        "datePublished": "<?php echo $post_date ?>"
         }
         </script>
 
