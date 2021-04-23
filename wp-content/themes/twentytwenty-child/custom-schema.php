@@ -8,7 +8,7 @@
         "@type": "Organization",
         "name": "C60 Purple Power",
         "url": "https://c60purplepower.com/",
-        "logo": "https://c60purplepower.com/wp-content/uploads/2017/12/11p-scaled-120x141.png",
+        "logo": "https://c60purplepower.com/wp-content/uploads/2021/01/c60_logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "1-800-367-9364",
@@ -47,27 +47,45 @@
         </script>
 
     <?php
-    } else if (is_product_category()) { ?>
+    } else if (is_product_category()) { 
+        $cat_objs = get_the_terms( get_the_ID(), 'product_cat' );
+        $cat_name = $cat_objs[0]->name;
+        $cat_id = $cat_objs[0]->term_id; 
+        $cat_link = get_category_link( $cat_id ); 
+        
+        ?>
         <script type="application/ld+json">
         {
-        "@context": "https://schema.org/", 
-        "@type": "BreadcrumbList", 
-        "itemListElement": [{
-            "@type": "ListItem", 
-            "position": 1, 
-            "name": "C60 Purple Power",
-            "item": "https://c60purplepower.com/"  
-        },{
-            "@type": "ListItem", 
-            "position": 2, 
-            "name": "C60 Oil",
-            "item": "https://c60purplepower.com/c60-oil/"  
-        }]
+            "@context": "https://schema.org/", 
+            "@type": "BreadcrumbList", 
+            "itemListElement": [
+                {
+                    "@type": "ListItem", 
+                    "position": 1, 
+                    "name": "C60 Purple Power",
+                    "item": "https://c60purplepower.com/"  
+                },
+                {
+                    "@type": "ListItem", 
+                    "position": 2, 
+                    "name": "<?php echo $cat_name; ?>",
+                    "item": "<?php echo $cat_link; ?>"  
+                }
+            ]
         }
         </script>
 
     <?php
-    } else if (is_product()) { ?>
+    } else if (is_product()) { 
+        $product = wc_get_product( get_the_id() );
+        $product_title = $product->get_name();
+        $product_link = get_permalink( $product->ID );
+        
+        $cat_objs = get_the_terms( get_the_ID(), 'product_cat' );
+        $cat_name = $cat_objs[0]->name;
+        $cat_id = $cat_objs[0]->term_id; 
+        $cat_link = get_category_link( $cat_id ); 
+        ?>
         <script type="application/ld+json">
         {
         "@context": "https://schema.org/", 
@@ -80,13 +98,13 @@
         },{
             "@type": "ListItem", 
             "position": 2, 
-            "name": "C60 Oil",
-            "item": "https://c60purplepower.com/c60-oil/"  
+            "name": "<?php echo $cat_name ?>",
+            "item": "<?php echo $cat_link ?>"  
         },{
             "@type": "ListItem", 
             "position": 3, 
-            "name": "C60 in Organic Avocado Oil",
-            "item": "https://c60purplepower.com/c60-oil/c60-avocado-oil/"  
+            "name": "<?php echo $product_title ?>",
+            "item": "<?php echo $product_link ?>"  
         }]
         }
         </script>
