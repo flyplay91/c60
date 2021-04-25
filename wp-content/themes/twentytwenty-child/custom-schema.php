@@ -1,6 +1,6 @@
 <?php
     $page_template_slug = get_page_template_slug();
-    var_dump($page_template_slug);
+    
     if ($page_template_slug == 'template-parts/home.php') { 
         $home_url = get_home_url();
         ?>
